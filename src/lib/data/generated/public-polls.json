@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-08-27",
+  "checkedAt": "2026-08-28",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 286,
+  "recordCount": 290,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -1171,14 +1171,14 @@
       "undecided": 33.6
     },
     {
-      "id": "poll-355d9931f98f",
+      "id": "poll-6d39c1ef3edb",
       "countyId": "hsinchu-county",
-      "institute": "民進黨內參",
+      "institute": "皮爾森數據",
       "date": "2026-08-01",
       "fieldwork": "7月27日至8月1日",
-      "source": "民進黨內參",
+      "source": "皮爾森數據",
       "sourceUrl": "https://www.bigmedia.com.tw/article/1786409505418",
-      "sourceKind": "internal",
+      "sourceKind": "public",
       "scenario": "徐欣瑩－鄭朝方",
       "results": {
         "hsinchu-county-徐欣瑩": 35.5,
@@ -2585,6 +2585,51 @@
       "undecided": 25.5
     },
     {
+      "id": "poll-0ba0f6a51b1f",
+      "countyId": "keelung",
+      "institute": "全國公信力",
+      "date": "2026-08-17",
+      "fieldwork": "8月1日至17日",
+      "source": "全國公信力",
+      "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 44.9,
+        "keelung-童子瑋": 28.0
+      }
+    },
+    {
+      "id": "poll-7aa0036b1dad",
+      "countyId": "keelung",
+      "institute": "全國公信力",
+      "date": "2026-08-17",
+      "fieldwork": "8月1日至17日",
+      "source": "全國公信力",
+      "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 38.5,
+        "keelung-童子瑋": 30.6
+      }
+    },
+    {
+      "id": "poll-ef4377f71c84",
+      "countyId": "keelung",
+      "institute": "全國公信力",
+      "date": "2026-08-17",
+      "fieldwork": "8月1日至17日",
+      "source": "全國公信力",
+      "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 40.7,
+        "keelung-童子瑋": 29.1
+      }
+    },
+    {
       "id": "poll-0fa76acfd3e3",
       "countyId": "kinmen",
       "institute": "國民黨內參",
@@ -3227,6 +3272,22 @@
         "newtaipei-蘇巧慧": 37.3
       },
       "undecided": 23.4
+    },
+    {
+      "id": "poll-1a96f8164b9b",
+      "countyId": "newtaipei",
+      "institute": "年代民調",
+      "date": "2026-08-26",
+      "fieldwork": "8月24至26日",
+      "source": "年代民調",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/4013907",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 32.2,
+        "newtaipei-蘇巧慧": 37.8
+      },
+      "undecided": 26.0
     },
     {
       "id": "poll-1380a5b80955",
@@ -5060,5 +5121,5 @@
       }
     ]
   },
-  "generatedAt": "2026-08-27T10:16:09Z"
+  "generatedAt": "2026-08-28T15:24:32Z"
 }

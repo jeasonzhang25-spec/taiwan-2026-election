@@ -1,6 +1,6 @@
 // ============================================================
 // 選情看板 —— 核心 TypeScript 型別
-// 所有資料結構在此定義，方便後續將 JSON 模擬資料替換為 API / DB
+// 所有資料結構在此定義，方便後續將人工核驗資料替換為 API / DB
 // ============================================================
 
 /** 選舉類型 */
@@ -30,13 +30,15 @@ export interface Party {
   texture?: "none" | "stripes" | "dots";
 }
 
-/** 候選人（演示使用虛構姓名） */
+/** 民調或正式選務資料中的人選 */
 export interface Candidate {
   id: string;
   name: string;
   partyId: PartyId;
   /** 是否為現任首長爭取連任 */
   isIncumbent?: boolean;
+  /** 登記完成前，只能視為民調題目中的人選 */
+  status?: "poll-option" | "official";
 }
 
 /** 單一筆公開民調記錄 */
@@ -44,22 +46,28 @@ export interface PollRecord {
   id: string;
   institute: string; // 調查機構
   date: string; // 調查時間（ISO date）
-  sampleSize: number; // 樣本數
-  method: string; // 調查方式（市話／手機／網路等）
-  marginOfError: number; // 誤差範圍（百分比）
+  fieldwork?: string; // 原始調查日期文字
+  sampleSize?: number; // 樣本數；來源未揭露時不填
+  method?: string; // 調查方式（市話／手機／網路等）
+  marginOfError?: number; // 誤差範圍（百分比）
   source: string; // 資料來源
   sourceUrl?: string; // 來源連結（預留）
-  publishedAt: string; // 發佈時間
+  publishedAt?: string; // 發佈時間
+  sourceKind?: "public" | "internal" | "primary";
+  scenario?: string; // 該列民調的題目／對戰情境
+  undecided?: number;
   results: Record<string, number>; // candidateId -> 支持度（%）
 }
 
 /** 候選人民調趨勢點 */
 export interface PollPoint {
+  recordId: string;
   date: string;
   value: number; // 支持度 %
-  marginError: number; // 誤差 %
+  marginError?: number; // 誤差 %
   institute: string;
-  sampleSize: number;
+  sampleSize?: number;
+  scenario?: string;
 }
 
 /** 重要事件標記 */
@@ -91,6 +99,10 @@ export interface CountyRace {
   lastPollDate: string;
   keyIssues: string[];
   updatedAt: string;
+  dataStatus: "verified-poll" | "insufficient";
+  dataSource?: string;
+  dataSourceUrl?: string;
+  dataNote?: string;
   /** 2022 選舉結果（供歷史版圖區使用） */
   result2022: HistoricalResult;
   /** 歷史執政黨版圖 */
@@ -101,7 +113,7 @@ export interface CountyRace {
 export interface HistoricalResult {
   year: number;
   winner: PartyId;
-  voteShare: number; // 得票率 %
+  voteShare?: number; // 得票率 %（只有已核對時才填）
   runnerUp?: PartyId;
 }
 

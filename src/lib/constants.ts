@@ -88,18 +88,18 @@ export const COMPETITIVENESS: Record<
   "slim-lead": { label: "小幅領先", tone: "blue" },
   tossup: { label: "五五波", tone: "amber" },
   "likely-flip": { label: "可能翻轉", tone: "red" },
-  insufficient: { label: "資料不足", tone: "gray" },
+  insufficient: { label: "尚無民調", tone: "gray" },
 };
 
 export function competitivenessLabel(c: Competitiveness): string {
   return COMPETITIVENESS[c]?.label ?? c;
 }
 
-/** 投票日（演示設定，可替換） */
+/** 中選會公布投票日 */
 export const ELECTION_DAY = "2026-11-28";
 
-/** 最後更新時間（演示） */
-export const LAST_UPDATED = "2026-08-25 09:30";
+/** 最後一次人工核验日期 */
+export const LAST_UPDATED = "2026-08-27";
 
 /** 各類選舉的說明 */
 export const ELECTION_TYPE_DESC: Record<ElectionType, string> = {
@@ -113,11 +113,12 @@ export const ELECTION_TYPE_DESC: Record<ElectionType, string> = {
 export const NAV_ITEMS = [
   { id: "overview", label: "全台總覽" },
   { id: "counties", label: "縣市選情" },
-  { id: "trend", label: "民調趨勢" },
+  { id: "live-data", label: "外部資料" },
+  { id: "trend", label: "民調資料庫" },
   { id: "history", label: "歷史版圖" },
   { id: "methodology", label: "資料說明" },
 ] as const;
 
-/** 演示資料警示文字 */
+/** 全站資料邊界 */
 export const DEMO_DISCLAIMER =
-  "演示資料，僅用於介面展示，不代表實際選情。";
+  "每筆民調情境均保留來源連結；黨內參與初選民調已標示。無民調不等於無候選人，也不代表選情落後。";

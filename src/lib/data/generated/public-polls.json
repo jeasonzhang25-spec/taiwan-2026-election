@@ -1,0 +1,5064 @@
+{
+  "checkedAt": "2026-08-27",
+  "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
+  "recordCount": 286,
+  "countyCount": 18,
+  "countyIds": [
+    "changhua",
+    "chiayi-city",
+    "chiayi-county",
+    "hsinchu-city",
+    "hsinchu-county",
+    "hualien",
+    "kaohsiung",
+    "keelung",
+    "kinmen",
+    "newtaipei",
+    "penghu",
+    "taichung",
+    "tainan",
+    "taipei",
+    "taitung",
+    "taoyuan",
+    "yilan",
+    "yunlin"
+  ],
+  "records": [
+    {
+      "id": "poll-4abfb11edb60",
+      "countyId": "changhua",
+      "institute": "國民黨",
+      "date": "2026-01-01",
+      "fieldwork": "2026年1月",
+      "source": "國民黨",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1769073918464",
+      "sourceKind": "internal",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-洪榮章": 18.5,
+        "changhua-陳素月": 41.1
+      },
+      "undecided": 40.4
+    },
+    {
+      "id": "poll-61c861cfe4d4",
+      "countyId": "changhua",
+      "institute": "國民黨",
+      "date": "2026-01-01",
+      "fieldwork": "2026年1月",
+      "source": "國民黨",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1769073918464",
+      "sourceKind": "internal",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-謝衣鳳": 30.0,
+        "changhua-陳素月": 37.4
+      },
+      "undecided": 32.6
+    },
+    {
+      "id": "poll-695be3fd9733",
+      "countyId": "changhua",
+      "institute": "國民黨",
+      "date": "2026-01-01",
+      "fieldwork": "2026年1月",
+      "source": "國民黨",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1769073918464",
+      "sourceKind": "internal",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-謝典林": 22.2,
+        "changhua-陳素月": 39.2
+      },
+      "undecided": 38.6
+    },
+    {
+      "id": "poll-7c69bd36f224",
+      "countyId": "changhua",
+      "institute": "國民黨",
+      "date": "2026-01-01",
+      "fieldwork": "2026年1月",
+      "source": "國民黨",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1769073918464",
+      "sourceKind": "internal",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-柯呈枋": 23.6,
+        "changhua-陳素月": 39.7
+      },
+      "undecided": 36.7
+    },
+    {
+      "id": "poll-75bed532d249",
+      "countyId": "changhua",
+      "institute": "趨勢民調",
+      "date": "2026-03-08",
+      "fieldwork": "3月6至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260325inv003",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-洪榮章": 23.8,
+        "changhua-陳素月": 39.6
+      }
+    },
+    {
+      "id": "poll-8ea78bcd846a",
+      "countyId": "changhua",
+      "institute": "趨勢民調",
+      "date": "2026-03-08",
+      "fieldwork": "3月6至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260325inv003",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-謝衣鳳": 31.9,
+        "changhua-陳素月": 34.8
+      }
+    },
+    {
+      "id": "poll-9a19b6bd5042",
+      "countyId": "changhua",
+      "institute": "趨勢民調",
+      "date": "2026-03-08",
+      "fieldwork": "3月6至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260325inv003",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-謝衣鳳": 22.1,
+        "changhua-柯呈枋": 15.2,
+        "changhua-洪榮章": 9.2
+      },
+      "undecided": 53.0
+    },
+    {
+      "id": "poll-b4ffc906c3e8",
+      "countyId": "changhua",
+      "institute": "趨勢民調",
+      "date": "2026-03-08",
+      "fieldwork": "3月6至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260325inv003",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-柯呈枋": 28.3,
+        "changhua-陳素月": 37.7
+      }
+    },
+    {
+      "id": "poll-7f6f739b3ade",
+      "countyId": "changhua",
+      "institute": "鉅聞天下",
+      "date": "2026-05-02",
+      "fieldwork": "4月27日至5月2日",
+      "source": "鉅聞天下",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1778147228192",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－蔡壁如",
+      "results": {
+        "changhua-魏平政": 14.4,
+        "changhua-陳素月": 39.2
+      },
+      "undecided": 20.67
+    },
+    {
+      "id": "poll-f89469aa40c2",
+      "countyId": "changhua",
+      "institute": "鉅聞天下",
+      "date": "2026-05-02",
+      "fieldwork": "4月27日至5月2日",
+      "source": "鉅聞天下",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1778147228192",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－蔡壁如",
+      "results": {
+        "changhua-陳素月": 39.63,
+        "changhua-蔡壁如": 19.17
+      },
+      "undecided": 15.54
+    },
+    {
+      "id": "poll-2333b9a0b68e",
+      "countyId": "changhua",
+      "institute": "CNEWS 匯流新聞網民調中心",
+      "date": "2026-05-21",
+      "fieldwork": "5月20日至21日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/001260525a01/",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－蔡壁如",
+      "results": {
+        "changhua-魏平政": 14.0,
+        "changhua-陳素月": 30.5,
+        "changhua-蔡壁如": 8.5
+      },
+      "undecided": 47.0,
+      "sampleSize": 1068,
+      "method": "家戶電話、分層比例隨機抽樣",
+      "marginOfError": 3.0,
+      "publishedAt": "2026-05-25"
+    },
+    {
+      "id": "poll-3c5d29b6b367",
+      "countyId": "changhua",
+      "institute": "CNEWS 匯流新聞網民調中心",
+      "date": "2026-05-21",
+      "fieldwork": "5月20日至21日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/001260525a01/",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－蔡壁如",
+      "results": {
+        "changhua-魏平政": 27.8,
+        "changhua-蔡壁如": 27.3
+      },
+      "undecided": 44.9,
+      "sampleSize": 1068,
+      "method": "家戶電話、分層比例隨機抽樣",
+      "marginOfError": 3.0,
+      "publishedAt": "2026-05-25"
+    },
+    {
+      "id": "poll-599c54801248",
+      "countyId": "changhua",
+      "institute": "CNEWS 匯流新聞網民調中心",
+      "date": "2026-05-21",
+      "fieldwork": "5月20日至21日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/001260525a01/",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－蔡壁如",
+      "results": {
+        "changhua-陳素月": 41.5,
+        "changhua-蔡壁如": 28.8
+      },
+      "undecided": 29.7,
+      "sampleSize": 1068,
+      "method": "家戶電話、分層比例隨機抽樣",
+      "marginOfError": 3.0,
+      "publishedAt": "2026-05-25"
+    },
+    {
+      "id": "poll-f7b684c2707d",
+      "countyId": "changhua",
+      "institute": "CNEWS 匯流新聞網民調中心",
+      "date": "2026-05-21",
+      "fieldwork": "5月20日至21日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/001260525a01/",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－蔡壁如",
+      "results": {
+        "changhua-魏平政": 23.2,
+        "changhua-陳素月": 42.6
+      },
+      "undecided": 34.2,
+      "sampleSize": 1068,
+      "method": "家戶電話、分層比例隨機抽樣",
+      "marginOfError": 3.0,
+      "publishedAt": "2026-05-25"
+    },
+    {
+      "id": "poll-b3d635c3a3ef",
+      "countyId": "changhua",
+      "institute": "民進黨",
+      "date": "2026-06-01",
+      "fieldwork": "6月",
+      "source": "民進黨",
+      "sourceUrl": "https://udn.com/news/story/124652/96176762",
+      "sourceKind": "internal",
+      "scenario": "魏平政－陳素月－邱建富",
+      "results": {
+        "changhua-魏平政": 11.0,
+        "changhua-陳素月": 28.0,
+        "changhua-邱建富": 12.0
+      },
+      "undecided": 49.0
+    },
+    {
+      "id": "poll-ae23116d9292",
+      "countyId": "changhua",
+      "institute": "ETtoday",
+      "date": "2026-08-17",
+      "fieldwork": "8月10日至17日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/amp/3221430",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－邱建富",
+      "results": {
+        "changhua-魏平政": 19.4,
+        "changhua-陳素月": 36.4,
+        "changhua-邱建富": 12.7
+      },
+      "undecided": 31.5
+    },
+    {
+      "id": "poll-2044e6e1954f",
+      "countyId": "chiayi-city",
+      "institute": "TVBS",
+      "date": "2026-04-30",
+      "fieldwork": "4月24日至30日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3194942",
+      "sourceKind": "public",
+      "scenario": "王美惠－張啓楷",
+      "results": {
+        "chiayi-city-王美惠": 43.0,
+        "chiayi-city-張啓楷": 37.0
+      },
+      "undecided": 20.0
+    },
+    {
+      "id": "poll-5d4f0b39bf60",
+      "countyId": "chiayi-city",
+      "institute": "關鍵調查",
+      "date": "2026-07-12",
+      "fieldwork": "7月10日至12日",
+      "source": "關鍵調查",
+      "sourceUrl": "https://sunmedia.tw/news/collaborative/2acUgQRl2gSuldPntgr9btUK4mmfKahkpZSFUMtNIIUC4U3WdIUjKIoe8AxhAA8S3BdGM03R",
+      "sourceKind": "public",
+      "scenario": "王美惠－張啓楷",
+      "results": {
+        "chiayi-city-王美惠": 41.5,
+        "chiayi-city-張啓楷": 38.0
+      },
+      "undecided": 20.5
+    },
+    {
+      "id": "poll-0ad22fde3d69",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-黃榮利": 37.964,
+        "chiayi-county-王育敏": 15.361
+      }
+    },
+    {
+      "id": "poll-1d0940eb0c22",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 67.5559,
+        "chiayi-county-王育敏": 14.2226
+      }
+    },
+    {
+      "id": "poll-3868dfd4654c",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-黃榮利": 39.0245,
+        "chiayi-county-王育敏": 18.3584
+      }
+    },
+    {
+      "id": "poll-b8e7bfa8d4e4",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 63.6321,
+        "chiayi-county-王育敏": 13.4218
+      }
+    },
+    {
+      "id": "poll-c368ac396d21",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 63.5224,
+        "chiayi-county-王育敏": 15.055
+      }
+    },
+    {
+      "id": "poll-d2f92273caf6",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-黃榮利": 37.5953,
+        "chiayi-county-王育敏": 15.2331
+      }
+    },
+    {
+      "id": "poll-f4f76f22b0fe",
+      "countyId": "hsinchu-city",
+      "institute": "鉅聞天下",
+      "date": "2026-01-11",
+      "fieldwork": "2026年1月6日至11日",
+      "source": "鉅聞天下",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1768708815496",
+      "sourceKind": "public",
+      "scenario": "高虹安－其他",
+      "results": {
+        "hsinchu-city-高虹安": 41.98,
+        "hsinchu-city-林志潔": 24.38,
+        "hsinchu-city-王婉諭": 5.74,
+        "hsinchu-city-高嘉瑜": 5.74,
+        "hsinchu-city-何志勇": 3.89,
+        "hsinchu-city-施乃如": 3.18,
+        "hsinchu-city-楊玲宜": 2.39
+      },
+      "undecided": 24.03
+    },
+    {
+      "id": "poll-30af596813fc",
+      "countyId": "hsinchu-city",
+      "institute": "TVBS",
+      "date": "2026-02-04",
+      "fieldwork": "1月29日至2月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260206/008741205265e8613fa0d2ba0607b0ce.pdf",
+      "sourceKind": "public",
+      "scenario": "高虹安－其他",
+      "results": {
+        "hsinchu-city-高虹安": 50.0,
+        "hsinchu-city-林志潔": 28.0
+      },
+      "undecided": 22.0
+    },
+    {
+      "id": "poll-d6ce327b62ed",
+      "countyId": "hsinchu-city",
+      "institute": "TVBS",
+      "date": "2026-02-04",
+      "fieldwork": "1月29日至2月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260206/008741205265e8613fa0d2ba0607b0ce.pdf",
+      "sourceKind": "public",
+      "scenario": "高虹安－其他",
+      "results": {
+        "hsinchu-city-高虹安": 48.0,
+        "hsinchu-city-林志潔": 25.0,
+        "hsinchu-city-王婉諭": 6.0
+      },
+      "undecided": 20.0
+    },
+    {
+      "id": "poll-b1d69c01b9f2",
+      "countyId": "hsinchu-city",
+      "institute": "匯流民調",
+      "date": "2026-05-20",
+      "fieldwork": "5月19日至20日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/【匯流民調】2026新竹市長選舉最新民調-六成五新竹/",
+      "sourceKind": "public",
+      "scenario": "高虹安－莊競程",
+      "results": {
+        "hsinchu-city-高虹安": 54.5,
+        "hsinchu-city-莊競程": 21.3
+      },
+      "undecided": 20.2
+    },
+    {
+      "id": "poll-0d1468ae4f60",
+      "countyId": "hsinchu-county",
+      "institute": "艾普羅",
+      "date": "2025-11-22",
+      "fieldwork": "2025年11月20日至22日",
+      "source": "艾普羅",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1756831",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 33.9,
+        "hsinchu-county-鄭朝方": 36.8
+      },
+      "undecided": 19.5
+    },
+    {
+      "id": "poll-67fdf91bdbdf",
+      "countyId": "hsinchu-county",
+      "institute": "艾普羅",
+      "date": "2025-11-22",
+      "fieldwork": "2025年11月20日至22日",
+      "source": "艾普羅",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1756831",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-鄭朝方": 40.8,
+        "hsinchu-county-林思铭": 28.6
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-b66cd53f7e14",
+      "countyId": "hsinchu-county",
+      "institute": "艾普羅",
+      "date": "2025-11-22",
+      "fieldwork": "2025年11月20日至22日",
+      "source": "艾普羅",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1756831",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 24.0,
+        "hsinchu-county-鄭朝方": 42.5
+      },
+      "undecided": 22.5
+    },
+    {
+      "id": "poll-bd8407af5af0",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-01-02",
+      "fieldwork": "2025年12月30日至2026年1月2日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://www.ftnn.com.tw/news/513634",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 37.2,
+        "hsinchu-county-鄭朝方": 35.1
+      },
+      "undecided": 19.0
+    },
+    {
+      "id": "poll-f3911484e783",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-01-02",
+      "fieldwork": "2025年12月30日至2026年1月2日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://www.ftnn.com.tw/news/513634",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 33.3,
+        "hsinchu-county-鄭朝方": 38.3
+      },
+      "undecided": 19.1
+    },
+    {
+      "id": "poll-11e9ff3aaa47",
+      "countyId": "hsinchu-county",
+      "institute": "全國公信力",
+      "date": "2026-01-26",
+      "fieldwork": "2026年1月24日至26日",
+      "source": "全國公信力",
+      "sourceUrl": "https://www.storm.mg/article/11098736",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 39.3,
+        "hsinchu-county-鄭朝方": 33.8
+      },
+      "undecided": 26.9
+    },
+    {
+      "id": "poll-4a3d0d227aed",
+      "countyId": "hsinchu-county",
+      "institute": "全國公信力",
+      "date": "2026-01-26",
+      "fieldwork": "2026年1月24日至26日",
+      "source": "全國公信力",
+      "sourceUrl": "https://www.storm.mg/article/11098736",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.6,
+        "hsinchu-county-陳見賢": 26.0
+      },
+      "undecided": 30.4
+    },
+    {
+      "id": "poll-6db3dcd28124",
+      "countyId": "hsinchu-county",
+      "institute": "全國公信力",
+      "date": "2026-01-26",
+      "fieldwork": "2026年1月24日至26日",
+      "source": "全國公信力",
+      "sourceUrl": "https://www.storm.mg/article/11098736",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 33.5,
+        "hsinchu-county-鄭朝方": 36.1
+      },
+      "undecided": 30.4
+    },
+    {
+      "id": "poll-97f7f2d42eb1",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-02-05",
+      "fieldwork": "2月4日至5日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://m.my-formosa.com.tw/doc_223590.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 32.3,
+        "hsinchu-county-陳見賢": 16.5,
+        "hsinchu-county-鄭朝方": 27.3
+      },
+      "undecided": 24.0
+    },
+    {
+      "id": "poll-24f8c15db15c",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-02-05",
+      "fieldwork": "2月2日至5日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/521857",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.8,
+        "hsinchu-county-鄭朝方": 35.9
+      },
+      "undecided": 20.3
+    },
+    {
+      "id": "poll-57e1c8cbee38",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-02-05",
+      "fieldwork": "2月2日至5日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/521857",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 33.6,
+        "hsinchu-county-陳見賢": 41.8
+      },
+      "undecided": 24.4
+    },
+    {
+      "id": "poll-73b7f15b1652",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-02-05",
+      "fieldwork": "2月2日至5日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/521857",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 50.3,
+        "hsinchu-county-鄭朝方": 31.1
+      },
+      "undecided": 18.6
+    },
+    {
+      "id": "poll-0c8f3a46cfd7",
+      "countyId": "hsinchu-county",
+      "institute": "趨勢民調",
+      "date": "2026-02-08",
+      "fieldwork": "2月7日至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 44.7,
+        "hsinchu-county-鄭朝方": 30.7
+      },
+      "undecided": 24.6
+    },
+    {
+      "id": "poll-e130ccccdcbf",
+      "countyId": "hsinchu-county",
+      "institute": "趨勢民調",
+      "date": "2026-02-08",
+      "fieldwork": "2月7日至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 38.6,
+        "hsinchu-county-陳見賢": 37.5
+      },
+      "undecided": 23.9
+    },
+    {
+      "id": "poll-50167f3421b3",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-02-24",
+      "fieldwork": "2月23日至24日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/526838",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 35.9,
+        "hsinchu-county-鄭朝方": 42.7
+      }
+    },
+    {
+      "id": "poll-818b8bdd2864",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-02-24",
+      "fieldwork": "2月23日至24日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/526838",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 44.0,
+        "hsinchu-county-鄭朝方": 37.0
+      }
+    },
+    {
+      "id": "poll-8c9492d1f501",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-02-24",
+      "fieldwork": "2月23日至24日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/526838",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 31.4,
+        "hsinchu-county-陳見賢": 42.8
+      }
+    },
+    {
+      "id": "poll-06beab0913ac",
+      "countyId": "hsinchu-county",
+      "institute": "TVBS",
+      "date": "2026-02-27",
+      "fieldwork": "2月25日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 22.1,
+        "hsinchu-county-陳見賢": 34.6,
+        "hsinchu-county-鄭朝方": 28.8
+      }
+    },
+    {
+      "id": "poll-4a2fef4a89b2",
+      "countyId": "hsinchu-county",
+      "institute": "TVBS",
+      "date": "2026-02-27",
+      "fieldwork": "2月25日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 40.6,
+        "hsinchu-county-陳見賢": 36.2
+      }
+    },
+    {
+      "id": "poll-9094866b708e",
+      "countyId": "hsinchu-county",
+      "institute": "TVBS",
+      "date": "2026-02-27",
+      "fieldwork": "2月25日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.1,
+        "hsinchu-county-鄭朝方": 31.8
+      }
+    },
+    {
+      "id": "poll-eec87f085f6d",
+      "countyId": "hsinchu-county",
+      "institute": "TVBS",
+      "date": "2026-02-27",
+      "fieldwork": "2月25日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.8,
+        "hsinchu-county-陳見賢": 36.4
+      }
+    },
+    {
+      "id": "poll-8f93b4668c39",
+      "countyId": "hsinchu-county",
+      "institute": "雨晴指標",
+      "date": "2026-03-05",
+      "fieldwork": "3月2日至5日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/541182",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 23.1,
+        "hsinchu-county-陳見賢": 35.3,
+        "hsinchu-county-鄭朝方": 21.2
+      }
+    },
+    {
+      "id": "poll-bba2c978fa3a",
+      "countyId": "hsinchu-county",
+      "institute": "雨晴指標",
+      "date": "2026-03-05",
+      "fieldwork": "3月2日至5日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/541182",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 32.0,
+        "hsinchu-county-陳見賢": 36.0
+      },
+      "undecided": 32.0
+    },
+    {
+      "id": "poll-f4665f4d9462",
+      "countyId": "hsinchu-county",
+      "institute": "雨晴指標",
+      "date": "2026-03-05",
+      "fieldwork": "3月2日至5日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/541182",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 46.7,
+        "hsinchu-county-鄭朝方": 27.1
+      }
+    },
+    {
+      "id": "poll-14d846d53782",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-06",
+      "fieldwork": "3月4日至6日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224158.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 37.6,
+        "hsinchu-county-鄭朝方": 38.2
+      },
+      "undecided": 13.9
+    },
+    {
+      "id": "poll-ac4dbd4a028d",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-06",
+      "fieldwork": "3月4日至6日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224158.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 41.0,
+        "hsinchu-county-陳見賢": 32.5
+      },
+      "undecided": 26.5
+    },
+    {
+      "id": "poll-e7a5b60001db",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-06",
+      "fieldwork": "3月4日至6日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224158.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 38.5,
+        "hsinchu-county-鄭朝方": 32.2
+      },
+      "undecided": 17.2
+    },
+    {
+      "id": "poll-019d0f81cc3a",
+      "countyId": "hsinchu-county",
+      "institute": "全方位",
+      "date": "2026-03-13",
+      "fieldwork": "3月12日至13日",
+      "source": "全方位",
+      "sourceUrl": "https://news.nextapple.com/politics/20260318/614FCCFBA60F76ED4DA9EE3A0AF41581",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 36.7,
+        "hsinchu-county-鄭朝方": 24.5
+      },
+      "undecided": 22.9
+    },
+    {
+      "id": "poll-49232c83ad8b",
+      "countyId": "hsinchu-county",
+      "institute": "全方位",
+      "date": "2026-03-13",
+      "fieldwork": "3月12日至13日",
+      "source": "全方位",
+      "sourceUrl": "https://news.nextapple.com/politics/20260318/614FCCFBA60F76ED4DA9EE3A0AF41581",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 37.3,
+        "hsinchu-county-陳見賢": 36.6
+      },
+      "undecided": 15.3
+    },
+    {
+      "id": "poll-5033ec0ac578",
+      "countyId": "hsinchu-county",
+      "institute": "全方位",
+      "date": "2026-03-13",
+      "fieldwork": "3月12日至13日",
+      "source": "全方位",
+      "sourceUrl": "https://news.nextapple.com/politics/20260318/614FCCFBA60F76ED4DA9EE3A0AF41581",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 36.7,
+        "hsinchu-county-鄭朝方": 27.1
+      },
+      "undecided": 22.6
+    },
+    {
+      "id": "poll-1e097ff43eee",
+      "countyId": "hsinchu-county",
+      "institute": "台灣研究學會",
+      "date": "2026-03-17",
+      "fieldwork": "3月16日至17日",
+      "source": "台灣研究學會",
+      "sourceUrl": "https://www.ftnn.com.tw/news/531528",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 45.6,
+        "hsinchu-county-鄭朝方": 32.2
+      },
+      "undecided": 22.2
+    },
+    {
+      "id": "poll-84796770080d",
+      "countyId": "hsinchu-county",
+      "institute": "台灣研究學會",
+      "date": "2026-03-17",
+      "fieldwork": "3月16日至17日",
+      "source": "台灣研究學會",
+      "sourceUrl": "https://www.ftnn.com.tw/news/531528",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 45.9,
+        "hsinchu-county-鄭朝方": 32.4
+      },
+      "undecided": 21.7
+    },
+    {
+      "id": "poll-ddea08af27be",
+      "countyId": "hsinchu-county",
+      "institute": "台灣研究學會",
+      "date": "2026-03-17",
+      "fieldwork": "3月16日至17日",
+      "source": "台灣研究學會",
+      "sourceUrl": "https://www.ftnn.com.tw/news/531528",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 40.6,
+        "hsinchu-county-陳見賢": 36.1
+      },
+      "undecided": 23.3
+    },
+    {
+      "id": "poll-5354a8f20ab5",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-03-19",
+      "fieldwork": "3月18日至19日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/532318",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 47.2,
+        "hsinchu-county-鄭朝方": 32.8
+      },
+      "undecided": 20.0
+    },
+    {
+      "id": "poll-99b8719c7607",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-03-19",
+      "fieldwork": "3月18日至19日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/532318",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 34.7,
+        "hsinchu-county-陳見賢": 37.3
+      },
+      "undecided": 28.0
+    },
+    {
+      "id": "poll-a0148471770c",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-03-19",
+      "fieldwork": "3月18日至19日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/532318",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 46.6,
+        "hsinchu-county-鄭朝方": 30.9
+      },
+      "undecided": 22.3
+    },
+    {
+      "id": "poll-44471444b65e",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-25",
+      "fieldwork": "3月23日至25日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224581.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-陳見賢": 39.7,
+        "hsinchu-county-鄭朝方": 31.2
+      },
+      "undecided": 14.1
+    },
+    {
+      "id": "poll-7674f8def608",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-25",
+      "fieldwork": "3月23日至25日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224581.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.7,
+        "hsinchu-county-陳見賢": 33.4
+      },
+      "undecided": 23.0
+    },
+    {
+      "id": "poll-918de3e9b398",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-25",
+      "fieldwork": "3月23日至25日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224581.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 44.7,
+        "hsinchu-county-鄭朝方": 27.0
+      },
+      "undecided": 12.1
+    },
+    {
+      "id": "poll-745f596bee2a",
+      "countyId": "hsinchu-county",
+      "institute": "國民黨初選",
+      "date": "2026-03-28",
+      "fieldwork": "3月28日",
+      "source": "國民黨初選",
+      "sourceUrl": "https://www.ettoday.net/news/20260328/3140075.htm",
+      "sourceKind": "primary",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 50.634,
+        "hsinchu-county-陳見賢": 49.366
+      }
+    },
+    {
+      "id": "poll-cbdd66790a4a",
+      "countyId": "hsinchu-county",
+      "institute": "年代民調",
+      "date": "2026-04-07",
+      "fieldwork": "4月6日至7日",
+      "source": "年代民調",
+      "sourceUrl": "https://udn.com/news/story/124652/9430562",
+      "sourceKind": "public",
+      "scenario": "徐欣瑩－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 36.6,
+        "hsinchu-county-鄭朝方": 30.8
+      },
+      "undecided": 28.3
+    },
+    {
+      "id": "poll-ae5c0a47437f",
+      "countyId": "hsinchu-county",
+      "institute": "全國公信力",
+      "date": "2026-04-18",
+      "fieldwork": "4月16日至18日",
+      "source": "全國公信力",
+      "sourceUrl": "https://www.pinview.com.tw/News/57636.html",
+      "sourceKind": "public",
+      "scenario": "徐欣瑩－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 38.7,
+        "hsinchu-county-鄭朝方": 27.3
+      },
+      "undecided": 21.7
+    },
+    {
+      "id": "poll-5f79b68fbd9b",
+      "countyId": "hsinchu-county",
+      "institute": "年代民調",
+      "date": "2026-06-16",
+      "fieldwork": "6月14日至16日",
+      "source": "年代民調",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1856735",
+      "sourceKind": "public",
+      "scenario": "徐欣瑩－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 32.3,
+        "hsinchu-county-鄭朝方": 30.5
+      },
+      "undecided": 33.6
+    },
+    {
+      "id": "poll-355d9931f98f",
+      "countyId": "hsinchu-county",
+      "institute": "民進黨內參",
+      "date": "2026-08-01",
+      "fieldwork": "7月27日至8月1日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1786409505418",
+      "sourceKind": "internal",
+      "scenario": "徐欣瑩－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 35.5,
+        "hsinchu-county-鄭朝方": 44.88
+      },
+      "undecided": 12.87
+    },
+    {
+      "id": "poll-0b06ad48a3be",
+      "countyId": "hsinchu-county",
+      "institute": "精確民調",
+      "date": "2026-08-20",
+      "fieldwork": "8月18日至20日",
+      "source": "精確民調",
+      "sourceUrl": "https://cnews.com.tw/247260821a05/",
+      "sourceKind": "public",
+      "scenario": "徐欣瑩－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 41.4,
+        "hsinchu-county-鄭朝方": 38.1
+      },
+      "undecided": 20.5
+    },
+    {
+      "id": "poll-c0e12b3f0df5",
+      "countyId": "hualien",
+      "institute": "國民黨內參",
+      "date": "2026-01-01",
+      "fieldwork": "2026年1月",
+      "source": "國民黨內參",
+      "sourceUrl": "https://www.ksnews.com.tw/e/66602",
+      "sourceKind": "internal",
+      "scenario": "游淑貞－葉耀輝",
+      "results": {
+        "hualien-游淑貞": 51.9,
+        "hualien-葉耀輝": 11.8
+      }
+    },
+    {
+      "id": "poll-35873122d27b",
+      "countyId": "hualien",
+      "institute": "風傳媒",
+      "date": "2026-03-01",
+      "fieldwork": "3月",
+      "source": "風傳媒",
+      "sourceUrl": "https://www.storm.mg/article/11116179",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 26.6,
+        "hualien-魏嘉賢": 17.9,
+        "hualien-張峻": 13.0
+      },
+      "undecided": 32.7
+    },
+    {
+      "id": "poll-9cf9a374d47b",
+      "countyId": "hualien",
+      "institute": "風傳媒",
+      "date": "2026-03-01",
+      "fieldwork": "3月",
+      "source": "風傳媒",
+      "sourceUrl": "https://www.storm.mg/article/11116179",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 31.3,
+        "hualien-魏嘉賢": 31.0
+      },
+      "undecided": 27.4
+    },
+    {
+      "id": "poll-d045d1299c64",
+      "countyId": "hualien",
+      "institute": "風傳媒",
+      "date": "2026-03-01",
+      "fieldwork": "3月",
+      "source": "風傳媒",
+      "sourceUrl": "https://www.storm.mg/article/11116179",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 39.9,
+        "hualien-張峻": 25.0
+      },
+      "undecided": 24.9
+    },
+    {
+      "id": "poll-25b7521839a1",
+      "countyId": "hualien",
+      "institute": "美麗島電子報",
+      "date": "2026-03-23",
+      "fieldwork": "3月18日至20日及3月23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 44.1,
+        "hualien-張峻": 28.3
+      },
+      "undecided": 16.3
+    },
+    {
+      "id": "poll-844651210bb3",
+      "countyId": "hualien",
+      "institute": "美麗島電子報",
+      "date": "2026-03-23",
+      "fieldwork": "3月18日至20日及3月23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 28.7,
+        "hualien-魏嘉賢": 20.2,
+        "hualien-張峻": 19.8
+      },
+      "undecided": 31.3
+    },
+    {
+      "id": "poll-cdff318eeb84",
+      "countyId": "hualien",
+      "institute": "美麗島電子報",
+      "date": "2026-03-23",
+      "fieldwork": "3月18日至20日及3月23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 31.0,
+        "hualien-魏嘉賢": 35.2
+      },
+      "undecided": 21.6
+    },
+    {
+      "id": "poll-013ce7980941",
+      "countyId": "hualien",
+      "institute": "求真",
+      "date": "2026-04-10",
+      "fieldwork": "4月7日至10日",
+      "source": "求真",
+      "sourceUrl": "https://www.nownews.com/news/6809155",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 51.3,
+        "hualien-張峻": 28.7
+      },
+      "undecided": 14.7
+    },
+    {
+      "id": "poll-6d0d8e9668fc",
+      "countyId": "hualien",
+      "institute": "求真",
+      "date": "2026-04-10",
+      "fieldwork": "4月7日至10日",
+      "source": "求真",
+      "sourceUrl": "https://www.nownews.com/news/6809155",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 35.4,
+        "hualien-魏嘉賢": 43.7
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-9de5296e2bb6",
+      "countyId": "hualien",
+      "institute": "求真",
+      "date": "2026-04-10",
+      "fieldwork": "4月7日至10日",
+      "source": "求真",
+      "sourceUrl": "https://www.nownews.com/news/6809155",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 32.5,
+        "hualien-魏嘉賢": 28.6,
+        "hualien-張峻": 21.8
+      },
+      "undecided": 9.4
+    },
+    {
+      "id": "poll-e1f0ff826a95",
+      "countyId": "hualien",
+      "institute": "趨勢民調",
+      "date": "2026-06-08",
+      "fieldwork": "6月6日至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.kingtop.com.tw/detail.php?type=lastest&id=50522",
+      "sourceKind": "public",
+      "scenario": "游淑貞－葉耀輝",
+      "results": {
+        "hualien-游淑貞": 36.5,
+        "hualien-葉耀輝": 28.2
+      },
+      "undecided": 35.1
+    },
+    {
+      "id": "poll-1fcbae522403",
+      "countyId": "hualien",
+      "institute": "風傳媒",
+      "date": "2026-07-23",
+      "fieldwork": "7月21日至23日",
+      "source": "風傳媒",
+      "sourceUrl": "https://www.ksnews.com.tw/e/125075",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 30.1,
+        "hualien-魏嘉賢": 22.1,
+        "hualien-張峻": 12.5
+      },
+      "undecided": 29.2
+    },
+    {
+      "id": "poll-57bd449e3959",
+      "countyId": "kaohsiung",
+      "institute": "NewTalk",
+      "date": "2025-02-27",
+      "fieldwork": "2025年2月25日至27日",
+      "source": "NewTalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-03-03/958798",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 46.5,
+        "kaohsiung-柯志恩": 32.9
+      },
+      "undecided": 20.7
+    },
+    {
+      "id": "poll-b304bee7f83e",
+      "countyId": "kaohsiung",
+      "institute": "NewTalk",
+      "date": "2025-02-27",
+      "fieldwork": "2025年2月25日至27日",
+      "source": "NewTalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-03-03/958798",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 45.6,
+        "kaohsiung-柯志恩": 31.7
+      },
+      "undecided": 22.7
+    },
+    {
+      "id": "poll-c656822d597e",
+      "countyId": "kaohsiung",
+      "institute": "NewTalk",
+      "date": "2025-02-27",
+      "fieldwork": "2025年2月25日至27日",
+      "source": "NewTalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-03-03/958798",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 46.7,
+        "kaohsiung-柯志恩": 34.6
+      },
+      "undecided": 18.8
+    },
+    {
+      "id": "poll-da8d386e955c",
+      "countyId": "kaohsiung",
+      "institute": "NewTalk",
+      "date": "2025-02-27",
+      "fieldwork": "2025年2月25日至27日",
+      "source": "NewTalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-03-03/958798",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 19.1,
+        "kaohsiung-賴瑞隆": 15.0,
+        "kaohsiung-邱議瑩": 14.3,
+        "kaohsiung-許智傑": 9.1
+      },
+      "undecided": 42.5
+    },
+    {
+      "id": "poll-dbffc72caa91",
+      "countyId": "kaohsiung",
+      "institute": "NewTalk",
+      "date": "2025-02-27",
+      "fieldwork": "2025年2月25日至27日",
+      "source": "NewTalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-03-03/958798",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 46.4,
+        "kaohsiung-柯志恩": 33.4
+      },
+      "undecided": 20.2
+    },
+    {
+      "id": "poll-0ec40df04362",
+      "countyId": "kaohsiung",
+      "institute": "鏡報",
+      "date": "2025-03-04",
+      "fieldwork": "3月2日至4日",
+      "source": "鏡報",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20250305edi059",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 24.6,
+        "kaohsiung-賴瑞隆": 22.7,
+        "kaohsiung-邱議瑩": 14.7,
+        "kaohsiung-許智傑": 13.3
+      },
+      "undecided": 24.7
+    },
+    {
+      "id": "poll-54ab0d972ee1",
+      "countyId": "kaohsiung",
+      "institute": "鏡報",
+      "date": "2025-09-12",
+      "fieldwork": "9月10至12日",
+      "source": "鏡報",
+      "sourceUrl": "https://www.mnews.tw/external/mirrordaily20450",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 25.2,
+        "kaohsiung-賴瑞隆": 25.9,
+        "kaohsiung-邱議瑩": 15.2,
+        "kaohsiung-許智傑": 11.5
+      },
+      "undecided": 22.2
+    },
+    {
+      "id": "poll-72bf253763c9",
+      "countyId": "kaohsiung",
+      "institute": "鏡報",
+      "date": "2025-09-12",
+      "fieldwork": "9月10至12日",
+      "source": "鏡報",
+      "sourceUrl": "https://www.mnews.tw/external/mirrordaily20450",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 37.8,
+        "kaohsiung-柯志恩": 41.8
+      },
+      "undecided": 20.5
+    },
+    {
+      "id": "poll-7407cdf92033",
+      "countyId": "kaohsiung",
+      "institute": "鏡報",
+      "date": "2025-09-12",
+      "fieldwork": "9月10至12日",
+      "source": "鏡報",
+      "sourceUrl": "https://www.mnews.tw/external/mirrordaily20450",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 41.8,
+        "kaohsiung-柯志恩": 38.5
+      },
+      "undecided": 19.7
+    },
+    {
+      "id": "poll-ae3327d53372",
+      "countyId": "kaohsiung",
+      "institute": "鏡報",
+      "date": "2025-09-12",
+      "fieldwork": "9月10至12日",
+      "source": "鏡報",
+      "sourceUrl": "https://www.mnews.tw/external/mirrordaily20450",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 38.8,
+        "kaohsiung-柯志恩": 38.8
+      },
+      "undecided": 22.4
+    },
+    {
+      "id": "poll-c683db173cf3",
+      "countyId": "kaohsiung",
+      "institute": "鏡報",
+      "date": "2025-09-12",
+      "fieldwork": "9月10至12日",
+      "source": "鏡報",
+      "sourceUrl": "https://www.mnews.tw/external/mirrordaily20450",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 39.8,
+        "kaohsiung-柯志恩": 38.9
+      },
+      "undecided": 21.2
+    },
+    {
+      "id": "poll-253fcea29427",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-09-19",
+      "fieldwork": "9月12日至19日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250930/47eff2bda3a7f080df5c17a6cc9fffa0.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 33.0,
+        "kaohsiung-柯志恩": 42.0
+      },
+      "undecided": 25.0
+    },
+    {
+      "id": "poll-6bfd95df1fbe",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-09-19",
+      "fieldwork": "9月12日至19日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250930/47eff2bda3a7f080df5c17a6cc9fffa0.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 36.0,
+        "kaohsiung-柯志恩": 42.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-96e49c1411e1",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-09-19",
+      "fieldwork": "9月12日至19日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250930/47eff2bda3a7f080df5c17a6cc9fffa0.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 41.0,
+        "kaohsiung-柯志恩": 41.0
+      },
+      "undecided": 18.0
+    },
+    {
+      "id": "poll-c5531cef3fcd",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-09-19",
+      "fieldwork": "9月12日至19日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250930/47eff2bda3a7f080df5c17a6cc9fffa0.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 36.0,
+        "kaohsiung-柯志恩": 44.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-0c2f422b2970",
+      "countyId": "kaohsiung",
+      "institute": "民進黨內參",
+      "date": "2025-10-30",
+      "fieldwork": "10月27日至30日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.nownews.com/news/6749393",
+      "sourceKind": "internal",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 44.5,
+        "kaohsiung-柯志恩": 36.0
+      }
+    },
+    {
+      "id": "poll-65fe67ada108",
+      "countyId": "kaohsiung",
+      "institute": "民進黨內參",
+      "date": "2025-10-30",
+      "fieldwork": "10月27日至30日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.nownews.com/news/6749393",
+      "sourceKind": "internal",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 40.4,
+        "kaohsiung-柯志恩": 37.0
+      }
+    },
+    {
+      "id": "poll-c0a2e1f5ca00",
+      "countyId": "kaohsiung",
+      "institute": "民進黨內參",
+      "date": "2025-10-30",
+      "fieldwork": "10月27日至30日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.nownews.com/news/6749393",
+      "sourceKind": "internal",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 37.4,
+        "kaohsiung-柯志恩": 40.5
+      }
+    },
+    {
+      "id": "poll-ffc75885af4a",
+      "countyId": "kaohsiung",
+      "institute": "民進黨內參",
+      "date": "2025-10-30",
+      "fieldwork": "10月27日至30日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.nownews.com/news/6749393",
+      "sourceKind": "internal",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 39.8,
+        "kaohsiung-柯志恩": 35.1
+      }
+    },
+    {
+      "id": "poll-05b3836f310d",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-05",
+      "fieldwork": "11月3日至5日",
+      "source": "上報",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1748047",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 47.7,
+        "kaohsiung-柯志恩": 33.0
+      },
+      "undecided": 19.3
+    },
+    {
+      "id": "poll-7867b164def4",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-05",
+      "fieldwork": "11月3日至5日",
+      "source": "上報",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1748047",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 39.1,
+        "kaohsiung-柯志恩": 30.3
+      },
+      "undecided": 30.7
+    },
+    {
+      "id": "poll-9c3674c5c8c7",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-05",
+      "fieldwork": "11月3日至5日",
+      "source": "上報",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1748047",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 46.0,
+        "kaohsiung-柯志恩": 32.8
+      },
+      "undecided": 21.1
+    },
+    {
+      "id": "poll-b80a849acb0b",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-05",
+      "fieldwork": "11月3日至5日",
+      "source": "上報",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1748047",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 41.2,
+        "kaohsiung-柯志恩": 36.0
+      },
+      "undecided": 22.8
+    },
+    {
+      "id": "poll-166c223cc450",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-26",
+      "fieldwork": "11月24日至26日",
+      "source": "上報",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/246027",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 43.3,
+        "kaohsiung-柯志恩": 19.6
+      },
+      "undecided": 37.1
+    },
+    {
+      "id": "poll-3e7b81309028",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-26",
+      "fieldwork": "11月24日至26日",
+      "source": "上報",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/246027",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 50.4,
+        "kaohsiung-柯志恩": 23.1
+      },
+      "undecided": 26.4
+    },
+    {
+      "id": "poll-62fab29f182c",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-26",
+      "fieldwork": "11月24日至26日",
+      "source": "上報",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/246027",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 50.0,
+        "kaohsiung-柯志恩": 23.7
+      },
+      "undecided": 26.3
+    },
+    {
+      "id": "poll-d06e59edd129",
+      "countyId": "kaohsiung",
+      "institute": "上報",
+      "date": "2025-11-26",
+      "fieldwork": "11月24日至26日",
+      "source": "上報",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/246027",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 51.9,
+        "kaohsiung-柯志恩": 23.7
+      },
+      "undecided": 24.5
+    },
+    {
+      "id": "poll-46e8e6eeb89c",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-11-27",
+      "fieldwork": "11月20日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/7f85b1bca9aaaba0aa86f0cded95d365.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 35.0,
+        "kaohsiung-柯志恩": 43.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-93dbb3364434",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-11-27",
+      "fieldwork": "11月20日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/7f85b1bca9aaaba0aa86f0cded95d365.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 30.0,
+        "kaohsiung-柯志恩": 40.0
+      },
+      "undecided": 29.0
+    },
+    {
+      "id": "poll-cf48a9923597",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-11-27",
+      "fieldwork": "11月20日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/7f85b1bca9aaaba0aa86f0cded95d365.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 42.0,
+        "kaohsiung-柯志恩": 40.0
+      },
+      "undecided": 19.0
+    },
+    {
+      "id": "poll-fff0798201fc",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-11-27",
+      "fieldwork": "11月20日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/7f85b1bca9aaaba0aa86f0cded95d365.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 35.0,
+        "kaohsiung-柯志恩": 42.0
+      },
+      "undecided": 22.0
+    },
+    {
+      "id": "poll-789bd8a7353b",
+      "countyId": "kaohsiung",
+      "institute": "精湛",
+      "date": "2025-11-28",
+      "fieldwork": "11月27日至28日",
+      "source": "精湛",
+      "sourceUrl": "https://www.ettoday.net/news/20251204/3078334.htm",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 44.6,
+        "kaohsiung-柯志恩": 34.9
+      },
+      "undecided": 20.5
+    },
+    {
+      "id": "poll-83cbf0afcc78",
+      "countyId": "kaohsiung",
+      "institute": "精湛",
+      "date": "2025-11-28",
+      "fieldwork": "11月27日至28日",
+      "source": "精湛",
+      "sourceUrl": "https://www.ettoday.net/news/20251204/3078334.htm",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 44.2,
+        "kaohsiung-柯志恩": 36.3
+      },
+      "undecided": 19.5
+    },
+    {
+      "id": "poll-bc2ed755c638",
+      "countyId": "kaohsiung",
+      "institute": "精湛",
+      "date": "2025-11-28",
+      "fieldwork": "11月27日至28日",
+      "source": "精湛",
+      "sourceUrl": "https://www.ettoday.net/news/20251204/3078334.htm",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 42.2,
+        "kaohsiung-柯志恩": 30.4
+      },
+      "undecided": 27.4
+    },
+    {
+      "id": "poll-cf497bfd048d",
+      "countyId": "kaohsiung",
+      "institute": "精湛",
+      "date": "2025-11-28",
+      "fieldwork": "11月27日至28日",
+      "source": "精湛",
+      "sourceUrl": "https://www.ettoday.net/news/20251204/3078334.htm",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 47.8,
+        "kaohsiung-柯志恩": 34.3
+      },
+      "undecided": 17.9
+    },
+    {
+      "id": "poll-04c3de881d2a",
+      "countyId": "kaohsiung",
+      "institute": "NOWNEWS今日新聞",
+      "date": "2025-12-13",
+      "fieldwork": "12月11日至13日",
+      "source": "NOWNEWS今日新聞",
+      "sourceUrl": "https://www.nownews.com/news/6765373",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 48.5,
+        "kaohsiung-柯志恩": 30.0
+      },
+      "undecided": 21.5
+    },
+    {
+      "id": "poll-1954217f8c26",
+      "countyId": "kaohsiung",
+      "institute": "NOWNEWS今日新聞",
+      "date": "2025-12-13",
+      "fieldwork": "12月11日至13日",
+      "source": "NOWNEWS今日新聞",
+      "sourceUrl": "https://www.nownews.com/news/6765373",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 51.4,
+        "kaohsiung-柯志恩": 29.1
+      },
+      "undecided": 19.5
+    },
+    {
+      "id": "poll-9e808cad5633",
+      "countyId": "kaohsiung",
+      "institute": "NOWNEWS今日新聞",
+      "date": "2025-12-13",
+      "fieldwork": "12月11日至13日",
+      "source": "NOWNEWS今日新聞",
+      "sourceUrl": "https://www.nownews.com/news/6765373",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 48.1,
+        "kaohsiung-柯志恩": 25.4
+      },
+      "undecided": 26.5
+    },
+    {
+      "id": "poll-d8e777e62170",
+      "countyId": "kaohsiung",
+      "institute": "NOWNEWS今日新聞",
+      "date": "2025-12-13",
+      "fieldwork": "12月11日至13日",
+      "source": "NOWNEWS今日新聞",
+      "sourceUrl": "https://www.nownews.com/news/6765373",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 48.4,
+        "kaohsiung-柯志恩": 29.5
+      },
+      "undecided": 22.0
+    },
+    {
+      "id": "poll-874afbc20597",
+      "countyId": "kaohsiung",
+      "institute": "Newtalk",
+      "date": "2025-12-26",
+      "fieldwork": "12月25日至26日",
+      "source": "Newtalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-12-30/1012221",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 47.1,
+        "kaohsiung-柯志恩": 29.3
+      },
+      "undecided": 27.5
+    },
+    {
+      "id": "poll-9bba8b1c14f7",
+      "countyId": "kaohsiung",
+      "institute": "Newtalk",
+      "date": "2025-12-26",
+      "fieldwork": "12月25日至26日",
+      "source": "Newtalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-12-30/1012221",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 48.3,
+        "kaohsiung-柯志恩": 29.9
+      },
+      "undecided": 21.8
+    },
+    {
+      "id": "poll-a85533e7b2bd",
+      "countyId": "kaohsiung",
+      "institute": "Newtalk",
+      "date": "2025-12-26",
+      "fieldwork": "12月25日至26日",
+      "source": "Newtalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-12-30/1012221",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 20.3,
+        "kaohsiung-賴瑞隆": 25.9,
+        "kaohsiung-邱議瑩": 18.6,
+        "kaohsiung-許智傑": 12.5
+      },
+      "undecided": 22.6
+    },
+    {
+      "id": "poll-bbee1f2e198e",
+      "countyId": "kaohsiung",
+      "institute": "Newtalk",
+      "date": "2025-12-26",
+      "fieldwork": "12月25日至26日",
+      "source": "Newtalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-12-30/1012221",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 49.5,
+        "kaohsiung-柯志恩": 29.7
+      },
+      "undecided": 20.8
+    },
+    {
+      "id": "poll-ffe0f9728afd",
+      "countyId": "kaohsiung",
+      "institute": "Newtalk",
+      "date": "2025-12-26",
+      "fieldwork": "12月25日至26日",
+      "source": "Newtalk",
+      "sourceUrl": "https://newtalk.tw/news/view/2025-12-30/1012221",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 43.2,
+        "kaohsiung-柯志恩": 29.2
+      },
+      "undecided": 27.5
+    },
+    {
+      "id": "poll-6c2dfdb91ad8",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-12-29",
+      "fieldwork": "12月22日至29日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/1c884e75f849d60fb83311e57f18c352.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 38.0,
+        "kaohsiung-柯志恩": 41.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-815f9405502d",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-12-29",
+      "fieldwork": "12月22日至29日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/1c884e75f849d60fb83311e57f18c352.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 41.0,
+        "kaohsiung-柯志恩": 39.0
+      },
+      "undecided": 20.0
+    },
+    {
+      "id": "poll-d22b453016e5",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-12-29",
+      "fieldwork": "12月22日至29日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/1c884e75f849d60fb83311e57f18c352.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 38.0,
+        "kaohsiung-柯志恩": 42.0
+      },
+      "undecided": 20.0
+    },
+    {
+      "id": "poll-f7680d967668",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2025-12-29",
+      "fieldwork": "12月22日至29日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251230/1c884e75f849d60fb83311e57f18c352.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 34.0,
+        "kaohsiung-柯志恩": 41.0
+      },
+      "undecided": 25.0
+    },
+    {
+      "id": "poll-0f3b685234e3",
+      "countyId": "kaohsiung",
+      "institute": "台視新聞網（初選前綠營內封關民調）",
+      "date": "2026-01-06",
+      "fieldwork": "2026年1月5日至6日",
+      "source": "台視新聞網（初選前綠營內封關民調）",
+      "sourceUrl": "https://news.ttv.com.tw/news/11501070003600W",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 49.4,
+        "kaohsiung-柯志恩": 30.1
+      },
+      "undecided": 20.4
+    },
+    {
+      "id": "poll-1a84c20b1671",
+      "countyId": "kaohsiung",
+      "institute": "台視新聞網（初選前綠營內封關民調）",
+      "date": "2026-01-06",
+      "fieldwork": "2026年1月5日至6日",
+      "source": "台視新聞網（初選前綠營內封關民調）",
+      "sourceUrl": "https://news.ttv.com.tw/news/11501070003600W",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 46.7,
+        "kaohsiung-柯志恩": 23.5
+      },
+      "undecided": 29.8
+    },
+    {
+      "id": "poll-783e01c4f5e4",
+      "countyId": "kaohsiung",
+      "institute": "台視新聞網（初選前綠營內封關民調）",
+      "date": "2026-01-06",
+      "fieldwork": "2026年1月5日至6日",
+      "source": "台視新聞網（初選前綠營內封關民調）",
+      "sourceUrl": "https://news.ttv.com.tw/news/11501070003600W",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 51.8,
+        "kaohsiung-柯志恩": 27.6
+      },
+      "undecided": 20.7
+    },
+    {
+      "id": "poll-f3b96f519f3d",
+      "countyId": "kaohsiung",
+      "institute": "台視新聞網（初選前綠營內封關民調）",
+      "date": "2026-01-06",
+      "fieldwork": "2026年1月5日至6日",
+      "source": "台視新聞網（初選前綠營內封關民調）",
+      "sourceUrl": "https://news.ttv.com.tw/news/11501070003600W",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 49.2,
+        "kaohsiung-柯志恩": 30.1
+      },
+      "undecided": 20.8
+    },
+    {
+      "id": "poll-205cdc1414c8",
+      "countyId": "kaohsiung",
+      "institute": "民進黨初選",
+      "date": "2026-01-12",
+      "fieldwork": "1月12日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.cna.com.tw/news/aipl/202601130111.aspx",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-許智傑": 51.9,
+        "kaohsiung-柯志恩": 25.1
+      },
+      "undecided": 23.0
+    },
+    {
+      "id": "poll-88ceb269d087",
+      "countyId": "kaohsiung",
+      "institute": "民進黨初選",
+      "date": "2026-01-12",
+      "fieldwork": "1月12日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.cna.com.tw/news/aipl/202601130111.aspx",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-邱議瑩": 55.4,
+        "kaohsiung-柯志恩": 24.7
+      },
+      "undecided": 19.9
+    },
+    {
+      "id": "poll-dcb849ec6a4e",
+      "countyId": "kaohsiung",
+      "institute": "民進黨初選",
+      "date": "2026-01-12",
+      "fieldwork": "1月12日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.cna.com.tw/news/aipl/202601130111.aspx",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-林岱樺": 50.6,
+        "kaohsiung-柯志恩": 21.8
+      },
+      "undecided": 27.6
+    },
+    {
+      "id": "poll-f63669516d7d",
+      "countyId": "kaohsiung",
+      "institute": "民進黨初選",
+      "date": "2026-01-12",
+      "fieldwork": "1月12日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.cna.com.tw/news/aipl/202601130111.aspx",
+      "sourceKind": "primary",
+      "scenario": "民進黨－柯志恩",
+      "results": {
+        "kaohsiung-賴瑞隆": 56.0,
+        "kaohsiung-柯志恩": 24.9
+      },
+      "undecided": 19.1
+    },
+    {
+      "id": "poll-7cc8ac3d9f20",
+      "countyId": "kaohsiung",
+      "institute": "ETtoday",
+      "date": "2026-01-16",
+      "fieldwork": "2026年1月14日至16日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260119/3103373.htm",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 44.0,
+        "kaohsiung-賴瑞隆": 37.7
+      },
+      "undecided": 11.9
+    },
+    {
+      "id": "poll-bc418f608a4b",
+      "countyId": "kaohsiung",
+      "institute": "山水民調",
+      "date": "2026-01-30",
+      "fieldwork": "1月29日至30日",
+      "source": "山水民調",
+      "sourceUrl": "https://newtalk.tw/news/view/2026-02-02/1017969",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 32.3,
+        "kaohsiung-賴瑞隆": 43.9
+      },
+      "undecided": 33.3
+    },
+    {
+      "id": "poll-059be5a33995",
+      "countyId": "kaohsiung",
+      "institute": "雨晴指標",
+      "date": "2026-02-09",
+      "fieldwork": "2月3日至9日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://www.nownews.com/news/6785609",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 26.2,
+        "kaohsiung-賴瑞隆": 45.5
+      },
+      "undecided": 28.3
+    },
+    {
+      "id": "poll-1dff8591ad27",
+      "countyId": "kaohsiung",
+      "institute": "山水民調",
+      "date": "2026-04-29",
+      "fieldwork": "4月27日至29日",
+      "source": "山水民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/257777",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 30.7,
+        "kaohsiung-賴瑞隆": 47.0
+      },
+      "undecided": 22.3
+    },
+    {
+      "id": "poll-82caa570db93",
+      "countyId": "kaohsiung",
+      "institute": "TVBS",
+      "date": "2026-06-02",
+      "fieldwork": "5月27日至6月2日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3221242",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 39.7,
+        "kaohsiung-賴瑞隆": 40.3
+      },
+      "undecided": 19.9
+    },
+    {
+      "id": "poll-66e2a7b9547f",
+      "countyId": "kaohsiung",
+      "institute": "大地民意",
+      "date": "2026-06-09",
+      "fieldwork": "6月8日至9日",
+      "source": "大地民意",
+      "sourceUrl": "https://www.mirrormedia.mg/external/setn_1855498",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 24.8,
+        "kaohsiung-賴瑞隆": 45.1
+      },
+      "undecided": 29.3
+    },
+    {
+      "id": "poll-ec5eef09bc67",
+      "countyId": "kaohsiung",
+      "institute": "新台灣國策智庫",
+      "date": "2026-06-10",
+      "fieldwork": "6月9日至10日",
+      "source": "新台灣國策智庫",
+      "sourceUrl": "https://www.ettoday.net/news/20260612/3182106.htm",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 28.4,
+        "kaohsiung-賴瑞隆": 46.2
+      },
+      "undecided": 25.4
+    },
+    {
+      "id": "poll-49e9f7c5e64e",
+      "countyId": "kaohsiung",
+      "institute": "ETtoday",
+      "date": "2026-06-19",
+      "fieldwork": "6月16日至19日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260623/3187875.htm",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 46.8,
+        "kaohsiung-賴瑞隆": 42.0
+      },
+      "undecided": 11.2
+    },
+    {
+      "id": "poll-dbda0de6ed7b",
+      "countyId": "kaohsiung",
+      "institute": "新台灣民調研究中心",
+      "date": "2026-06-28",
+      "fieldwork": "6月26日至28日",
+      "source": "新台灣民調研究中心",
+      "sourceUrl": "https://www.cnma.org.tw/page/news/show.aspx?num=52457",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 32.0,
+        "kaohsiung-賴瑞隆": 41.0
+      },
+      "undecided": 20.0
+    },
+    {
+      "id": "poll-a50704bd0396",
+      "countyId": "kaohsiung",
+      "institute": "年代民調",
+      "date": "2026-07-18",
+      "fieldwork": "7月16日至18日",
+      "source": "年代民調",
+      "sourceUrl": "http://survey.eracom.com.tw/detail.jsp?resultId=566",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 23.6,
+        "kaohsiung-賴瑞隆": 36.2
+      },
+      "undecided": 32.8
+    },
+    {
+      "id": "poll-0349fa259af5",
+      "countyId": "kaohsiung",
+      "institute": "皮爾森數據",
+      "date": "2026-07-19",
+      "fieldwork": "7月13日至19日",
+      "source": "皮爾森數據",
+      "sourceUrl": "https://www.upmedia.mg/tw/investigation/politics/265557",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 46.67,
+        "kaohsiung-賴瑞隆": 46.01
+      },
+      "undecided": 5.03
+    },
+    {
+      "id": "poll-1d2eb2184f15",
+      "countyId": "kaohsiung",
+      "institute": "山水民調",
+      "date": "2026-07-20",
+      "fieldwork": "7月18日至20日",
+      "source": "山水民調",
+      "sourceUrl": "https://www.zmedia.com.tw/Document/PoolDetail/43287",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 31.6,
+        "kaohsiung-賴瑞隆": 39.6
+      },
+      "undecided": 28.8
+    },
+    {
+      "id": "poll-c777880a16bb",
+      "countyId": "kaohsiung",
+      "institute": "皮爾森數據",
+      "date": "2026-08-01",
+      "fieldwork": "7月27日至8月1日",
+      "source": "皮爾森數據",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1786278801544",
+      "sourceKind": "public",
+      "scenario": "賴瑞隆－柯志恩",
+      "results": {
+        "kaohsiung-柯志恩": 46.14,
+        "kaohsiung-賴瑞隆": 47.78
+      },
+      "undecided": 4.24
+    },
+    {
+      "id": "poll-1e91fbf1950d",
+      "countyId": "keelung",
+      "institute": "TVBS",
+      "date": "2025-12-22",
+      "fieldwork": "2025年12月15日至22日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3080482?openExternalBrowser=1",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 48.0,
+        "keelung-童子瑋": 33.0
+      },
+      "undecided": 19.0
+    },
+    {
+      "id": "poll-df7d39003dc4",
+      "countyId": "keelung",
+      "institute": "民進黨內參",
+      "date": "2026-02-28",
+      "fieldwork": "2026年2月26日至28日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260312inv003",
+      "sourceKind": "internal",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 39.3,
+        "keelung-童子瑋": 33.1
+      }
+    },
+    {
+      "id": "poll-bff3e3f16efa",
+      "countyId": "keelung",
+      "institute": "TVBS",
+      "date": "2026-03-26",
+      "fieldwork": "3月19日至3月26日",
+      "source": "TVBS",
+      "sourceUrl": "https://www.storm.mg/article/11115511",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 45.0,
+        "keelung-童子瑋": 30.0
+      },
+      "undecided": 25.0
+    },
+    {
+      "id": "poll-7f4cbee48808",
+      "countyId": "keelung",
+      "institute": "民進黨內參",
+      "date": "2026-05-01",
+      "fieldwork": "5月",
+      "source": "民進黨內參",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5436378",
+      "sourceKind": "internal",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 42.2,
+        "keelung-童子瑋": 37.7
+      },
+      "undecided": 20.1
+    },
+    {
+      "id": "poll-9c5834b2fcb9",
+      "countyId": "keelung",
+      "institute": "民進黨內參",
+      "date": "2026-07-27",
+      "fieldwork": "7月24日至27日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.mirrormedia.mg/story/amp/20260730inv001",
+      "sourceKind": "internal",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 38.5,
+        "keelung-童子瑋": 36.0
+      },
+      "undecided": 25.5
+    },
+    {
+      "id": "poll-0fa76acfd3e3",
+      "countyId": "kinmen",
+      "institute": "國民黨內參",
+      "date": "2025-10-31",
+      "fieldwork": "2025年10月27日至31日",
+      "source": "國民黨內參",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3099283",
+      "sourceKind": "internal",
+      "scenario": "陳玉珍－楊鎮浯－李文良",
+      "results": {
+        "kinmen-陳玉珍": 41.0,
+        "kinmen-楊鎮浯": 14.0,
+        "kinmen-李文良": 9.0
+      }
+    },
+    {
+      "id": "poll-9b2af0f8016d",
+      "countyId": "kinmen",
+      "institute": "國民黨內參",
+      "date": "2025-10-31",
+      "fieldwork": "2025年10月27日至31日",
+      "source": "國民黨內參",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3099283",
+      "sourceKind": "internal",
+      "scenario": "陳玉珍－楊鎮浯－李文良",
+      "results": {
+        "kinmen-陳玉珍": 50.0,
+        "kinmen-楊鎮浯": 24.0
+      }
+    },
+    {
+      "id": "poll-9e2e5bcf21d8",
+      "countyId": "kinmen",
+      "institute": "世新大學",
+      "date": "2026-04-17",
+      "fieldwork": "2026年4月13日至17日",
+      "source": "世新大學",
+      "sourceUrl": "https://www.ftvnews.com.tw/news/detail/2026522W0366",
+      "sourceKind": "public",
+      "scenario": "陳玉珍－楊鎮浯－李文良",
+      "results": {
+        "kinmen-陳玉珍": 46.1,
+        "kinmen-楊鎮浯": 18.9,
+        "kinmen-李文良": 6.2
+      }
+    },
+    {
+      "id": "poll-a206302b4a3e",
+      "countyId": "kinmen",
+      "institute": "世新大學",
+      "date": "2026-04-17",
+      "fieldwork": "2026年4月13日至17日",
+      "source": "世新大學",
+      "sourceUrl": "https://www.ftvnews.com.tw/news/detail/2026522W0366",
+      "sourceKind": "public",
+      "scenario": "陳玉珍－楊鎮浯－李文良",
+      "results": {
+        "kinmen-陳玉珍": 47.7,
+        "kinmen-楊鎮浯": 21.2
+      }
+    },
+    {
+      "id": "poll-db97ed56f302",
+      "countyId": "kinmen",
+      "institute": "世新大學",
+      "date": "2026-04-17",
+      "fieldwork": "2026年4月13日至17日",
+      "source": "世新大學",
+      "sourceUrl": "https://www.ftvnews.com.tw/news/detail/2026522W0366",
+      "sourceKind": "public",
+      "scenario": "陳玉珍－楊鎮浯－李文良",
+      "results": {
+        "kinmen-陳玉珍": 52.0,
+        "kinmen-李文良": 10.4
+      }
+    },
+    {
+      "id": "poll-17f58e5f0dc1",
+      "countyId": "newtaipei",
+      "institute": "年代民調",
+      "date": "2025-08-16",
+      "fieldwork": "2025年8月12日至16日",
+      "source": "年代民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/poll/237754",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 37.7,
+        "newtaipei-蘇巧慧": 29.2
+      },
+      "undecided": 31.1
+    },
+    {
+      "id": "poll-7d7817ae6ebd",
+      "countyId": "newtaipei",
+      "institute": "年代民調",
+      "date": "2025-08-16",
+      "fieldwork": "2025年8月12日至16日",
+      "source": "年代民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/poll/237754",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 35.1,
+        "newtaipei-黃國昌": 29.3
+      },
+      "undecided": 35.6
+    },
+    {
+      "id": "poll-3b7bb369fdaa",
+      "countyId": "newtaipei",
+      "institute": "匯流民調",
+      "date": "2025-11-12",
+      "fieldwork": "11月9日至12日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/%E5%8C%AF%E6%B5%81%E6%B0%91%E8%AA%BF-2026%E6%96%B0%E5%8C%97%E5%B8%82%E9%95%B7-%E8%97%8D%E7%B6%A0%E5%B0%8D%E6%B1%BA/",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 47.1,
+        "newtaipei-蘇巧慧": 37.1
+      },
+      "undecided": 15.8
+    },
+    {
+      "id": "poll-6befac6cb24c",
+      "countyId": "newtaipei",
+      "institute": "匯流民調",
+      "date": "2025-11-12",
+      "fieldwork": "11月9日至12日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/%E5%8C%AF%E6%B5%81%E6%B0%91%E8%AA%BF-2026%E6%96%B0%E5%8C%97%E5%B8%82%E9%95%B7-%E8%97%8D%E7%B6%A0%E5%B0%8D%E6%B1%BA/",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 47.3,
+        "newtaipei-黃國昌": 33.4
+      },
+      "undecided": 19.3
+    },
+    {
+      "id": "poll-e0cf1f6340e3",
+      "countyId": "newtaipei",
+      "institute": "匯流民調",
+      "date": "2025-11-12",
+      "fieldwork": "11月9日至12日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/%E5%8C%AF%E6%B5%81%E6%B0%91%E8%AA%BF-2026%E6%96%B0%E5%8C%97%E5%B8%82%E9%95%B7-%E8%97%8D%E7%B6%A0%E5%B0%8D%E6%B1%BA/",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 39.1,
+        "newtaipei-蘇巧慧": 35.7,
+        "newtaipei-黃國昌": 16.1
+      },
+      "undecided": 9.1
+    },
+    {
+      "id": "poll-67c2472d4134",
+      "countyId": "newtaipei",
+      "institute": "TVBS",
+      "date": "2026-01-16",
+      "fieldwork": "2026年1月6日至16日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260121/f549e8011d885ed630573b7f936eff9c.pdf",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 39.0,
+        "newtaipei-黃國昌": 33.0
+      },
+      "undecided": 28.0
+    },
+    {
+      "id": "poll-b569aa525793",
+      "countyId": "newtaipei",
+      "institute": "TVBS",
+      "date": "2026-01-16",
+      "fieldwork": "2026年1月6日至16日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260121/f549e8011d885ed630573b7f936eff9c.pdf",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 47.0,
+        "newtaipei-蘇巧慧": 32.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-0b85f7b6b65d",
+      "countyId": "newtaipei",
+      "institute": "美麗島電子報",
+      "date": "2026-01-21",
+      "fieldwork": "1月19日至21日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_223242.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 45.8,
+        "newtaipei-蘇巧慧": 36.0
+      },
+      "undecided": 18.2
+    },
+    {
+      "id": "poll-61cb6cc55c63",
+      "countyId": "newtaipei",
+      "institute": "美麗島電子報",
+      "date": "2026-01-21",
+      "fieldwork": "1月19日至21日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_223242.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 41.8,
+        "newtaipei-黃國昌": 36.7
+      },
+      "undecided": 21.5
+    },
+    {
+      "id": "poll-cd8d11d19c9e",
+      "countyId": "newtaipei",
+      "institute": "美麗島電子報",
+      "date": "2026-01-21",
+      "fieldwork": "1月19日至21日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_223242.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 34.2,
+        "newtaipei-蘇巧慧": 32.7,
+        "newtaipei-黃國昌": 15.4
+      },
+      "undecided": 16.7
+    },
+    {
+      "id": "poll-00b97418b313",
+      "countyId": "newtaipei",
+      "institute": "東森民調",
+      "date": "2026-01-28",
+      "fieldwork": "1月26日至28日",
+      "source": "東森民調",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/535474",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 41.6,
+        "newtaipei-蘇巧慧": 33.5
+      },
+      "undecided": 24.9
+    },
+    {
+      "id": "poll-6139f779ea51",
+      "countyId": "newtaipei",
+      "institute": "東森民調",
+      "date": "2026-01-28",
+      "fieldwork": "1月26日至28日",
+      "source": "東森民調",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/535474",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 32.3,
+        "newtaipei-蘇巧慧": 30.5,
+        "newtaipei-黃國昌": 11.2
+      },
+      "undecided": 26.0
+    },
+    {
+      "id": "poll-87489504fd59",
+      "countyId": "newtaipei",
+      "institute": "東森民調",
+      "date": "2026-01-28",
+      "fieldwork": "1月26日至28日",
+      "source": "東森民調",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/535474",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 41.8,
+        "newtaipei-黃國昌": 28.3
+      },
+      "undecided": 29.9
+    },
+    {
+      "id": "poll-2f4a07ad8a72",
+      "countyId": "newtaipei",
+      "institute": "民進黨",
+      "date": "2026-02-24",
+      "fieldwork": "2月23日至24日",
+      "source": "民進黨",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5352342",
+      "sourceKind": "internal",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 30.2,
+        "newtaipei-蘇巧慧": 38.1,
+        "newtaipei-黃國昌": 13.1
+      },
+      "undecided": 18.6
+    },
+    {
+      "id": "poll-389307cb6433",
+      "countyId": "newtaipei",
+      "institute": "民進黨",
+      "date": "2026-02-24",
+      "fieldwork": "2月23日至24日",
+      "source": "民進黨",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5352342",
+      "sourceKind": "internal",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 43.3,
+        "newtaipei-蘇巧慧": 43.7
+      },
+      "undecided": 13.0
+    },
+    {
+      "id": "poll-3b4f2ffb6644",
+      "countyId": "newtaipei",
+      "institute": "民進黨",
+      "date": "2026-02-24",
+      "fieldwork": "2月23日至24日",
+      "source": "民進黨",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5352342",
+      "sourceKind": "internal",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 52.4,
+        "newtaipei-黃國昌": 30.9
+      },
+      "undecided": 16.7
+    },
+    {
+      "id": "poll-c5a73b1a4618",
+      "countyId": "newtaipei",
+      "institute": "美麗島電子報",
+      "date": "2026-03-11",
+      "fieldwork": "3月9日至11日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224233.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 32.1,
+        "newtaipei-蘇巧慧": 35.7,
+        "newtaipei-黃國昌": 9.8
+      },
+      "undecided": 22.5
+    },
+    {
+      "id": "poll-d3ce845d4de2",
+      "countyId": "newtaipei",
+      "institute": "美麗島電子報",
+      "date": "2026-03-11",
+      "fieldwork": "3月9日至11日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224233.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 44.4,
+        "newtaipei-黃國昌": 28.0
+      },
+      "undecided": 27.6
+    },
+    {
+      "id": "poll-f65208f89708",
+      "countyId": "newtaipei",
+      "institute": "美麗島電子報",
+      "date": "2026-03-11",
+      "fieldwork": "3月9日至11日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224233.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 39.1,
+        "newtaipei-蘇巧慧": 38.0
+      },
+      "undecided": 22.9
+    },
+    {
+      "id": "poll-c7088d647950",
+      "countyId": "newtaipei",
+      "institute": "ETtoday",
+      "date": "2026-03-22",
+      "fieldwork": "3月21日至22日",
+      "source": "ETtoday",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3160546",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 43.3,
+        "newtaipei-蘇巧慧": 41.8
+      },
+      "undecided": 11.0
+    },
+    {
+      "id": "poll-f0710717f0c2",
+      "countyId": "newtaipei",
+      "institute": "民進黨內參",
+      "date": "2026-03-27",
+      "fieldwork": "3月27日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.cmmedia.com.tw/home/articles/60455",
+      "sourceKind": "internal",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 34.0,
+        "newtaipei-蘇巧慧": 35.0
+      }
+    },
+    {
+      "id": "poll-0ac595512a19",
+      "countyId": "newtaipei",
+      "institute": "美麗島電子報",
+      "date": "2026-04-10",
+      "fieldwork": "4月8日至10日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://m.my-formosa.com.tw/doc_224921.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 35.5,
+        "newtaipei-蘇巧慧": 34.5
+      },
+      "undecided": 30.0
+    },
+    {
+      "id": "poll-9bfdd4fac2b6",
+      "countyId": "newtaipei",
+      "institute": "民進黨內參",
+      "date": "2026-04-21",
+      "fieldwork": "4月21日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1825965",
+      "sourceKind": "internal",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 37.6,
+        "newtaipei-蘇巧慧": 41.8
+      }
+    },
+    {
+      "id": "poll-9b75d5a8bdd7",
+      "countyId": "newtaipei",
+      "institute": "藍白整合初選",
+      "date": "2026-04-27",
+      "fieldwork": "4月23日至27日",
+      "source": "藍白整合初選",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5418501",
+      "sourceKind": "primary",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 26.7,
+        "newtaipei-黃國昌": 28.3
+      },
+      "undecided": 30.8
+    },
+    {
+      "id": "poll-af82ad72dae3",
+      "countyId": "newtaipei",
+      "institute": "藍白整合初選",
+      "date": "2026-04-27",
+      "fieldwork": "4月23日至27日",
+      "source": "藍白整合初選",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5418501",
+      "sourceKind": "primary",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-蘇巧慧": 31.3,
+        "newtaipei-黃國昌": 28.1
+      },
+      "undecided": 25.0
+    },
+    {
+      "id": "poll-cb86f6c1e322",
+      "countyId": "newtaipei",
+      "institute": "藍白整合初選",
+      "date": "2026-04-27",
+      "fieldwork": "4月23日至27日",
+      "source": "藍白整合初選",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5418501",
+      "sourceKind": "primary",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 34.0,
+        "newtaipei-蘇巧慧": 28.5
+      },
+      "undecided": 26.0
+    },
+    {
+      "id": "poll-dbb882b15684",
+      "countyId": "newtaipei",
+      "institute": "藍白整合初選",
+      "date": "2026-04-27",
+      "fieldwork": "4月23日至27日",
+      "source": "藍白整合初選",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5418501",
+      "sourceKind": "primary",
+      "scenario": "李四川－蘇巧慧－黃國昌",
+      "results": {
+        "newtaipei-李四川": 36.3,
+        "newtaipei-蘇巧慧": 24.5
+      },
+      "undecided": 31.2
+    },
+    {
+      "id": "poll-92ff0083d676",
+      "countyId": "newtaipei",
+      "institute": "山水民調",
+      "date": "2026-05-01",
+      "fieldwork": "4月29日至5月1日",
+      "source": "山水民調",
+      "sourceUrl": "https://www.zmedia.com.tw/Document/PoolDetail/41952",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 39.6,
+        "newtaipei-蘇巧慧": 34.8
+      },
+      "undecided": 25.6
+    },
+    {
+      "id": "poll-ec2adfbf4ae4",
+      "countyId": "newtaipei",
+      "institute": "ETToday",
+      "date": "2026-05-04",
+      "fieldwork": "5月1日至4日",
+      "source": "ETToday",
+      "sourceUrl": "https://www.ettoday.net/news/20260512/3164695.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 42.5,
+        "newtaipei-蘇巧慧": 41.7
+      },
+      "undecided": 9.6
+    },
+    {
+      "id": "poll-5d6e389cad1d",
+      "countyId": "newtaipei",
+      "institute": "民進黨",
+      "date": "2026-06-03",
+      "fieldwork": "6月2日至3日",
+      "source": "民進黨",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5461880",
+      "sourceKind": "internal",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 29.0,
+        "newtaipei-蘇巧慧": 31.5
+      },
+      "undecided": 39.5
+    },
+    {
+      "id": "poll-3b445b0ef83e",
+      "countyId": "newtaipei",
+      "institute": "TVBS",
+      "date": "2026-06-05",
+      "fieldwork": "6月2日至5日",
+      "source": "TVBS",
+      "sourceUrl": "https://www.ettoday.net/news/20260608/3179520.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 39.2,
+        "newtaipei-蘇巧慧": 33.0
+      },
+      "undecided": 21.4
+    },
+    {
+      "id": "poll-f284bd159b07",
+      "countyId": "newtaipei",
+      "institute": "鉅聞天下",
+      "date": "2026-07-11",
+      "fieldwork": "7月6日至11日",
+      "source": "鉅聞天下",
+      "sourceUrl": "https://www.ettoday.net/news/20260720/3204332.htm",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 50.85,
+        "newtaipei-蘇巧慧": 44.06
+      },
+      "undecided": 3.4
+    },
+    {
+      "id": "poll-e40318941753",
+      "countyId": "newtaipei",
+      "institute": "新台灣國策智庫",
+      "date": "2026-07-14",
+      "fieldwork": "7月12日至14日",
+      "source": "新台灣國策智庫",
+      "sourceUrl": "https://www.setn.com/news/1873356",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 40.0,
+        "newtaipei-蘇巧慧": 40.2
+      },
+      "undecided": 19.8
+    },
+    {
+      "id": "poll-cd4a36a28b26",
+      "countyId": "newtaipei",
+      "institute": "TVBS 民意調查中心",
+      "date": "2026-07-23",
+      "fieldwork": "7月20日至23日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.nextapple.com/life/20260729/475E59B3F7F1504C83DD63E801885488",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 43.7,
+        "newtaipei-蘇巧慧": 36.8
+      },
+      "undecided": 19.5,
+      "sampleSize": 1303,
+      "method": "市內電話訪問",
+      "marginOfError": 2.7,
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "id": "poll-4aeea9351734",
+      "countyId": "newtaipei",
+      "institute": "ETToday",
+      "date": "2026-08-13",
+      "fieldwork": "8月5日至13日",
+      "source": "ETToday",
+      "sourceUrl": "https://www.ettoday.net/amp/3222662",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 39.3,
+        "newtaipei-蘇巧慧": 37.3
+      },
+      "undecided": 23.4
+    },
+    {
+      "id": "poll-1380a5b80955",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2025-11-27",
+      "fieldwork": "2025年11月24日到27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳光復",
+      "results": {
+        "penghu-陳光復": 35.31,
+        "penghu-葉竹林": 25.62
+      },
+      "undecided": 25.94
+    },
+    {
+      "id": "poll-b3083562c1e8",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2025-11-27",
+      "fieldwork": "2025年11月24日到27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳光復",
+      "results": {
+        "penghu-陳光復": 46.06,
+        "penghu-鄭清發": 16.08
+      },
+      "undecided": 27.77
+    },
+    {
+      "id": "poll-f16d0d6acaa0",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2025-11-27",
+      "fieldwork": "2025年11月24日到27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳光復",
+      "results": {
+        "penghu-陳光復": 38.01,
+        "penghu-葉竹林": 23.07,
+        "penghu-鄭清發": 7.78
+      },
+      "undecided": 22.27
+    },
+    {
+      "id": "poll-fb4a8f31a8b7",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2025-11-27",
+      "fieldwork": "2025年11月24日到27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳光復",
+      "results": {
+        "penghu-陳光復": 34.79,
+        "penghu-陳雙全": 16.24,
+        "penghu-葉竹林": 19.79
+      },
+      "undecided": 22.04
+    },
+    {
+      "id": "poll-30b8034585b9",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2026-03-27",
+      "fieldwork": "2026年3月19日至27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://bccnews.com.tw/archives/778434",
+      "sourceKind": "public",
+      "scenario": "陳光復－陳振中－其他",
+      "results": {
+        "penghu-陳光復": 30.37,
+        "penghu-陳振中": 10.7,
+        "penghu-葉竹林": 17.82,
+        "penghu-黃健忠": 13.53,
+        "penghu-許智富": 2.13,
+        "penghu-陳盡川": 0.65
+      },
+      "undecided": 24.79
+    },
+    {
+      "id": "poll-4e37501e9e70",
+      "countyId": "penghu",
+      "institute": "ETToday",
+      "date": "2026-08-03",
+      "fieldwork": "2026年7月14日至8月3日",
+      "source": "ETToday",
+      "sourceUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "sourceKind": "public",
+      "scenario": "吳淑瑾－陳振中－其他",
+      "results": {
+        "penghu-吳淑瑾": 21.0,
+        "penghu-陳振中": 30.3,
+        "penghu-葉竹林": 17.8,
+        "penghu-周倪安": 3.2,
+        "penghu-許智富": 4.0,
+        "penghu-陳盡川": 3.1
+      },
+      "undecided": 10.1
+    },
+    {
+      "id": "poll-202f6339c2ee",
+      "countyId": "taichung",
+      "institute": "匯流民調",
+      "date": "2025-11-26",
+      "fieldwork": "2025年11月25日至26日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/%e3%80%90%e5%8c%af%e6%b5%81%e6%b0%91%e8%aa%bf2026%e5%8f%b0%e4%b8%ad%e5%b8%82%e9%95%b7%e9%81%b8%e8%88%89%e6%9c%80%e6%96%b0%e6%b0%91%e8%aa%bf3-2%e3%80%912026%e5%8f%b0%e4%b8%ad%e5%b8%82%e9%95%b7%e9%81%b8",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 43.9,
+        "taichung-何欣純": 25.0
+      },
+      "undecided": 31.1
+    },
+    {
+      "id": "poll-111472256634",
+      "countyId": "taichung",
+      "institute": "國民黨內參",
+      "date": "2025-11-26",
+      "fieldwork": "2025年11月25日至26日",
+      "source": "國民黨內參",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3069680",
+      "sourceKind": "internal",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 39.9,
+        "taichung-何欣純": 19.9
+      },
+      "undecided": 34.3
+    },
+    {
+      "id": "poll-18858b929af9",
+      "countyId": "taichung",
+      "institute": "國民黨內參",
+      "date": "2025-11-26",
+      "fieldwork": "2025年11月25日至26日",
+      "source": "國民黨內參",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3069680",
+      "sourceKind": "internal",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-楊瓊瓔": 28.2,
+        "taichung-何欣純": 26.8
+      },
+      "undecided": 37.5
+    },
+    {
+      "id": "poll-6302584ac481",
+      "countyId": "taichung",
+      "institute": "艾普羅民調",
+      "date": "2026-01-06",
+      "fieldwork": "2026年1月5日至6日",
+      "source": "艾普羅民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249173",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 39.4,
+        "taichung-何欣純": 25.8
+      },
+      "undecided": 34.8
+    },
+    {
+      "id": "poll-db3ebf850242",
+      "countyId": "taichung",
+      "institute": "艾普羅民調",
+      "date": "2026-01-06",
+      "fieldwork": "2026年1月5日至6日",
+      "source": "艾普羅民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249173",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-楊瓊瓔": 31.5,
+        "taichung-何欣純": 28.3
+      },
+      "undecided": 41.2
+    },
+    {
+      "id": "poll-15d76b2350b6",
+      "countyId": "taichung",
+      "institute": "ETtoday",
+      "date": "2026-01-12",
+      "fieldwork": "1月8日至12日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260114/3100632.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-楊瓊瓔": 41.7,
+        "taichung-何欣純": 35.1
+      },
+      "undecided": 23.2
+    },
+    {
+      "id": "poll-3b1fc8a49d37",
+      "countyId": "taichung",
+      "institute": "ETtoday",
+      "date": "2026-01-12",
+      "fieldwork": "1月8日至12日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260114/3100632.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 48.0,
+        "taichung-楊瓊瓔": 16.3
+      },
+      "undecided": 35.7
+    },
+    {
+      "id": "poll-4d149c1c521c",
+      "countyId": "taichung",
+      "institute": "ETtoday",
+      "date": "2026-01-12",
+      "fieldwork": "1月8日至12日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260114/3100632.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 51.0,
+        "taichung-何欣純": 32.4
+      },
+      "undecided": 16.6
+    },
+    {
+      "id": "poll-898fe6d023d7",
+      "countyId": "taichung",
+      "institute": "TVBS",
+      "date": "2026-01-22",
+      "fieldwork": "1月19日至22日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260123/e81df25f05002ab1c3e1dbf68d1d320b.pdf",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 54.0,
+        "taichung-楊瓊瓔": 20.0
+      },
+      "undecided": 26.0
+    },
+    {
+      "id": "poll-a1373a33a06a",
+      "countyId": "taichung",
+      "institute": "TVBS",
+      "date": "2026-01-22",
+      "fieldwork": "1月19日至22日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260123/e81df25f05002ab1c3e1dbf68d1d320b.pdf",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 46.0,
+        "taichung-何欣純": 31.0
+      },
+      "undecided": 23.0
+    },
+    {
+      "id": "poll-b4140b40ec7c",
+      "countyId": "taichung",
+      "institute": "TVBS",
+      "date": "2026-01-22",
+      "fieldwork": "1月19日至22日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260123/e81df25f05002ab1c3e1dbf68d1d320b.pdf",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-楊瓊瓔": 36.0,
+        "taichung-何欣純": 34.0
+      },
+      "undecided": 30.0
+    },
+    {
+      "id": "poll-3e8ddc3688f2",
+      "countyId": "taichung",
+      "institute": "美麗島電子報",
+      "date": "2026-01-23",
+      "fieldwork": "1月21日至23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://m.my-formosa.com.tw/DOC_223267.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 43.9,
+        "taichung-何欣純": 29.4
+      },
+      "undecided": 26.7
+    },
+    {
+      "id": "poll-762f06155ca4",
+      "countyId": "taichung",
+      "institute": "美麗島電子報",
+      "date": "2026-01-23",
+      "fieldwork": "1月21日至23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://m.my-formosa.com.tw/DOC_223267.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-楊瓊瓔": 32.7,
+        "taichung-何欣純": 33.7
+      },
+      "undecided": 33.6
+    },
+    {
+      "id": "poll-f4e435cd47c4",
+      "countyId": "taichung",
+      "institute": "美麗島電子報",
+      "date": "2026-01-23",
+      "fieldwork": "1月21日至23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://m.my-formosa.com.tw/DOC_223267.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 52.0,
+        "taichung-楊瓊瓔": 17.4
+      },
+      "undecided": 30.6
+    },
+    {
+      "id": "poll-6f501089c9e3",
+      "countyId": "taichung",
+      "institute": "艾普羅民調",
+      "date": "2026-03-03",
+      "fieldwork": "3月2日至3日",
+      "source": "艾普羅民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/253073",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 41.8,
+        "taichung-何欣純": 20.1
+      }
+    },
+    {
+      "id": "poll-dc43294e7f8c",
+      "countyId": "taichung",
+      "institute": "艾普羅民調",
+      "date": "2026-03-03",
+      "fieldwork": "3月2日至3日",
+      "source": "艾普羅民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/253073",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-楊瓊瓔": 22.9,
+        "taichung-何欣純": 24.6
+      }
+    },
+    {
+      "id": "poll-e2c3b2d9909c",
+      "countyId": "taichung",
+      "institute": "艾普羅民調",
+      "date": "2026-03-03",
+      "fieldwork": "3月2日至3日",
+      "source": "艾普羅民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/253073",
+      "sourceKind": "public",
+      "scenario": "國民黨－何欣純",
+      "results": {
+        "taichung-江啟臣": 46.6,
+        "taichung-楊瓊瓔": 14.2
+      }
+    },
+    {
+      "id": "poll-1e2167417337",
+      "countyId": "taichung",
+      "institute": "匯流民調",
+      "date": "2026-05-12",
+      "fieldwork": "5月11日至12日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/1450514a02/",
+      "sourceKind": "public",
+      "scenario": "江啟臣－何欣純",
+      "results": {
+        "taichung-江啟臣": 40.6,
+        "taichung-何欣純": 24.4
+      },
+      "undecided": 35.0
+    },
+    {
+      "id": "poll-809b5ed68617",
+      "countyId": "taichung",
+      "institute": "艾普羅行銷市場研究",
+      "date": "2026-08-05",
+      "fieldwork": "8月3日至5日",
+      "source": "艾普羅民調",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/565257",
+      "sourceKind": "public",
+      "scenario": "江啟臣－何欣純",
+      "results": {
+        "taichung-江啟臣": 38.2,
+        "taichung-何欣純": 24.1
+      },
+      "undecided": 37.7,
+      "sampleSize": 1077,
+      "method": "住宅電話抽樣、人員電話訪問",
+      "marginOfError": 3.0,
+      "publishedAt": "2026-08-08"
+    },
+    {
+      "id": "poll-27f907da202f",
+      "countyId": "taichung",
+      "institute": "新台灣國策智庫",
+      "date": "2026-08-13",
+      "fieldwork": "8月11日至13日",
+      "source": "新台灣國策智庫",
+      "sourceUrl": "https://braintrust.tw/wp-content/uploads/2026/08/2605098-4%E6%96%B0%E5%8F%B0%E7%81%A3%E5%9C%8B%E7%AD%96%E6%99%BA%E5%BA%AB%E8%AA%BF%E6%9F%A5%E7%B0%A1%E5%A0%B1.pdf",
+      "sourceKind": "public",
+      "scenario": "江啟臣－何欣純",
+      "results": {
+        "taichung-江啟臣": 42.8,
+        "taichung-何欣純": 36.1
+      },
+      "undecided": 21.1
+    },
+    {
+      "id": "poll-ac14ea7f9f04",
+      "countyId": "tainan",
+      "institute": "東森民調",
+      "date": "2025-09-07",
+      "fieldwork": "2025年9月5日至7日",
+      "source": "東森民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/239780",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 36.6,
+        "tainan-謝龍介": 31.8
+      },
+      "undecided": 31.6
+    },
+    {
+      "id": "poll-fd42f9d920fd",
+      "countyId": "tainan",
+      "institute": "東森民調",
+      "date": "2025-09-07",
+      "fieldwork": "2025年9月5日至7日",
+      "source": "東森民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/239780",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 43.2,
+        "tainan-謝龍介": 27.0
+      },
+      "undecided": 29.8
+    },
+    {
+      "id": "poll-1b47ef78fbe2",
+      "countyId": "tainan",
+      "institute": "TVBS",
+      "date": "2025-09-12",
+      "fieldwork": "9月8日至12日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250917/b821fdad1c8903f8437d790b84d6d5de.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 41.0,
+        "tainan-謝龍介": 36.0
+      },
+      "undecided": 23.0
+    },
+    {
+      "id": "poll-d2c53dea4209",
+      "countyId": "tainan",
+      "institute": "TVBS",
+      "date": "2025-09-12",
+      "fieldwork": "9月8日至12日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250917/b821fdad1c8903f8437d790b84d6d5de.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 32.0,
+        "tainan-謝龍介": 44.0
+      },
+      "undecided": 24.0
+    },
+    {
+      "id": "poll-39d7bb79dcd3",
+      "countyId": "tainan",
+      "institute": "趨勢民調",
+      "date": "2025-10-22",
+      "fieldwork": "10月21日至22日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/243169",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 46.6,
+        "tainan-謝龍介": 31.4
+      },
+      "undecided": 22.0
+    },
+    {
+      "id": "poll-a8b777de8858",
+      "countyId": "tainan",
+      "institute": "趨勢民調",
+      "date": "2025-10-22",
+      "fieldwork": "10月21日至22日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/243169",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 52.1,
+        "tainan-謝龍介": 29.6
+      },
+      "undecided": 18.3
+    },
+    {
+      "id": "poll-08d9712235b9",
+      "countyId": "tainan",
+      "institute": "鋒燦民調",
+      "date": "2025-10-28",
+      "fieldwork": "10月27日至28日",
+      "source": "鋒燦民調",
+      "sourceUrl": "https://www.ftnn.com.tw/news/495955",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 42.3,
+        "tainan-謝龍介": 37.2
+      },
+      "undecided": 20.5
+    },
+    {
+      "id": "poll-c3691e1bcff5",
+      "countyId": "tainan",
+      "institute": "鋒燦民調",
+      "date": "2025-10-28",
+      "fieldwork": "10月27日至28日",
+      "source": "鋒燦民調",
+      "sourceUrl": "https://www.ftnn.com.tw/news/495955",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 52.6,
+        "tainan-謝龍介": 24.9
+      },
+      "undecided": 22.5
+    },
+    {
+      "id": "poll-b2c2311886a6",
+      "countyId": "tainan",
+      "institute": "TVBS",
+      "date": "2025-11-20",
+      "fieldwork": "11月17日至20日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251124/b598691bc21b681281b8b75489a1deef.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 38.0,
+        "tainan-謝龍介": 41.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-cf28ccbe2d3c",
+      "countyId": "tainan",
+      "institute": "TVBS",
+      "date": "2025-11-20",
+      "fieldwork": "11月17日至20日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251124/b598691bc21b681281b8b75489a1deef.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 47.0,
+        "tainan-謝龍介": 34.0
+      },
+      "undecided": 19.0
+    },
+    {
+      "id": "poll-0c0b625ac0e2",
+      "countyId": "tainan",
+      "institute": "鋒燦民調",
+      "date": "2025-12-09",
+      "fieldwork": "12月8日至9日",
+      "source": "鋒燦民調",
+      "sourceUrl": "https://www.ftnn.com.tw/news/506723",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 53.2,
+        "tainan-謝龍介": 25.0
+      },
+      "undecided": 21.8
+    },
+    {
+      "id": "poll-4259820be9c2",
+      "countyId": "tainan",
+      "institute": "鋒燦民調",
+      "date": "2025-12-09",
+      "fieldwork": "12月8日至9日",
+      "source": "鋒燦民調",
+      "sourceUrl": "https://www.ftnn.com.tw/news/506723",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 44.9,
+        "tainan-謝龍介": 30.9
+      },
+      "undecided": 24.2
+    },
+    {
+      "id": "poll-6c4ba2cf2d7d",
+      "countyId": "tainan",
+      "institute": "匯流民調",
+      "date": "2025-12-23",
+      "fieldwork": "12月22日至23日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/174251225a03/",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 33.0,
+        "tainan-陳亭妃": 42.7
+      },
+      "undecided": 24.3
+    },
+    {
+      "id": "poll-91f6a6e1b412",
+      "countyId": "tainan",
+      "institute": "匯流民調",
+      "date": "2025-12-23",
+      "fieldwork": "12月22日至23日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/174251225a03/",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 51.6,
+        "tainan-謝龍介": 28.5
+      },
+      "undecided": 19.9
+    },
+    {
+      "id": "poll-b5b74ee78502",
+      "countyId": "tainan",
+      "institute": "匯流民調",
+      "date": "2025-12-23",
+      "fieldwork": "12月22日至23日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/174251225a03/",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 57.1,
+        "tainan-謝龍介": 18.5
+      },
+      "undecided": 24.4
+    },
+    {
+      "id": "poll-607f6a50d68b",
+      "countyId": "tainan",
+      "institute": "民進黨內參",
+      "date": "2025-12-23",
+      "fieldwork": "12月22日至23日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20251225daily001",
+      "sourceKind": "internal",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 54.1,
+        "tainan-謝龍介": 28.3
+      },
+      "undecided": 17.6
+    },
+    {
+      "id": "poll-f19e156e3a2b",
+      "countyId": "tainan",
+      "institute": "民進黨內參",
+      "date": "2025-12-23",
+      "fieldwork": "12月22日至23日",
+      "source": "民進黨內參",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20251225daily001",
+      "sourceKind": "internal",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 51.5,
+        "tainan-謝龍介": 28.8
+      },
+      "undecided": 19.7
+    },
+    {
+      "id": "poll-6f9d3498ee7d",
+      "countyId": "tainan",
+      "institute": "關鍵民調",
+      "date": "2025-12-29",
+      "fieldwork": "12月24日至29日",
+      "source": "關鍵民調",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5297627",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 52.7,
+        "tainan-謝龍介": 27.8
+      },
+      "undecided": 19.5
+    },
+    {
+      "id": "poll-95489cbf71a4",
+      "countyId": "tainan",
+      "institute": "關鍵民調",
+      "date": "2025-12-29",
+      "fieldwork": "12月24日至29日",
+      "source": "關鍵民調",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5297627",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 50.1,
+        "tainan-謝龍介": 22.4
+      },
+      "undecided": 27.5
+    },
+    {
+      "id": "poll-70abca33cc9f",
+      "countyId": "tainan",
+      "institute": "鋒燦民調",
+      "date": "2025-12-30",
+      "fieldwork": "12月29日至30日",
+      "source": "鋒燦民調",
+      "sourceUrl": "https://www.ftnn.com.tw/news/512544",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 56.2,
+        "tainan-謝龍介": 23.7
+      },
+      "undecided": 20.1
+    },
+    {
+      "id": "poll-742dee96bffe",
+      "countyId": "tainan",
+      "institute": "鋒燦民調",
+      "date": "2025-12-30",
+      "fieldwork": "12月29日至30日",
+      "source": "鋒燦民調",
+      "sourceUrl": "https://www.ftnn.com.tw/news/512544",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 50.6,
+        "tainan-謝龍介": 31.4
+      },
+      "undecided": 18.0
+    },
+    {
+      "id": "poll-c7bd26793d75",
+      "countyId": "tainan",
+      "institute": "ETtoday",
+      "date": "2026-01-07",
+      "fieldwork": "2026年1月2日至7日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260108/3097921.htm",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 48.1,
+        "tainan-謝龍介": 37.7
+      },
+      "undecided": 14.2
+    },
+    {
+      "id": "poll-e623fd532342",
+      "countyId": "tainan",
+      "institute": "ETtoday",
+      "date": "2026-01-07",
+      "fieldwork": "2026年1月2日至7日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260108/3097921.htm",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 44.8,
+        "tainan-謝龍介": 38.5
+      },
+      "undecided": 16.7
+    },
+    {
+      "id": "poll-178020ece8ba",
+      "countyId": "tainan",
+      "institute": "雨晴指標",
+      "date": "2026-01-07",
+      "fieldwork": "1月6日至7日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/249218",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 51.0,
+        "tainan-謝龍介": 24.5
+      },
+      "undecided": 24.5
+    },
+    {
+      "id": "poll-3b6d5b44ca8c",
+      "countyId": "tainan",
+      "institute": "雨晴指標",
+      "date": "2026-01-07",
+      "fieldwork": "1月6日至7日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://www.upmedia.mg/tw/lifestyle/policy/249218",
+      "sourceKind": "public",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 33.7,
+        "tainan-陳亭妃": 41.4
+      },
+      "undecided": 24.9
+    },
+    {
+      "id": "poll-73405830aaad",
+      "countyId": "tainan",
+      "institute": "民進黨初選",
+      "date": "2026-01-15",
+      "fieldwork": "1月15日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.dpp.org.tw/media/contents/11439",
+      "sourceKind": "primary",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 60.8557,
+        "tainan-謝龍介": 13.8631
+      }
+    },
+    {
+      "id": "poll-f93ec3fe3d99",
+      "countyId": "tainan",
+      "institute": "民進黨初選",
+      "date": "2026-01-15",
+      "fieldwork": "1月15日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.dpp.org.tw/media/contents/11439",
+      "sourceKind": "primary",
+      "scenario": "民進黨－謝龍介",
+      "results": {
+        "tainan-林俊憲": 58.163,
+        "tainan-謝龍介": 21.6493
+      }
+    },
+    {
+      "id": "poll-09739d8d315f",
+      "countyId": "tainan",
+      "institute": "鉅聞天下",
+      "date": "2026-02-28",
+      "fieldwork": "2月23日至28日",
+      "source": "鉅聞天下",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1772712411866",
+      "sourceKind": "public",
+      "scenario": "陳亭妃－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 45.96,
+        "tainan-謝龍介": 40.57
+      }
+    },
+    {
+      "id": "poll-34d86f62359f",
+      "countyId": "tainan",
+      "institute": "TVBS",
+      "date": "2026-03-12",
+      "fieldwork": "3月9日至12日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3152745",
+      "sourceKind": "public",
+      "scenario": "陳亭妃－謝龍介",
+      "results": {
+        "tainan-陳亭妃": 53.0,
+        "tainan-謝龍介": 30.0
+      },
+      "undecided": 17.0
+    },
+    {
+      "id": "poll-200855b5460c",
+      "countyId": "taipei",
+      "institute": "循證民調",
+      "date": "2025-11-19",
+      "fieldwork": "2025年11月17日至19日",
+      "source": "循證民調",
+      "sourceUrl": "https://www.shotnews.tw/news/e61dccbd57da4",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-王世堅": 29.9,
+        "taipei-蔣萬安": 49.1
+      }
+    },
+    {
+      "id": "poll-bbf5533a72ea",
+      "countyId": "taipei",
+      "institute": "循證民調",
+      "date": "2025-11-19",
+      "fieldwork": "2025年11月17日至19日",
+      "source": "循證民調",
+      "sourceUrl": "https://www.shotnews.tw/news/e61dccbd57da4",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-吳怡農": 24.5,
+        "taipei-蔣萬安": 56.9
+      }
+    },
+    {
+      "id": "poll-db9d8ac7d38d",
+      "countyId": "taipei",
+      "institute": "山水民調",
+      "date": "2025-11-23",
+      "fieldwork": "2025年11月20日至23日",
+      "source": "山水民調",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20251127edi016",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-王世堅": 33.0,
+        "taipei-吳怡農": 11.3,
+        "taipei-鄭麗君": 5.9,
+        "taipei-沈伯洋": 8.6,
+        "taipei-林右昌": 2.8
+      },
+      "undecided": 38.4
+    },
+    {
+      "id": "poll-9ddd26352d23",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-沈伯洋": 22.0,
+        "taipei-蔣萬安": 64.0
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-ad4490c27b68",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-吳怡農": 24.0,
+        "taipei-蔣萬安": 61.0
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-b72b28e39564",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-王世堅": 34.0,
+        "taipei-蔣萬安": 55.0
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-c5832f5fd268",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-林右昌": 19.0,
+        "taipei-蔣萬安": 65.0
+      },
+      "undecided": 17.0
+    },
+    {
+      "id": "poll-d0752c7c7f20",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-鄭麗君": 24.0,
+        "taipei-蔣萬安": 62.0
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-555db3b4329d",
+      "countyId": "taipei",
+      "institute": "震傳媒",
+      "date": "2026-01-26",
+      "fieldwork": "2026年1月25日至1月26日",
+      "source": "震傳媒",
+      "sourceUrl": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-卓榮泰": 24.0,
+        "taipei-蔣萬安": 62.7
+      },
+      "undecided": 13.3
+    },
+    {
+      "id": "poll-b44687b7a76f",
+      "countyId": "taipei",
+      "institute": "震傳媒",
+      "date": "2026-01-26",
+      "fieldwork": "2026年1月25日至1月26日",
+      "source": "震傳媒",
+      "sourceUrl": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-王世堅": 32.7,
+        "taipei-蔣萬安": 52.0
+      },
+      "undecided": 15.3
+    },
+    {
+      "id": "poll-f90960cd1328",
+      "countyId": "taipei",
+      "institute": "震傳媒",
+      "date": "2026-01-26",
+      "fieldwork": "2026年1月25日至1月26日",
+      "source": "震傳媒",
+      "sourceUrl": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-鄭麗君": 27.4,
+        "taipei-蔣萬安": 60.4
+      },
+      "undecided": 12.2
+    },
+    {
+      "id": "poll-5a345dfdd082",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2026-01-28",
+      "fieldwork": "1月23日至1月28日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260130/a77f38bdee0ceef8c988b182d179b754.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-鄭麗君": 25.0,
+        "taipei-蔣萬安": 62.0
+      },
+      "undecided": 13.0
+    },
+    {
+      "id": "poll-fb27375ffbe3",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2026-01-28",
+      "fieldwork": "1月23日至1月28日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260130/a77f38bdee0ceef8c988b182d179b754.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-王世堅": 27.0,
+        "taipei-蔣萬安": 60.0
+      },
+      "undecided": 13.0
+    },
+    {
+      "id": "poll-7e75040d9e7a",
+      "countyId": "taipei",
+      "institute": "新台灣國策智庫",
+      "date": "2026-05-05",
+      "fieldwork": "5月4日至5日",
+      "source": "新台灣國策智庫",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1834747",
+      "sourceKind": "public",
+      "scenario": "沈伯洋－蔣萬安",
+      "results": {
+        "taipei-蔣萬安": 52.9,
+        "taipei-沈伯洋": 29.7
+      },
+      "undecided": 17.4
+    },
+    {
+      "id": "poll-58bf9d37c81c",
+      "countyId": "taipei",
+      "institute": "TVBS 民意調查中心",
+      "date": "2026-05-26",
+      "fieldwork": "5月21至26日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3214850",
+      "sourceKind": "public",
+      "scenario": "沈伯洋－蔣萬安",
+      "results": {
+        "taipei-蔣萬安": 58.0,
+        "taipei-沈伯洋": 30.0
+      },
+      "undecided": 13.0,
+      "sampleSize": 901,
+      "method": "電話後四碼隨機抽樣、人員電話訪問",
+      "marginOfError": 3.3,
+      "publishedAt": "2026-05-27"
+    },
+    {
+      "id": "poll-3f93cd42835c",
+      "countyId": "taipei",
+      "institute": "山水民調",
+      "date": "2026-06-22",
+      "fieldwork": "6月21日至22日",
+      "source": "山水民調",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1861503",
+      "sourceKind": "public",
+      "scenario": "沈伯洋－蔣萬安",
+      "results": {
+        "taipei-蔣萬安": 55.2,
+        "taipei-沈伯洋": 27.5
+      },
+      "undecided": 17.4
+    },
+    {
+      "id": "poll-656cac5fe07a",
+      "countyId": "taipei",
+      "institute": "TPOC台灣議題研究中心",
+      "date": "2026-08-07",
+      "fieldwork": "8月5日至7日",
+      "source": "TPOC台灣議題研究中心",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5539708",
+      "sourceKind": "public",
+      "scenario": "沈伯洋－蔣萬安",
+      "results": {
+        "taipei-蔣萬安": 48.4,
+        "taipei-沈伯洋": 33.0
+      },
+      "undecided": 18.6
+    },
+    {
+      "id": "poll-b76f134320a1",
+      "countyId": "taitung",
+      "institute": "匯流民調",
+      "date": "2026-05-28",
+      "fieldwork": "5月27日至28日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/145260601a01/",
+      "sourceKind": "public",
+      "scenario": "吳秀華－陳瑩－劉櫂豪",
+      "results": {
+        "taitung-吳秀華": 51.4,
+        "taitung-陳瑩": 22.4
+      },
+      "undecided": 26.3
+    },
+    {
+      "id": "poll-dcc9742ee867",
+      "countyId": "taitung",
+      "institute": "匯流民調",
+      "date": "2026-05-28",
+      "fieldwork": "5月27日至28日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/145260601a01/",
+      "sourceKind": "public",
+      "scenario": "吳秀華－陳瑩－劉櫂豪",
+      "results": {
+        "taitung-吳秀華": 44.2,
+        "taitung-陳瑩": 15.0,
+        "taitung-劉櫂豪": 13.4
+      },
+      "undecided": 27.4
+    },
+    {
+      "id": "poll-79b7f2b7c467",
+      "countyId": "taoyuan",
+      "institute": "TVBS",
+      "date": "2025-12-12",
+      "fieldwork": "2025年12月5日至12日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251215/fcec2c7a4c138f591e0a2ce680a491da.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－張善政",
+      "results": {
+        "taoyuan-王義川": 20.0,
+        "taoyuan-張善政": 59.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-e809e75d1ecf",
+      "countyId": "taoyuan",
+      "institute": "TVBS",
+      "date": "2025-12-12",
+      "fieldwork": "2025年12月5日至12日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251215/fcec2c7a4c138f591e0a2ce680a491da.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－張善政",
+      "results": {
+        "taoyuan-黃世杰": 19.0,
+        "taoyuan-張善政": 61.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-ea867ce313cb",
+      "countyId": "taoyuan",
+      "institute": "TVBS",
+      "date": "2025-12-12",
+      "fieldwork": "2025年12月5日至12日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251215/fcec2c7a4c138f591e0a2ce680a491da.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－張善政",
+      "results": {
+        "taoyuan-何志偉": 20.0,
+        "taoyuan-張善政": 59.0
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-4f5418317e0e",
+      "countyId": "taoyuan",
+      "institute": "匯流民調",
+      "date": "2026-03-03",
+      "fieldwork": "2026年3月2日至3日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/145260312a01/",
+      "sourceKind": "public",
+      "scenario": "民進黨－張善政",
+      "results": {
+        "taoyuan-何志偉": 35.7,
+        "taoyuan-張善政": 40.8
+      },
+      "undecided": 23.5
+    },
+    {
+      "id": "poll-cc3c6ee6ca08",
+      "countyId": "taoyuan",
+      "institute": "匯流民調",
+      "date": "2026-03-03",
+      "fieldwork": "2026年3月2日至3日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/145260312a01/",
+      "sourceKind": "public",
+      "scenario": "民進黨－張善政",
+      "results": {
+        "taoyuan-王義川": 34.4,
+        "taoyuan-張善政": 41.8
+      },
+      "undecided": 23.8
+    },
+    {
+      "id": "poll-533fa604a314",
+      "countyId": "yilan",
+      "institute": "美麗島電子報",
+      "date": "2026-03-18",
+      "fieldwork": "3月16日至18日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224420.htm",
+      "sourceKind": "public",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-吳宗憲": 26.6,
+        "yilan-林國漳": 33.0,
+        "yilan-陳琬惠": 7.9
+      },
+      "undecided": 25.0
+    },
+    {
+      "id": "poll-72cdbe2406fa",
+      "countyId": "yilan",
+      "institute": "美麗島電子報",
+      "date": "2026-03-18",
+      "fieldwork": "3月16日至18日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224420.htm",
+      "sourceKind": "public",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-林國漳": 35.8,
+        "yilan-陳琬惠": 26.7
+      },
+      "undecided": 25.9
+    },
+    {
+      "id": "poll-a67277e1d00c",
+      "countyId": "yilan",
+      "institute": "美麗島電子報",
+      "date": "2026-03-18",
+      "fieldwork": "3月16日至18日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224420.htm",
+      "sourceKind": "public",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-吳宗憲": 33.0,
+        "yilan-林國漳": 35.8
+      },
+      "undecided": 23.5
+    },
+    {
+      "id": "poll-bd4b33fbfe6b",
+      "countyId": "yilan",
+      "institute": "TVBS",
+      "date": "2026-03-19",
+      "fieldwork": "3月13日至19日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3158893",
+      "sourceKind": "public",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-吳宗憲": 35.0,
+        "yilan-林國漳": 38.0
+      },
+      "undecided": 27.0
+    },
+    {
+      "id": "poll-fb16ed39447d",
+      "countyId": "yilan",
+      "institute": "TVBS",
+      "date": "2026-03-19",
+      "fieldwork": "3月13日至19日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3158893",
+      "sourceKind": "public",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-吳宗憲": 28.0,
+        "yilan-林國漳": 33.0,
+        "yilan-陳琬惠": 8.0
+      },
+      "undecided": 31.0
+    },
+    {
+      "id": "poll-7b6dfa98c664",
+      "countyId": "yilan",
+      "institute": "藍白整合初選",
+      "date": "2026-05-01",
+      "fieldwork": "5月",
+      "source": "藍白整合初選",
+      "sourceUrl": "https://www.storm.mg/article/11127599",
+      "sourceKind": "primary",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-林國漳": 27.5,
+        "yilan-陳琬惠": 21.1
+      },
+      "undecided": 40.4
+    },
+    {
+      "id": "poll-8f4295f1108b",
+      "countyId": "yilan",
+      "institute": "藍白整合初選",
+      "date": "2026-05-01",
+      "fieldwork": "5月",
+      "source": "藍白整合初選",
+      "sourceUrl": "https://www.storm.mg/article/11127599",
+      "sourceKind": "primary",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-吳宗憲": 27.6,
+        "yilan-林國漳": 28.9
+      },
+      "undecided": 36.7
+    },
+    {
+      "id": "poll-b2d0bb248cf5",
+      "countyId": "yunlin",
+      "institute": "鉅聞天下",
+      "date": "2026-03-28",
+      "fieldwork": "2026年3月23日至28日",
+      "source": "鉅聞天下",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1779181485438",
+      "sourceKind": "public",
+      "scenario": "劉建國－張嘉郡",
+      "results": {
+        "yunlin-張嘉郡": 49.52,
+        "yunlin-劉建國": 38.91
+      },
+      "undecided": 8.92
+    }
+  ],
+  "candidates": {
+    "changhua": [
+      {
+        "id": "changhua-陳素月",
+        "name": "陳素月",
+        "partyId": "dpp"
+      },
+      {
+        "id": "changhua-邱建富",
+        "name": "邱建富",
+        "partyId": "ind"
+      },
+      {
+        "id": "changhua-柯呈枋",
+        "name": "柯呈枋",
+        "partyId": "kmt"
+      },
+      {
+        "id": "changhua-洪榮章",
+        "name": "洪榮章",
+        "partyId": "kmt"
+      },
+      {
+        "id": "changhua-謝典林",
+        "name": "謝典林",
+        "partyId": "kmt"
+      },
+      {
+        "id": "changhua-謝衣鳳",
+        "name": "謝衣鳳",
+        "partyId": "kmt"
+      },
+      {
+        "id": "changhua-魏平政",
+        "name": "魏平政",
+        "partyId": "kmt"
+      },
+      {
+        "id": "changhua-蔡壁如",
+        "name": "蔡壁如",
+        "partyId": "tpp"
+      }
+    ],
+    "chiayi-city": [
+      {
+        "id": "chiayi-city-王美惠",
+        "name": "王美惠",
+        "partyId": "dpp"
+      },
+      {
+        "id": "chiayi-city-張啓楷",
+        "name": "張啓楷",
+        "partyId": "tpp"
+      }
+    ],
+    "chiayi-county": [
+      {
+        "id": "chiayi-county-蔡易餘",
+        "name": "蔡易餘",
+        "partyId": "dpp"
+      },
+      {
+        "id": "chiayi-county-黃榮利",
+        "name": "黃榮利",
+        "partyId": "dpp"
+      },
+      {
+        "id": "chiayi-county-王育敏",
+        "name": "王育敏",
+        "partyId": "kmt"
+      }
+    ],
+    "hsinchu-city": [
+      {
+        "id": "hsinchu-city-施乃如",
+        "name": "施乃如",
+        "partyId": "dpp"
+      },
+      {
+        "id": "hsinchu-city-林志潔",
+        "name": "林志潔",
+        "partyId": "dpp"
+      },
+      {
+        "id": "hsinchu-city-楊玲宜",
+        "name": "楊玲宜",
+        "partyId": "dpp"
+      },
+      {
+        "id": "hsinchu-city-莊競程",
+        "name": "莊競程",
+        "partyId": "dpp"
+      },
+      {
+        "id": "hsinchu-city-高嘉瑜",
+        "name": "高嘉瑜",
+        "partyId": "dpp"
+      },
+      {
+        "id": "hsinchu-city-高虹安",
+        "name": "高虹安",
+        "partyId": "ind"
+      },
+      {
+        "id": "hsinchu-city-何志勇",
+        "name": "何志勇",
+        "partyId": "kmt"
+      },
+      {
+        "id": "hsinchu-city-王婉諭",
+        "name": "王婉諭",
+        "partyId": "npp"
+      }
+    ],
+    "hsinchu-county": [
+      {
+        "id": "hsinchu-county-鄭朝方",
+        "name": "鄭朝方",
+        "partyId": "dpp"
+      },
+      {
+        "id": "hsinchu-county-徐欣瑩",
+        "name": "徐欣瑩",
+        "partyId": "kmt"
+      },
+      {
+        "id": "hsinchu-county-林思铭",
+        "name": "林思铭",
+        "partyId": "kmt"
+      },
+      {
+        "id": "hsinchu-county-陳見賢",
+        "name": "陳見賢",
+        "partyId": "kmt"
+      }
+    ],
+    "hualien": [
+      {
+        "id": "hualien-張峻",
+        "name": "張峻",
+        "partyId": "ind"
+      },
+      {
+        "id": "hualien-魏嘉賢",
+        "name": "魏嘉賢",
+        "partyId": "ind"
+      },
+      {
+        "id": "hualien-游淑貞",
+        "name": "游淑貞",
+        "partyId": "kmt"
+      },
+      {
+        "id": "hualien-葉耀輝",
+        "name": "葉耀輝",
+        "partyId": "kmt"
+      }
+    ],
+    "kaohsiung": [
+      {
+        "id": "kaohsiung-林岱樺",
+        "name": "林岱樺",
+        "partyId": "dpp"
+      },
+      {
+        "id": "kaohsiung-許智傑",
+        "name": "許智傑",
+        "partyId": "dpp"
+      },
+      {
+        "id": "kaohsiung-賴瑞隆",
+        "name": "賴瑞隆",
+        "partyId": "dpp"
+      },
+      {
+        "id": "kaohsiung-邱議瑩",
+        "name": "邱議瑩",
+        "partyId": "dpp"
+      },
+      {
+        "id": "kaohsiung-柯志恩",
+        "name": "柯志恩",
+        "partyId": "kmt"
+      }
+    ],
+    "keelung": [
+      {
+        "id": "keelung-童子瑋",
+        "name": "童子瑋",
+        "partyId": "dpp"
+      },
+      {
+        "id": "keelung-謝國樑",
+        "name": "謝國樑",
+        "partyId": "kmt"
+      }
+    ],
+    "kinmen": [
+      {
+        "id": "kinmen-李文良",
+        "name": "李文良",
+        "partyId": "ind"
+      },
+      {
+        "id": "kinmen-楊鎮浯",
+        "name": "楊鎮浯",
+        "partyId": "kmt"
+      },
+      {
+        "id": "kinmen-陳玉珍",
+        "name": "陳玉珍",
+        "partyId": "kmt"
+      }
+    ],
+    "newtaipei": [
+      {
+        "id": "newtaipei-蘇巧慧",
+        "name": "蘇巧慧",
+        "partyId": "dpp"
+      },
+      {
+        "id": "newtaipei-李四川",
+        "name": "李四川",
+        "partyId": "kmt"
+      },
+      {
+        "id": "newtaipei-黃國昌",
+        "name": "黃國昌",
+        "partyId": "tpp"
+      }
+    ],
+    "penghu": [
+      {
+        "id": "penghu-吳淑瑾",
+        "name": "吳淑瑾",
+        "partyId": "dpp"
+      },
+      {
+        "id": "penghu-陳光復",
+        "name": "陳光復",
+        "partyId": "dpp"
+      },
+      {
+        "id": "penghu-周倪安",
+        "name": "周倪安",
+        "partyId": "ind"
+      },
+      {
+        "id": "penghu-葉竹林",
+        "name": "葉竹林",
+        "partyId": "ind"
+      },
+      {
+        "id": "penghu-許智富",
+        "name": "許智富",
+        "partyId": "ind"
+      },
+      {
+        "id": "penghu-陳盡川",
+        "name": "陳盡川",
+        "partyId": "ind"
+      },
+      {
+        "id": "penghu-黃健忠",
+        "name": "黃健忠",
+        "partyId": "ind"
+      },
+      {
+        "id": "penghu-鄭清發",
+        "name": "鄭清發",
+        "partyId": "kmt"
+      },
+      {
+        "id": "penghu-陳振中",
+        "name": "陳振中",
+        "partyId": "kmt"
+      },
+      {
+        "id": "penghu-陳雙全",
+        "name": "陳雙全",
+        "partyId": "kmt"
+      }
+    ],
+    "taichung": [
+      {
+        "id": "taichung-何欣純",
+        "name": "何欣純",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taichung-楊瓊瓔",
+        "name": "楊瓊瓔",
+        "partyId": "kmt"
+      },
+      {
+        "id": "taichung-江啟臣",
+        "name": "江啟臣",
+        "partyId": "kmt"
+      }
+    ],
+    "tainan": [
+      {
+        "id": "tainan-林俊憲",
+        "name": "林俊憲",
+        "partyId": "dpp"
+      },
+      {
+        "id": "tainan-陳亭妃",
+        "name": "陳亭妃",
+        "partyId": "dpp"
+      },
+      {
+        "id": "tainan-謝龍介",
+        "name": "謝龍介",
+        "partyId": "kmt"
+      }
+    ],
+    "taipei": [
+      {
+        "id": "taipei-卓榮泰",
+        "name": "卓榮泰",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taipei-吳怡農",
+        "name": "吳怡農",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taipei-林右昌",
+        "name": "林右昌",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taipei-沈伯洋",
+        "name": "沈伯洋",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taipei-王世堅",
+        "name": "王世堅",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taipei-鄭麗君",
+        "name": "鄭麗君",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taipei-蔣萬安",
+        "name": "蔣萬安",
+        "partyId": "kmt"
+      }
+    ],
+    "taitung": [
+      {
+        "id": "taitung-陳瑩",
+        "name": "陳瑩",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taitung-劉櫂豪",
+        "name": "劉櫂豪",
+        "partyId": "ind"
+      },
+      {
+        "id": "taitung-吳秀華",
+        "name": "吳秀華",
+        "partyId": "kmt"
+      }
+    ],
+    "taoyuan": [
+      {
+        "id": "taoyuan-何志偉",
+        "name": "何志偉",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taoyuan-王義川",
+        "name": "王義川",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taoyuan-黃世杰",
+        "name": "黃世杰",
+        "partyId": "dpp"
+      },
+      {
+        "id": "taoyuan-張善政",
+        "name": "張善政",
+        "partyId": "kmt"
+      }
+    ],
+    "yilan": [
+      {
+        "id": "yilan-林國漳",
+        "name": "林國漳",
+        "partyId": "dpp"
+      },
+      {
+        "id": "yilan-吳宗憲",
+        "name": "吳宗憲",
+        "partyId": "kmt"
+      },
+      {
+        "id": "yilan-陳琬惠",
+        "name": "陳琬惠",
+        "partyId": "tpp"
+      }
+    ],
+    "yunlin": [
+      {
+        "id": "yunlin-劉建國",
+        "name": "劉建國",
+        "partyId": "dpp"
+      },
+      {
+        "id": "yunlin-張嘉郡",
+        "name": "張嘉郡",
+        "partyId": "kmt"
+      }
+    ]
+  },
+  "generatedAt": "2026-08-27T10:16:09Z"
+}

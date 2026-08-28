@@ -20,13 +20,15 @@ function statusBadge(county: CountyRace) {
 
 export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
   const { openCounty, countyId } = useDashboard();
-  const top = sortByCompetitiveness(counties).slice(0, 5);
+  const top = sortByCompetitiveness(
+    counties.filter((county) => county.dataStatus === "verified-poll"),
+  ).slice(0, 5);
 
   if (top.length === 0) {
     return (
       <EmptyState
         title="無關鍵選區"
-        description="目前篩選條件下沒有可顯示的選區。"
+        description="目前篩選條件下沒有已核驗的公開民調。"
       />
     );
   }

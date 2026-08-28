@@ -86,7 +86,7 @@ export default function HeroFilter() {
             2026 台灣九合一選舉選情總覽
           </h1>
           <p className="mt-2 text-sm leading-6 text-ink-secondary">
-            匯總公開民調、候選人動態與歷史選舉數據，觀察 22 個縣市的競爭態勢。
+            匯總可追溯來源的公開民調情境、候選人動態與歷史選舉數據，觀察 22 個縣市的競爭態勢。
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export default function HeroFilter() {
             <input
               type="date"
               value={filters.date}
-              min="2026-07-06"
+              min="2025-01-01"
               max={LAST_UPDATED.slice(0, 10)}
               onChange={(e) => setFilters({ date: e.target.value })}
               className="h-8 rounded-lg border border-line bg-surface px-2 text-xs text-ink outline-none transition-colors duration-150 hover:border-line-strong focus:border-ink"
@@ -143,7 +143,7 @@ export default function HeroFilter() {
           />
         </div>
         <p className="mt-2 text-[11px] leading-4 text-ink-muted">
-          目前僅提供縣市長資料；來源與截至日期只影響已收錄逐筆民調數量、六都趨勢與詳情，地圖摘要維持最新版本。
+          目前僅提供縣市長資料；來源與截至日期只影響逐筆民調區與詳情。地圖採用最新一筆公開情境著色，空表或尚無數字的縣市維持灰色。
         </p>
       </div>
     </section>

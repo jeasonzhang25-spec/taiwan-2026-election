@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { NAV_ITEMS, LAST_UPDATED } from "@/lib/constants";
+import BrandLogo from "@/components/layout/BrandLogo";
 
 function focusCountySearch() {
   const el = document.getElementById("counties");
@@ -24,11 +25,8 @@ export default function Navbar() {
       </a>
       <div className="mx-auto flex h-14 max-w-page items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         {/* 左側品牌 */}
-        <a href="#overview" className="flex min-w-0 items-baseline gap-2">
-          <span className="text-[17px] font-semibold tracking-tight text-ink">島嶼選情</span>
-          <span className="hidden truncate text-xs text-ink-secondary md:inline">
-            2026 台灣九合一選舉觀察
-          </span>
+        <a href="/" aria-label="島嶼選情首頁" className="min-w-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/30">
+          <BrandLogo />
         </a>
 
         {/* 中央導航（桌面） */}
@@ -36,7 +34,7 @@ export default function Navbar() {
           {NAV_ITEMS.map((item) => (
             <a
               key={item.id}
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
               className="rounded-md px-3 py-1.5 text-[13px] text-ink-secondary transition-colors duration-150 hover:bg-surface hover:text-ink"
             >
               {item.label}
@@ -46,13 +44,13 @@ export default function Navbar() {
 
         {/* 右側狀態與操作 */}
         <div className="flex items-center gap-2">
-          <div className="hidden items-center gap-2 rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink-secondary sm:flex">
+          <a href="/data-status" className="hidden items-center gap-2 rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink-secondary transition-colors hover:border-line-strong hover:text-ink sm:flex" aria-label={`查看資料狀態，更新 ${LAST_UPDATED}`}>
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#178A56] opacity-40" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#178A56]" />
             </span>
             <span className="whitespace-nowrap">更新 {LAST_UPDATED}</span>
-          </div>
+          </a>
 
           <button
             onClick={focusCountySearch}
@@ -89,13 +87,16 @@ export default function Navbar() {
           {NAV_ITEMS.map((item) => (
             <a
               key={item.id}
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
               onClick={() => setMenuOpen(false)}
               className="block rounded-md px-3 py-2.5 text-sm text-ink-secondary hover:bg-surface hover:text-ink"
             >
               {item.label}
             </a>
           ))}
+          <div className="my-2 border-t border-line" />
+          <a href="/data-status" onClick={() => setMenuOpen(false)} className="block rounded-md px-3 py-2.5 text-sm text-ink-secondary hover:bg-surface hover:text-ink">資料狀態</a>
+          <a href="/roadmap" onClick={() => setMenuOpen(false)} className="block rounded-md px-3 py-2.5 text-sm text-ink-secondary hover:bg-surface hover:text-ink">完善清單</a>
         </nav>
       )}
     </header>

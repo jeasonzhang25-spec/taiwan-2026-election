@@ -54,7 +54,7 @@ export default function CountyTable() {
     <section id="counties" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
       <SectionTitle
         title="縣市選情列表"
-        subtitle="22 個縣市完整列表，支援搜尋與排序。"
+        subtitle="22 個縣市完整列表；只有公開索引中已有候選人支持度數字的縣市顯示 2026 支持度。"
         aside={
           <div className="relative">
             <svg
@@ -127,6 +127,7 @@ export default function CountyTable() {
                 {rows.map((c) => {
                   const { leader, runner } = topTwo(c);
                   const support = c.latestSupport[c.leadingId] ?? 0;
+                  const hasData = c.dataStatus === "verified-poll" && Boolean(leader);
                   const active = countyId === c.id;
                   return (
                     <tr
@@ -154,8 +155,8 @@ export default function CountyTable() {
                         </span>
                       </td>
                       <td className="px-3 py-3 text-ink-secondary">
-                        {leader.name}
-                        <span className="text-ink-muted">（{partyShort(leader.partyId)}）</span>
+                        {hasData && leader ? leader.name : "尚無公開數字"}
+                        {hasData && leader && <span className="text-ink-muted">（{partyShort(leader.partyId)}）</span>}
                         {runner && (
                           <>
                             <span className="text-ink-muted"> vs </span>
@@ -165,22 +166,18 @@ export default function CountyTable() {
                         )}
                       </td>
                       <td className="px-3 py-3">
-                        <span className="num font-medium text-ink">{fmtPct(support)}</span>
+                        <span className="num font-medium text-ink">{hasData ? fmtPct(support) : "—"}</span>
                       </td>
                       <td className="px-3 py-3">
-                        <span className="inline-flex items-center gap-1.5">
-                          <PartyDot party={leader.partyId} size={9} />
-                          {leader.name}
-                        </span>
+                        {hasData && leader ? <span className="inline-flex items-center gap-1.5"><PartyDot party={leader.partyId} size={9} />{leader.name}</span> : <span className="text-ink-muted">—</span>}
                       </td>
                       <td className="px-3 py-3">
-                        <span className="num">{c.margin.toFixed(1)}</span>
-                        <span className="text-ink-muted"> 個百分點</span>
+                        {hasData ? <><span className="num">{c.margin.toFixed(1)}</span><span className="text-ink-muted"> 個百分點</span></> : <span className="text-ink-muted">—</span>}
                       </td>
                       <td className="px-3 py-3">
                         <CompetitivenessBadge value={c.competitiveness} />
                       </td>
-                      <td className="px-3 py-3 text-xs text-ink-muted">{fmtShortDate(c.lastPollDate)}</td>
+                      <td className="px-3 py-3 text-xs text-ink-muted">{hasData ? fmtShortDate(c.lastPollDate) : "—"}</td>
                     </tr>
                   );
                 })}
@@ -193,6 +190,7 @@ export default function CountyTable() {
             {rows.map((c) => {
               const { leader, runner } = topTwo(c);
               const support = c.latestSupport[c.leadingId] ?? 0;
+              const hasData = c.dataStatus === "verified-poll" && Boolean(leader);
               const active = countyId === c.id;
               return (
                 <button
@@ -206,15 +204,15 @@ export default function CountyTable() {
                   </div>
                   <div className="mt-2 flex items-center gap-1.5 text-xs text-ink-secondary">
                     <PartyDot party={c.incumbentParty} size={9} />
-                    現任 {partyShort(c.incumbentParty)} · 民調 {fmtShortDate(c.lastPollDate)}
+                    2022 當選 {partyShort(c.incumbentParty)}{hasData ? ` · 民調 ${fmtShortDate(c.lastPollDate)}` : " · 暫無公開數字"}
                   </div>
-                  <div className="mt-2 flex items-center justify-between text-xs">
+                  {hasData && leader ? <div className="mt-2 flex items-center justify-between text-xs">
                     <span className="inline-flex items-center gap-1.5 text-ink-secondary">
                       <PartyDot party={leader.partyId} size={9} />
                       {leader.name}（{partyShort(leader.partyId)}）
                     </span>
                     <span className="num font-medium text-ink">{fmtPct(support)}</span>
-                  </div>
+                  </div> : <div className="mt-2 text-xs text-ink-muted">目前沒有至少兩名人選皆有數字的公開民調</div>}
                   {runner && (
                     <div className="mt-1 flex items-center justify-between text-xs">
                       <span className="inline-flex items-center gap-1.5 text-ink-secondary">
@@ -223,9 +221,7 @@ export default function CountyTable() {
                       </span>
                     </div>
                   )}
-                  <div className="mt-2 border-t border-line pt-1.5 text-[11px] text-ink-muted">
-                    領先差距 {c.margin.toFixed(1)} 個百分點
-                  </div>
+                  {hasData && <div className="mt-2 border-t border-line pt-1.5 text-[11px] text-ink-muted">領先差距 {c.margin.toFixed(1)} 個百分點</div>}
                 </button>
               );
             })}

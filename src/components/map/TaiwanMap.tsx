@@ -31,6 +31,7 @@ const NO_DATA_COLOR = "#EDEBE5";
 const TOSSUP_COLOR = "#DBD8D0";
 
 function colorFor(county: CountyRace, mode: DisplayMode): string {
+  if (county.dataStatus === "insufficient") return NO_DATA_COLOR;
   if (mode === "leading-party") {
     if (county.competitiveness === "tossup") return TOSSUP_COLOR;
     return partyColor(getLeadingParty(county));
@@ -122,6 +123,9 @@ export default function TaiwanMap({
           const isFiltered = filteredIds.has(county.id);
           if (!isFiltered) {
             return `<div style="font-weight:600">${county.name}</div><div style="color:#8A8F99;font-size:11px">當前篩選下無資料</div>`;
+          }
+          if (county.dataStatus === "insufficient") {
+            return `<div style="font-weight:600;margin-bottom:4px">${county.name}</div><div style="color:#5F6470;font-size:11px">目前沒有已核驗的 2026 公開民調</div>`;
           }
           const leader = county.candidates.find((c) => c.id === county.leadingId);
           const leaderParty = leader ? partyColor(leader.partyId) : "#888";

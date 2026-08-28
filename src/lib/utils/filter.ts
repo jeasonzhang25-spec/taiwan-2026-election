@@ -18,7 +18,9 @@ export function filterCounties(
   }
 
   if (filter.party !== "all") {
-    list = list.filter((c) => getLeadingParty(c) === filter.party);
+    list = list.filter(
+      (c) => c.dataStatus === "verified-poll" && getLeadingParty(c) === filter.party,
+    );
   }
 
   return list;
@@ -43,6 +45,7 @@ export function countLeadingByParty(
 ): Record<string, number> {
   const counts: Record<string, number> = {};
   for (const c of counties) {
+    if (c.dataStatus !== "verified-poll") continue;
     // 五五波是獨立狀態，不應再重複計入某一政黨。
     if (c.competitiveness === "tossup") continue;
     const p = getLeadingParty(c);
@@ -54,6 +57,10 @@ export function countLeadingByParty(
 /** 計算膠著縣市數量 */
 export function countTossups(counties: CountyRace[]): number {
   return counties.filter((c) => c.competitiveness === "tossup").length;
+}
+
+export function countInsufficient(counties: CountyRace[]): number {
+  return counties.filter((c) => c.dataStatus === "insufficient").length;
 }
 
 /** 依「競爭程度」排序（越膠著越靠前，用於關鍵選區） */

@@ -30,8 +30,8 @@ export default function PollTrendSection() {
   return (
     <section id="trend" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
       <SectionTitle
-        title="主要縣市民調趨勢"
-        subtitle="折線不進行虛假平滑；逐筆呈現各機構數字，並標示抽樣誤差範圍。"
+        title="公開民調完整資料庫"
+        subtitle="逐題保留已公開數字與來源連結；黨內參、初選民調另作標記，不補點、不平滑，也不把不同題目硬做平均。"
       />
 
       {/* 縣市切換標籤 */}

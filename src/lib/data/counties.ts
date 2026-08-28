@@ -1,511 +1,85 @@
-// ============================================================
-// 縣市選情模擬資料（22 縣市）
-// ⚠️ 本檔案所有候選人、支持度、差距、競爭評級皆為「演示用虛構資料」，
-//    僅用於介面展示，不代表任何真實民調或真實選情。
-//    候選人一律使用「候選人A／B／C」虛構代稱。
-//    歷史執政黨版圖以「政黨層級」示意，非逐筆真實選舉紀錄。
-// ============================================================
+import type { CountyRace, HistoricalResult, PartyId, PollRecord } from "../types";
+import { MAJOR_CITY_POLLS, POLL_CANDIDATES, POLL_DATA_CHECKED_AT } from "./polling";
 
-import type {
-  Candidate,
-  CountyRace,
-  ElectionType,
-  HistoricalResult,
-  PartyId,
-} from "../types";
-import { MAJOR_CITY_POLLS } from "./polling";
+const checkedAt = POLL_DATA_CHECKED_AT;
 
-function cand(
-  id: string,
-  name: string,
-  partyId: PartyId,
-  isIncumbent?: boolean,
-): Candidate {
-  return { id, name, partyId, isIncumbent };
+function result2022(winner: PartyId, voteShare?: number, runnerUp?: PartyId): HistoricalResult {
+  return { year: 2022, winner, voteShare, runnerUp };
 }
 
-function hist(year: number, winner: PartyId, voteShare: number, runnerUp?: PartyId): HistoricalResult {
-  return { year, winner, voteShare, runnerUp };
-}
+type BaseCounty = Pick<CountyRace, "id" | "name" | "nameEn" | "incumbentParty" | "incumbentName" | "result2022">;
 
-/** 由六都民調最後一筆 wave 推導最新支持度 */
-function latestFromPolls(countyId: string): Record<string, number> {
-  const records = MAJOR_CITY_POLLS[countyId];
-  if (!records || records.length === 0) return {};
-  const last = records[records.length - 1];
-  return { ...last.results };
-}
-
-// ============================================================
-// 縣市資料
-// ============================================================
-export const COUNTIES: CountyRace[] = [
-  // ---- 六都（完整候選人與民調趨勢） ----
-  {
-    id: "taipei",
-    name: "台北市",
-    nameEn: "Taipei",
-    electionType: "mayor",
-    incumbentParty: "dpp",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("taipei-a", "候選人A", "dpp", true),
-      cand("taipei-b", "候選人B", "kmt"),
-      cand("taipei-c", "候選人C", "tpp"),
-    ],
-    latestSupport: latestFromPolls("taipei"),
-    leadingId: "taipei-a",
-    margin: 0.4,
-    competitiveness: "tossup",
-    change: -0.1,
-    lastPollDate: "2026-08-22",
-    keyIssues: ["居住正義", "交通改善", "都市更新"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 42.5, "dpp"),
-    historical: [hist(2018, "ind", 41.1, "kmt"), hist(2022, "kmt", 42.5, "dpp")],
-  },
-  {
-    id: "newtaipei",
-    name: "新北市",
-    nameEn: "New Taipei",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("newtaipei-a", "候選人A", "kmt", true),
-      cand("newtaipei-b", "候選人B", "dpp"),
-    ],
-    latestSupport: latestFromPolls("newtaipei"),
-    leadingId: "newtaipei-a",
-    margin: 3.3,
-    competitiveness: "slim-lead",
-    change: 1.2,
-    lastPollDate: "2026-08-21",
-    keyIssues: ["捷運路網", "托育政策", "治安"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 61.4, "dpp"),
-    historical: [hist(2018, "kmt", 57.1, "dpp"), hist(2022, "kmt", 61.4, "dpp")],
-  },
-  {
-    id: "taoyuan",
-    name: "桃園市",
-    nameEn: "Taoyuan",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("taoyuan-a", "候選人A", "kmt", true),
-      cand("taoyuan-b", "候選人B", "dpp"),
-      cand("taoyuan-c", "候選人C", "tpp"),
-    ],
-    latestSupport: latestFromPolls("taoyuan"),
-    leadingId: "taoyuan-a",
-    margin: 12.1,
-    competitiveness: "stable-lead",
-    change: 0.3,
-    lastPollDate: "2026-08-23",
-    keyIssues: ["航空城開發", "機場捷運", "產業招商"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 52.0, "dpp"),
-    historical: [hist(2018, "dpp", 44.4, "kmt"), hist(2022, "kmt", 52.0, "dpp")],
-  },
-  {
-    id: "taichung",
-    name: "台中市",
-    nameEn: "Taichung",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人B（現任）",
-    candidates: [
-      cand("taichung-a", "候選人A", "dpp"),
-      cand("taichung-b", "候選人B", "kmt", true),
-    ],
-    latestSupport: latestFromPolls("taichung"),
-    leadingId: "taichung-b",
-    margin: 0.3,
-    competitiveness: "tossup",
-    change: -0.3,
-    lastPollDate: "2026-08-24",
-    keyIssues: ["中捷延伸", "空污改善", "青年就業"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 60.1, "dpp"),
-    historical: [hist(2018, "kmt", 56.8, "dpp"), hist(2022, "kmt", 60.1, "dpp")],
-  },
-  {
-    id: "tainan",
-    name: "台南市",
-    nameEn: "Tainan",
-    electionType: "mayor",
-    incumbentParty: "dpp",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("tainan-a", "候選人A", "dpp", true),
-      cand("tainan-b", "候選人B", "kmt"),
-    ],
-    latestSupport: latestFromPolls("tainan"),
-    leadingId: "tainan-a",
-    margin: 23.6,
-    competitiveness: "stable-lead",
-    change: 0.5,
-    lastPollDate: "2026-08-22",
-    keyIssues: ["南科發展", "交通建設", "文化觀光"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "dpp", 49.6, "kmt"),
-    historical: [hist(2018, "dpp", 38.0, "kmt"), hist(2022, "dpp", 49.6, "kmt")],
-  },
-  {
-    id: "kaohsiung",
-    name: "高雄市",
-    nameEn: "Kaohsiung",
-    electionType: "mayor",
-    incumbentParty: "dpp",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("kaohsiung-a", "候選人A", "dpp", true),
-      cand("kaohsiung-b", "候選人B", "kmt"),
-    ],
-    latestSupport: latestFromPolls("kaohsiung"),
-    leadingId: "kaohsiung-a",
-    margin: 4.6,
-    competitiveness: "slim-lead",
-    change: 0.5,
-    lastPollDate: "2026-08-21",
-    keyIssues: ["產業轉型", "港市合一", "觀光振興"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "dpp", 50.1, "kmt"),
-    historical: [hist(2018, "kmt", 53.0, "dpp"), hist(2022, "dpp", 50.1, "kmt")],
-  },
-
-  // ---- 其餘 16 縣市（簡化資料） ----
-  {
-    id: "keelung",
-    name: "基隆市",
-    nameEn: "Keelung",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人B（現任）",
-    candidates: [cand("keelung-a", "候選人A", "dpp"), cand("keelung-b", "候選人B", "kmt", true)],
-    latestSupport: { "keelung-a": 36.5, "keelung-b": 36.2 },
-    leadingId: "keelung-a",
-    margin: 0.3,
-    competitiveness: "tossup",
-    change: -0.2,
-    lastPollDate: "2026-08-20",
-    keyIssues: ["港區更新", "通勤改善"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 52.9, "dpp"),
-    historical: [hist(2018, "kmt", 55.1, "dpp"), hist(2022, "kmt", 52.9, "dpp")],
-  },
-  {
-    id: "hsinchu-city",
-    name: "新竹市",
-    nameEn: "Hsinchu City",
-    electionType: "mayor",
-    incumbentParty: "tpp",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("hsinchu-city-a", "候選人A", "tpp", true),
-      cand("hsinchu-city-b", "候選人B", "kmt"),
-      cand("hsinchu-city-c", "候選人C", "dpp"),
-    ],
-    latestSupport: { "hsinchu-city-a": 33.8, "hsinchu-city-b": 32.1, "hsinchu-city-c": 26.0 },
-    leadingId: "hsinchu-city-a",
-    margin: 1.7,
-    competitiveness: "slim-lead",
-    change: 0.4,
-    lastPollDate: "2026-08-22",
-    keyIssues: ["科學園區", "交通壅塞", "學區"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "tpp", 45.0, "dpp"),
-    historical: [hist(2018, "kmt", 49.2, "dpp"), hist(2022, "tpp", 45.0, "dpp")],
-  },
-  {
-    id: "hsinchu-county",
-    name: "新竹縣",
-    nameEn: "Hsinchu County",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("hsinchu-county-a", "候選人A", "kmt", true),
-      cand("hsinchu-county-b", "候選人B", "dpp"),
-      cand("hsinchu-county-c", "候選人C", "tpp"),
-    ],
-    latestSupport: { "hsinchu-county-a": 45.2, "hsinchu-county-b": 22.5, "hsinchu-county-c": 11.8 },
-    leadingId: "hsinchu-county-a",
-    margin: 22.7,
-    competitiveness: "stable-lead",
-    change: 0.2,
-    lastPollDate: "2026-08-21",
-    keyIssues: ["竹科擴張", "交通"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 63.3, "dpp"),
-    historical: [hist(2018, "kmt", 66.0, "dpp"), hist(2022, "kmt", 63.3, "dpp")],
-  },
-  {
-    id: "miaoli",
-    name: "苗栗縣",
-    nameEn: "Miaoli",
-    electionType: "mayor",
-    incumbentParty: "ind",
-    incumbentName: "候選人A（現任）",
-    candidates: [
-      cand("miaoli-a", "候選人A", "ind", true),
-      cand("miaoli-b", "候選人B", "kmt"),
-      cand("miaoli-c", "候選人C", "dpp"),
-    ],
-    latestSupport: { "miaoli-a": 36.8, "miaoli-b": 38.1, "miaoli-c": 12.0 },
-    leadingId: "miaoli-b",
-    margin: 1.3,
-    competitiveness: "slim-lead",
-    change: 0.5,
-    lastPollDate: "2026-08-19",
-    keyIssues: ["財政改善", "農業發展"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "ind", 42.2, "kmt"),
-    historical: [hist(2018, "kmt", 57.3, "dpp"), hist(2022, "ind", 42.2, "kmt")],
-  },
-  {
-    id: "changhua",
-    name: "彰化縣",
-    nameEn: "Changhua",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("changhua-a", "候選人A", "kmt", true), cand("changhua-b", "候選人B", "dpp")],
-    latestSupport: { "changhua-a": 41.2, "changhua-b": 38.5 },
-    leadingId: "changhua-a",
-    margin: 2.7,
-    competitiveness: "slim-lead",
-    change: 0.6,
-    lastPollDate: "2026-08-22",
-    keyIssues: ["農業轉型", "交通"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 56.2, "dpp"),
-    historical: [hist(2018, "kmt", 53.3, "dpp"), hist(2022, "kmt", 56.2, "dpp")],
-  },
-  {
-    id: "nantou",
-    name: "南投縣",
-    nameEn: "Nantou",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("nantou-a", "候選人A", "kmt", true), cand("nantou-b", "候選人B", "dpp")],
-    latestSupport: { "nantou-a": 46.8, "nantou-b": 20.3 },
-    leadingId: "nantou-a",
-    margin: 26.5,
-    competitiveness: "stable-lead",
-    change: 0.1,
-    lastPollDate: "2026-08-20",
-    keyIssues: ["觀光", "青年回流"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 58.0, "dpp"),
-    historical: [hist(2018, "kmt", 65.2, "dpp"), hist(2022, "kmt", 58.0, "dpp")],
-  },
-  {
-    id: "yunlin",
-    name: "雲林縣",
-    nameEn: "Yunlin",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("yunlin-a", "候選人A", "kmt", true), cand("yunlin-b", "候選人B", "dpp")],
-    latestSupport: { "yunlin-a": 38.6, "yunlin-b": 39.2 },
-    leadingId: "yunlin-b",
-    margin: 0.6,
-    competitiveness: "slim-lead",
-    change: 0.5,
-    lastPollDate: "2026-08-21",
-    keyIssues: ["農業", "長照"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 56.1, "dpp"),
-    historical: [hist(2018, "kmt", 53.9, "dpp"), hist(2022, "kmt", 56.1, "dpp")],
-  },
-  {
-    id: "chiayi-city",
-    name: "嘉義市",
-    nameEn: "Chiayi City",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("chiayi-city-a", "候選人A", "kmt", true), cand("chiayi-city-b", "候選人B", "dpp")],
-    latestSupport: { "chiayi-city-a": 42.8, "chiayi-city-b": 39.7 },
-    leadingId: "chiayi-city-a",
-    margin: 3.1,
-    competitiveness: "slim-lead",
-    change: 0.2,
-    lastPollDate: "2026-08-22",
-    keyIssues: ["城市更新", "文化觀光"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 62.2, "dpp"),
-    historical: [hist(2018, "kmt", 64.5, "dpp"), hist(2022, "kmt", 62.2, "dpp")],
-  },
-  {
-    id: "chiayi-county",
-    name: "嘉義縣",
-    nameEn: "Chiayi County",
-    electionType: "mayor",
-    incumbentParty: "dpp",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("chiayi-county-a", "候選人A", "dpp", true), cand("chiayi-county-b", "候選人B", "kmt")],
-    latestSupport: { "chiayi-county-a": 50.2, "chiayi-county-b": 28.1 },
-    leadingId: "chiayi-county-a",
-    margin: 22.1,
-    competitiveness: "stable-lead",
-    change: -0.1,
-    lastPollDate: "2026-08-19",
-    keyIssues: ["農業", "醫療"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "dpp", 60.3, "kmt"),
-    historical: [hist(2018, "dpp", 52.7, "kmt"), hist(2022, "dpp", 60.3, "kmt")],
-  },
-  {
-    id: "pingtung",
-    name: "屏東縣",
-    nameEn: "Pingtung",
-    electionType: "mayor",
-    incumbentParty: "dpp",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("pingtung-a", "候選人A", "dpp", true), cand("pingtung-b", "候選人B", "kmt")],
-    latestSupport: { "pingtung-a": 46.5, "pingtung-b": 31.2 },
-    leadingId: "pingtung-a",
-    margin: 15.3,
-    competitiveness: "stable-lead",
-    change: 0.3,
-    lastPollDate: "2026-08-21",
-    keyIssues: ["觀光", "農漁業"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "dpp", 53.1, "kmt"),
-    historical: [hist(2018, "dpp", 42.0, "kmt"), hist(2022, "dpp", 53.1, "kmt")],
-  },
-  {
-    id: "yilan",
-    name: "宜蘭縣",
-    nameEn: "Yilan",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人B（現任）",
-    candidates: [cand("yilan-a", "候選人A", "dpp"), cand("yilan-b", "候選人B", "kmt", true)],
-    latestSupport: { "yilan-a": 37.4, "yilan-b": 37.1 },
-    leadingId: "yilan-a",
-    margin: 0.3,
-    competitiveness: "tossup",
-    change: 0.1,
-    lastPollDate: "2026-08-20",
-    keyIssues: ["交通", "觀光", "高鐵延伸"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 52.5, "dpp"),
-    historical: [hist(2018, "kmt", 49.6, "dpp"), hist(2022, "kmt", 52.5, "dpp")],
-  },
-  {
-    id: "hualien",
-    name: "花蓮縣",
-    nameEn: "Hualien",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("hualien-a", "候選人A", "kmt", true), cand("hualien-b", "候選人B", "dpp")],
-    latestSupport: { "hualien-a": 55.1, "hualien-b": 20.8 },
-    leadingId: "hualien-a",
-    margin: 34.3,
-    competitiveness: "stable-lead",
-    change: -0.2,
-    lastPollDate: "2026-08-20",
-    keyIssues: ["觀光", "交通重建"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 64.0, "dpp"),
-    historical: [hist(2018, "kmt", 71.6, "dpp"), hist(2022, "kmt", 64.0, "dpp")],
-  },
-  {
-    id: "taitung",
-    name: "台東縣",
-    nameEn: "Taitung",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("taitung-a", "候選人A", "kmt", true), cand("taitung-b", "候選人B", "dpp")],
-    latestSupport: { "taitung-a": 52.4, "taitung-b": 24.6 },
-    leadingId: "taitung-a",
-    margin: 27.8,
-    competitiveness: "stable-lead",
-    change: 0.2,
-    lastPollDate: "2026-08-19",
-    keyIssues: ["觀光", "原鄉發展"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 59.2, "dpp"),
-    historical: [hist(2018, "kmt", 62.3, "dpp"), hist(2022, "kmt", 59.2, "dpp")],
-  },
-  {
-    id: "penghu",
-    name: "澎湖縣",
-    nameEn: "Penghu",
-    electionType: "mayor",
-    incumbentParty: "dpp",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("penghu-a", "候選人A", "dpp", true), cand("penghu-b", "候選人B", "kmt")],
-    latestSupport: { "penghu-a": 39.6, "penghu-b": 36.1 },
-    leadingId: "penghu-a",
-    margin: 3.5,
-    competitiveness: "slim-lead",
-    change: -0.3,
-    lastPollDate: "2026-08-20",
-    keyIssues: ["觀光", "醫療後送"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "dpp", 50.1, "kmt"),
-    historical: [hist(2018, "kmt", 51.0, "dpp"), hist(2022, "dpp", 50.1, "kmt")],
-  },
-  {
-    id: "kinmen",
-    name: "金門縣",
-    nameEn: "Kinmen",
-    electionType: "mayor",
-    incumbentParty: "ind",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("kinmen-a", "候選人A", "ind", true), cand("kinmen-b", "候選人B", "kmt")],
-    latestSupport: { "kinmen-a": 41.2, "kinmen-b": 37.0 },
-    leadingId: "kinmen-a",
-    margin: 4.2,
-    competitiveness: "slim-lead",
-    change: 0.4,
-    lastPollDate: "2026-08-18",
-    keyIssues: ["兩岸觀光", "醫療"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "ind", 42.3, "kmt"),
-    historical: [hist(2018, "kmt", 47.8, "ind"), hist(2022, "ind", 42.3, "kmt")],
-  },
-  {
-    id: "lienchiang",
-    name: "連江縣",
-    nameEn: "Lienchiang",
-    electionType: "mayor",
-    incumbentParty: "kmt",
-    incumbentName: "候選人A（現任）",
-    candidates: [cand("lienchiang-a", "候選人A", "kmt", true), cand("lienchiang-b", "候選人B", "ind")],
-    latestSupport: { "lienchiang-a": 58.3, "lienchiang-b": 25.9 },
-    leadingId: "lienchiang-a",
-    margin: 32.4,
-    competitiveness: "stable-lead",
-    change: 0.1,
-    lastPollDate: "2026-08-18",
-    keyIssues: ["交通", "觀光"],
-    updatedAt: "2026-08-25 09:30",
-    result2022: hist(2022, "kmt", 54.7, "ind"),
-    historical: [hist(2018, "kmt", 61.4, "ind"), hist(2022, "kmt", 54.7, "ind")],
-  },
+const BASE_COUNTIES: BaseCounty[] = [
+  { id: "taipei", name: "台北市", nameEn: "Taipei", incumbentParty: "kmt", incumbentName: "蔣萬安", result2022: result2022("kmt", 42.29, "dpp") },
+  { id: "newtaipei", name: "新北市", nameEn: "New Taipei", incumbentParty: "kmt", incumbentName: "侯友宜", result2022: result2022("kmt", 62.42, "dpp") },
+  { id: "taoyuan", name: "桃園市", nameEn: "Taoyuan", incumbentParty: "kmt", incumbentName: "張善政", result2022: result2022("kmt", 52.02, "dpp") },
+  { id: "taichung", name: "台中市", nameEn: "Taichung", incumbentParty: "kmt", incumbentName: "盧秀燕", result2022: result2022("kmt", 59.35, "dpp") },
+  { id: "tainan", name: "台南市", nameEn: "Tainan", incumbentParty: "dpp", incumbentName: "黃偉哲", result2022: result2022("dpp", 48.8, "kmt") },
+  { id: "kaohsiung", name: "高雄市", nameEn: "Kaohsiung", incumbentParty: "dpp", incumbentName: "陳其邁", result2022: result2022("dpp", undefined, "kmt") },
+  { id: "keelung", name: "基隆市", nameEn: "Keelung", incumbentParty: "kmt", incumbentName: "謝國樑", result2022: result2022("kmt", 52.92, "dpp") },
+  { id: "hsinchu-city", name: "新竹市", nameEn: "Hsinchu City", incumbentParty: "tpp", incumbentName: "高虹安（目前停職；邱臣遠代理）", result2022: result2022("tpp", 45.02, "dpp") },
+  { id: "hsinchu-county", name: "新竹縣", nameEn: "Hsinchu County", incumbentParty: "kmt", incumbentName: "楊文科", result2022: result2022("kmt", 63.36, "dpp") },
+  { id: "miaoli", name: "苗栗縣", nameEn: "Miaoli", incumbentParty: "ind", incumbentName: "鍾東錦", result2022: result2022("ind") },
+  { id: "changhua", name: "彰化縣", nameEn: "Changhua", incumbentParty: "kmt", incumbentName: "王惠美", result2022: result2022("kmt", 56.75, "dpp") },
+  { id: "nantou", name: "南投縣", nameEn: "Nantou", incumbentParty: "kmt", incumbentName: "許淑華", result2022: result2022("kmt", 55.99, "dpp") },
+  { id: "yunlin", name: "雲林縣", nameEn: "Yunlin", incumbentParty: "kmt", incumbentName: "張麗善", result2022: result2022("kmt", 56.57, "dpp") },
+  { id: "chiayi-city", name: "嘉義市", nameEn: "Chiayi City", incumbentParty: "kmt", incumbentName: "黃敏惠", result2022: result2022("kmt") },
+  { id: "chiayi-county", name: "嘉義縣", nameEn: "Chiayi County", incumbentParty: "dpp", incumbentName: "翁章梁", result2022: result2022("dpp") },
+  { id: "pingtung", name: "屏東縣", nameEn: "Pingtung", incumbentParty: "dpp", incumbentName: "周春米", result2022: result2022("dpp") },
+  { id: "yilan", name: "宜蘭縣", nameEn: "Yilan", incumbentParty: "kmt", incumbentName: "林姿妙", result2022: result2022("kmt") },
+  { id: "hualien", name: "花蓮縣", nameEn: "Hualien", incumbentParty: "kmt", incumbentName: "徐榛蔚", result2022: result2022("kmt") },
+  { id: "taitung", name: "台東縣", nameEn: "Taitung", incumbentParty: "kmt", incumbentName: "饒慶鈴", result2022: result2022("kmt") },
+  { id: "penghu", name: "澎湖縣", nameEn: "Penghu", incumbentParty: "dpp", incumbentName: "陳光復", result2022: result2022("dpp") },
+  { id: "kinmen", name: "金門縣", nameEn: "Kinmen", incumbentParty: "ind", incumbentName: "陳福海", result2022: result2022("ind") },
+  { id: "lienchiang", name: "連江縣", nameEn: "Lienchiang", incumbentParty: "kmt", incumbentName: "王忠銘", result2022: result2022("kmt") },
 ];
 
-/** 縣市 id -> 選情 的快速查詢 */
-export const COUNTY_MAP: Record<string, CountyRace> = Object.fromEntries(
-  COUNTIES.map((c) => [c.id, c]),
-);
+function latestRecord(records: PollRecord[]): PollRecord | undefined {
+  const kindRank = { primary: 0, internal: 1, public: 2 } as const;
+  return [...records].sort((a, b) =>
+    a.date.localeCompare(b.date)
+    || (kindRank[a.sourceKind ?? "public"] - kindRank[b.sourceKind ?? "public"])
+    || Object.keys(a.results).length - Object.keys(b.results).length
+    || a.id.localeCompare(b.id),
+  ).at(-1);
+}
 
+function pollFields(base: BaseCounty) {
+  const record = latestRecord(MAJOR_CITY_POLLS[base.id] ?? []);
+  const candidates = (POLL_CANDIDATES[base.id] ?? []).map((item) => ({
+    ...item,
+    isIncumbent: base.incumbentName === item.name || base.incumbentName.startsWith(`${item.name}（`),
+  }));
+  if (!record || candidates.length === 0) {
+    return {
+      candidates: [], latestSupport: {}, leadingId: "", margin: 0,
+      competitiveness: "insufficient" as const, change: 0, lastPollDate: "",
+      dataStatus: "insufficient" as const,
+      dataNote: "截至核驗日，公開索引尚無至少兩名人選皆有數字的縣市長支持度民調。",
+    };
+  }
+  const ordered = Object.entries(record.results).sort((a, b) => b[1] - a[1]);
+  const margin = Number(((ordered[0]?.[1] ?? 0) - (ordered[1]?.[1] ?? 0)).toFixed(2));
+  return {
+    candidates, latestSupport: { ...record.results }, leadingId: ordered[0]?.[0] ?? "", margin,
+    competitiveness: record.marginOfError !== undefined && margin <= record.marginOfError
+      ? "tossup" as const
+      : margin <= 10 ? "slim-lead" as const : "stable-lead" as const,
+    change: 0, lastPollDate: record.date, dataStatus: "verified-poll" as const,
+    dataSource: record.source, dataSourceUrl: record.sourceUrl,
+    dataNote: `地圖採最新一筆「${record.scenario ?? "候選人支持度"}」題目；同日其他組合仍完整保留於下方民調表。人名為問卷選項，不代表已完成候選人登記。`,
+  };
+}
+
+export const COUNTIES: CountyRace[] = BASE_COUNTIES.map((base) => ({
+  ...base,
+  electionType: "mayor",
+  ...pollFields(base),
+  keyIssues: [],
+  updatedAt: checkedAt,
+  historical: [base.result2022],
+}));
+
+export const COUNTY_MAP: Record<string, CountyRace> = Object.fromEntries(COUNTIES.map((county) => [county.id, county]));
+export const getCounty = (id: string) => COUNTY_MAP[id];
 export const MAJOR_CITY_NAMES = ["台北市", "新北市", "桃園市", "台中市", "台南市", "高雄市"];
-
-export function getCounty(id: string): CountyRace | undefined {
-  return COUNTY_MAP[id];
-}
-
-export function getElectionTypeOf(id: string): ElectionType {
-  return COUNTY_MAP[id]?.electionType ?? "mayor";
-}

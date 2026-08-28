@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo } from "react";
+import dynamic from "next/dynamic";
 import type { EChartsOption } from "echarts";
-import EChart from "./EChart";
 import { partyColor } from "@/lib/constants";
 import { fmtShortDate } from "@/lib/utils/format";
 import type { Candidate, CountyPollTrend, PartyId } from "@/lib/types";
@@ -11,6 +11,13 @@ interface PollTrendChartProps {
   trend: CountyPollTrend;
   candidates: Candidate[];
   height?: number;
+}
+
+const EChart = dynamic(() => import("./EChart"), { ssr: false });
+
+function fmtArchiveDate(value: string) {
+  const [year, month, day] = value.split("-");
+  return year && month && day ? `${year.slice(2)}/${Number(month)}/${Number(day)}` : value;
 }
 
 /**
@@ -24,19 +31,23 @@ export default function PollTrendChart({
   candidates,
   height = 280,
 }: PollTrendChartProps) {
+  const latestRecord = [...trend.records].sort(
+    (a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id),
+  ).at(-1);
+  const candidateById = new Map(candidates.map((candidate) => [candidate.id, candidate]));
   const option = useMemo<EChartsOption>(() => {
-    const dates = Array.from(
-      new Set(trend.series.flatMap((s) => s.points.map((p) => p.date))),
-    ).sort();
-    const dateIndex = new Map(dates.map((d, i) => [d, i]));
+    const records = [...trend.records].sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
+    const recordIds = records.map((record) => record.id);
+    const recordById = new Map(records.map((record) => [record.id, record]));
+    const recordIndex = new Map(recordIds.map((id, i) => [id, i]));
 
     const candidateById = new Map(candidates.map((c) => [c.id, c]));
 
     const lineSeries = trend.series.map((s) => {
       const cand = candidateById.get(s.candidateId);
       const color = partyColor(cand?.partyId as PartyId);
-      const data = dates.map((d) => {
-        const p = s.points.find((x) => x.date === d);
+      const data = recordIds.map((recordId) => {
+        const p = s.points.find((x) => x.recordId === recordId);
         if (!p) return null;
         return {
           value: p.value,
@@ -63,8 +74,8 @@ export default function PollTrendChart({
     const errorSeries = trend.series.map((s) => {
       const cand = candidateById.get(s.candidateId);
       const color = partyColor(cand?.partyId as PartyId);
-      const data = s.points.map((p) => [
-        dateIndex.get(p.date) as number,
+      const data = s.points.filter((p) => p.marginError !== undefined).map((p) => [
+        recordIndex.get(p.recordId) as number,
         p.value,
         p.marginError,
       ]);
@@ -112,9 +123,8 @@ export default function PollTrendChart({
           if (lineParams.length === 0) return "";
           const first = lineParams[0];
           const meta = first.data;
-          const head = `<div style="font-weight:600;margin-bottom:4px">${fmtShortDate(
-            first.axisValue,
-          )}</div>`;
+          const record = recordById.get(String(first.axisValue));
+          const head = `<div style="font-weight:600;margin-bottom:4px">${record?.date ?? fmtShortDate(String(first.axisValue))}${record?.scenario ? ` · ${record.scenario}` : ""}</div>`;
           const rows = lineParams
             .map((p: any) => {
               const color = p.color || "#888";
@@ -125,7 +135,7 @@ export default function PollTrendChart({
             })
             .join("");
           const foot = meta
-            ? `<div style="margin-top:6px;font-size:10px;color:#8A8F99">${meta.institute} · 樣本 ${meta.sampleSize} · 誤差 ±${meta.moe}%</div>`
+            ? `<div style="margin-top:6px;font-size:10px;color:#8A8F99">${meta.institute} · ${meta.sampleSize ? `樣本 ${meta.sampleSize}` : "樣本未揭露"} · ${meta.moe !== undefined ? `誤差 ±${meta.moe}%` : "誤差未揭露"}</div>`
             : "";
           return head + rows + foot;
         },
@@ -140,11 +150,16 @@ export default function PollTrendChart({
       },
       xAxis: {
         type: "category",
-        data: dates,
+        data: recordIds,
         boundaryGap: false,
         axisLine: { lineStyle: { color: "#E7E4DC" } },
         axisTick: { show: false },
-        axisLabel: { fontSize: 10, color: "#8A8F99", formatter: (v: string) => fmtShortDate(v) },
+        axisLabel: {
+          fontSize: 10,
+          color: "#8A8F99",
+          hideOverlap: true,
+          formatter: (value: string) => fmtArchiveDate(recordById.get(value)?.date ?? value),
+        },
       },
       yAxis: {
         type: "value",
@@ -157,11 +172,25 @@ export default function PollTrendChart({
   }, [trend, candidates]);
 
   return (
-    <EChart
-      option={option}
-      className="w-full"
-      style={{ height }}
-      ariaLabel={`${trend.countyId} 民調趨勢圖`}
-    />
+    <div>
+      <div className="sr-only">
+        <p>民調趨勢圖。共 {trend.records.length} 筆問卷情境。</p>
+        {latestRecord && (
+          <p>
+            最新一筆為 {latestRecord.date}，{latestRecord.institute}，
+            {Object.entries(latestRecord.results)
+              .sort((a, b) => b[1] - a[1])
+              .map(([id, value]) => `${candidateById.get(id)?.name ?? id} ${value}%`)
+              .join("、")}。
+          </p>
+        )}
+      </div>
+      <EChart
+        option={option}
+        className="w-full"
+        style={{ height }}
+        ariaLabel={`${trend.countyId} 民調趨勢圖`}
+      />
+    </div>
   );
 }

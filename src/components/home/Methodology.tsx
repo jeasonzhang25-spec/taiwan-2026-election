@@ -1,4 +1,5 @@
 import { SOURCES } from "@/lib/data/sources";
+import { POLL_COUNTY_COUNT, POLL_RECORD_COUNT } from "@/lib/data/polling";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 
 const READING_POINTS: { title: string; body: string }[] = [
@@ -8,11 +9,11 @@ const READING_POINTS: { title: string; body: string }[] = [
   },
   {
     title: "不同機構資料如何處理",
-    body: "各家機構的樣本、調查方式（市話／手機／網路）與誤差範圍不盡相同，故以「折線＋資料點」並陳，而非混成單一平滑曲線，方便你比較來源差異。",
+    body: "各家機構的樣本、調查方式與誤差範圍不盡相同，故以「折線＋資料點」並陳；來源未公開的方法欄位會顯示「未揭露」，不自行猜填。",
   },
   {
     title: "誤差範圍意味著什麼",
-    body: "誤差範圍（±%）代表抽樣誤差的區間。當兩名候選人的差距小於誤差範圍時，實際領先者仍可能不同，這正是「五五波」的判斷依據。",
+    body: "誤差範圍（±%）代表抽樣誤差的區間。只有該筆資料已揭露抽樣誤差時，才用「差距不大於誤差」判為五五波；未揭露者不做這項推斷。",
   },
   {
     title: "「領先」不等於預測當選",
@@ -20,11 +21,11 @@ const READING_POINTS: { title: string; body: string }[] = [
   },
   {
     title: "資料多久更新一次",
-    body: "演示版本為靜態資料；正式版本將以固定頻率（如每日）更新，並於導覽列標示最後更新時間。",
+    body: "外部媒體標題索引每 30 分鐘嘗試更新；民調同步工作流也以 30 分鐘為檢查週期，只有內容改變且驗證通過才發布。平台排程仍可能延遲。",
   },
   {
-    title: "模擬資料與真實資料的區別",
-    body: "目前所有民調、候選人與支持度皆為演示用虛構資料，僅供介面展示。接入真實資料後，此警示區將自動移除。",
+    title: "沒有資料如何呈現",
+    body: "公開索引空表或沒有至少兩名人選數字的縣市一律標示「尚無民調」並以灰色呈現，不推估領先政黨、不補虛構候選人。",
   },
 ];
 
@@ -33,7 +34,7 @@ export default function Methodology() {
     <section id="methodology" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
       <SectionTitle
         title="如何閱讀本看板"
-        subtitle="幾個關鍵概念，幫助你正確理解選情數據。"
+        subtitle={`目前收錄 ${POLL_RECORD_COUNT} 筆問卷情境、涵蓋 ${POLL_COUNTY_COUNT} 個縣市；以下是正確閱讀方式。`}
       />
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -46,7 +47,10 @@ export default function Methodology() {
       </div>
 
       <div className="mt-6">
-        <h3 className="mb-3 text-sm font-semibold text-ink">資料來源</h3>
+        <div className="mb-3 flex items-center justify-between gap-4">
+          <h3 className="text-sm font-semibold text-ink">資料來源</h3>
+          <a href="/data-status" className="text-xs font-medium text-[#245D91] hover:underline">查看完整資料狀態 →</a>
+        </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {SOURCES.map((s) => (
             <div key={s.name} className="flex flex-col rounded-xl border border-line bg-surface p-4 shadow-card">

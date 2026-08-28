@@ -1,6 +1,6 @@
 import { DEMO_DISCLAIMER } from "@/lib/constants";
 
-/** 演示資料警示（全域統一樣式） */
+/** 資料邊界（全域統一樣式） */
 export function DataDisclaimer({ className = "" }: { className?: string }) {
   return (
     <div

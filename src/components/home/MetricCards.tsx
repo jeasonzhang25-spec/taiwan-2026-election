@@ -4,7 +4,7 @@ import { useDashboard } from "@/context/ElectionContext";
 import { COUNTIES } from "@/lib/data/counties";
 import { MAJOR_CITY_POLLS } from "@/lib/data/polling";
 import { PARTY_LIST, ELECTION_DAY } from "@/lib/constants";
-import { filterCounties, filterPollRecords, countLeadingByParty, countTossups } from "@/lib/utils/filter";
+import { filterCounties, filterPollRecords, countLeadingByParty, countTossups, countInsufficient } from "@/lib/utils/filter";
 import { daysUntil } from "@/lib/utils/format";
 import { PartyDot } from "@/components/ui/PartyDot";
 import { DataDisclaimer } from "@/components/ui/DataDisclaimer";
@@ -15,6 +15,7 @@ export default function MetricCards() {
 
   const leadingByParty = countLeadingByParty(filtered);
   const tossups = countTossups(filtered);
+  const insufficient = countInsufficient(filtered);
 
   const pollRecords = Object.values(MAJOR_CITY_POLLS).flat();
   const filteredPollCount = filterPollRecords(pollRecords, filters).length;
@@ -43,21 +44,26 @@ export default function MetricCards() {
               <span className="text-xs text-ink-secondary">五五波</span>
               <span className="num text-base font-semibold text-ink">{tossups}</span>
             </span>
+            <span className="inline-flex items-center gap-1.5" title="尚無公開候選人支持度數字">
+              <span className="inline-block h-[11px] w-[11px] rounded-[3px] border border-line bg-[#EDEBE5]" />
+              <span className="text-xs text-ink-secondary">尚無數字</span>
+              <span className="num text-base font-semibold text-ink">{insufficient}</span>
+            </span>
           </div>
         </div>
 
         {/* 膠著縣市數量 */}
         <div className="rounded-xl border border-line bg-surface p-3 shadow-card sm:p-4">
-          <div className="text-xs text-ink-secondary">膠著縣市數量</div>
+          <div className="text-xs text-ink-secondary">有公開民調縣市</div>
           <div className="mt-2 flex items-baseline gap-2">
-            <span className="num text-2xl font-semibold text-ink sm:text-3xl">{tossups}</span>
-            <span className="hidden text-xs text-ink-muted sm:inline">個縣市呈五五波</span>
+            <span className="num text-2xl font-semibold text-ink sm:text-3xl">{filtered.length - insufficient}</span>
+            <span className="hidden text-xs text-ink-muted sm:inline">／22 個縣市</span>
           </div>
         </div>
 
         {/* 已收錄公開民調 */}
         <div className="rounded-xl border border-line bg-surface p-3 shadow-card sm:p-4">
-          <div className="text-xs text-ink-secondary">已收錄公開民調</div>
+          <div className="text-xs text-ink-secondary">已收錄民調情境</div>
           <div className="mt-2 flex items-baseline gap-2">
             <span className="num text-2xl font-semibold text-ink sm:text-3xl">{filteredPollCount}</span>
             <span className="text-xs text-ink-muted">筆</span>

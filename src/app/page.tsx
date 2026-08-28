@@ -9,7 +9,10 @@ import MapSection from "@/components/home/MapSection";
 import PollTrendSection from "@/components/home/PollTrendSection";
 import PartyMapSection from "@/components/home/PartyMapSection";
 import CountyTable from "@/components/home/CountyTable";
+import LiveDataSection from "@/components/home/LiveDataSection";
 import Methodology from "@/components/home/Methodology";
+import TrustCenterSection from "@/components/home/TrustCenterSection";
+import MetroPagesSection from "@/components/home/MetroPagesSection";
 import CountyDrawer from "@/components/drawer/CountyDrawer";
 
 function DashboardContent() {
@@ -18,7 +21,10 @@ function DashboardContent() {
       <HeroFilter />
       <MetricCards />
       <MapSection />
+      <MetroPagesSection />
       <CountyTable />
+      <LiveDataSection />
+      <TrustCenterSection />
       <PollTrendSection />
       <PartyMapSection />
       <Methodology />

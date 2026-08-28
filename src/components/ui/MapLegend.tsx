@@ -26,7 +26,7 @@ export default function MapLegend({ mode }: { mode: DisplayMode }) {
         </span>
         <span className="inline-flex items-center gap-1.5">
           <span className="inline-block h-3 w-3 rounded-[3px] bg-[#EDEBE5] border border-line" />
-          無資料
+          尚無民調
         </span>
       </div>
     );
@@ -38,7 +38,7 @@ export default function MapLegend({ mode }: { mode: DisplayMode }) {
       ["#C3B4E4", "小幅領先"],
       ["#9B7BD1", "五五波"],
       ["#6A3FA8", "可能翻轉"],
-      ["#E6E4DE", "資料不足"],
+      ["#E6E4DE", "尚無民調"],
     ];
     return (
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] text-ink-secondary">

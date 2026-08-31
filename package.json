@@ -10,7 +10,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "sync:polls": "python3 scripts/sync-public-polls.py",
-    "validate:polls": "python3 scripts/validate-public-polls.py"
+    "validate:polls": "python3 scripts/validate-public-polls.py",
+    "verify:poll-sources": "python3 scripts/verify-poll-sources.py"
   },
   "dependencies": {
     "echarts": "^5.5.1",

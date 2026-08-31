@@ -15,7 +15,7 @@
 | 樣式 | Tailwind CSS 3 |
 | 圖表 | ECharts 5（canvas 渲染，自建輕量 React 封裝） |
 | 地圖 | 台灣 22 縣市 GeoJSON（本地 `public/data`，Douglas-Peucker 簡化，未變形，含金門／連江離島） |
-| 資料 | 公開民調同步腳本、靜態 JSON、RSS 媒體索引 |
+| 資料 | 公開民調同步腳本、靜態 JSON、5 分鐘近即時 RSS 媒體索引 |
 | 主題 | 預設淺色；預留開票夜深色模式 |
 
 核心民調與地圖在建置時寫入本地；外部媒體標題由伺服器端接口定時快取。
@@ -44,6 +44,7 @@ npm run typecheck
 # 5. 重新同步並驗證公開民調
 npm run sync:polls
 npm run validate:polls
+npm run verify:poll-sources
 ```
 
 ---
@@ -90,7 +91,7 @@ election-dashboard/
 
 ## 資料更新與發布
 
-公開民調同步器位於 `scripts/sync-public-polls.py`，輸出為 `src/lib/data/generated/public-polls.json`。`scripts/validate-public-polls.py` 會在發布前檢查筆數、覆蓋縣市、日期、百分比、來源連結與候選人對應。
+公開民調同步器位於 `scripts/sync-public-polls.py`，輸出為 `src/lib/data/generated/public-polls.json`。`scripts/validate-public-polls.py` 會在發布前檢查筆數、覆蓋縣市、日期、百分比、來源連結與候選人對應；`scripts/verify-poll-sources.py` 另行檢查來源連線、內容指紋與已發布數字變更，輸出人工複核佇列至 `src/lib/data/generated/poll-source-audit.json`。
 
 1. **`src/lib/data/counties.ts`**
    22 縣市的候選人、最新支持度、領先者、領先差距、競爭評級、現任首長、關鍵議題、2022 結果與歷史版圖。對應型別 `CountyRace`。
@@ -102,7 +103,7 @@ election-dashboard/
    資料來源卡片（`SOURCES`）與來源篩選選項（`SOURCE_OPTIONS`）。填上 `url` 即可啟用「前往來源」連結。
 
 4. **`src/lib/constants.ts`**
-   投票日 `ELECTION_DAY`、最後更新時間 `LAST_UPDATED`、政黨顏色 `PARTIES`。
+   投票日 `ELECTION_DAY`、政黨顏色 `PARTIES` 等穩定設定。民調核驗時間不再手動填寫，統一讀取同步資料中的 `POLL_DATA_CHECKED_AT`。
 
 ### 從 API / 資料庫遷移
 
@@ -113,7 +114,15 @@ election-dashboard/
 
 ### 自動排程
 
-`.github/workflows/sync-polls.yml` 會定期同步、驗證、執行型別檢查與正式建置。只有資料內容真正改變且全部檢查通過時才建立更新提交；上傳 GitHub 並啟用 Actions 後生效。
+`.github/workflows/sync-polls.yml` 會定期同步、執行雙層驗證、型別檢查與正式建置。已發布支持度被改寫時會阻擋新版；來源限制或辨識不足則進入人工複核佇列。流程失敗會建立 GitHub Issue，恢復後自動關閉。`.github/workflows/monitor-poll-freshness.yml` 每 6 小時檢查資料時效，超過 72 小時未成功核驗時另行提醒。上傳 GitHub 並啟用 Actions 後生效。
+
+資料狀態頁會分開顯示：
+
+- **目錄最近檢查**：同步器最近成功核對公開索引的日期。
+- **內容最近變化**：結構化民調內容上次真正改變的時間。
+- **即時媒體索引**：頁面開啟後每 5 分鐘嘗試刷新，只作線索索引，不會自動改寫地圖或民調數字。
+
+驗證器會阻擋重複 ID、未知縣市、未登錄人選、未來日期、異常百分比、無效來源網址，以及不合理的樣本數或抽樣誤差；原始來源未揭露的樣本、方法、發布日期等欄位則列為透明度警告，不自行補猜。
 
 ---
 

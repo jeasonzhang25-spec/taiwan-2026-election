@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: sync-public-polls
@@ -15,6 +16,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: 讀取網站程式
         uses: actions/checkout@v4
@@ -34,12 +36,23 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: 保留上一版作為異常縮水基準
-        run: cp src/lib/data/generated/public-polls.json /tmp/public-polls.previous.json
+        run: |
+          cp src/lib/data/generated/public-polls.json /tmp/public-polls.previous.json
+          if [ -f src/lib/data/generated/poll-source-audit.json ]; then
+            cp src/lib/data/generated/poll-source-audit.json /tmp/poll-source-audit.previous.json
+          fi
 
       - name: 重新整理與驗證民調資料
         run: |
           npm run sync:polls
-          npm run validate:polls -- --previous /tmp/public-polls.previous.json
+          npm run validate:polls -- --previous /tmp/public-polls.previous.json | tee /tmp/poll-validation.txt
+
+      - name: 核驗原始來源與偵測已發布數字變更
+        run: |
+          npm run verify:poll-sources -- \
+            --previous-data /tmp/public-polls.previous.json \
+            --previous-audit /tmp/poll-source-audit.previous.json \
+            | tee /tmp/poll-source-audit.txt
 
       - name: 驗證網站
         run: |
@@ -49,12 +62,91 @@ jobs:
 
       - name: 保存有意義的資料變更
         run: |
-          if git diff --quiet -- src/lib/data/generated/public-polls.json; then
-            echo "資料內容沒有改變"
+          poll_changed=false
+          if ! git diff --quiet -- src/lib/data/generated/public-polls.json; then
+            poll_changed=true
+          fi
+          audit_content_changed=$(node -p "require('./src/lib/data/generated/poll-source-audit.json').summary.contentChangedCount")
+          if [ "$poll_changed" = false ] && [ "$audit_content_changed" -eq 0 ]; then
+            echo "民調資料與民調證據都沒有改變；暫時性連線狀態不建立提交"
             exit 0
           fi
           git config user.name "island-election-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/lib/data/generated/public-polls.json
-          git commit -m "data: 同步公開民調"
+          git add src/lib/data/generated/public-polls.json src/lib/data/generated/poll-source-audit.json
+          git commit -m "data: 同步並核驗公開民調"
           git push
+
+      - name: 寫入失敗摘要
+        if: failure()
+        run: |
+          echo "## 公開民調同步失敗" >> "$GITHUB_STEP_SUMMARY"
+          echo "上一版已發布資料不會被覆蓋。請檢查來源網站結構、網路狀態、資料驗證或網站建置紀錄。" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f /tmp/poll-validation.txt ]; then
+            echo '```text' >> "$GITHUB_STEP_SUMMARY"
+            tail -80 /tmp/poll-validation.txt >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f /tmp/poll-source-audit.txt ]; then
+            echo '```text' >> "$GITHUB_STEP_SUMMARY"
+            tail -80 /tmp/poll-source-audit.txt >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: 建立或更新失敗提醒
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "[自動提醒] 民調同步或核驗失敗";
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            const body = [
+              "民調同步、來源核驗或網站建置沒有完成，上一版可用資料未被覆蓋。",
+              "",
+              `工作流：${context.workflow}`,
+              `執行時間：${new Date().toISOString()}`,
+              `查看紀錄：https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join("\n");
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              });
+            }
+
+      - name: 核驗恢復後關閉提醒
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "[自動提醒] 民調同步或核驗失敗";
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: "closed",
+              });
+            }

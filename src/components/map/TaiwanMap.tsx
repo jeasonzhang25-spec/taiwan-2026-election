@@ -29,6 +29,18 @@ function pollChangeColor(change: number): string {
 
 const NO_DATA_COLOR = "#EDEBE5";
 const TOSSUP_COLOR = "#DBD8D0";
+const COMPACT_LABEL_COUNTIES = new Set([
+  "keelung",
+  "hsinchu-city",
+  "chiayi-city",
+  "penghu",
+  "kinmen",
+  "lienchiang",
+]);
+
+function countyLabel(county: CountyRace): string {
+  return county.name.replace(/[縣市]$/, "");
+}
 
 function colorFor(county: CountyRace, mode: DisplayMode): string {
   if (county.dataStatus === "insufficient") return NO_DATA_COLOR;
@@ -89,9 +101,20 @@ export default function TaiwanMap({
       const isFiltered = filteredIds.has(c.id);
       const color = isFiltered ? colorFor(c, mode) : NO_DATA_COLOR;
       const isSelected = c.id === selectedId;
+      const fontSize = COMPACT_LABEL_COUNTIES.has(c.id) ? 7 : 8;
       return {
         name: c.name,
         value: isFiltered ? c.margin : undefined,
+        label: {
+          // 詳情抽屜已顯示縣市名；隱藏選中區標籤，讓版圖輪廓完整露出。
+          show: !isSelected,
+          formatter: countyLabel(c),
+          color: "#3F4652",
+          fontSize,
+          fontWeight: 500,
+          textBorderColor: "rgba(255,255,255,0.92)",
+          textBorderWidth: 2,
+        },
         itemStyle: {
           areaColor: color,
           borderColor: isSelected ? "#111827" : "#FFFFFF",
@@ -103,7 +126,14 @@ export default function TaiwanMap({
             areaColor: isFiltered ? color : NO_DATA_COLOR,
             opacity: 1,
           },
-          label: { show: true, color: "#111827", fontWeight: 600 },
+          label: {
+            show: !isSelected,
+            color: "#111827",
+            fontSize,
+            fontWeight: 600,
+            textBorderColor: "rgba(255,255,255,0.96)",
+            textBorderWidth: 2,
+          },
         },
       };
     });
@@ -152,13 +182,7 @@ export default function TaiwanMap({
           layoutSize: "100%",
           selectedMode: false,
           label: {
-            show: true,
-            color: "#4B5563",
-            fontSize: 9,
-            formatter: (p: any) => {
-              const c = byId[nameToId[p.name]];
-              return c ? c.name.replace(/[縣市]$/, "") : p.name;
-            },
+            show: false,
           },
           data,
         },

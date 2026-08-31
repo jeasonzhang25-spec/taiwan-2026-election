@@ -52,7 +52,7 @@ export default function CountyPage({ params }: { params: { countyId: string } })
     <>
       <InfoPageHeader />
       <main id="main-content">
-        <section className="border-b border-line bg-[#F0F3F6]">
+        <section className="border-b border-line bg-brand-mist">
           <div className="mx-auto max-w-page px-4 pb-8 pt-6 sm:px-6 lg:px-8">
             <nav className="flex flex-wrap items-center gap-2 text-xs text-ink-muted" aria-label="麵包屑">
               <a href="/" className="hover:text-ink">全台總覽</a><span aria-hidden="true">/</span><span className="text-ink-secondary">{county.name}</span>
@@ -60,11 +60,11 @@ export default function CountyPage({ params }: { params: { countyId: string } })
             <div className="mt-5 grid gap-6 lg:grid-cols-[1fr_380px] lg:items-end">
               <div>
                 <div className="flex flex-wrap items-center gap-2"><span className="rounded-full bg-white px-2.5 py-1 text-xs font-medium text-ink-secondary shadow-card">六都專頁</span><CompetitivenessBadge value={county.competitiveness} /></div>
-                <h1 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">{county.name} 2026 選情</h1>
+                <h1 className="mt-3 text-3xl font-semibold tracking-[-0.025em] text-ink sm:text-[40px] sm:leading-[1.15]">{county.name} 2026 選情</h1>
                 <p className="mt-3 max-w-2xl text-sm leading-6 text-ink-secondary">逐筆比較 {records.length} 筆公開問卷情境，並追蹤正式候選人登記、政見來源與後續資料更新。人名目前仍是民調選項，不代表中選會正式名冊。</p>
-                <div className="mt-4 flex flex-wrap gap-2">{METRO_COUNTY_IDS.map((id) => <a key={id} href={`/county/${id}`} aria-current={id === county.id ? "page" : undefined} className={`rounded-full border px-3 py-1.5 text-xs ${id === county.id ? "border-ink bg-ink text-white" : "border-line-strong bg-white text-ink-secondary hover:text-ink"}`}>{COUNTY_MAP[id]?.name}</a>)}</div>
+                <div className="mt-4 flex flex-wrap gap-2">{METRO_COUNTY_IDS.map((id) => <a key={id} href={`/county/${id}`} aria-current={id === county.id ? "page" : undefined} className={`inline-flex min-h-9 items-center rounded-lg border px-3 text-[13px] font-medium ${id === county.id ? "border-brand bg-brand text-white" : "border-line-strong bg-white text-ink-secondary hover:text-ink"}`}>{COUNTY_MAP[id]?.name}</a>)}</div>
               </div>
-              <div className="rounded-xl border border-white/80 bg-white p-5 shadow-card">
+              <div className="rounded-2xl border border-white/80 bg-white p-5">
                 <div className="text-xs text-ink-muted">2022 當選首長</div>
                 <div className="mt-2 flex items-center gap-2"><PartyDot party={county.incumbentParty} size={12} /><span className="text-lg font-semibold text-ink">{county.incumbentName}</span><span className="text-sm text-ink-secondary">{partyName(county.incumbentParty)}</span></div>
                 <div className="mt-4 grid grid-cols-3 gap-3 border-t border-line pt-4 text-center"><div><div className="num text-lg font-semibold">{records.length}</div><div className="mt-1 text-[11px] text-ink-muted">民調情境</div></div><div><div className="num text-lg font-semibold">{sourceCount}</div><div className="mt-1 text-[11px] text-ink-muted">發布來源</div></div><div><div className="num text-sm font-semibold">{latestRecord?.date ?? "—"}</div><div className="mt-1 text-[11px] text-ink-muted">最新日期</div></div></div>
@@ -74,7 +74,7 @@ export default function CountyPage({ params }: { params: { countyId: string } })
         </section>
 
         <nav className="sticky top-0 z-30 border-b border-line bg-canvas/95 backdrop-blur" aria-label={`${county.name}頁面導覽`}>
-          <div className="mx-auto flex max-w-page gap-1 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8"><a href="#overview" className="whitespace-nowrap rounded-md px-3 py-2 text-sm text-ink-secondary hover:bg-white hover:text-ink">最新概況</a><a href="#poll-comparison" className="whitespace-nowrap rounded-md px-3 py-2 text-sm text-ink-secondary hover:bg-white hover:text-ink">民調比較</a><a href="#policies" className="whitespace-nowrap rounded-md px-3 py-2 text-sm text-ink-secondary hover:bg-white hover:text-ink">政見資料</a><a href="#subscriptions" className="whitespace-nowrap rounded-md px-3 py-2 text-sm text-ink-secondary hover:bg-white hover:text-ink">訂閱提醒</a></div>
+          <div className="mx-auto flex max-w-page gap-1 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8"><a href="#overview" className="inline-flex min-h-10 items-center whitespace-nowrap rounded-lg px-3 text-sm font-medium text-ink-secondary hover:bg-white hover:text-brand">最新概況</a><a href="#poll-comparison" className="inline-flex min-h-10 items-center whitespace-nowrap rounded-lg px-3 text-sm font-medium text-ink-secondary hover:bg-white hover:text-brand">民調比較</a><a href="#policies" className="inline-flex min-h-10 items-center whitespace-nowrap rounded-lg px-3 text-sm font-medium text-ink-secondary hover:bg-white hover:text-brand">政見資料</a><a href="#subscriptions" className="inline-flex min-h-10 items-center whitespace-nowrap rounded-lg px-3 text-sm font-medium text-ink-secondary hover:bg-white hover:text-brand">訂閱提醒</a></div>
         </nav>
 
         <div className="mx-auto max-w-page space-y-16 px-4 py-10 sm:px-6 lg:px-8">

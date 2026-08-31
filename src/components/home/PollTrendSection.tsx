@@ -16,7 +16,6 @@ export default function PollTrendSection() {
   const [selected, setSelected] = useState<string[]>([
     "taipei",
     "newtaipei",
-    "kaohsiung",
   ]);
 
   function toggle(id: string) {
@@ -28,7 +27,7 @@ export default function PollTrendSection() {
   }
 
   return (
-    <section id="trend" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
+    <section id="trend" className="mx-auto max-w-page scroll-mt-20 px-4 pt-16 sm:px-6 lg:px-8">
       <SectionTitle
         title="公開民調完整資料庫"
         subtitle="逐題保留已公開數字與來源連結；黨內參、初選民調另作標記，不補點、不平滑，也不把不同題目硬做平均。"
@@ -44,9 +43,9 @@ export default function PollTrendSection() {
               key={id}
               onClick={() => toggle(id)}
               aria-pressed={active}
-              className={`rounded-full border px-3.5 py-1.5 text-xs transition-colors duration-150 ${
+              className={`min-h-9 rounded-lg border px-3.5 py-1.5 text-[13px] font-medium transition-colors duration-150 ${
                 active
-                  ? "border-ink bg-ink text-white"
+                  ? "border-brand bg-brand text-white"
                   : "border-line bg-surface text-ink-secondary hover:border-line-strong hover:text-ink"
               }`}
             >
@@ -58,14 +57,14 @@ export default function PollTrendSection() {
       </div>
 
       {/* 圖表網格 */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {selected.map((id) => {
           const county = COUNTY_MAP[id];
           if (!county) return null;
           const records = filterPollRecords(MAJOR_CITY_POLLS[id] ?? [], filters);
           const trend = buildSeries(id, records);
           return (
-            <div key={id} className="rounded-xl border border-line bg-surface p-4 shadow-card">
+            <div key={id} className="rounded-2xl border border-line bg-surface p-4 sm:p-5">
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="text-sm font-semibold text-ink">{county.name}</h3>
               </div>

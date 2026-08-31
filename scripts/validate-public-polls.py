@@ -5,10 +5,11 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -54,6 +55,20 @@ def main() -> None:
     if not isinstance(candidates, dict):
         raise SystemExit("ERROR: candidates must be an object")
 
+    today_taipei = datetime.now(ZoneInfo("Asia/Taipei")).date()
+    try:
+        checked_at = date.fromisoformat(str(payload.get("checkedAt")))
+        if checked_at > today_taipei:
+            errors.append("checkedAt is in the future for Asia/Taipei")
+    except ValueError:
+        errors.append(f"invalid checkedAt {payload.get('checkedAt')!r}")
+    try:
+        datetime.fromisoformat(str(payload.get("generatedAt")).replace("Z", "+00:00"))
+    except ValueError:
+        errors.append(f"invalid generatedAt {payload.get('generatedAt')!r}")
+    if not is_source_url(payload.get("indexUrl")):
+        errors.append("indexUrl must be a valid web URL")
+
     ids: set[str] = set()
     coverage: set[str] = set()
     for index, record in enumerate(records):
@@ -75,12 +90,17 @@ def main() -> None:
         else:
             coverage.add(county_id)
 
+        poll_date: date | None = None
         try:
             poll_date = date.fromisoformat(str(record.get("date")))
-            if poll_date > date.today():
+            if poll_date > today_taipei:
                 errors.append(f"{label}: poll date is in the future")
         except ValueError:
             errors.append(f"{label}: invalid ISO date {record.get('date')!r}")
+
+        for field in ("institute", "source", "scenario", "fieldwork"):
+            if not isinstance(record.get(field), str) or not record.get(field, "").strip():
+                errors.append(f"{label}: missing {field}")
 
         if record.get("sourceKind") not in VALID_SOURCE_KINDS:
             errors.append(f"{label}: invalid sourceKind {record.get('sourceKind')!r}")
@@ -88,6 +108,43 @@ def main() -> None:
             errors.append(f"{label}: sourceUrl must be a valid web URL")
         elif str(record.get("sourceUrl")).startswith("http://"):
             warnings.append(f"{label}: source only provides an HTTP link")
+
+        sample_size = record.get("sampleSize")
+        if sample_size is not None and (
+            isinstance(sample_size, bool)
+            or not isinstance(sample_size, int)
+            or sample_size <= 0
+        ):
+            errors.append(f"{label}: invalid sampleSize {sample_size!r}")
+
+        margin = record.get("marginOfError")
+        if margin is not None and (
+            isinstance(margin, bool)
+            or not isinstance(margin, (int, float))
+            or not 0 < margin <= 20
+        ):
+            errors.append(f"{label}: invalid marginOfError {margin!r}")
+
+        published_at = record.get("publishedAt")
+        if published_at is None:
+            warnings.append(f"{label}: publication date not disclosed")
+        else:
+            try:
+                published_date = date.fromisoformat(str(published_at))
+                if poll_date and published_date < poll_date:
+                    warnings.append(f"{label}: publication date predates poll end date")
+                if published_date > today_taipei:
+                    errors.append(f"{label}: publication date is in the future")
+            except ValueError:
+                errors.append(f"{label}: invalid publishedAt {published_at!r}")
+
+        undecided = record.get("undecided")
+        if undecided is not None and (
+            isinstance(undecided, bool)
+            or not isinstance(undecided, (int, float))
+            or not 0 <= undecided <= 100
+        ):
+            errors.append(f"{label}: invalid undecided percentage {undecided!r}")
 
         results = record.get("results")
         if not isinstance(results, dict) or len(results) < 2:
@@ -103,6 +160,9 @@ def main() -> None:
                 errors.append(f"{label}: unregistered candidate {candidate_id!r}")
             if isinstance(value, bool) or not isinstance(value, (int, float)) or not 0 <= value <= 100:
                 errors.append(f"{label}: invalid percentage for {candidate_id!r}: {value!r}")
+        numeric_values = [value for value in results.values() if isinstance(value, (int, float)) and not isinstance(value, bool)]
+        if sum(numeric_values) > 105:
+            warnings.append(f"{label}: named choices total more than 105%; verify question format")
 
         if record.get("sampleSize") is None:
             warnings.append(f"{label}: sample size not disclosed")
@@ -139,14 +199,16 @@ def main() -> None:
 
     missing_sample = sum("sample size" in item for item in warnings)
     missing_method = sum("method" in item for item in warnings)
+    missing_published = sum("publication date not disclosed" in item for item in warnings)
     print(
         f"Poll data validation passed: {len(records)} scenarios, "
         f"{len(coverage)} counties, {len(ids)} unique IDs."
     )
     print(
         f"Disclosure note: {missing_sample} rows lack sample size; "
-        f"{missing_method} rows lack methodology in the public index."
+        f"{missing_method} rows lack methodology; {missing_published} rows lack publication date."
     )
+    print(f"Non-blocking disclosure warnings: {len(warnings)}.")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,17 @@
 import type { PartyId } from "../types";
 
+/** 台灣時區的今天（供日期篩選上限使用） */
+export function taiwanToday(date = new Date()): string {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${values.year}-${values.month}-${values.day}`;
+}
+
 /** 格式化百分比：34.2 -> "34.2%" */
 export function fmtPct(v: number, digits = 1): string {
   return `${v.toFixed(digits)}%`;

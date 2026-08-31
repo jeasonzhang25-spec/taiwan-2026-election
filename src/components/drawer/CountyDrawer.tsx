@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { useDashboard } from "@/context/ElectionContext";
 import { getCounty } from "@/lib/data/counties";
 import { MAJOR_CITY_POLLS, buildSeries } from "@/lib/data/polling";
-import { filterPollRecords } from "@/lib/utils/filter";
+import { buildCountySnapshot, filterPollRecords } from "@/lib/utils/filter";
 import { partyColor, partyName } from "@/lib/constants";
 import { PartyDot } from "@/components/ui/PartyDot";
 import { CompetitivenessBadge } from "@/components/ui/Badge";
@@ -13,12 +13,21 @@ import { EmptyState } from "@/components/ui/EmptyState";
 import PollTrendChart from "@/components/charts/PollTrendChart";
 import { fmtShortDate, fmtPct } from "@/lib/utils/format";
 import { isMetroCountyId } from "@/lib/data/county-pages";
+import type { PollRecord } from "@/lib/types";
 
 const SOURCE_KIND_LABEL = {
   public: "一般公開",
   internal: "政黨內參",
   primary: "初選民調",
 } as const;
+
+function surveyGroupKey(record: PollRecord) {
+  return [
+    record.fieldwork || record.date,
+    record.institute,
+    record.sourceUrl || record.source,
+  ].join("|");
+}
 
 export default function CountyDrawer() {
   const { countyId, closeCounty, filters } = useDashboard();
@@ -70,8 +79,9 @@ export default function CountyDrawer() {
 
   if (!countyId) return null;
 
-  const county = getCounty(countyId);
-  if (!county) return null;
+  const baseCounty = getCounty(countyId);
+  if (!baseCounty) return null;
+  const county = buildCountySnapshot(baseCounty, filters);
 
   const records = filterPollRecords(MAJOR_CITY_POLLS[countyId] ?? [], filters);
   const trend = records.length > 0 ? buildSeries(countyId, records) : undefined;
@@ -81,6 +91,11 @@ export default function CountyDrawer() {
       (county.latestSupport[b.id] ?? 0) - (county.latestSupport[a.id] ?? 0),
   );
   const allPolls = [...records].sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+  const surveyGroupCounts = allPolls.reduce((counts, record) => {
+    const key = surveyGroupKey(record);
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+    return counts;
+  }, new Map<string, number>());
 
   return (
     <div className="fixed inset-0 z-50" role="dialog" aria-modal="true" aria-label={`${county.name} 選情詳情`}>
@@ -192,15 +207,16 @@ export default function CountyDrawer() {
           <section aria-label="最近民調">
             <div className="mb-2 flex items-end justify-between gap-3">
               <h3 className="text-sm font-semibold text-ink">已收錄公開民調情境</h3>
-              <span className="text-[11px] text-ink-muted">共 {allPolls.length} 筆；同一調查的不同題目分列</span>
+              <span className="text-[11px] text-ink-muted">共 {allPolls.length} 筆情境 · 約 {surveyGroupCounts.size} 組調查</span>
             </div>
             {allPolls.length > 0 ? (
               <div className="overflow-x-auto rounded-lg border border-line">
-                <table className="w-full min-w-[760px] text-left text-xs">
+                <table className="w-full min-w-[860px] text-left text-xs">
                   <thead className="bg-canvas text-ink-secondary">
                     <tr>
                       <th className="px-3 py-2 font-medium">機構</th>
-                      <th className="px-3 py-2 font-medium">日期</th>
+                      <th className="px-3 py-2 font-medium">調查期間</th>
+                      <th className="px-3 py-2 font-medium">發布日期</th>
                       <th className="px-3 py-2 font-medium">題目情境</th>
                       <th className="px-3 py-2 font-medium">樣本</th>
                       <th className="px-3 py-2 font-medium">方式</th>
@@ -211,17 +227,29 @@ export default function CountyDrawer() {
                   <tbody className="divide-y divide-line">
                     {allPolls.map((r) => {
                       const resultRows = Object.entries(r.results).sort((a, b) => b[1] - a[1]);
+                      const groupCount = surveyGroupCounts.get(surveyGroupKey(r)) ?? 1;
+                      const fullDisclosure = Boolean(
+                        r.fieldwork
+                        && r.publishedAt
+                        && r.sampleSize
+                        && r.method
+                        && r.marginOfError !== undefined
+                        && r.sourceUrl,
+                      );
                       return (
                         <tr key={r.id} className="hover:bg-canvas/60">
                           <td className="px-3 py-2 text-ink">
                             <div className="whitespace-nowrap">
                               {r.sourceUrl ? <a href={r.sourceUrl} target="_blank" rel="noreferrer" className="text-[#245A96] hover:underline">{r.institute} ↗</a> : r.institute}
                             </div>
-                            <span className="mt-0.5 inline-flex rounded bg-[#F0EFEC] px-1.5 py-0.5 text-[10px] text-ink-muted">
-                              {SOURCE_KIND_LABEL[r.sourceKind ?? "public"]}
-                            </span>
+                            <div className="mt-1 flex flex-wrap gap-1">
+                              <span className="inline-flex rounded bg-[#F0EFEC] px-1.5 py-0.5 text-[10px] text-ink-muted">{SOURCE_KIND_LABEL[r.sourceKind ?? "public"]}</span>
+                              <span className={`inline-flex rounded px-1.5 py-0.5 text-[10px] ${fullDisclosure ? "bg-[#E8F5EE] text-[#126B43]" : "bg-[#FBF1E2] text-[#8A5D0A]"}`}>{fullDisclosure ? "方法欄位完整" : "部分欄位未揭露"}</span>
+                              {groupCount > 1 && <span className="inline-flex rounded bg-[#EAF1FA] px-1.5 py-0.5 text-[10px] text-[#245A96]">同一調查 {groupCount} 題</span>}
+                            </div>
                           </td>
-                          <td className="px-3 py-2 num whitespace-nowrap">{r.date.replaceAll("-", "/")}</td>
+                          <td className="px-3 py-2 whitespace-nowrap">{r.fieldwork ?? r.date.replaceAll("-", "/")}</td>
+                          <td className="px-3 py-2 num whitespace-nowrap">{r.publishedAt?.replaceAll("-", "/") ?? "未揭露"}</td>
                           <td className="px-3 py-2">{r.scenario ?? "—"}</td>
                           <td className="px-3 py-2 num">{r.sampleSize?.toLocaleString() ?? "未揭露"}</td>
                           <td className="px-3 py-2">{r.method ?? "未揭露"}</td>

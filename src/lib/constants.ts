@@ -98,9 +98,6 @@ export function competitivenessLabel(c: Competitiveness): string {
 /** 中選會公布投票日 */
 export const ELECTION_DAY = "2026-11-28";
 
-/** 最後一次人工核验日期 */
-export const LAST_UPDATED = "2026-08-27";
-
 /** 各類選舉的說明 */
 export const ELECTION_TYPE_DESC: Record<ElectionType, string> = {
   mayor: "22 縣市首長改選，即「縣市長」層級選舉。",

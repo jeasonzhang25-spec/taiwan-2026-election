@@ -1,4 +1,4 @@
-export type ExternalFeedKind = "poll" | "analysis";
+export type ExternalFeedKind = "news" | "poll" | "analysis" | "commentary";
 
 export interface VerifiedPollResult {
   name: string;
@@ -42,9 +42,10 @@ export interface ExternalFeedItem {
   source: string;
   url: string;
   publishedAt: string;
+  topic: string;
 }
 
-export const EXTERNAL_DATA_CHECKED_AT = "2026-08-27";
+export { POLL_DATA_CHECKED_AT as EXTERNAL_DATA_CHECKED_AT } from "./polling";
 
 /**
  * 人工核驗的公開民調索引。

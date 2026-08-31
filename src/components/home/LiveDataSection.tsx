@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ANALYSIS_ITEMS,
   EXTERNAL_DATA_CHECKED_AT,
@@ -17,13 +17,27 @@ type FeedResponse = {
   fetchedAt: string;
   blackout: boolean;
   partial: boolean;
+  successfulFeeds: number;
+  totalFeeds: number;
 };
 
 const FILTERS: { value: ExternalFeedKind | "all"; label: string }[] = [
   { value: "all", label: "全部動態" },
   { value: "poll", label: "民調報導" },
+  { value: "news", label: "選舉新聞" },
   { value: "analysis", label: "選情分析" },
+  { value: "commentary", label: "評論觀點" },
 ];
+
+const FEED_META: Record<ExternalFeedKind, { label: string; tone: "green" | "blue" | "amber" | "red" }> = {
+  news: { label: "新聞", tone: "green" },
+  poll: { label: "民調", tone: "blue" },
+  analysis: { label: "分析", tone: "amber" },
+  commentary: { label: "觀點", tone: "red" },
+};
+
+const PAGE_SIZE = 8;
+const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 
 function formatFeedDate(value: string) {
   const date = new Date(value);
@@ -36,29 +50,54 @@ function formatFeedDate(value: string) {
   }).format(date);
 }
 
+function formatFetchedAt(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("zh-TW", {
+    month: "numeric",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  }).format(date);
+}
+
 export default function LiveDataSection() {
   const [feed, setFeed] = useState<FeedResponse | null>(null);
   const [feedError, setFeedError] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [activeFilter, setActiveFilter] = useState<ExternalFeedKind | "all">("all");
+  const [showAllVerified, setShowAllVerified] = useState(false);
   const [blackout] = useState(() => isPollPublicationBlackout(new Date()));
+
+  const loadFeed = useCallback(async (signal?: AbortSignal) => {
+    setRefreshing(true);
+    try {
+      const response = await fetch("/api/external-feed", { signal, cache: "no-store" });
+      if (!response.ok) throw new Error("feed unavailable");
+      const nextFeed = await response.json() as FeedResponse;
+      setFeed(nextFeed);
+      setFeedError(false);
+    } catch (error: unknown) {
+      if (!(error instanceof DOMException && error.name === "AbortError")) {
+        setFeedError(true);
+      }
+    } finally {
+      if (!signal?.aborted) setRefreshing(false);
+    }
+  }, []);
 
   useEffect(() => {
     const controller = new AbortController();
+    void loadFeed(controller.signal);
+    const timer = window.setInterval(() => void loadFeed(), REFRESH_INTERVAL_MS);
 
-    fetch("/api/external-feed", { signal: controller.signal })
-      .then((response) => {
-        if (!response.ok) throw new Error("feed unavailable");
-        return response.json() as Promise<FeedResponse>;
-      })
-      .then(setFeed)
-      .catch((error: unknown) => {
-        if (!(error instanceof DOMException && error.name === "AbortError")) {
-          setFeedError(true);
-        }
-      });
-
-    return () => controller.abort();
-  }, []);
+    return () => {
+      controller.abort();
+      window.clearInterval(timer);
+    };
+  }, [loadFeed]);
 
   const filteredFeed = useMemo(() => {
     const items = Array.from(
@@ -72,9 +111,12 @@ export default function LiveDataSection() {
       ? items
       : items.filter((item) => item.kind === activeFilter);
   }, [activeFilter, feed]);
+  const visibleFeed = filteredFeed.slice(0, visibleCount);
+  const visibleVerifiedPolls = showAllVerified ? VERIFIED_POLLS : VERIFIED_POLLS.slice(0, 2);
 
   return (
-    <section id="live-data" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
+    <section id="live-data" className="mt-16 scroll-mt-20 border-y border-line bg-[#EEF3F3] py-14">
+      <div className="mx-auto max-w-page px-4 sm:px-6 lg:px-8">
       <SectionTitle
         title="外部真實資料"
         subtitle="人工核驗的民調資料與即時媒體索引分開呈現；評論觀點不參與地圖、席次或勝率計算。"
@@ -120,12 +162,12 @@ export default function LiveDataSection() {
       ) : (
         <div>
           <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-            <h3 className="text-sm font-semibold text-ink">方法資料較完整的重點民調</h3>
+            <h3 className="text-lg font-semibold tracking-tight text-ink">方法資料較完整的重點民調</h3>
             <span className="text-[11px] text-ink-muted">完整民調情境請見下方資料庫；此處只精選已核對樣本與方法者</span>
           </div>
           <div className="grid gap-4 lg:grid-cols-2">
-            {VERIFIED_POLLS.map((poll) => (
-              <article key={poll.id} className="rounded-xl border border-line bg-surface p-4 shadow-card">
+            {visibleVerifiedPolls.map((poll) => (
+              <article key={poll.id} className="rounded-2xl border border-line bg-surface p-4 sm:p-5">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2">
@@ -195,18 +237,27 @@ export default function LiveDataSection() {
               </article>
             ))}
           </div>
+          {VERIFIED_POLLS.length > 2 && (
+            <button
+              type="button"
+              onClick={() => setShowAllVerified((value) => !value)}
+              className="mt-4 min-h-10 rounded-xl border border-line bg-white px-4 text-sm font-medium text-ink-secondary hover:border-line-strong hover:text-ink"
+            >
+              {showAllVerified ? "收起重點民調" : `查看全部 ${VERIFIED_POLLS.length} 筆重點民調`}
+            </button>
+          )}
         </div>
       )}
 
       <div className="mt-7 grid gap-6 xl:grid-cols-[1fr_1.15fr]">
         <div>
           <div className="mb-3 flex items-center justify-between gap-2">
-            <h3 className="text-sm font-semibold text-ink">評論觀點樣本</h3>
+            <h3 className="text-lg font-semibold tracking-tight text-ink">人工核驗評論解讀</h3>
             <Badge tone="amber">觀點 ≠ 資料</Badge>
           </div>
           <div className="space-y-3">
             {ANALYSIS_ITEMS.map((item) => (
-              <article key={item.id} className="rounded-xl border border-line bg-surface p-4 shadow-card">
+              <article key={item.id} className="rounded-2xl border border-[#EBD9AE] bg-[#FFFCF4] p-4">
                 <div className="flex flex-wrap items-center gap-2 text-[11px] text-ink-muted">
                   <span className="font-medium text-ink-secondary">{item.analyst}</span>
                   <span aria-hidden="true">·</span>
@@ -232,17 +283,31 @@ export default function LiveDataSection() {
         <div>
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
             <div>
-              <h3 className="text-sm font-semibold text-ink">即時媒體索引</h3>
-              <p className="mt-0.5 text-[11px] text-ink-muted">每 30 分鐘更新標題與原連結；本站不自動摘要或判定立場</p>
+              <h3 className="text-lg font-semibold tracking-tight text-ink">即時新聞、民調與評論索引</h3>
+              <p className="mt-0.5 text-[11px] text-ink-muted">每 5 分鐘自動刷新；彙整全台、六都、民調、分析與評論查詢，不自動判定立場</p>
             </div>
+            <button
+              type="button"
+              onClick={() => void loadFeed()}
+              disabled={refreshing}
+                className="min-h-10 rounded-xl border border-line bg-surface px-3 text-sm font-medium text-ink-secondary transition-colors hover:border-line-strong hover:text-ink disabled:cursor-wait disabled:opacity-60"
+            >
+              {refreshing ? "更新中…" : "立即更新"}
+            </button>
+          </div>
+
+          <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
             <div className="flex flex-wrap gap-1.5" role="group" aria-label="篩選即時媒體索引">
               {FILTERS.map((filter) => (
                 <button
                   key={filter.value}
                   type="button"
-                  onClick={() => setActiveFilter(filter.value)}
+                  onClick={() => {
+                    setActiveFilter(filter.value);
+                    setVisibleCount(PAGE_SIZE);
+                  }}
                   aria-pressed={activeFilter === filter.value}
-                  className={`rounded-full border px-2.5 py-1 text-[11px] transition-colors ${
+                  className={`min-h-9 rounded-lg border px-3 py-1.5 text-[13px] font-medium transition-colors ${
                     activeFilter === filter.value
                       ? "border-ink bg-ink text-white"
                       : "border-line bg-surface text-ink-secondary hover:border-line-strong"
@@ -252,9 +317,14 @@ export default function LiveDataSection() {
                 </button>
               ))}
             </div>
+            {feed && (
+              <p className="text-[11px] text-ink-muted">
+                更新 {formatFetchedAt(feed.fetchedAt)} · {feed.items.length} 筆 · {feed.successfulFeeds}/{feed.totalFeeds} 組查詢正常
+              </p>
+            )}
           </div>
 
-          <div className="overflow-hidden rounded-xl border border-line bg-surface shadow-card" aria-live="polite">
+          <div className="overflow-hidden rounded-2xl border border-line bg-surface" aria-live="polite">
             {!feed && !feedError && (
               <div className="space-y-3 p-4">
                 {[0, 1, 2, 3].map((item) => (
@@ -275,7 +345,7 @@ export default function LiveDataSection() {
               </div>
             )}
 
-            {filteredFeed.map((item, index) => (
+            {visibleFeed.map((item, index) => (
               <a
                 key={item.id}
                 href={item.url}
@@ -286,27 +356,40 @@ export default function LiveDataSection() {
                 }`}
               >
                 <div className="flex items-start gap-3">
-                  <Badge tone={item.kind === "poll" ? "blue" : "amber"} className="mt-0.5 shrink-0">
-                    {item.kind === "poll" ? "民調相關" : "分析"}
+                  <Badge tone={FEED_META[item.kind].tone} className="mt-0.5 shrink-0">
+                    {FEED_META[item.kind].label}
                   </Badge>
                   <div className="min-w-0 flex-1">
                     <p className="text-[13px] font-medium leading-5 text-ink group-hover:text-[#245A96]">
                       {item.title}
                     </p>
                     <p className="mt-1 text-[11px] text-ink-muted">
-                      {item.source} · {formatFeedDate(item.publishedAt)}
+                      {item.topic} · {item.source} · {formatFeedDate(item.publishedAt)}
                     </p>
                   </div>
                   <span className="text-xs text-ink-muted" aria-hidden="true">↗</span>
                 </div>
               </a>
             ))}
+
+            {visibleCount < filteredFeed.length && (
+              <div className="border-t border-line p-3 text-center">
+                <button
+                  type="button"
+                  onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+                  className="rounded-lg border border-line bg-canvas px-4 py-2 text-xs font-medium text-ink-secondary hover:border-line-strong hover:text-ink"
+                >
+                  顯示更多（尚有 {filteredFeed.length - visibleCount} 筆）
+                </button>
+              </div>
+            )}
           </div>
 
           {feed?.partial && (
             <p className="mt-2 text-[11px] text-ink-muted">部分外部來源暫時沒有回應，現有項目仍繼續顯示。</p>
           )}
         </div>
+      </div>
       </div>
     </section>
   );

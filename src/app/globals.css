@@ -13,10 +13,26 @@ html {
 }
 
 body {
-  background-color: var(--canvas);
+  background:
+    radial-gradient(circle at 82% -8%, rgba(23, 63, 70, 0.055), transparent 28rem),
+    var(--canvas);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(23, 63, 70, 0.18);
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto max-w-page px-4 sm:px-6 lg:px-8;
+  }
+
+  .control-height {
+    @apply min-h-10;
+  }
 }
 
 /* 数字使用等宽/窄体，配合 tabular-nums 保证对齐 */

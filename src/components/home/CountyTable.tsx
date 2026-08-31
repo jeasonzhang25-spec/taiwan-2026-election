@@ -20,6 +20,7 @@ export default function CountyTable() {
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("margin");
   const [sortDir, setSortDir] = useState<SortDir>("asc");
+  const [showAllMobile, setShowAllMobile] = useState(false);
 
   const rows = useMemo(() => {
     let list = filterCounties(COUNTIES, filters);
@@ -49,9 +50,10 @@ export default function CountyTable() {
 
   const sortIndicator = (key: SortKey) =>
     sortKey === key ? (sortDir === "asc" ? " ↑" : " ↓") : "";
+  const mobileRows = query.trim() || showAllMobile ? rows : rows.slice(0, 8);
 
   return (
-    <section id="counties" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
+    <section id="counties" className="mx-auto max-w-page scroll-mt-20 px-4 pt-16 sm:px-6 lg:px-8">
       <SectionTitle
         title="縣市選情列表"
         subtitle="22 個縣市完整列表；只有公開索引中已有候選人支持度數字的縣市顯示 2026 支持度。"
@@ -74,7 +76,7 @@ export default function CountyTable() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="搜尋縣市…"
-              className="h-9 w-44 rounded-lg border border-line bg-surface pl-8 pr-2 text-sm text-ink outline-none transition-colors duration-150 focus:border-ink sm:w-56"
+              className="h-10 w-44 rounded-xl border border-line bg-surface pl-8 pr-3 text-sm text-ink outline-none transition-colors duration-150 focus:border-brand sm:w-56"
             />
           </div>
         }
@@ -187,7 +189,7 @@ export default function CountyTable() {
 
           {/* 手機卡片列表 */}
           <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:hidden">
-            {rows.map((c) => {
+            {mobileRows.map((c) => {
               const { leader, runner } = topTwo(c);
               const support = c.latestSupport[c.leadingId] ?? 0;
               const hasData = c.dataStatus === "verified-poll" && Boolean(leader);
@@ -196,7 +198,7 @@ export default function CountyTable() {
                 <button
                   key={c.id}
                   onClick={() => openCounty(c.id)}
-                  className={`rounded-xl border p-3.5 text-left transition-all duration-150 ${active ? "border-ink bg-canvas" : "border-line bg-surface"}`}
+                  className={`min-h-11 rounded-xl border p-3.5 text-left transition-all duration-150 ${active ? "border-brand bg-brand-mist" : "border-line bg-surface"}`}
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-semibold text-ink">{c.name}</span>
@@ -206,13 +208,13 @@ export default function CountyTable() {
                     <PartyDot party={c.incumbentParty} size={9} />
                     2022 當選 {partyShort(c.incumbentParty)}{hasData ? ` · 民調 ${fmtShortDate(c.lastPollDate)}` : " · 暫無公開數字"}
                   </div>
-                  {hasData && leader ? <div className="mt-2 flex items-center justify-between text-xs">
+                  {hasData && leader ? <div className="mt-2 flex items-center justify-between text-[13px]">
                     <span className="inline-flex items-center gap-1.5 text-ink-secondary">
                       <PartyDot party={leader.partyId} size={9} />
                       {leader.name}（{partyShort(leader.partyId)}）
                     </span>
                     <span className="num font-medium text-ink">{fmtPct(support)}</span>
-                  </div> : <div className="mt-2 text-xs text-ink-muted">目前沒有至少兩名人選皆有數字的公開民調</div>}
+                  </div> : <div className="mt-2 text-[13px] text-ink-muted">尚無可比較的公開支持度</div>}
                   {runner && (
                     <div className="mt-1 flex items-center justify-between text-xs">
                       <span className="inline-flex items-center gap-1.5 text-ink-secondary">
@@ -226,6 +228,15 @@ export default function CountyTable() {
               );
             })}
           </div>
+          {!query.trim() && rows.length > 8 && (
+            <button
+              type="button"
+              onClick={() => setShowAllMobile((value) => !value)}
+              className="mt-3 min-h-11 w-full rounded-xl border border-line bg-surface px-4 text-sm font-medium text-ink-secondary md:hidden"
+            >
+              {showAllMobile ? "收起縣市列表" : `查看全部 ${rows.length} 個縣市`}
+            </button>
+          )}
         </>
       )}
     </section>

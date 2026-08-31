@@ -23,10 +23,10 @@ export default function MetricCards() {
   const days = daysUntil(ELECTION_DAY);
 
   return (
-    <section className="mx-auto max-w-page px-4 pt-5 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-page px-4 pt-6 sm:px-6 lg:px-8">
       <div className="grid grid-cols-3 gap-3 lg:grid-cols-4">
         {/* 各黨領先縣市 */}
-        <div className="col-span-3 rounded-xl border border-line bg-surface p-4 shadow-card lg:col-span-1">
+        <div className="col-span-3 rounded-2xl border border-brand/15 bg-brand-mist p-4 lg:col-span-1">
           <div className="text-xs text-ink-secondary">各黨領先縣市</div>
           <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
             {PARTY_LIST.map((p) => {
@@ -53,7 +53,7 @@ export default function MetricCards() {
         </div>
 
         {/* 膠著縣市數量 */}
-        <div className="rounded-xl border border-line bg-surface p-3 shadow-card sm:p-4">
+        <div className="rounded-2xl border border-line bg-surface p-3 sm:p-4">
           <div className="text-xs text-ink-secondary">有公開民調縣市</div>
           <div className="mt-2 flex items-baseline gap-2">
             <span className="num text-2xl font-semibold text-ink sm:text-3xl">{filtered.length - insufficient}</span>
@@ -62,7 +62,7 @@ export default function MetricCards() {
         </div>
 
         {/* 已收錄公開民調 */}
-        <div className="rounded-xl border border-line bg-surface p-3 shadow-card sm:p-4">
+        <div className="rounded-2xl border border-line bg-surface p-3 sm:p-4">
           <div className="text-xs text-ink-secondary">已收錄民調情境</div>
           <div className="mt-2 flex items-baseline gap-2">
             <span className="num text-2xl font-semibold text-ink sm:text-3xl">{filteredPollCount}</span>
@@ -71,7 +71,7 @@ export default function MetricCards() {
         </div>
 
         {/* 距離投票日 */}
-        <div className="rounded-xl border border-line bg-surface p-3 shadow-card sm:p-4">
+        <div className="rounded-2xl border border-line bg-surface p-3 sm:p-4">
           <div className="text-xs text-ink-secondary">距離投票日</div>
           <div className="mt-2 flex items-baseline gap-2">
             <span className="num text-2xl font-semibold text-ink sm:text-3xl">{days}</span>

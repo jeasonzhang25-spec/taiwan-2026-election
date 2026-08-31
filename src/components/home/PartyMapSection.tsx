@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import { useDashboard } from "@/context/ElectionContext";
 import { COUNTIES } from "@/lib/data/counties";
-import { filterCounties, countLeadingByParty, getLeadingParty } from "@/lib/utils/filter";
+import { buildCountySnapshots, filterCountySnapshots, countLeadingByParty, getLeadingParty } from "@/lib/utils/filter";
 import { PARTY_LIST, partyShort } from "@/lib/constants";
 import PartyBarChart from "@/components/charts/PartyBarChart";
 import { SectionTitle } from "@/components/ui/SectionTitle";
@@ -21,7 +21,8 @@ function classify(county: (typeof COUNTIES)[number]): SeatStatus {
 
 export default function PartyMapSection() {
   const { filters } = useDashboard();
-  const filtered = filterCounties(COUNTIES, filters);
+  const snapshots = buildCountySnapshots(COUNTIES, filters);
+  const filtered = filterCountySnapshots(snapshots, filters);
 
   const leadingByParty = countLeadingByParty(filtered);
   const barData = PARTY_LIST.map((p) => ({
@@ -38,7 +39,7 @@ export default function PartyMapSection() {
     const lossSet = new Set<PartyId>();
     const flipList: { name: string; from: PartyId; to: PartyId }[] = [];
 
-    for (const c of COUNTIES) {
+    for (const c of snapshots) {
       const s = classify(c);
       if (s === "insufficient") insufficient++;
       else if (s === "hold") holds++;
@@ -53,7 +54,7 @@ export default function PartyMapSection() {
       }
     }
     return { holds, flips, tossups, insufficient, gains: gainSet.size, losses: lossSet.size, flipList };
-  }, []);
+  }, [snapshots]);
 
   const stats: { label: string; value: number; tone: string }[] = [
     { label: "守住", value: holds, tone: "text-[#245A96]" },
@@ -65,7 +66,7 @@ export default function PartyMapSection() {
   ];
 
   return (
-    <section id="history" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
+    <section id="history" className="mx-auto max-w-page scroll-mt-20 px-4 pt-16 sm:px-6 lg:px-8">
       <SectionTitle
         title="政黨版圖"
         subtitle="只比較已有公開候選人支持度數字的縣市；尚無民調者不推估守住或翻轉。"
@@ -73,7 +74,7 @@ export default function PartyMapSection() {
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {/* 左：各黨領先縣市數量（橫向長條圖） */}
-        <div className="rounded-xl border border-line bg-surface p-4 shadow-card">
+        <div className="rounded-2xl border border-line bg-surface p-4 sm:p-5">
           <h3 className="mb-3 text-sm font-semibold text-ink">各黨領先縣市數量</h3>
           {barData.length > 0 ? (
             <PartyBarChart data={barData} height={240} />
@@ -85,7 +86,7 @@ export default function PartyMapSection() {
         </div>
 
         {/* 右：與 2022 年相比 */}
-        <div className="rounded-xl border border-line bg-surface p-4 shadow-card">
+        <div className="rounded-2xl border border-line bg-surface p-4 sm:p-5">
           <h3 className="mb-3 text-sm font-semibold text-ink">與 2022 年相比</h3>
 
           <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">

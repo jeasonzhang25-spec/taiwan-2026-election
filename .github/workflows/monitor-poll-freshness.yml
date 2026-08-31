@@ -1,0 +1,94 @@
+name: 監看民調資料時效
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 讀取網站資料
+        uses: actions/checkout@v4
+
+      - name: 判斷是否超過 72 小時未成功核驗
+        id: freshness
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          data = json.loads(Path("src/lib/data/generated/public-polls.json").read_text(encoding="utf-8"))
+          checked_at = datetime.fromisoformat(f"{data['checkedAt']}T23:59:59+08:00")
+          age_hours = (datetime.now(timezone.utc) - checked_at).total_seconds() / 3600
+          print(f"checked_at={data['checkedAt']}")
+          print(f"age_hours={age_hours:.1f}")
+          print(f"stale={'true' if age_hours > 72 else 'false'}")
+          PY
+
+      - name: 建立或更新過期提醒
+        if: steps.freshness.outputs.stale == 'true'
+        uses: actions/github-script@v7
+        env:
+          CHECKED_AT: ${{ steps.freshness.outputs.checked_at }}
+          AGE_HOURS: ${{ steps.freshness.outputs.age_hours }}
+        with:
+          script: |
+            const title = "[自動提醒] 民調資料超過 72 小時未核驗";
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            const body = [
+              `網站資料最後成功核驗日期：${process.env.CHECKED_AT}`,
+              `距今約 ${process.env.AGE_HOURS} 小時，已超過 72 小時門檻。`,
+              "",
+              `查看排程：https://github.com/${context.repo.owner}/${context.repo.repo}/actions/workflows/sync-polls.yml`,
+            ].join("\n");
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              });
+            }
+
+      - name: 資料恢復後關閉過期提醒
+        if: steps.freshness.outputs.stale == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "[自動提醒] 民調資料超過 72 小時未核驗";
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: "closed",
+              });
+            }

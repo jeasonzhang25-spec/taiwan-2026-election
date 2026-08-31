@@ -21,7 +21,7 @@ const READING_POINTS: { title: string; body: string }[] = [
   },
   {
     title: "資料多久更新一次",
-    body: "外部媒體標題索引每 30 分鐘嘗試更新；民調同步工作流也以 30 分鐘為檢查週期，只有內容改變且驗證通過才發布。平台排程仍可能延遲。",
+    body: "外部媒體標題索引每 5 分鐘嘗試更新，開啟頁面時也會自動刷新；正式民調資料仍以 30 分鐘為檢查週期，只有內容改變且驗證通過才發布。平台與來源快取仍可能造成短暫延遲。",
   },
   {
     title: "沒有資料如何呈現",
@@ -31,18 +31,21 @@ const READING_POINTS: { title: string; body: string }[] = [
 
 export default function Methodology() {
   return (
-    <section id="methodology" className="mx-auto max-w-page scroll-mt-20 px-4 pt-10 sm:px-6 lg:px-8">
+    <section id="methodology" className="mx-auto max-w-page scroll-mt-20 px-4 pt-16 sm:px-6 lg:px-8">
       <SectionTitle
         title="如何閱讀本看板"
         subtitle={`目前收錄 ${POLL_RECORD_COUNT} 筆問卷情境、涵蓋 ${POLL_COUNTY_COUNT} 個縣市；以下是正確閱讀方式。`}
       />
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {READING_POINTS.map((p) => (
-          <div key={p.title} className="rounded-xl border border-line bg-surface p-4 shadow-card">
-            <h3 className="text-sm font-semibold text-ink">{p.title}</h3>
-            <p className="mt-1.5 text-[13px] leading-5 text-ink-secondary">{p.body}</p>
-          </div>
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+        {READING_POINTS.map((p, index) => (
+          <details key={p.title} open={index === 0} className="group rounded-xl border border-line bg-surface px-4 py-3.5">
+            <summary className="flex min-h-8 cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-ink marker:hidden">
+              {p.title}
+              <span className="text-brand transition-transform group-open:rotate-45" aria-hidden="true">＋</span>
+            </summary>
+            <p className="border-t border-line pt-3 text-[13px] leading-6 text-ink-secondary">{p.body}</p>
+          </details>
         ))}
       </div>
 
@@ -52,8 +55,8 @@ export default function Methodology() {
           <a href="/data-status" className="text-xs font-medium text-[#245D91] hover:underline">查看完整資料狀態 →</a>
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {SOURCES.map((s) => (
-            <div key={s.name} className="flex flex-col rounded-xl border border-line bg-surface p-4 shadow-card">
+          {SOURCES.slice(0, 3).map((s) => (
+            <div key={s.name} className="flex flex-col rounded-xl border border-line bg-surface p-4">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-ink">{s.name}</span>
                 <span className="rounded bg-[#F0EFEC] px-1.5 py-0.5 text-[10px] text-ink-secondary">

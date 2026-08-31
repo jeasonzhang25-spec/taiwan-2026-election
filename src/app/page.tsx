@@ -23,8 +23,8 @@ function DashboardContent() {
       <MapSection />
       <MetroPagesSection />
       <CountyTable />
-      <LiveDataSection />
       <TrustCenterSection />
+      <LiveDataSection />
       <PollTrendSection />
       <PartyMapSection />
       <Methodology />

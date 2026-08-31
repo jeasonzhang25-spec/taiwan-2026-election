@@ -12,11 +12,11 @@ export function SectionTitle({
   id?: string;
 }) {
   return (
-    <div id={id} className="mb-4 flex flex-wrap items-end justify-between gap-3 scroll-mt-24">
-      <div>
-        <h2 className="text-lg font-semibold tracking-tight text-ink">{title}</h2>
+    <div id={id} className="mb-6 flex flex-wrap items-end justify-between gap-4 scroll-mt-24">
+      <div className="max-w-3xl">
+        <h2 className="text-[22px] font-semibold leading-8 tracking-tight text-ink sm:text-2xl">{title}</h2>
         {subtitle && (
-          <p className="mt-1 text-[13px] leading-5 text-ink-secondary">{subtitle}</p>
+          <p className="mt-1.5 text-sm leading-6 text-ink-secondary">{subtitle}</p>
         )}
       </div>
       {aside && <div className="flex items-center gap-2">{aside}</div>}

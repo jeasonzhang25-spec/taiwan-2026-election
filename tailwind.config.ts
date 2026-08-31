@@ -11,7 +11,13 @@ const config: Config = {
         // 文字层级
         ink: "#1A1A1A",
         "ink-secondary": "#5F6470",
-        "ink-muted": "#8A8F99",
+        "ink-muted": "#737985",
+        brand: {
+          DEFAULT: "#173F46",
+          strong: "#10343A",
+          soft: "#E7F0F0",
+          mist: "#F0F4F4",
+        },
         // 边框与分隔线
         line: "#E7E4DC",
         "line-strong": "#D8D4CA",
@@ -54,12 +60,12 @@ const config: Config = {
         xl: "12px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(26, 26, 26, 0.04), 0 1px 3px rgba(26, 26, 26, 0.05)",
-        "card-hover": "0 2px 6px rgba(26, 26, 26, 0.06), 0 4px 14px rgba(26, 26, 26, 0.06)",
+        card: "0 1px 2px rgba(26, 26, 26, 0.035)",
+        "card-hover": "0 3px 10px rgba(26, 26, 26, 0.07), 0 10px 24px rgba(26, 26, 26, 0.04)",
         drawer: "-12px 0 32px rgba(26, 26, 26, 0.12)",
       },
       maxWidth: {
-        page: "1440px",
+        page: "1280px",
       },
       transitionDuration: {
         "150": "150ms",

@@ -14,9 +14,12 @@ import re
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup, Tag
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 INDEX_URL = "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查"
@@ -95,6 +98,22 @@ ENRICHMENTS: dict[tuple[str, str, str], dict[str, Any]] = {
         "publishedAt": "2026-05-25",
     },
 }
+
+
+def fetch_index() -> str:
+    retry = Retry(
+        total=3,
+        connect=3,
+        read=3,
+        backoff_factor=0.8,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=("GET",),
+    )
+    session = requests.Session()
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    response = session.get(INDEX_URL, headers={"User-Agent": USER_AGENT}, timeout=(10, 45))
+    response.raise_for_status()
+    return response.text
 
 
 def clean_text(cell: Tag) -> str:
@@ -202,9 +221,7 @@ def source_kind(source: str) -> str:
 
 
 def main() -> None:
-    response = requests.get(INDEX_URL, headers={"User-Agent": USER_AGENT}, timeout=45)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(fetch_index(), "html.parser")
 
     records: list[dict[str, Any]] = []
     candidates: dict[str, dict[str, dict[str, str]]] = {}
@@ -291,7 +308,7 @@ def main() -> None:
     }
     coverage = sorted({record["countyId"] for record in records})
     content = {
-        "checkedAt": date.today().isoformat(),
+        "checkedAt": datetime.now(ZoneInfo("Asia/Taipei")).date().isoformat(),
         "indexUrl": INDEX_URL,
         "recordCount": len(records),
         "countyCount": len(coverage),

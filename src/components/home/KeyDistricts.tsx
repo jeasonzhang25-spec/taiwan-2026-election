@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { useDashboard } from "@/context/ElectionContext";
 import type { CountyRace } from "@/lib/types";
-import { partyName } from "@/lib/constants";
+import { partyShort } from "@/lib/constants";
 import { sortByCompetitiveness, topTwo } from "@/lib/utils/filter";
 import { fmtShortDate, fmtPct, changeNote } from "@/lib/utils/format";
 import { PartyDot } from "@/components/ui/PartyDot";
@@ -20,9 +21,11 @@ function statusBadge(county: CountyRace) {
 
 export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
   const { openCounty, countyId } = useDashboard();
+  const [showAll, setShowAll] = useState(false);
   const top = sortByCompetitiveness(
     counties.filter((county) => county.dataStatus === "verified-poll"),
   ).slice(0, 5);
+  const visible = showAll ? top : top.slice(0, 3);
 
   if (top.length === 0) {
     return (
@@ -35,7 +38,7 @@ export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
 
   return (
     <div className="space-y-2.5">
-      {top.map((county) => {
+      {visible.map((county) => {
         const { leader, runner } = topTwo(county);
         const leaderSupport = county.latestSupport[county.leadingId] ?? 0;
         const runnerSupport = runner ? county.latestSupport[runner.id] ?? 0 : 0;
@@ -45,8 +48,8 @@ export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
           <button
             key={county.id}
             onClick={() => openCounty(county.id)}
-            className={`block w-full rounded-lg border p-3 text-left transition-all duration-150 hover:shadow-card-hover ${
-              isActive ? "border-ink bg-canvas" : "border-line bg-surface"
+            className={`block w-full rounded-xl border p-3.5 text-left transition-all duration-150 hover:-translate-y-0.5 hover:shadow-card-hover ${
+              isActive ? "border-brand bg-brand-mist" : "border-line bg-surface"
             }`}
             aria-pressed={isActive}
           >
@@ -55,22 +58,30 @@ export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
               {statusBadge(county)}
             </div>
 
-            <div className="mt-2 space-y-1.5">
+            <div className="mt-3 space-y-2">
               <div className="flex items-center justify-between text-xs">
                 <span className="inline-flex items-center gap-1.5 text-ink-secondary">
                   <PartyDot party={leader.partyId} size={9} />
-                  {leader.name} · {partyName(leader.partyId)}
+                  {leader.name} · {partyShort(leader.partyId)}
                 </span>
                 <span className="num font-medium text-ink">{fmtPct(leaderSupport)}</span>
               </div>
+              <div className="h-1.5 overflow-hidden rounded-full bg-[#ECEAE3]">
+                <div className="h-full rounded-full bg-brand transition-[width] duration-200" style={{ width: `${leaderSupport}%` }} />
+              </div>
               {runner && (
-                <div className="flex items-center justify-between text-xs">
-                  <span className="inline-flex items-center gap-1.5 text-ink-secondary">
-                    <PartyDot party={runner.partyId} size={9} />
-                    {runner.name} · {partyName(runner.partyId)}
-                  </span>
-                  <span className="num font-medium text-ink">{fmtPct(runnerSupport)}</span>
-                </div>
+                <>
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="inline-flex items-center gap-1.5 text-ink-secondary">
+                      <PartyDot party={runner.partyId} size={9} />
+                      {runner.name} · {partyShort(runner.partyId)}
+                    </span>
+                    <span className="num font-medium text-ink">{fmtPct(runnerSupport)}</span>
+                  </div>
+                  <div className="h-1.5 overflow-hidden rounded-full bg-[#ECEAE3]">
+                    <div className="h-full rounded-full bg-ink-muted/60 transition-[width] duration-200" style={{ width: `${runnerSupport}%` }} />
+                  </div>
+                </>
               )}
             </div>
 
@@ -86,6 +97,15 @@ export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
           </button>
         );
       })}
+      {top.length > 3 && (
+        <button
+          type="button"
+          onClick={() => setShowAll((value) => !value)}
+          className="min-h-10 w-full rounded-xl border border-line bg-canvas px-3 text-sm font-medium text-ink-secondary transition-colors hover:border-line-strong hover:text-ink"
+        >
+          {showAll ? "收起其他選區" : `查看另外 ${top.length - 3} 個選區`}
+        </button>
+      )}
     </div>
   );
 }

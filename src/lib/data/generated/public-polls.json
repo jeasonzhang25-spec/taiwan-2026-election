@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-08-31",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 291,
+  "recordCount": 292,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -2647,6 +2647,22 @@
       }
     },
     {
+      "id": "poll-839000fe29e1",
+      "countyId": "keelung",
+      "institute": "山水民調",
+      "date": "2026-08-24",
+      "fieldwork": "8月21日至24日",
+      "source": "山水民調",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/267542",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋",
+      "results": {
+        "keelung-謝國樑": 38.3,
+        "keelung-童子瑋": 33.2
+      },
+      "undecided": 28.2
+    },
+    {
       "id": "poll-0fa76acfd3e3",
       "countyId": "kinmen",
       "institute": "國民黨內參",
@@ -5138,5 +5154,5 @@
       }
     ]
   },
-  "generatedAt": "2026-08-29T07:04:44Z"
+  "generatedAt": "2026-08-31T06:13:31Z"
 }

@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-31T20:04:59Z",
-  "dataGeneratedAt": "2026-08-31T06:13:31Z",
+  "generatedAt": "2026-09-01T10:06:57Z",
+  "dataGeneratedAt": "2026-09-01T10:06:25Z",
   "summary": {
-    "recordCount": 292,
-    "surveyCount": 140,
-    "sourceCount": 140,
-    "checkedSourceCount": 140,
+    "recordCount": 294,
+    "surveyCount": 142,
+    "sourceCount": 142,
+    "checkedSourceCount": 142,
     "reachableCount": 116,
-    "restrictedCount": 22,
-    "unreachableCount": 2,
+    "restrictedCount": 21,
+    "unreachableCount": 5,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 34,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -462,6 +462,24 @@
       ]
     },
     {
+      "id": "source-31df3c33c6883b12",
+      "url": "https://ctinews.com/news/items/4XamVZDJxA",
+      "domain": "ctinews.com",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://ctinews.com/news/items/4XamVZDJxA",
+      "contentType": "text/html",
+      "fingerprint": "81f8f8a65bcb24fc9f92f9e0d05ed7033867b84f5dccf8c08cc6c92023f8cbfc",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-6c94836f73dc"
+      ]
+    },
+    {
       "id": "source-2fbeced2235411d2",
       "url": "https://m.my-formosa.com.tw/DOC_223267.htm",
       "domain": "m.my-formosa.com.tw",
@@ -521,14 +539,14 @@
       "id": "source-fbadc2a46e4cf5d2",
       "url": "https://my-formosa.com.tw/DOC_223242.htm",
       "domain": "my-formosa.com.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://my-formosa.com.tw/DOC_223242.htm",
-      "contentType": "text/html",
-      "fingerprint": "ed58f0c1a1dd3e65871e7e7c15422940c581573600d6203367c83505616888e6",
-      "error": null,
-      "evidence": "partial",
-      "candidateHits": 3,
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ConnectionError",
+      "evidence": "none",
+      "candidateHits": 0,
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
@@ -561,15 +579,15 @@
       "id": "source-5bb90e197eca4542",
       "url": "https://my-formosa.com.tw/DOC_224233.htm",
       "domain": "my-formosa.com.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://my-formosa.com.tw/DOC_224233.htm",
-      "contentType": "text/html",
-      "fingerprint": "925198fdda3734122b6a15ed9cf34ef8f4ea993a833e27a2f15e9d4416691dce",
-      "error": null,
-      "evidence": "strong",
-      "candidateHits": 3,
-      "percentageHits": 5,
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ConnectionError",
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-c5a73b1a4618",
@@ -581,15 +599,15 @@
       "id": "source-a46437b74c1ce0fa",
       "url": "https://my-formosa.com.tw/DOC_224420.htm",
       "domain": "my-formosa.com.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://my-formosa.com.tw/DOC_224420.htm",
-      "contentType": "text/html",
-      "fingerprint": "d3ca53ee6e12c7786395c46dff728934208533fd7b1e40b4ba8c0b7ebe26cfe4",
-      "error": null,
-      "evidence": "strong",
-      "candidateHits": 3,
-      "percentageHits": 4,
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ConnectionError",
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-533fa604a314",
@@ -807,6 +825,24 @@
       "contentChanged": false,
       "recordIds": [
         "poll-656cac5fe07a"
+      ]
+    },
+    {
+      "id": "source-d5ae47838993282b",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5558776",
+      "domain": "news.ltn.com.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5558776",
+      "contentType": "text/html",
+      "fingerprint": "29c3c8d5440aa972c55a6f0bfee3edf77917a258f4fb9076a844c0aa7cdcc548",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-1c5ce4f679dd"
       ]
     },
     {
@@ -1090,7 +1126,7 @@
       "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
-        "poll-1a96f8164b9b"
+        "poll-9ee0e9455898"
       ]
     },
     {
@@ -1159,15 +1195,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "restricted",
-      "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgRA7LCRGOG819QGIi1ItHbIgir7m-qphU2B451r_YDhBQn06_-aKqPFZc1plWHXADmyo1daeQd95TAyAnJSWgFD",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 6,
+      "percentageHits": 3,
       "contentChanged": false,
       "recordIds": [
         "poll-4e37501e9e70"
@@ -1701,7 +1737,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -3145,6 +3181,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-3d73c7fec380d763",
+      "countyId": "yilan",
+      "fieldwork": "8月26日至29日",
+      "institute": "山水民調",
+      "recordIds": [
+        "poll-1c5ce4f679dd"
+      ],
+      "sourceUrls": [
+        "https://news.ltn.com.tw/news/politics/breakingnews/5558776"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-3db08746e9632d82",
       "countyId": "changhua",
       "fieldwork": "5月20日至21日",
@@ -3823,19 +3872,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-8de5fe83da082f7c",
-      "countyId": "newtaipei",
-      "fieldwork": "8月24至26日",
-      "institute": "年代民調",
-      "recordIds": [
-        "poll-1a96f8164b9b"
-      ],
-      "sourceUrls": [
-        "https://news.tvbs.com.tw/politics/4013907"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-8e018f5894705f56",
       "countyId": "hualien",
       "fieldwork": "3月18日至20日及3月23日",
@@ -4466,6 +4502,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-e622afe51c8af95a",
+      "countyId": "newtaipei",
+      "fieldwork": "8月26日至28日",
+      "institute": "畢肯市場研究",
+      "recordIds": [
+        "poll-6c94836f73dc"
+      ],
+      "sourceUrls": [
+        "https://ctinews.com/news/items/4XamVZDJxA"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-e80ddaa5afa02573",
       "countyId": "newtaipei",
       "fieldwork": "2月23日至24日",
@@ -4574,6 +4623,19 @@
       ],
       "sourceUrls": [
         "https://news.tvbs.com.tw/politics/3152745"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-f63a32ba6a3c030d",
+      "countyId": "newtaipei",
+      "fieldwork": "8月24日至26日",
+      "institute": "年代民調",
+      "recordIds": [
+        "poll-9ee0e9455898"
+      ],
+      "sourceUrls": [
+        "https://news.tvbs.com.tw/politics/4013907"
       ],
       "scenarioCount": 1
     },
@@ -4776,17 +4838,6 @@
       ]
     },
     {
-      "id": "review-4577a83454a058f8",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
-      "recordIds": [
-        "poll-4e37501e9e70"
-      ]
-    },
-    {
       "id": "review-45bff19b5d134b65",
       "priority": "medium",
       "reasons": [
@@ -4839,6 +4890,19 @@
       "recordIds": [
         "poll-0c8f3a46cfd7",
         "poll-e130ccccdcbf"
+      ]
+    },
+    {
+      "id": "review-5bb90e197eca4542",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://my-formosa.com.tw/DOC_224233.htm",
+      "recordIds": [
+        "poll-c5a73b1a4618",
+        "poll-d3ce845d4de2",
+        "poll-f65208f89708"
       ]
     },
     {
@@ -4977,6 +5041,19 @@
       ]
     },
     {
+      "id": "review-a46437b74c1ce0fa",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://my-formosa.com.tw/DOC_224420.htm",
+      "recordIds": [
+        "poll-533fa604a314",
+        "poll-72cdbe2406fa",
+        "poll-a67277e1d00c"
+      ]
+    },
+    {
       "id": "review-ac23c7f5d36a1c2e",
       "priority": "medium",
       "reasons": [
@@ -5082,6 +5159,19 @@
         "poll-6c4ba2cf2d7d",
         "poll-91f6a6e1b412",
         "poll-b5b74ee78502"
+      ]
+    },
+    {
+      "id": "review-fbadc2a46e4cf5d2",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://my-formosa.com.tw/DOC_223242.htm",
+      "recordIds": [
+        "poll-0b85f7b6b65d",
+        "poll-61cb6cc55c63",
+        "poll-cd8d11d19c9e"
       ]
     }
   ]

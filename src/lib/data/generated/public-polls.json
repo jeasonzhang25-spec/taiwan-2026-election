@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-09-01",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 292,
+  "recordCount": 294,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -3307,11 +3307,11 @@
       "undecided": 23.4
     },
     {
-      "id": "poll-1a96f8164b9b",
+      "id": "poll-9ee0e9455898",
       "countyId": "newtaipei",
       "institute": "年代民調",
       "date": "2026-08-26",
-      "fieldwork": "8月24至26日",
+      "fieldwork": "8月24日至26日",
       "source": "年代民調",
       "sourceUrl": "https://news.tvbs.com.tw/politics/4013907",
       "sourceKind": "public",
@@ -3321,6 +3321,21 @@
         "newtaipei-蘇巧慧": 37.8
       },
       "undecided": 26.0
+    },
+    {
+      "id": "poll-6c94836f73dc",
+      "countyId": "newtaipei",
+      "institute": "畢肯市場研究",
+      "date": "2026-08-28",
+      "fieldwork": "8月26日至28日",
+      "source": "畢肯市場研究",
+      "sourceUrl": "https://ctinews.com/news/items/4XamVZDJxA",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 34.7,
+        "newtaipei-蘇巧慧": 35.2
+      }
     },
     {
       "id": "poll-1380a5b80955",
@@ -4715,6 +4730,21 @@
       "undecided": 36.7
     },
     {
+      "id": "poll-1c5ce4f679dd",
+      "countyId": "yilan",
+      "institute": "山水民調",
+      "date": "2026-08-29",
+      "fieldwork": "8月26日至29日",
+      "source": "山水民調",
+      "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5558776",
+      "sourceKind": "public",
+      "scenario": "吳宗憲－林國漳",
+      "results": {
+        "yilan-吳宗憲": 28.0,
+        "yilan-林國漳": 37.8
+      }
+    },
+    {
       "id": "poll-b2d0bb248cf5",
       "countyId": "yunlin",
       "institute": "鉅聞天下",
@@ -5154,5 +5184,5 @@
       }
     ]
   },
-  "generatedAt": "2026-08-31T06:13:31Z"
+  "generatedAt": "2026-09-01T10:06:25Z"
 }

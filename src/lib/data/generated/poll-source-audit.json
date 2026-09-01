@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-01T18:31:12Z",
+  "generatedAt": "2026-09-01T21:21:16Z",
   "dataGeneratedAt": "2026-09-01T10:06:25Z",
   "summary": {
     "recordCount": 294,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 2,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 34,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1737,7 +1737,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -1859,7 +1859,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 5,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -2220,11 +2220,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.pinview.com.tw/News/57636.html",
       "contentType": "text/html",
-      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fingerprint": "ff75f0f04bd4e160ec3da64a2d522b74a216935b33517341a15be4426503e164",
       "error": null,
-      "evidence": "none",
+      "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 0,
+      "percentageHits": 2,
       "contentChanged": true,
       "recordIds": [
         "poll-ae5c0a47437f"
@@ -4727,23 +4727,9 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-0b71c557de25e052",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/526838",
-      "recordIds": [
-        "poll-50167f3421b3",
-        "poll-818b8bdd2864",
-        "poll-8c9492d1f501"
-      ]
-    },
-    {
       "id": "review-51af381bc9a7fcea",
       "priority": "high",
       "reasons": [
-        "no_poll_evidence_found",
         "source_content_changed"
       ],
       "url": "https://www.pinview.com.tw/News/57636.html",

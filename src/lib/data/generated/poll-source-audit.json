@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-01T21:21:16Z",
+  "generatedAt": "2026-09-01T23:35:08Z",
   "dataGeneratedAt": "2026-09-01T10:06:25Z",
   "summary": {
     "recordCount": 294,
@@ -1737,7 +1737,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -1854,12 +1854,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/526838",
       "contentType": "text/html",
-      "fingerprint": "42e69a4e903aa710ff9b8f1349fe812edc9399570ccca9319ad2182306432966",
+      "fingerprint": "5c5074f0f61eb866830d7c09e6dfcb6b95bd8a55bf6c72c4542f7ea402cee6ec",
       "error": null,
       "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 5,
-      "contentChanged": false,
+      "percentageHits": 4,
+      "contentChanged": true,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -2225,7 +2225,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 2,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-ae5c0a47437f"
       ]
@@ -4727,14 +4727,16 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-51af381bc9a7fcea",
+      "id": "review-0b71c557de25e052",
       "priority": "high",
       "reasons": [
         "source_content_changed"
       ],
-      "url": "https://www.pinview.com.tw/News/57636.html",
+      "url": "https://www.ftnn.com.tw/news/526838",
       "recordIds": [
-        "poll-ae5c0a47437f"
+        "poll-50167f3421b3",
+        "poll-818b8bdd2864",
+        "poll-8c9492d1f501"
       ]
     },
     {

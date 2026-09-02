@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-09-02",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 294,
+  "recordCount": 295,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -3338,6 +3338,22 @@
       }
     },
     {
+      "id": "poll-e51bfad82f27",
+      "countyId": "newtaipei",
+      "institute": "TVBS",
+      "date": "2026-08-29",
+      "fieldwork": "8月28日至29日",
+      "source": "TVBS",
+      "sourceUrl": "https://newtalk.tw/news/view/2026-09-02/1057312",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧",
+      "results": {
+        "newtaipei-李四川": 39.8,
+        "newtaipei-蘇巧慧": 33.1
+      },
+      "undecided": 27.1
+    },
+    {
       "id": "poll-1380a5b80955",
       "countyId": "penghu",
       "institute": "民意調查協會",
@@ -5184,5 +5200,5 @@
       }
     ]
   },
-  "generatedAt": "2026-09-01T10:06:25Z"
+  "generatedAt": "2026-09-02T06:26:10Z"
 }

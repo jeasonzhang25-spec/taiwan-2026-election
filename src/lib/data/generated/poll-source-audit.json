@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-01T23:35:08Z",
+  "generatedAt": "2026-09-02T01:25:37Z",
   "dataGeneratedAt": "2026-09-01T10:06:25Z",
   "summary": {
     "recordCount": 294,
@@ -1496,7 +1496,7 @@
       "domain": "www.dpp.org.tw",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.dpp.org.tw/media/contents/11439",
+      "finalUrl": "https://www.dpp.org.tw/overload.php",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -1854,11 +1854,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/526838",
       "contentType": "text/html",
-      "fingerprint": "5c5074f0f61eb866830d7c09e6dfcb6b95bd8a55bf6c72c4542f7ea402cee6ec",
+      "fingerprint": "0369087e39e942c99bc3eaabf90da373461a914e0babaddf1d24c1166cff681c",
       "error": null,
       "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 4,
+      "percentageHits": 5,
       "contentChanged": true,
       "recordIds": [
         "poll-50167f3421b3",

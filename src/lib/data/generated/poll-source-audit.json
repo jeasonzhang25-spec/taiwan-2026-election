@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-03T00:16:09Z",
+  "generatedAt": "2026-09-03T17:16:05Z",
   "dataGeneratedAt": "2026-09-02T06:26:10Z",
   "summary": {
     "recordCount": 295,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 34,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 33,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1877,7 +1877,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 4,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -4757,19 +4757,6 @@
     }
   ],
   "reviewQueue": [
-    {
-      "id": "review-0b71c557de25e052",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/526838",
-      "recordIds": [
-        "poll-50167f3421b3",
-        "poll-818b8bdd2864",
-        "poll-8c9492d1f501"
-      ]
-    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

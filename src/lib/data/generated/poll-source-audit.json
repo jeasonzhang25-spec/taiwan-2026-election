@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-03T17:16:05Z",
+  "generatedAt": "2026-09-04T17:36:54Z",
   "dataGeneratedAt": "2026-09-02T06:26:10Z",
   "summary": {
     "recordCount": 295,
     "surveyCount": 143,
     "sourceCount": 143,
     "checkedSourceCount": 143,
-    "reachableCount": 120,
-    "restrictedCount": 21,
+    "reachableCount": 119,
+    "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 33,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1213,15 +1213,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "status": "restricted",
+      "httpStatus": 429,
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQ0oTOZGKuD7NQGIi3FOUZhKTlmBage3iHePhJ6JGVgDlwTTlHNgPZRpTrLGJ1dS4upot94i_39qzAyAnJSWgFD",
       "contentType": "text/html",
-      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
+      "fingerprint": null,
       "error": null,
-      "evidence": "strong",
-      "candidateHits": 6,
-      "percentageHits": 3,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-4e37501e9e70"
@@ -1755,7 +1755,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2256,12 +2256,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.setn.com/news/1748047",
       "contentType": "text/html",
-      "fingerprint": "7885936b65d7431e6da737d2d6224a12ac8d4078cf80005b330b00a66b68c8cc",
+      "fingerprint": "846f361dd8cc75a1d9787b898b717d12b7b16f5e6cf079f060eb04967263a867",
       "error": null,
-      "evidence": "partial",
+      "evidence": "strong",
       "candidateHits": 5,
-      "percentageHits": 0,
-      "contentChanged": false,
+      "percentageHits": 1,
+      "contentChanged": true,
       "recordIds": [
         "poll-05b3836f310d",
         "poll-7867b164def4",
@@ -4758,6 +4758,20 @@
   ],
   "reviewQueue": [
     {
+      "id": "review-e4fdea1f8fb3c6da",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.setn.com/News.aspx?NewsID=1748047",
+      "recordIds": [
+        "poll-05b3836f310d",
+        "poll-7867b164def4",
+        "poll-9c3674c5c8c7",
+        "poll-b80a849acb0b"
+      ]
+    },
+    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -4866,6 +4880,17 @@
         "poll-3c5d29b6b367",
         "poll-599c54801248",
         "poll-f7b684c2707d"
+      ]
+    },
+    {
+      "id": "review-4577a83454a058f8",
+      "priority": "medium",
+      "reasons": [
+        "source_restricted"
+      ],
+      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "recordIds": [
+        "poll-4e37501e9e70"
       ]
     },
     {

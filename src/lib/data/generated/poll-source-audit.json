@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-05T09:05:19Z",
-  "dataGeneratedAt": "2026-09-02T06:26:10Z",
+  "generatedAt": "2026-09-05T12:43:18Z",
+  "dataGeneratedAt": "2026-09-05T12:43:03Z",
   "summary": {
     "recordCount": 295,
     "surveyCount": 143,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 34,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 33,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -476,7 +476,7 @@
       "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
-        "poll-6c94836f73dc"
+        "poll-a8585e969ad8"
       ]
     },
     {
@@ -1800,7 +1800,7 @@
       "evidence": "strong",
       "candidateHits": 3,
       "percentageHits": 3,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-0c0b625ac0e2",
         "poll-4259820be9c2"
@@ -4417,6 +4417,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-d250c0ea309364c1",
+      "countyId": "newtaipei",
+      "fieldwork": "8月26日至28日",
+      "institute": "信民協會",
+      "recordIds": [
+        "poll-a8585e969ad8"
+      ],
+      "sourceUrls": [
+        "https://ctinews.com/news/items/4XamVZDJxA"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-d268008451758c46",
       "countyId": "kaohsiung",
       "fieldwork": "9月10至12日",
@@ -4516,19 +4529,6 @@
       ],
       "sourceUrls": [
         "https://cnews.com.tw/174251225a03/"
-      ],
-      "scenarioCount": 1
-    },
-    {
-      "id": "survey-e622afe51c8af95a",
-      "countyId": "newtaipei",
-      "fieldwork": "8月26日至28日",
-      "institute": "畢肯市場研究",
-      "recordIds": [
-        "poll-6c94836f73dc"
-      ],
-      "sourceUrls": [
-        "https://ctinews.com/news/items/4XamVZDJxA"
       ],
       "scenarioCount": 1
     },
@@ -4757,18 +4757,6 @@
     }
   ],
   "reviewQueue": [
-    {
-      "id": "review-cae2e9feb5529f2e",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/506723",
-      "recordIds": [
-        "poll-0c0b625ac0e2",
-        "poll-4259820be9c2"
-      ]
-    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-06T06:30:55Z",
+  "generatedAt": "2026-09-06T11:22:17Z",
   "dataGeneratedAt": "2026-09-05T12:43:03Z",
   "summary": {
     "recordCount": 295,
     "surveyCount": 143,
     "sourceCount": 143,
     "checkedSourceCount": 143,
-    "reachableCount": 120,
+    "reachableCount": 118,
     "restrictedCount": 21,
-    "unreachableCount": 2,
+    "unreachableCount": 4,
     "notCheckedCount": 0,
     "contentChangedCount": 1,
-    "reviewQueueCount": 34,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -985,15 +985,15 @@
       "id": "source-637f96b63936630b",
       "url": "https://news.tvbs.com.tw/politics/3140411",
       "domain": "news.tvbs.com.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://news.tvbs.com.tw/politics/3140411",
-      "contentType": "text/html",
-      "fingerprint": "b5871cef425d131f45486eff24da1b92a807a09e0bdefb21fc16eb7ed4e1b9c4",
-      "error": null,
-      "evidence": "partial",
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ChunkedEncodingError",
+      "evidence": "none",
       "candidateHits": 0,
-      "percentageHits": 7,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-06beab0913ac",
@@ -1079,15 +1079,15 @@
       "id": "source-9d31b804d4fb6a69",
       "url": "https://news.tvbs.com.tw/politics/3214850",
       "domain": "news.tvbs.com.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://news.tvbs.com.tw/politics/3214850",
-      "contentType": "text/html",
-      "fingerprint": "f4b37f2e892ac28e3b94d1f037359dce13b52fea97c0e3875f5758311ad49d8f",
-      "error": null,
-      "evidence": "strong",
-      "candidateHits": 2,
-      "percentageHits": 2,
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ChunkedEncodingError",
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-58bf9d37c81c"
@@ -1755,7 +1755,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2369,11 +2369,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.setn.com/news/1873356",
       "contentType": "text/html",
-      "fingerprint": "ed78d60ba089f4ce5ee0210d3a1c12e25725e155ba7c60f1e3b26620eb4c7df9",
+      "fingerprint": "16d46325f8e5dc99cec93feaf0a71f7ee7f283d7d43315c4e25f3e5d44bf2eb9",
       "error": null,
       "evidence": "strong",
       "candidateHits": 2,
-      "percentageHits": 2,
+      "percentageHits": 1,
       "contentChanged": true,
       "recordIds": [
         "poll-e40318941753"
@@ -4946,6 +4946,20 @@
       ]
     },
     {
+      "id": "review-637f96b63936630b",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://news.tvbs.com.tw/politics/3140411",
+      "recordIds": [
+        "poll-06beab0913ac",
+        "poll-4a2fef4a89b2",
+        "poll-9094866b708e",
+        "poll-eec87f085f6d"
+      ]
+    },
+    {
       "id": "review-6d3d0ca630fa4825",
       "priority": "medium",
       "reasons": [
@@ -5041,6 +5055,17 @@
         "poll-555db3b4329d",
         "poll-b44687b7a76f",
         "poll-f90960cd1328"
+      ]
+    },
+    {
+      "id": "review-9d31b804d4fb6a69",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://news.tvbs.com.tw/politics/3214850",
+      "recordIds": [
+        "poll-58bf9d37c81c"
       ]
     },
     {

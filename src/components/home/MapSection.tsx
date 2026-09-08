@@ -1,12 +1,18 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useDashboard } from "@/context/ElectionContext";
 import { COUNTIES } from "@/lib/data/counties";
 import { buildCountySnapshots, filterCountySnapshots } from "@/lib/utils/filter";
-import TaiwanMap from "@/components/map/TaiwanMap";
 import MapLegend from "@/components/ui/MapLegend";
 import KeyDistricts from "./KeyDistricts";
 import { EmptyState } from "@/components/ui/EmptyState";
+import { partyShort } from "@/lib/constants";
+
+const TaiwanMap = dynamic(() => import("@/components/map/TaiwanMap"), {
+  ssr: false,
+  loading: () => <div role="status" className="h-full min-h-[360px] animate-pulse rounded-xl bg-[#1B1E23]" aria-label="地圖載入中" />,
+});
 
 export default function MapSection() {
   const { filters, countyId, openCounty } = useDashboard();
@@ -60,6 +66,15 @@ export default function MapSection() {
           <div className="mt-3 border-t border-line pt-3">
             <MapLegend mode={filters.displayMode} />
           </div>
+          <details className="mt-3 rounded-lg border border-line bg-canvas text-xs">
+            <summary className="cursor-pointer px-3 py-2 font-medium text-ink-secondary">查看地圖文字摘要（{filtered.length} 縣市）</summary>
+            <div className="grid gap-px border-t border-line bg-line sm:grid-cols-2">
+              {filtered.map((county) => {
+                const leader = county.candidates.find((candidate) => candidate.id === county.leadingId);
+                return <div key={county.id} className="flex items-center justify-between gap-3 bg-canvas px-3 py-2"><a href={`/county/${county.id}`} className="font-medium text-ink hover:underline">{county.name}</a><span className="text-right text-ink-secondary">{county.dataStatus === "insufficient" ? "尚無民調" : `${leader?.name ?? "—"}（${leader ? partyShort(leader.partyId) : "—"}）領先 ${county.margin.toFixed(1)} 點`}</span></div>;
+              })}
+            </div>
+          </details>
         </div>
 
         {/* 右側：本週關鍵選區（1/3） */}

@@ -10,7 +10,7 @@
 
 | 面向 | 選型 |
 | --- | --- |
-| 框架 | Next.js 14（App Router） |
+| 框架 | Next.js 16（App Router） |
 | 語言 | TypeScript（strict） |
 | 樣式 | Tailwind CSS 3 |
 | 圖表 | ECharts 5（canvas 渲染，自建輕量 React 封裝） |
@@ -24,7 +24,7 @@
 
 ## 快速開始
 
-環境要求：Node.js ≥ 18.17（建議 20+）。
+環境要求：Node.js ≥ 20.9。
 
 ```bash
 # 1. 安裝依賴
@@ -41,10 +41,18 @@ npm run start
 # 4. 型別檢查
 npm run typecheck
 
-# 5. 重新同步並驗證公開民調
+# 5. 重新同步並驗證公開民調、候選人與政見線索
 npm run sync:polls
+npm run sync:candidates
+npm run sync:policies
 npm run validate:polls
 npm run verify:poll-sources
+
+# 6. P1 資料契約、型別、建置與首頁體積品質門
+npm run quality
+
+# 7. 核心路徑與 axe 無障礙回歸（需先完成 npm run build）
+npm run test:e2e
 ```
 
 ---
@@ -60,7 +68,8 @@ election-dashboard/
 │   ├── app/
 │   │   ├── layout.tsx                 # 根佈局（metadata、lang=zh-Hant）
 │   │   ├── page.tsx                   # 首頁組裝（Provider + 各區塊 + 抽屜）
-│   │   ├── county/[countyId]/          # 六都獨立頁（民調、政見、訂閱）
+│   │   ├── county/[countyId]/          # 22 縣市獨立頁（民調、政見、訂閱）
+│   │   ├── sources/                    # 民調來源台帳與去重規則
 │   │   ├── data-status/                # 資料健康與更正紀錄
 │   │   ├── roadmap/                    # 公開完善清單
 │   │   └── globals.css                # 全域樣式、設計 token、紋理/動畫
@@ -93,6 +102,8 @@ election-dashboard/
 
 公開民調同步器位於 `scripts/sync-public-polls.py`，輸出為 `src/lib/data/generated/public-polls.json`。`scripts/validate-public-polls.py` 會在發布前檢查筆數、覆蓋縣市、日期、百分比、來源連結與候選人對應；`scripts/verify-poll-sources.py` 另行檢查來源連線、內容指紋與已發布數字變更，輸出人工複核佇列至 `src/lib/data/generated/poll-source-audit.json`。
 
+候選人台帳位於 `src/lib/data/generated/candidate-registrations.json`，覆蓋 22 縣市、81 位已登記人；`scripts/sync-candidate-registry.py` 定期檢查各地選委會入口與全台彙總是否仍一致。`scripts/sync-candidate-policies.py` 為每位登記人建立「姓名＋政策關鍵字」監測，把新線索寫入 `candidate-policy-audit.json`。新聞標題不會直接變成政見：只有能直接歸屬候選人、保留日期與原始連結的資料才會進入正式比較。
+
 1. **`src/lib/data/counties.ts`**
    22 縣市的候選人、最新支持度、領先者、領先差距、競爭評級、現任首長、關鍵議題、2022 結果與歷史版圖。對應型別 `CountyRace`。
 
@@ -114,7 +125,7 @@ election-dashboard/
 
 ### 自動排程
 
-`.github/workflows/sync-polls.yml` 會定期同步、執行雙層驗證、型別檢查與正式建置。已發布支持度被改寫時會阻擋新版；來源限制或辨識不足則進入人工複核佇列。流程失敗會建立 GitHub Issue，恢復後自動關閉。`.github/workflows/monitor-poll-freshness.yml` 每 6 小時檢查資料時效，超過 72 小時未成功核驗時另行提醒。上傳 GitHub 並啟用 Actions 後生效。
+`.github/workflows/sync-polls.yml` 每 30 分鐘同步民調；`.github/workflows/sync-candidates-policies.yml` 每 6 小時核驗全台候選人台帳並掃描政見線索。兩條流程都會通過資料契約、型別、建置與體積品質門才保存結果；新增政見、同步失敗或來源差異會建立 GitHub Issue。`.github/workflows/monitor-poll-freshness.yml` 每 6 小時檢查三類結構化資料是否過期。上傳 GitHub 並啟用 Actions 後生效；如果已連接 Vercel，機器人提交通過後會觸發線上重建。
 
 資料狀態頁會分開顯示：
 
@@ -134,15 +145,15 @@ election-dashboard/
 - 篩選條件寫入 URL query（`?type=&party=&source=&date=&mode=&county=`），可直接分享。
 - 縣市抽屜支援 `Esc` 與關閉鈕退出，並處理焦點管理；手機端為全屏底部面板。
 - 民調趨勢圖使用「折線＋資料點＋誤差線」，**不進行虛假平滑**；懸浮顯示機構、樣本數、日期。來源與截至日期只作用於有逐筆記錄的縣市，不會把最新摘要假裝成歷史快照。
-- 六都各有獨立網址，提供人選／來源／題目／日期篩選的逐筆民調比較器。
-- 政見區只收錄可追溯的正式來源；候選人登記與選舉公報尚未完成時顯示待補狀態。
-- 每個六都頁面提供縣市及指定來源 RSS；瀏覽器本機追蹤不蒐集姓名或 Email。
+- 22 縣市各有獨立網址；有資料時提供逐筆民調比較器，無資料時顯示監測與缺口狀態。
+- 政見區逐一顯示所有登記人目前是「已有核驗資料」或「自動監測中」；不以政黨主張、競選口號或媒體評論填補空白。
+- 每個縣市頁面提供縣市及指定來源 RSS；瀏覽器本機追蹤不蒐集姓名或 Email。
 
 ---
 
 ## 設計規範（摘要）
 
-- 主設計基準 1440px、12 欄網格；溫暖米白背景、深灰文字、白色卡片、細邊框、極輕陰影。
+- 主設計基準 1440px、12 欄網格；全站採統一石墨深色層級、低對比細邊框與紫色互動狀態。
 - 圓角 8–12px；動畫 150–250ms；不使用大面積漸層、玻璃擬態或誇張發光。
 - 政黨顏色僅用於地圖／圖表／少量狀態標記：國民黨藍、民進黨綠、民眾黨青綠、時代力量黃、無黨籍灰、五五波淺灰。
 - 所有顏色均搭配文字／圖示／紋理，兼顧色盲使用者。

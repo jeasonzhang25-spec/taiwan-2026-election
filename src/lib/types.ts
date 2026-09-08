@@ -9,6 +9,14 @@ export type ElectionType = "mayor" | "councilor" | "township" | "village";
 /** 政黨識別碼 */
 export type PartyId = "kmt" | "dpp" | "tpp" | "npp" | "ind";
 
+/** 人選在正式選務流程中的身分；越往後代表越接近正式候選人。 */
+export type CandidateStatus =
+  | "poll-option"
+  | "announced"
+  | "nominated"
+  | "registered"
+  | "qualified";
+
 /** 首頁地圖顯示模式 */
 export type DisplayMode = "leading-party" | "competitiveness" | "poll-change";
 
@@ -35,10 +43,31 @@ export interface Candidate {
   id: string;
   name: string;
   partyId: PartyId;
+  /** 小黨或未獲推薦者的官方標示；未填時依 partyId 顯示。 */
+  partyLabel?: string;
   /** 是否為現任首長爭取連任 */
   isIncumbent?: boolean;
-  /** 登記完成前，只能視為民調題目中的人選 */
-  status?: "poll-option" | "official";
+  /** 未有一手來源時只能視為民調題目中的人選。 */
+  status?: CandidateStatus;
+  statusDate?: string;
+  statusSourceUrl?: string;
+}
+
+export interface PolicyPosition {
+  id: string;
+  countyId: string;
+  candidateId: string;
+  dimensionId: string;
+  title: string;
+  summary: string;
+  originalText: string;
+  sourceName: string;
+  sourceUrl: string;
+  /** 來源層級；媒體直接報導只證明候選人曾公開提出，不等同完整政策白皮書。 */
+  sourceKind: "candidate-primary" | "media-direct";
+  publishedAt: string;
+  versionDate: string;
+  status: "draft" | "verified" | "superseded";
 }
 
 /** 單一筆公開民調記錄 */

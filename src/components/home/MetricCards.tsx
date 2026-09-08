@@ -26,7 +26,7 @@ export default function MetricCards() {
     <section className="mx-auto max-w-page px-4 pt-6 sm:px-6 lg:px-8">
       <div className="grid grid-cols-3 gap-3 lg:grid-cols-4">
         {/* 各黨領先縣市 */}
-        <div className="col-span-3 rounded-2xl border border-brand/15 bg-brand-mist p-4 lg:col-span-1">
+        <div className="col-span-3 rounded-2xl border border-line bg-surface p-4 lg:col-span-1">
           <div className="text-xs text-ink-secondary">各黨領先縣市</div>
           <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
             {PARTY_LIST.map((p) => {
@@ -40,12 +40,12 @@ export default function MetricCards() {
               );
             })}
             <span className="inline-flex items-center gap-1.5" title="五五波（膠著）">
-              <span className="hatch-tossup inline-block h-[11px] w-[11px] rounded-[3px] bg-[#DBD8D0]" />
+              <span className="hatch-tossup inline-block h-[11px] w-[11px] rounded-[3px] bg-[#737983]" />
               <span className="text-xs text-ink-secondary">五五波</span>
               <span className="num text-base font-semibold text-ink">{tossups}</span>
             </span>
             <span className="inline-flex items-center gap-1.5" title="尚無公開候選人支持度數字">
-              <span className="inline-block h-[11px] w-[11px] rounded-[3px] border border-line bg-[#EDEBE5]" />
+              <span className="inline-block h-[11px] w-[11px] rounded-[3px] border border-line bg-[#25282E]" />
               <span className="text-xs text-ink-secondary">尚無數字</span>
               <span className="num text-base font-semibold text-ink">{insufficient}</span>
             </span>

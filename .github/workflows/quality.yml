@@ -1,0 +1,28 @@
+name: 網站品質門
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: 安裝依賴
+        run: npm ci
+      - name: 資料、型別、建置與體積門檻
+        run: npm run quality
+      - name: 安裝瀏覽器
+        run: npx playwright install --with-deps chromium
+      - name: 核心路徑與無障礙回歸
+        run: npm run test:e2e

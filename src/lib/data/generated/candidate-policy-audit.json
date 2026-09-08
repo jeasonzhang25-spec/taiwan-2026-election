@@ -1,0 +1,798 @@
+{
+  "generatedAt": "2026-09-08T15:49:25.345312+00:00",
+  "summary": {
+    "candidateCount": 81,
+    "coveredCandidateCount": 2,
+    "verifiedPolicyCount": 10,
+    "monitoredFeedCount": 22,
+    "successfulFeedCount": 0,
+    "failedFeedCount": 0,
+    "reviewQueueCount": 0
+  },
+  "candidates": [
+    {
+      "countyId": "taipei",
+      "candidateId": "taipei-郭璽",
+      "candidateName": "郭璽",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taipei",
+      "candidateId": "taipei-蕭文乾",
+      "candidateName": "蕭文乾",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taipei",
+      "candidateId": "taipei-唐新民",
+      "candidateName": "唐新民",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taipei",
+      "candidateId": "taipei-林志成",
+      "candidateName": "林志成",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "newtaipei",
+      "candidateId": "newtaipei-蘇巧慧",
+      "candidateName": "蘇巧慧",
+      "verifiedPolicyCount": 5,
+      "reviewQueueCount": 0,
+      "status": "verified"
+    },
+    {
+      "countyId": "newtaipei",
+      "candidateId": "newtaipei-李四川",
+      "candidateName": "李四川",
+      "verifiedPolicyCount": 5,
+      "reviewQueueCount": 0,
+      "status": "verified"
+    },
+    {
+      "countyId": "newtaipei",
+      "candidateId": "newtaipei-蘇輝湟",
+      "candidateName": "蘇輝湟",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taoyuan",
+      "candidateId": "taoyuan-張善政",
+      "candidateName": "張善政",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taoyuan",
+      "candidateId": "taoyuan-黃世杰",
+      "candidateName": "黃世杰",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taichung",
+      "candidateId": "taichung-何欣純",
+      "candidateName": "何欣純",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taichung",
+      "candidateId": "taichung-江啟臣",
+      "candidateName": "江啟臣",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taichung",
+      "candidateId": "taichung-洪麗華",
+      "candidateName": "洪麗華",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "tainan",
+      "candidateId": "tainan-謝龍介",
+      "candidateName": "謝龍介",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "tainan",
+      "candidateId": "tainan-蕭燐洪",
+      "candidateName": "蕭燐洪",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "tainan",
+      "candidateId": "tainan-葉人文",
+      "candidateName": "葉人文",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "tainan",
+      "candidateId": "tainan-陳亭妃",
+      "candidateName": "陳亭妃",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kaohsiung",
+      "candidateId": "kaohsiung-張靜",
+      "candidateName": "張靜",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kaohsiung",
+      "candidateId": "kaohsiung-賴瑞隆",
+      "candidateName": "賴瑞隆",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kaohsiung",
+      "candidateId": "kaohsiung-王肇民",
+      "candidateName": "王肇民",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kaohsiung",
+      "candidateId": "kaohsiung-柯志恩",
+      "candidateName": "柯志恩",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kaohsiung",
+      "candidateId": "kaohsiung-洪方隆",
+      "candidateName": "洪方隆",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "keelung",
+      "candidateId": "keelung-謝國樑",
+      "candidateName": "謝國樑",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "keelung",
+      "candidateId": "keelung-魏造文",
+      "candidateName": "魏造文",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "keelung",
+      "candidateId": "keelung-童子瑋",
+      "candidateName": "童子瑋",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hsinchu-city",
+      "candidateId": "hsinchu-city-高虹安",
+      "candidateName": "高虹安",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hsinchu-city",
+      "candidateId": "hsinchu-city-莊競程",
+      "candidateName": "莊競程",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hsinchu-city",
+      "candidateId": "hsinchu-city-何志勇",
+      "candidateName": "何志勇",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hsinchu-county",
+      "candidateId": "hsinchu-county-鄭朝方",
+      "candidateName": "鄭朝方",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hsinchu-county",
+      "candidateId": "hsinchu-county-朱定瑀",
+      "candidateName": "朱定瑀",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hsinchu-county",
+      "candidateId": "hsinchu-county-徐欣瑩",
+      "candidateName": "徐欣瑩",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "miaoli",
+      "candidateId": "miaoli-陳品安",
+      "candidateName": "陳品安",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "miaoli",
+      "candidateId": "miaoli-鍾東錦",
+      "candidateName": "鍾東錦",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "changhua",
+      "candidateId": "changhua-陳重嘉",
+      "candidateName": "陳重嘉",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "changhua",
+      "candidateId": "changhua-陳素月",
+      "candidateName": "陳素月",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "changhua",
+      "candidateId": "changhua-邱建富",
+      "candidateName": "邱建富",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "changhua",
+      "candidateId": "changhua-魏平政",
+      "candidateName": "魏平政",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "nantou",
+      "candidateId": "nantou-温世政",
+      "candidateName": "温世政",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "nantou",
+      "candidateId": "nantou-許淑華",
+      "candidateName": "許淑華",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yunlin",
+      "candidateId": "yunlin-吳炳輝",
+      "candidateName": "吳炳輝",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yunlin",
+      "candidateId": "yunlin-張嘉郡",
+      "candidateName": "張嘉郡",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yunlin",
+      "candidateId": "yunlin-劉建國",
+      "candidateName": "劉建國",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yunlin",
+      "candidateId": "yunlin-林佳瑜",
+      "candidateName": "林佳瑜",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "chiayi-city",
+      "candidateId": "chiayi-city-黃宏成台灣阿成世界偉人財神總統",
+      "candidateName": "黃宏成台灣阿成世界偉人財神總統",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "chiayi-city",
+      "candidateId": "chiayi-city-陳愷璜",
+      "candidateName": "陳愷璜",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "chiayi-city",
+      "candidateId": "chiayi-city-張啓楷",
+      "candidateName": "張啓楷",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "chiayi-city",
+      "candidateId": "chiayi-city-王美惠",
+      "candidateName": "王美惠",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "chiayi-city",
+      "candidateId": "chiayi-city-王義成",
+      "candidateName": "王義成",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "chiayi-county",
+      "candidateId": "chiayi-county-吳品叡",
+      "candidateName": "吳品叡",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "chiayi-county",
+      "candidateId": "chiayi-county-蔡易餘",
+      "candidateName": "蔡易餘",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "pingtung",
+      "candidateId": "pingtung-蘇清泉",
+      "candidateName": "蘇清泉",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "pingtung",
+      "candidateId": "pingtung-周春米",
+      "candidateName": "周春米",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yilan",
+      "candidateId": "yilan-陳宏毅",
+      "candidateName": "陳宏毅",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yilan",
+      "candidateId": "yilan-吳宗憲",
+      "candidateName": "吳宗憲",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yilan",
+      "candidateId": "yilan-劉燦輝",
+      "candidateName": "劉燦輝",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yilan",
+      "candidateId": "yilan-林國漳",
+      "candidateName": "林國漳",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "yilan",
+      "candidateId": "yilan-楊鉯婷",
+      "candidateName": "楊鉯婷",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taitung",
+      "candidateId": "taitung-陳瑩",
+      "candidateName": "陳瑩",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taitung",
+      "candidateId": "taitung-吳秀華",
+      "candidateName": "吳秀華",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taitung",
+      "candidateId": "taitung-李吳穎智",
+      "candidateName": "李吳穎智",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "taitung",
+      "candidateId": "taitung-王志偉",
+      "candidateName": "王志偉",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hualien",
+      "candidateId": "hualien-游淑貞",
+      "candidateName": "游淑貞",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hualien",
+      "candidateId": "hualien-張峻",
+      "candidateName": "張峻",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hualien",
+      "candidateId": "hualien-魏嘉賢",
+      "candidateName": "魏嘉賢",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "hualien",
+      "candidateId": "hualien-羅佩秦",
+      "candidateName": "羅佩秦",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "penghu",
+      "candidateId": "penghu-吳淑瑾",
+      "candidateName": "吳淑瑾",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "penghu",
+      "candidateId": "penghu-陳振中",
+      "candidateName": "陳振中",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "penghu",
+      "candidateId": "penghu-周倪安",
+      "candidateName": "周倪安",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "penghu",
+      "candidateId": "penghu-許智富",
+      "candidateName": "許智富",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "penghu",
+      "candidateId": "penghu-陳盡川",
+      "candidateName": "陳盡川",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "penghu",
+      "candidateId": "penghu-葉竹林",
+      "candidateName": "葉竹林",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kinmen",
+      "candidateId": "kinmen-洪和成",
+      "candidateName": "洪和成",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kinmen",
+      "candidateId": "kinmen-陳玉珍",
+      "candidateName": "陳玉珍",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kinmen",
+      "candidateId": "kinmen-李文良",
+      "candidateName": "李文良",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kinmen",
+      "candidateId": "kinmen-黃世團",
+      "candidateName": "黃世團",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kinmen",
+      "candidateId": "kinmen-張國威",
+      "candidateName": "張國威",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kinmen",
+      "candidateId": "kinmen-梁文韜",
+      "candidateName": "梁文韜",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "kinmen",
+      "candidateId": "kinmen-張火木",
+      "candidateName": "張火木",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "lienchiang",
+      "candidateId": "lienchiang-王忠銘",
+      "candidateName": "王忠銘",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    },
+    {
+      "countyId": "lienchiang",
+      "candidateId": "lienchiang-曹爾元",
+      "candidateName": "曹爾元",
+      "verifiedPolicyCount": 0,
+      "reviewQueueCount": 0,
+      "status": "monitoring"
+    }
+  ],
+  "feeds": [
+    {
+      "countyId": "changhua",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%BD%B0%E5%8C%96%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "chiayi-city",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%98%89%E7%BE%A9%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "chiayi-county",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%98%89%E7%BE%A9%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "hsinchu-city",
+      "url": "https://news.google.com/rss/search?q=2026%20%E6%96%B0%E7%AB%B9%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "hsinchu-county",
+      "url": "https://news.google.com/rss/search?q=2026%20%E6%96%B0%E7%AB%B9%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "hualien",
+      "url": "https://news.google.com/rss/search?q=2026%20%E8%8A%B1%E8%93%AE%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "kaohsiung",
+      "url": "https://news.google.com/rss/search?q=2026%20%E9%AB%98%E9%9B%84%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "keelung",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%9F%BA%E9%9A%86%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "kinmen",
+      "url": "https://news.google.com/rss/search?q=2026%20%E9%87%91%E9%96%80%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "lienchiang",
+      "url": "https://news.google.com/rss/search?q=2026%20%E9%80%A3%E6%B1%9F%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "miaoli",
+      "url": "https://news.google.com/rss/search?q=2026%20%E8%8B%97%E6%A0%97%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "nantou",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%8D%97%E6%8A%95%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "newtaipei",
+      "url": "https://news.google.com/rss/search?q=2026%20%E6%96%B0%E5%8C%97%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "penghu",
+      "url": "https://news.google.com/rss/search?q=2026%20%E6%BE%8E%E6%B9%96%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "pingtung",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%B1%8F%E6%9D%B1%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "taichung",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E4%B8%AD%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "tainan",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E5%8D%97%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "taipei",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E5%8C%97%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "taitung",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E6%9D%B1%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "taoyuan",
+      "url": "https://news.google.com/rss/search?q=2026%20%E6%A1%83%E5%9C%92%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "yilan",
+      "url": "https://news.google.com/rss/search?q=2026%20%E5%AE%9C%E8%98%AD%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    },
+    {
+      "countyId": "yunlin",
+      "url": "https://news.google.com/rss/search?q=2026%20%E9%9B%B2%E6%9E%97%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "status": "not-checked",
+      "itemCount": 0
+    }
+  ],
+  "failedFeeds": [],
+  "reviewQueue": []
+}

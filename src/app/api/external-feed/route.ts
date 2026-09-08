@@ -4,6 +4,7 @@ import {
   type ExternalFeedItem,
   type ExternalFeedKind,
 } from "@/lib/data/external";
+import { inferExternalFeedKind } from "@/lib/data/feed-classification";
 
 export const revalidate = 300;
 
@@ -12,6 +13,12 @@ type FeedDefinition = {
   query: string;
   topic: string;
 };
+
+const COUNTY_TOPICS = [
+  "台北市", "新北市", "桃園市", "台中市", "台南市", "高雄市", "基隆市",
+  "新竹市", "新竹縣", "苗栗縣", "彰化縣", "南投縣", "雲林縣", "嘉義市",
+  "嘉義縣", "屏東縣", "宜蘭縣", "花蓮縣", "台東縣", "澎湖縣", "金門縣", "連江縣",
+] as const;
 
 const FEED_DEFINITIONS: FeedDefinition[] = [
   { kind: "news", query: "2026 九合一 選舉", topic: "全台" },
@@ -23,12 +30,7 @@ const FEED_DEFINITIONS: FeedDefinition[] = [
   { kind: "commentary", query: "2026 九合一 觀點 投書", topic: "評論" },
   { kind: "commentary", query: "2026 縣市長 社論", topic: "評論" },
   { kind: "analysis", query: "2026 地方選舉 選情 評析", topic: "全台" },
-  { kind: "news", query: "2026 台北市長 選舉", topic: "台北市" },
-  { kind: "news", query: "2026 新北市長 選舉", topic: "新北市" },
-  { kind: "news", query: "2026 桃園市長 選舉", topic: "桃園市" },
-  { kind: "news", query: "2026 台中市長 選舉", topic: "台中市" },
-  { kind: "news", query: "2026 台南市長 選舉", topic: "台南市" },
-  { kind: "news", query: "2026 高雄市長 選舉", topic: "高雄市" },
+  ...COUNTY_TOPICS.map((topic) => ({ kind: "news" as const, query: `2026 ${topic}長 選舉`, topic })),
 ];
 
 const FEEDS = FEED_DEFINITIONS.map((feed) => ({
@@ -77,14 +79,6 @@ function safeHttpsUrl(value: string): string | null {
   }
 }
 
-function inferKind(title: string, fallback: ExternalFeedKind): ExternalFeedKind {
-  if (/民調|支持度|好感度|領先|落後|五五波|調查出爐/.test(title)) return "poll";
-  if (/名嘴|評論|社論|投書|預言|斷言|觀點|看法|推演|看好|看衰/.test(title)) return "commentary";
-  if (/選情|戰況|布局|盤點|分析|評析|解析|評估|攻防|勝算|戰略|結構差異|觀察點/.test(title)) return "analysis";
-  if (fallback === "commentary" || fallback === "analysis") return "news";
-  return fallback;
-}
-
 function isElectionRelated(title: string): boolean {
   return /2026|九合一|地方選舉|縣市長|市長|縣長|選情|民調|參選|候選|提名/.test(title);
 }
@@ -106,7 +100,7 @@ function parseFeed(xml: string, feed: (typeof FEEDS)[number]): ExternalFeedItem[
     return [
       {
         id: `${feed.kind}-${feed.topic}-${publishedAt}-${index}`,
-        kind: inferKind(title, feed.kind),
+        kind: inferExternalFeedKind(title, feed.kind),
         title,
         source,
         url,
@@ -121,6 +115,7 @@ async function fetchFeed(feed: (typeof FEEDS)[number]): Promise<ExternalFeedItem
   const response = await fetch(feed.url, {
     headers: { "User-Agent": "IslandElectionDashboard/0.1" },
     next: { revalidate: 300 },
+    signal: AbortSignal.timeout(6000),
   });
 
   if (!response.ok) throw new Error(`Feed responded ${response.status}`);
@@ -171,6 +166,11 @@ export async function GET() {
     addItem(item);
   }
   balancedItems.sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+
+  const failedFeeds = settled.length - settled.filter((result) => result.status === "fulfilled").length;
+  if (failedFeeds > 0) {
+    console.warn("external_feed_partial", JSON.stringify({ failedFeeds, totalFeeds: activeFeeds.length, fetchedAt: now.toISOString() }));
+  }
 
   return NextResponse.json(
     {

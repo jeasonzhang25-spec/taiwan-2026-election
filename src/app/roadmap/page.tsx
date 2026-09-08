@@ -13,7 +13,7 @@ const groups = [
     title: "資料基礎與閱讀體驗",
     tone: "green",
     items: [
-      ["全量公開民調檔案", "收錄 18 個縣市、286 筆問卷情境，原始來源可逐筆開啟。"],
+      ["全量公開民調檔案", "收錄 18 個縣市、298 筆問卷情境，原始來源可逐筆開啟。"],
       ["資料分類", "公開發布、政黨內參、黨內初選分開標示，不混成單一平均。"],
       ["縣市聯動", "地圖、列表、趨勢圖與縣市詳情可互相切換，手機版可完整操作。"],
       ["資料邊界", "人名標示為民調選項，不冒充中選會正式登記候選人。"],
@@ -31,23 +31,23 @@ const groups = [
     ],
   },
   {
-    eyebrow: "最新完成",
-    title: "六都深度頁與追蹤工具",
+    eyebrow: "P1 已完成",
+    title: "全台縣市頁、資料治理與品質門",
     tone: "blue",
     items: [
-      ["六都獨立頁", "台北、新北、桃園、台中、台南、高雄已有可分享網址與完整資料入口。"],
-      ["民調比較器", "可按人選、來源類型、發布來源、題目情境和日期範圍逐筆比較。"],
-      ["政見資料框架", "先公開登記狀態與比較維度；正式資料發布後才逐項填入，不用民調人名冒充候選人。"],
-      ["來源訂閱與提醒", "提供縣市／指定來源 RSS，以及不蒐集個資的瀏覽器本機追蹤。"],
+      ["22 縣市獨立頁", "全台縣市都有穩定網址；無民調時呈現監測時間、資料缺口與下一步。"],
+      ["身分與政見契約", "人選分為民調選項、宣布、提名、登記、審定；政見保留原文、來源與版本。"],
+      ["來源台帳與人工複核", "298 筆情境依 144 組調查歸檔，公開來源核驗、去重規則與待複核原因。"],
+      ["性能、無障礙與 SEO", "ECharts 按需載入、折疊線下延遲載入、圖表文字資料、行動版卡片、分享圖與網站地圖。"],
+      ["自動化品質門", "資料契約、建置體積、Playwright 核心路徑與 axe 無障礙檢查進入 GitHub Actions。"],
     ],
   },
   {
-    eyebrow: "下一步",
-    title: "擴充其餘縣市與正式選務資料",
+    eyebrow: "資格審定中",
+    title: "候選人登記與選舉公報",
     tone: "amber",
     items: [
-      ["其餘 16 縣市獨立頁", "沿用六都模板，依資料量逐步開放可分享的地方專頁。"],
-      ["正式候選人同步", "登記與審定後串接中選會名冊，保留民調選項與正式候選人的差異。"],
+      ["候選人登記同步", "六都及新竹市市長登記名冊已接入；審定公告後再將通過者更新為正式候選人。"],
       ["正式政見版本", "依選舉公報與候選人一手來源建立同題比較、版本日期與原文連結。"],
       ["真正背景推播", "若後續建立會員與通知服務，再提供 Email 或 Web Push；目前不蒐集聯絡資料。"],
     ],
@@ -66,10 +66,10 @@ const groups = [
 ] as const;
 
 const toneStyles = {
-  green: "bg-[#E8F5EE] text-[#126B43]",
-  blue: "bg-[#EAF2FA] text-[#245D91]",
-  amber: "bg-[#FBF1E2] text-[#8A5D0A]",
-  gray: "bg-[#EEEDE9] text-[#5F6470]",
+  green: "bg-[#13271F] text-[#72D6A0]",
+  blue: "bg-[#162333] text-brand",
+  amber: "bg-[#2A2112] text-[#F1C46B]",
+  gray: "bg-[#1B1E23] text-[#AEB3BC]",
 };
 
 export default function RoadmapPage() {
@@ -100,9 +100,9 @@ export default function RoadmapPage() {
           ))}
         </div>
 
-        <section className="mt-8 rounded-xl bg-ink p-6 text-white sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-8">
-          <div><h2 className="text-xl font-semibold">六都模板已可用，下一步擴至其餘 16 縣市</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-white/70">先依資料覆蓋與讀者需求排序，再接入正式候選人名冊與選舉公報，避免空頁面先於可靠資料上線。</p></div>
-          <a href="/county/taipei" className="mt-5 inline-flex shrink-0 rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-ink sm:mt-0">查看六都專頁</a>
+        <section className="mt-8 rounded-xl border border-line bg-surface p-6 text-ink sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-8">
+          <div><h2 className="text-xl font-semibold">全台登記名冊已接入，下一步追蹤資格審定</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-ink-secondary">22 縣市、81 位縣市長登記人均已與民調選項分流，並建立地方選委會來源與政見監測；正式候選人仍以中選會後續審定公告為準。</p></div>
+          <a href="/sources" className="mt-5 inline-flex shrink-0 rounded-lg bg-surface px-4 py-2.5 text-sm font-medium text-ink sm:mt-0">查看來源台帳</a>
         </section>
       </main>
       <Footer />

@@ -10,7 +10,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: sync-public-polls
+  group: election-data-write
   cancel-in-progress: false
 
 jobs:
@@ -57,8 +57,10 @@ jobs:
       - name: 驗證網站
         run: |
           npm ci
+          npm run test:contracts
           npm run typecheck
           npm run build
+          npm run check:bundle
 
       - name: 保存有意義的資料變更
         run: |

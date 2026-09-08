@@ -5,33 +5,33 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // 页面背景：温暖米白 / 极浅灰
-        canvas: "#F6F4EF",
-        surface: "#FFFFFF",
+        // Linear Civic Dark：统一石墨底，以细微明度差建立资料层级
+        canvas: "#0B0C0E",
+        surface: "#121417",
         // 文字层级
-        ink: "#1A1A1A",
-        "ink-secondary": "#5F6470",
-        "ink-muted": "#737985",
+        ink: "#F4F5F7",
+        "ink-secondary": "#B1B5BD",
+        "ink-muted": "#8D929B",
         brand: {
-          DEFAULT: "#173F46",
-          strong: "#10343A",
-          soft: "#E7F0F0",
-          mist: "#F0F4F4",
+          DEFAULT: "#8584FF",
+          strong: "#706FF2",
+          soft: "#25243E",
+          mist: "#171824",
         },
         // 边框与分隔线
-        line: "#E7E4DC",
-        "line-strong": "#D8D4CA",
+        line: "#282B31",
+        "line-strong": "#3A3E47",
         // 政党色（仅用于地图/图表/少量状态标记）
         party: {
-          kmt: "#2B6CB0",
-          dpp: "#178A56",
-          tpp: "#0E8FA0",
-          npp: "#D19A0B",
-          ind: "#8A9199",
-          tossup: "#D5D1C8",
+          kmt: "#4D8FD1",
+          dpp: "#35A86B",
+          tpp: "#27B1C0",
+          npp: "#E7B52D",
+          ind: "#A0A6AF",
+          tossup: "#737983",
         },
         // 状态
-        danger: "#B3261E",
+        danger: "#FF6B66",
       },
       fontFamily: {
         sans: [
@@ -56,13 +56,16 @@ const config: Config = {
           "monospace",
         ],
       },
+      fontSize: {
+        xs: ["0.8125rem", { lineHeight: "1.25rem" }],
+      },
       borderRadius: {
         xl: "12px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(26, 26, 26, 0.035)",
-        "card-hover": "0 3px 10px rgba(26, 26, 26, 0.07), 0 10px 24px rgba(26, 26, 26, 0.04)",
-        drawer: "-12px 0 32px rgba(26, 26, 26, 0.12)",
+        card: "0 1px 2px rgba(0, 0, 0, 0.22)",
+        "card-hover": "0 10px 30px rgba(0, 0, 0, 0.28)",
+        drawer: "-12px 0 36px rgba(0, 0, 0, 0.42)",
       },
       maxWidth: {
         page: "1280px",

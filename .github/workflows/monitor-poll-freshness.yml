@@ -1,4 +1,4 @@
-name: 監看民調資料時效
+name: 監看選舉資料時效
 
 on:
   schedule:
@@ -17,7 +17,7 @@ jobs:
       - name: 讀取網站資料
         uses: actions/checkout@v4
 
-      - name: 判斷是否超過 72 小時未成功核驗
+      - name: 判斷民調、候選人與政見監測是否過期
         id: freshness
         run: |
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
@@ -26,11 +26,20 @@ jobs:
           from pathlib import Path
 
           data = json.loads(Path("src/lib/data/generated/public-polls.json").read_text(encoding="utf-8"))
+          candidate_audit = json.loads(Path("src/lib/data/generated/candidate-registration-audit.json").read_text(encoding="utf-8"))
+          policy_audit = json.loads(Path("src/lib/data/generated/candidate-policy-audit.json").read_text(encoding="utf-8"))
+          now = datetime.now(timezone.utc)
           checked_at = datetime.fromisoformat(f"{data['checkedAt']}T23:59:59+08:00")
-          age_hours = (datetime.now(timezone.utc) - checked_at).total_seconds() / 3600
+          candidate_checked_at = datetime.fromisoformat(candidate_audit["generatedAt"])
+          policy_checked_at = datetime.fromisoformat(policy_audit["generatedAt"])
+          age_hours = (now - checked_at).total_seconds() / 3600
+          candidate_age_hours = (now - candidate_checked_at).total_seconds() / 3600
+          policy_age_hours = (now - policy_checked_at).total_seconds() / 3600
           print(f"checked_at={data['checkedAt']}")
           print(f"age_hours={age_hours:.1f}")
-          print(f"stale={'true' if age_hours > 72 else 'false'}")
+          print(f"candidate_age_hours={candidate_age_hours:.1f}")
+          print(f"policy_age_hours={policy_age_hours:.1f}")
+          print(f"stale={'true' if age_hours > 72 or candidate_age_hours > 30 or policy_age_hours > 30 else 'false'}")
           PY
 
       - name: 建立或更新過期提醒
@@ -39,9 +48,11 @@ jobs:
         env:
           CHECKED_AT: ${{ steps.freshness.outputs.checked_at }}
           AGE_HOURS: ${{ steps.freshness.outputs.age_hours }}
+          CANDIDATE_AGE_HOURS: ${{ steps.freshness.outputs.candidate_age_hours }}
+          POLICY_AGE_HOURS: ${{ steps.freshness.outputs.policy_age_hours }}
         with:
           script: |
-            const title = "[自動提醒] 民調資料超過 72 小時未核驗";
+            const title = "[自動提醒] 選舉資料超過時效未核驗";
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -51,7 +62,8 @@ jobs:
             const existing = issues.find((issue) => issue.title === title);
             const body = [
               `網站資料最後成功核驗日期：${process.env.CHECKED_AT}`,
-              `距今約 ${process.env.AGE_HOURS} 小時，已超過 72 小時門檻。`,
+              `民調距今約 ${process.env.AGE_HOURS} 小時；候選人台帳約 ${process.env.CANDIDATE_AGE_HOURS} 小時；政見監測約 ${process.env.POLICY_AGE_HOURS} 小時。`,
+              "門檻：民調 72 小時，候選人與政見監測 30 小時。",
               "",
               `查看排程：https://github.com/${context.repo.owner}/${context.repo.repo}/actions/workflows/sync-polls.yml`,
             ].join("\n");
@@ -76,7 +88,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const title = "[自動提醒] 民調資料超過 72 小時未核驗";
+            const title = "[自動提醒] 選舉資料超過時效未核驗";
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,

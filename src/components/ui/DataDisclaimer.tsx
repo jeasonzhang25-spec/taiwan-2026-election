@@ -4,7 +4,7 @@ import { DEMO_DISCLAIMER } from "@/lib/constants";
 export function DataDisclaimer({ className = "" }: { className?: string }) {
   return (
     <div
-      className={`flex items-start gap-2 rounded-xl border border-[#E8E0C9] bg-[#FBF8EF] px-3.5 py-2.5 text-[13px] leading-5 text-[#76570F] ${className}`}
+      className={`flex items-start gap-2 rounded-xl border border-[#55411D] bg-[#2A2112] px-3.5 py-2.5 text-[13px] leading-5 text-[#F1C46B] ${className}`}
     >
       <svg
         width="14"

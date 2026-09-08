@@ -4,6 +4,8 @@ import Footer from "@/components/layout/Footer";
 import { COUNTY_MAP } from "@/lib/data/counties";
 import { DATA_CHANGE_LOG } from "@/lib/data/change-log";
 import { getPollDataHealth, POLL_RECORDS_BY_COUNTY } from "@/lib/data/health";
+import candidateAuditData from "@/lib/data/generated/candidate-registration-audit.json";
+import policyAuditData from "@/lib/data/generated/candidate-policy-audit.json";
 
 export const metadata: Metadata = {
   title: "資料狀態與更正紀錄｜島嶼選情",
@@ -55,6 +57,8 @@ function sourceDomain(value?: string | null) {
 
 export default function DataStatusPage() {
   const health = getPollDataHealth();
+  const candidateAudit = candidateAuditData.summary;
+  const policyAudit = policyAuditData.summary;
   const covered = Object.entries(POLL_RECORDS_BY_COUNTY)
     .filter(([, count]) => count > 0)
     .sort((a, b) => b[1] - a[1]);
@@ -72,8 +76,8 @@ export default function DataStatusPage() {
       <main id="main-content" className="mx-auto max-w-page px-4 pb-16 pt-10 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <div className="flex flex-wrap items-center gap-2">
-            <span className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ${healthy ? "bg-[#E8F5EE] text-[#126B43]" : "bg-[#FBF1E2] text-[#8A5D0A]"}`}>
-              <span className={`h-2 w-2 rounded-full ${healthy ? "bg-[#178A56]" : "bg-[#D19A0B]"}`} aria-hidden="true" />
+            <span className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ${healthy ? "bg-[#13271F] text-[#72D6A0]" : "bg-[#2A2112] text-[#F1C46B]"}`}>
+              <span className={`h-2 w-2 rounded-full ${healthy ? "bg-[#35A86B]" : "bg-[#E7B52D]"}`} aria-hidden="true" />
               {statusLabel}
             </span>
             <span className="text-xs text-ink-muted">民調目錄核驗 {health.checkedAt}</span>
@@ -86,22 +90,22 @@ export default function DataStatusPage() {
 
         <section className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4" aria-label="資料摘要">
           <Metric label="民調情境" value={`${health.recordCount} 筆`} note="每個問卷對戰組合各自保留" />
-          <Metric label="公開調查組" value={`約 ${health.surveyCount} 組`} note="依縣市、調查期間、機構與來源歸組" />
-          <Metric label="縣市覆蓋" value={`${health.countyCount} / ${health.totalCountyCount}`} note="有至少兩名人選的數字支持度" />
-          <Metric label="最新調查日期" value={health.latestPollDate} note="依公開索引中的調查結束日" />
+          <Metric label="登記候選人" value={`${candidateAudit.candidateCount} 人`} note={`${candidateAudit.countyCount} / 22 縣市均已建立台帳`} />
+          <Metric label="已核驗政見" value={`${policyAudit.verifiedPolicyCount} 項`} note={`${policyAudit.coveredCandidateCount} 人已有可回查原文`} />
+          <Metric label="政見監測" value={`${policyAudit.candidateCount} / ${candidateAudit.candidateCount}`} note="每位登記人都建立姓名與政策關鍵字監測" />
         </section>
 
         <section className="mt-10 rounded-xl border border-line bg-surface p-5 shadow-card sm:p-6" aria-labelledby="freshness-title">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 id="freshness-title" className="text-lg font-semibold text-ink">兩套更新時間，分別說明</h2>
-              <p className="mt-1 text-sm leading-6 text-ink-secondary">即時新聞索引和結構化民調不是同一套資料，不能共用一個「最新」標籤。</p>
+              <h2 id="freshness-title" className="text-lg font-semibold text-ink">四條更新路徑，分別說明</h2>
+              <p className="mt-1 text-sm leading-6 text-ink-secondary">候選人、政見、民調與即時新聞的證據標準不同，不能共用一個「最新」標籤。</p>
             </div>
             <span className="rounded-full border border-line bg-canvas px-3 py-1 text-xs text-ink-muted">{health.scheduleLabel}</span>
           </div>
           <div className="mt-5 grid gap-3 md:grid-cols-2">
             <article className="rounded-lg border border-line bg-canvas p-4">
-              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">結構化民調</h3><span className="rounded bg-[#E8F5EE] px-2 py-1 text-[11px] font-medium text-[#126B43]">人工規則核驗</span></div>
+              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">結構化民調</h3><span className="rounded bg-[#13271F] px-2 py-1 text-xs font-medium text-[#72D6A0]">人工規則核驗</span></div>
               <dl className="mt-3 grid gap-2 text-sm">
                 <div className="flex justify-between gap-4"><dt className="text-ink-muted">目錄最近檢查</dt><dd className="num text-ink">{health.checkedAt}</dd></div>
                 <div className="flex justify-between gap-4"><dt className="text-ink-muted">內容最近變化</dt><dd className="num text-right text-ink">{formatTaiwanDateTime(health.generatedAt)}</dd></div>
@@ -109,9 +113,19 @@ export default function DataStatusPage() {
               </dl>
             </article>
             <article className="rounded-lg border border-line bg-canvas p-4">
-              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">即時媒體索引</h3><span className="rounded bg-[#EAF1FA] px-2 py-1 text-[11px] font-medium text-[#245A96]">頁面開啟後刷新</span></div>
-              <p className="mt-3 text-sm leading-6 text-ink-secondary">每 5 分鐘嘗試讀取新聞標題、來源、時間和連結。它只用於發現線索，不會自動寫入地圖、領先縣市或民調趨勢。</p>
-              <a href="/#live-data" className="mt-2 inline-flex text-sm font-medium text-[#245D91] hover:underline">查看即時索引與實際抓取時間 →</a>
+              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">候選人登記台帳</h3><span className="rounded bg-[#13271F] px-2 py-1 text-xs font-medium text-[#72D6A0]">22 縣市完整</span></div>
+              <p className="mt-3 text-sm leading-6 text-ink-secondary">每 6 小時檢查 22 個地方選委會入口與全台彙總；來源異常或姓名差異會阻擋新版，不會刪掉上一版名冊。</p>
+              <div className="mt-2 text-xs text-ink-muted">核驗產物 {formatTaiwanDateTime(candidateAuditData.generatedAt)}</div>
+            </article>
+            <article className="rounded-lg border border-line bg-canvas p-4">
+              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">候選人政見</h3><span className="rounded bg-[#162333] px-2 py-1 text-xs font-medium text-[#82B8F0]">81 人持續監測</span></div>
+              <p className="mt-3 text-sm leading-6 text-ink-secondary">每 6 小時逐縣市掃描候選人姓名與政策關鍵字。新文章只會進入待核驗佇列；確認為本人主張並保留原文後才加入比較卡。</p>
+              <div className="mt-2 text-xs text-ink-muted">目前 {policyAudit.reviewQueueCount} 條線索待核驗 · 產物 {formatTaiwanDateTime(policyAuditData.generatedAt)}</div>
+            </article>
+            <article className="rounded-lg border border-line bg-canvas p-4">
+              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">即時媒體索引</h3><span className="rounded bg-[#162333] px-2 py-1 text-xs font-medium text-[#82B8F0]">頁面開啟後刷新</span></div>
+              <p className="mt-3 text-sm leading-6 text-ink-secondary">每 5 分鐘嘗試讀取新聞標題、來源、時間和連結。它只用於發現線索，不會自動寫入地圖、候選人名冊、政見或民調趨勢。</p>
+              <a href="/#live-data" className="mt-2 inline-flex text-sm font-medium text-brand hover:underline">查看即時索引與實際抓取時間 →</a>
             </article>
           </div>
         </section>
@@ -130,7 +144,7 @@ export default function DataStatusPage() {
                 </div>
               ))}
             </div>
-            <div className="border-t border-line bg-[#FBF8EF] px-5 py-4 text-sm leading-6 text-[#725817]">
+            <div className="border-t border-line bg-[#2A2112] px-5 py-4 text-sm leading-6 text-[#F1C46B]">
               尚無符合條件的公開支持度民調：{missingNames.join("、")}。沒有數字不代表沒有參選人，也不代表選情落後。
             </div>
           </div>
@@ -155,7 +169,7 @@ export default function DataStatusPage() {
             <div className="rounded-xl border border-line bg-surface p-5 shadow-card">
               <div className="flex items-start justify-between gap-4">
                 <div><h2 className="text-lg font-semibold text-ink">發布前校驗與揭露缺口</h2><p className="mt-2 text-sm leading-6 text-ink-secondary">結構錯誤會阻擋發布；原始來源未揭露的欄位會如實留空。</p></div>
-                <span className={`num rounded-full px-2.5 py-1 text-xs font-semibold ${health.blockingIssueCount === 0 ? "bg-[#E8F5EE] text-[#126B43]" : "bg-[#FBECEC] text-[#9C2B25]"}`}>{health.blockingIssueCount} 個阻斷項</span>
+                <span className={`num rounded-full px-2.5 py-1 text-xs font-semibold ${health.blockingIssueCount === 0 ? "bg-[#13271F] text-[#72D6A0]" : "bg-[#2B1718] text-[#FF8A84]"}`}>{health.blockingIssueCount} 個阻斷項</span>
               </div>
               <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {[
@@ -169,7 +183,7 @@ export default function DataStatusPage() {
                   <div key={String(label)} className="rounded-lg bg-canvas p-3"><div className="num text-xl font-semibold">{value}</div><div className="mt-1 text-xs text-ink-muted">{label}</div></div>
                 ))}
               </div>
-              <a href={health.indexUrl} target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm font-medium text-[#245D91] underline decoration-[#245D91]/30 underline-offset-4 hover:decoration-[#245D91]">查看公開民調索引 ↗</a>
+              <a href={health.indexUrl} target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm font-medium text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand">查看公開民調索引 ↗</a>
             </div>
           </div>
         </section>
@@ -208,7 +222,7 @@ export default function DataStatusPage() {
             <div className="mt-5 overflow-hidden rounded-lg border border-line">
               <div className="flex items-center justify-between gap-3 border-b border-line bg-canvas px-4 py-3">
                 <h3 className="text-sm font-semibold text-ink">人工複核佇列</h3>
-                <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${health.sourceAudit.blockingIssueCount > 0 ? "bg-[#FBECEC] text-[#9C2B25]" : "bg-[#FBF1E2] text-[#8A5D0A]"}`}>
+                <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${health.sourceAudit.blockingIssueCount > 0 ? "bg-[#2B1718] text-[#FF8A84]" : "bg-[#2A2112] text-[#F1C46B]"}`}>
                   {health.sourceAudit.blockingIssueCount > 0 ? `${health.sourceAudit.blockingIssueCount} 項阻擋發布` : "不阻擋上一版資料"}
                 </span>
               </div>
@@ -217,7 +231,7 @@ export default function DataStatusPage() {
                   <article key={item.id} className="grid gap-2 px-4 py-3 text-sm sm:grid-cols-[180px_1fr_auto] sm:items-center">
                     <div className="truncate font-medium text-ink">{sourceDomain(item.url)}</div>
                     <div className="text-ink-secondary">{item.reasons.map((reason) => REVIEW_REASON_LABELS[reason] ?? reason).join("、")}</div>
-                    {item.url ? <a href={item.url} target="_blank" rel="noreferrer" className="text-xs font-medium text-[#245D91] hover:underline">查看來源 ↗</a> : null}
+                    {item.url ? <a href={item.url} target="_blank" rel="noreferrer" className="text-xs font-medium text-brand hover:underline">查看來源 ↗</a> : null}
                   </article>
                 ))}
               </div>
@@ -226,7 +240,7 @@ export default function DataStatusPage() {
               ) : null}
             </div>
           ) : (
-            <div className="mt-5 rounded-lg border border-[#CFE7DA] bg-[#F1F8F4] px-4 py-3 text-sm text-[#126B43]">
+            <div className="mt-5 rounded-lg border border-[#264D3A] bg-[#13271F] px-4 py-3 text-sm text-[#72D6A0]">
               目前沒有需要人工複核的來源異常，也沒有偵測到已發布數字被改寫。
             </div>
           )}
@@ -236,10 +250,10 @@ export default function DataStatusPage() {
           <h2 className="text-lg font-semibold text-ink">自動更新怎麼把關</h2>
           <div className="mt-5 grid gap-3 md:grid-cols-4">
             {[
-              ["01", "發現", "每 30 分鐘檢查公開民調索引是否有新內容。"],
-              ["02", "雙層驗證", "先核對欄位與百分比，再檢查來源連線、內容指紋與數字變更。"],
-              ["03", "安全發布", "數字遭改寫時阻擋新版；其餘可疑來源排入人工複核，保留上一版。"],
-              ["04", "監看告警", "流程失敗或超過 72 小時未成功檢查時，自動建立 GitHub 提醒。"],
+              ["01", "自動發現", "民調每 30 分鐘更新；候選人與政見每 6 小時掃描；新聞索引每 5 分鐘刷新。"],
+              ["02", "分級核驗", "名冊核對地方選委會；民調檢查數字與方法；政見要求能直接歸屬候選人。"],
+              ["03", "安全發布", "客觀結構資料通過品質門後自動發布；新政見先進人工核驗佇列，避免錯誤歸因。"],
+              ["04", "監看告警", "同步失敗、資料過期、來源變動或出現新政見線索時，自動建立或更新 GitHub 提醒。"],
             ].map(([number, title, detail]) => (
               <div key={String(number)} className="rounded-lg border border-line bg-canvas p-4">
                 <div className="num text-xs text-ink-muted">{number}</div>
@@ -258,7 +272,7 @@ export default function DataStatusPage() {
           <div className="mt-4 divide-y divide-line overflow-hidden rounded-xl border border-line bg-surface shadow-card">
             {DATA_CHANGE_LOG.map((entry) => (
               <article key={`${entry.date}-${entry.title}`} className="grid gap-3 p-5 sm:grid-cols-[110px_1fr]">
-                <div><div className="num text-xs text-ink-muted">{entry.date}</div><div className="mt-1 text-xs font-medium text-[#245D91]">{entry.kind}</div></div>
+                <div><div className="num text-xs text-ink-muted">{entry.date}</div><div className="mt-1 text-xs font-medium text-brand">{entry.kind}</div></div>
                 <div><h3 className="font-semibold text-ink">{entry.title}</h3><p className="mt-1 text-sm leading-6 text-ink-secondary">{entry.detail}</p></div>
               </article>
             ))}

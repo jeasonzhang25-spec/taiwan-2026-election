@@ -13,6 +13,7 @@ import { EmptyState } from "@/components/ui/EmptyState";
 import PollTrendChart from "@/components/charts/PollTrendChart";
 import { fmtShortDate, fmtPct } from "@/lib/utils/format";
 import { isMetroCountyId } from "@/lib/data/county-pages";
+import { candidatePartyLabel, candidateStatusLabel } from "@/lib/data/candidate-status";
 import type { PollRecord } from "@/lib/types";
 
 const SOURCE_KIND_LABEL = {
@@ -139,7 +140,7 @@ export default function CountyDrawer() {
           <DataDisclaimer />
 
           {isMetroCountyId(county.id) && (
-            <a href={`/county/${county.id}`} className="flex items-center justify-between rounded-lg border border-[#C6D9F0] bg-[#F3F7FC] px-4 py-3 text-sm font-medium text-[#245D91] hover:border-[#9DBBDD]">
+            <a href={`/county/${county.id}`} className="flex items-center justify-between rounded-lg border border-[#2B4664] bg-[#162333] px-4 py-3 text-sm font-medium text-brand hover:border-[#42698F]">
               <span>開啟{county.name}完整專頁</span>
               <span aria-hidden="true">民調比較 · 政見 · 訂閱 →</span>
             </a>
@@ -162,18 +163,18 @@ export default function CountyDrawer() {
                       <div className="flex items-center gap-2">
                         <PartyDot party={c.partyId} size={12} />
                         <span className="text-sm font-medium text-ink">{c.name}</span>
-                        <span className="text-xs text-ink-secondary">{partyName(c.partyId)}</span>
+                        <span className="text-xs text-ink-secondary">{candidatePartyLabel(c)}</span>
                         {c.isIncumbent && (
-                          <span className="rounded bg-[#F0EFEC] px-1.5 py-0.5 text-[10px] text-ink-secondary">現任</span>
+                          <span className="rounded bg-[#1B1E23] px-1.5 py-0.5 text-xs text-ink-secondary">現任</span>
                         )}
-                        <span className="rounded bg-[#F0EFEC] px-1.5 py-0.5 text-[10px] text-ink-secondary">非正式候選人名冊</span>
+                        <span className="rounded bg-[#1B1E23] px-1.5 py-0.5 text-xs text-ink-secondary">{candidateStatusLabel(c.status)}</span>
                         {isLeader && (
-                          <span className="rounded bg-[#EAF1FA] px-1.5 py-0.5 text-[10px] font-medium text-[#245A96]">領先</span>
+                          <span className="rounded bg-[#162333] px-1.5 py-0.5 text-xs font-medium text-[#82B8F0]">領先</span>
                         )}
                       </div>
                       <div className="num text-base font-semibold text-ink">{fmtPct(support)}</div>
                     </div>
-                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-[#F0EEE8]">
+                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-[#22252B]">
                       <div
                         className="h-full rounded-full"
                         style={{ width: `${pct}%`, backgroundColor: partyColor(c.partyId) }}
@@ -187,7 +188,7 @@ export default function CountyDrawer() {
               領先者：{leader?.name}，領先{" "}
               <span className="num font-medium text-ink">{county.margin.toFixed(1)}</span> 個百分點
             </p>}
-            {county.dataNote && <p className="mt-2 text-[11px] leading-4 text-ink-muted">{county.dataNote}</p>}
+            {county.dataNote && <p className="mt-2 text-xs leading-4 text-ink-muted">{county.dataNote}</p>}
           </section>
 
           {/* 民調趨勢 */}
@@ -207,7 +208,7 @@ export default function CountyDrawer() {
           <section aria-label="最近民調">
             <div className="mb-2 flex items-end justify-between gap-3">
               <h3 className="text-sm font-semibold text-ink">已收錄公開民調情境</h3>
-              <span className="text-[11px] text-ink-muted">共 {allPolls.length} 筆情境 · 約 {surveyGroupCounts.size} 組調查</span>
+              <span className="text-xs text-ink-muted">共 {allPolls.length} 筆情境 · 約 {surveyGroupCounts.size} 組調查</span>
             </div>
             {allPolls.length > 0 ? (
               <div className="overflow-x-auto rounded-lg border border-line">
@@ -240,12 +241,12 @@ export default function CountyDrawer() {
                         <tr key={r.id} className="hover:bg-canvas/60">
                           <td className="px-3 py-2 text-ink">
                             <div className="whitespace-nowrap">
-                              {r.sourceUrl ? <a href={r.sourceUrl} target="_blank" rel="noreferrer" className="text-[#245A96] hover:underline">{r.institute} ↗</a> : r.institute}
+                              {r.sourceUrl ? <a href={r.sourceUrl} target="_blank" rel="noreferrer" className="text-[#82B8F0] hover:underline">{r.institute} ↗</a> : r.institute}
                             </div>
                             <div className="mt-1 flex flex-wrap gap-1">
-                              <span className="inline-flex rounded bg-[#F0EFEC] px-1.5 py-0.5 text-[10px] text-ink-muted">{SOURCE_KIND_LABEL[r.sourceKind ?? "public"]}</span>
-                              <span className={`inline-flex rounded px-1.5 py-0.5 text-[10px] ${fullDisclosure ? "bg-[#E8F5EE] text-[#126B43]" : "bg-[#FBF1E2] text-[#8A5D0A]"}`}>{fullDisclosure ? "方法欄位完整" : "部分欄位未揭露"}</span>
-                              {groupCount > 1 && <span className="inline-flex rounded bg-[#EAF1FA] px-1.5 py-0.5 text-[10px] text-[#245A96]">同一調查 {groupCount} 題</span>}
+                              <span className="inline-flex rounded bg-[#1B1E23] px-1.5 py-0.5 text-xs text-ink-muted">{SOURCE_KIND_LABEL[r.sourceKind ?? "public"]}</span>
+                              <span className={`inline-flex rounded px-1.5 py-0.5 text-xs ${fullDisclosure ? "bg-[#13271F] text-[#72D6A0]" : "bg-[#2A2112] text-[#F1C46B]"}`}>{fullDisclosure ? "方法欄位完整" : "部分欄位未揭露"}</span>
+                              {groupCount > 1 && <span className="inline-flex rounded bg-[#162333] px-1.5 py-0.5 text-xs text-[#82B8F0]">同一調查 {groupCount} 題</span>}
                             </div>
                           </td>
                           <td className="px-3 py-2 whitespace-nowrap">{r.fieldwork ?? r.date.replaceAll("-", "/")}</td>
@@ -299,7 +300,7 @@ export default function CountyDrawer() {
                   key={h.year}
                   className="flex-1 rounded-lg border border-line p-2 text-center"
                 >
-                  <div className="text-[11px] text-ink-muted">{h.year}</div>
+                  <div className="text-xs text-ink-muted">{h.year}</div>
                   <div className="mt-1 flex items-center justify-center gap-1.5">
                     <PartyDot party={h.winner} size={9} />
                     <span className="text-xs font-medium text-ink">{partyName(h.winner)}</span>
@@ -327,7 +328,7 @@ export default function CountyDrawer() {
           {/* 更新時間與來源 */}
           <section className="border-t border-line pt-4 text-xs text-ink-muted" aria-label="資料資訊">
             核驗日期：{county.updatedAt} · 資料來源：{" "}
-            {county.dataSourceUrl ? <a href={county.dataSourceUrl} target="_blank" rel="noreferrer" className="text-[#245A96] hover:underline">{county.dataSource ?? "原始報導"} ↗</a> : "中選會 2022 結果；公開索引尚無候選人支持度數字"}
+            {county.dataSourceUrl ? <a href={county.dataSourceUrl} target="_blank" rel="noreferrer" className="text-[#82B8F0] hover:underline">{county.dataSource ?? "原始報導"} ↗</a> : "中選會 2022 結果；公開索引尚無候選人支持度數字"}
           </section>
         </div>
       </div>

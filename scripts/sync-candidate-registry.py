@@ -13,10 +13,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-import requests
-from bs4 import BeautifulSoup
-
-
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "src/lib/data/generated/candidate-registrations.json"
 AUDIT_PATH = ROOT / "src/lib/data/generated/candidate-registration-audit.json"
@@ -25,6 +21,9 @@ EXPECTED_CANDIDATES = 81
 
 
 def fetch_text(url: str) -> tuple[str, str, int | None]:
+    import requests
+    from bs4 import BeautifulSoup
+
     try:
         response = requests.get(
             url,

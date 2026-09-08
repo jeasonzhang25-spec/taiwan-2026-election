@@ -19,9 +19,6 @@ from typing import Any
 from urllib.parse import quote
 from xml.etree import ElementTree
 
-import requests
-
-
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "src/lib/data/generated/candidate-registrations.json"
 POLICIES_PATH = ROOT / "src/lib/data/policies.ts"
@@ -44,6 +41,8 @@ def feed_url(county_name: str) -> str:
 
 
 def fetch_feed(county_id: str, county_name: str, candidates: list[dict[str, Any]]) -> tuple[str, list[dict[str, Any]], str]:
+    import requests
+
     url = feed_url(county_name)
     response = requests.get(url, timeout=15, headers={"User-Agent": "IslandElectionDashboard/0.2"})
     response.raise_for_status()

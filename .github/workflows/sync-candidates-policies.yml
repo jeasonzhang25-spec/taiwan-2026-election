@@ -1,0 +1,141 @@
+name: 同步候選人與政見線索
+
+on:
+  schedule:
+    - cron: "38 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: election-data-write
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 讀取網站程式
+        uses: actions/checkout@v4
+
+      - name: 準備 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 準備 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: 安裝同步與網站依賴
+        run: |
+          pip install requests beautifulsoup4
+          npm ci
+
+      - name: 核驗全台登記台帳
+        run: npm run sync:candidates
+
+      - name: 掃描全部候選人的新政見線索
+        run: npm run sync:policies
+
+      - name: 發布前品質門
+        run: |
+          npm run test:contracts
+          npm run typecheck
+          npm run build
+          npm run check:bundle
+
+      - name: 保存核驗與發現結果
+        run: |
+          if git diff --quiet -- src/lib/data/generated/candidate-registration-audit.json src/lib/data/generated/candidate-policy-audit.json; then
+            echo "候選人來源狀態與政見核驗佇列沒有變化"
+            exit 0
+          fi
+          git config user.name "island-election-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/lib/data/generated/candidate-registration-audit.json src/lib/data/generated/candidate-policy-audit.json
+          git commit -m "data: 核驗候選人並更新政見線索"
+          git push
+
+      - name: 建立或更新政見人工核驗提醒
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const audit = JSON.parse(fs.readFileSync("src/lib/data/generated/candidate-policy-audit.json", "utf8"));
+            const title = "[自動提醒] 有新的候選人政見線索待核驗";
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            if (audit.summary.reviewQueueCount === 0) {
+              if (existing) await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: "closed",
+              });
+              return;
+            }
+            const lines = audit.reviewQueue.slice(0, 20).map((item) =>
+              `- [ ] ${item.candidateName}｜[${item.title}](${item.sourceUrl})｜${item.sourceName}`
+            );
+            const body = [
+              `系統找到 ${audit.summary.reviewQueueCount} 條可能的候選人政見，尚未寫入正式比較資料。`,
+              "",
+              "請核對是否為候選人本人提出、原文是否可回查、日期及摘要是否準確：",
+              "",
+              ...lines,
+              "",
+              `完整佇列：src/lib/data/generated/candidate-policy-audit.json`,
+              `本次執行：https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join("\n");
+            if (existing) {
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: existing.number, body });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });
+            }
+
+      - name: 建立或更新流程失敗提醒
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "[自動提醒] 候選人或政見同步失敗";
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            const body = [
+              "候選人名冊核驗、政見發現或發布前品質門沒有完成；網站繼續保留上一版資料。",
+              "",
+              `執行時間：${new Date().toISOString()}`,
+              `查看紀錄：https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join("\n");
+            if (existing) {
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: existing.number, body });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body });
+            }
+
+      - name: 流程恢復後關閉失敗提醒
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "[自動提醒] 候選人或政見同步失敗";
+            const { data: issues } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: "open", per_page: 100 });
+            const existing = issues.find((issue) => issue.title === title);
+            if (existing) await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: existing.number, state: "closed" });

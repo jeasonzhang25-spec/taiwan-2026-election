@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --canvas: #f6f4ef;
-  --surface: #ffffff;
-  --ink: #1a1a1a;
+  --canvas: #0b0c0e;
+  --surface: #121417;
+  --ink: #f4f5f7;
+  color-scheme: dark;
 }
 
 html {
@@ -13,16 +14,14 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at 82% -8%, rgba(23, 63, 70, 0.055), transparent 28rem),
-    var(--canvas);
+  background: var(--canvas);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background: rgba(23, 63, 70, 0.18);
+  background: rgba(113, 112, 255, 0.28);
 }
 
 @layer components {
@@ -49,8 +48,8 @@ body {
 .hatch-tossup {
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(26, 26, 26, 0.10) 0,
-    rgba(26, 26, 26, 0.10) 1px,
+    rgba(255, 255, 255, 0.32) 0,
+    rgba(255, 255, 255, 0.32) 1px,
     transparent 1px,
     transparent 6px
   );
@@ -63,13 +62,13 @@ body {
     height: 10px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #d5d1c8;
+    background: #3a3e47;
     border-radius: 999px;
     border: 2px solid transparent;
     background-clip: content-box;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #bcb7ac;
+    background: #535965;
     background-clip: content-box;
   }
   ::-webkit-scrollbar-track {
@@ -79,7 +78,7 @@ body {
 
 /* 焦点可见性（键盘无障碍） */
 :focus-visible {
-  outline: 2px solid #2b6cb0;
+  outline: 2px solid #A9A8FF;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -126,7 +125,7 @@ body {
 .skeleton-shimmer {
   position: relative;
   overflow: hidden;
-  background: #eceae3;
+  background: #1b1e23;
 }
 .skeleton-shimmer::after {
   content: "";
@@ -136,7 +135,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0.08),
     transparent
   );
   animation: shimmer 1.4s infinite;

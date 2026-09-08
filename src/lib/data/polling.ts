@@ -1,5 +1,6 @@
 import pollData from "./generated/public-polls.json";
 import type { Candidate, CountyPollTrend, PartyId, PollPoint, PollRecord, PollSeries } from "../types";
+import { canonicalInstituteName } from "./source-names";
 
 type GeneratedRecord = Omit<PollRecord, "sourceUrl"> & {
   countyId: string;
@@ -49,7 +50,12 @@ export const MAJOR_CITY_POLLS: Record<string, PollRecord[]> = payload.records.re
   (grouped, generated) => {
     const { countyId, sourceUrl, ...record } = generated;
     if (!grouped[countyId]) grouped[countyId] = [];
-    grouped[countyId].push({ ...record, sourceUrl: sourceUrl || undefined });
+    grouped[countyId].push({
+      ...record,
+      institute: canonicalInstituteName(record.institute),
+      source: canonicalInstituteName(record.source),
+      sourceUrl: sourceUrl || undefined,
+    });
     return grouped;
   },
   {} as Record<string, PollRecord[]>,

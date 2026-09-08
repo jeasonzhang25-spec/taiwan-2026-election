@@ -1,5 +1,6 @@
 import type { CountyRace, HistoricalResult, PartyId, PollRecord } from "../types";
 import { MAJOR_CITY_POLLS, POLL_CANDIDATES, POLL_DATA_CHECKED_AT } from "./polling";
+import { REGISTERED_MAYOR_CANDIDATES } from "./candidate-registrations";
 
 const checkedAt = POLL_DATA_CHECKED_AT;
 
@@ -17,7 +18,7 @@ const BASE_COUNTIES: BaseCounty[] = [
   { id: "tainan", name: "台南市", nameEn: "Tainan", incumbentParty: "dpp", incumbentName: "黃偉哲", result2022: result2022("dpp", 48.8, "kmt") },
   { id: "kaohsiung", name: "高雄市", nameEn: "Kaohsiung", incumbentParty: "dpp", incumbentName: "陳其邁", result2022: result2022("dpp", undefined, "kmt") },
   { id: "keelung", name: "基隆市", nameEn: "Keelung", incumbentParty: "kmt", incumbentName: "謝國樑", result2022: result2022("kmt", 52.92, "dpp") },
-  { id: "hsinchu-city", name: "新竹市", nameEn: "Hsinchu City", incumbentParty: "tpp", incumbentName: "高虹安（目前停職；邱臣遠代理）", result2022: result2022("tpp", 45.02, "dpp") },
+  { id: "hsinchu-city", name: "新竹市", nameEn: "Hsinchu City", incumbentParty: "ind", incumbentName: "高虹安", result2022: result2022("tpp", 45.02, "dpp") },
   { id: "hsinchu-county", name: "新竹縣", nameEn: "Hsinchu County", incumbentParty: "kmt", incumbentName: "楊文科", result2022: result2022("kmt", 63.36, "dpp") },
   { id: "miaoli", name: "苗栗縣", nameEn: "Miaoli", incumbentParty: "ind", incumbentName: "鍾東錦", result2022: result2022("ind") },
   { id: "changhua", name: "彰化縣", nameEn: "Changhua", incumbentParty: "kmt", incumbentName: "王惠美", result2022: result2022("kmt", 56.75, "dpp") },
@@ -46,13 +47,28 @@ function latestRecord(records: PollRecord[]): PollRecord | undefined {
 
 function pollFields(base: BaseCounty) {
   const record = latestRecord(MAJOR_CITY_POLLS[base.id] ?? []);
-  const candidates = (POLL_CANDIDATES[base.id] ?? []).map((item) => ({
-    ...item,
-    isIncumbent: base.incumbentName === item.name || base.incumbentName.startsWith(`${item.name}（`),
-  }));
+  const registrations = REGISTERED_MAYOR_CANDIDATES[base.id] ?? [];
+  const registrationById = new Map(registrations.map((item) => [item.id, item]));
+  const candidates = (POLL_CANDIDATES[base.id] ?? []).map((item) => {
+    const registration = registrationById.get(item.id);
+    return {
+      ...item,
+      ...registration,
+      status: registration ? "registered" as const : "poll-option" as const,
+      isIncumbent: base.incumbentName === item.name || base.incumbentName.startsWith(`${item.name}（`),
+    };
+  });
+  const knownIds = new Set(candidates.map((item) => item.id));
+  for (const registration of registrations) {
+    if (knownIds.has(registration.id)) continue;
+    candidates.push({
+      ...registration,
+      isIncumbent: base.incumbentName === registration.name || base.incumbentName.startsWith(`${registration.name}（`),
+    });
+  }
   if (!record || candidates.length === 0) {
     return {
-      candidates: [], latestSupport: {}, leadingId: "", margin: 0,
+      candidates, latestSupport: {}, leadingId: "", margin: 0,
       competitiveness: "insufficient" as const, change: 0, lastPollDate: "",
       dataStatus: "insufficient" as const,
       dataNote: "截至核驗日，公開索引尚無至少兩名人選皆有數字的縣市長支持度民調。",

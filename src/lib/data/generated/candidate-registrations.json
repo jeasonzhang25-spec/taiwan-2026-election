@@ -1,0 +1,156 @@
+{
+  "checkedAt": "2026-09-08",
+  "generatedAt": "2026-09-08T12:00:00+08:00",
+  "aggregateSourceUrl": "https://www.cna.com.tw/news/aipl/202609045002.aspx",
+  "sources": {
+    "taipei": "https://web.cec.gov.tw/api/file/7d199a34-2eb9-47df-9059-4992778b0b8f.pdf",
+    "newtaipei": "https://web.cec.gov.tw/api/file/11c24147-de1e-4616-8524-6df28adb8510.pdf",
+    "taoyuan": "https://web.cec.gov.tw/api/file/588192ed-df0f-4818-8dd6-0392a7b1c60e.pdf",
+    "taichung": "https://web.cec.gov.tw/api/file/21e67124-56f7-4abd-ade1-d9919df57808.pdf",
+    "tainan": "https://web.cec.gov.tw/api/file/6917afae-e537-413d-b285-141eb8b12f17.pdf",
+    "kaohsiung": "https://web.cec.gov.tw/api/file/c7cfcc20-6cc8-47a4-a18e-fd86faa2c368.pdf",
+    "keelung": "https://web.cec.gov.tw/klec",
+    "hsinchu-city": "https://web.cec.gov.tw/hcec/article/64636",
+    "hsinchu-county": "https://web.cec.gov.tw/hccec",
+    "miaoli": "https://web.cec.gov.tw/mlec/article/64615",
+    "changhua": "https://web.cec.gov.tw/chec/article/64648",
+    "nantou": "https://web.cec.gov.tw/ntec",
+    "yunlin": "https://web.cec.gov.tw/ylec",
+    "chiayi-city": "https://web.cec.gov.tw/cyec",
+    "chiayi-county": "https://web.cec.gov.tw/cycec",
+    "pingtung": "https://web.cec.gov.tw/ptec/article/list/616?beginDate=&endDate=&keyword=&page=1",
+    "yilan": "https://web.cec.gov.tw/ilec",
+    "hualien": "https://web.cec.gov.tw/hlec/article/64670",
+    "taitung": "https://web.cec.gov.tw/ttec/article/list/4214?beginDate=&endDate=&keyword=&page=1",
+    "penghu": "https://web.cec.gov.tw/phec",
+    "kinmen": "https://web.cec.gov.tw/kmec",
+    "lienchiang": "https://web.cec.gov.tw/lcec/article/64621"
+  },
+  "candidates": {
+    "taipei": [
+      { "name": "郭璽", "partyId": "ind", "partyLabel": "台灣麻將最大黨", "statusDate": "2026-08-31" },
+      { "name": "沈伯洋", "partyId": "dpp", "statusDate": "2026-09-02" },
+      { "name": "蕭文乾", "partyId": "ind", "partyLabel": "臺灣SoR無法黨", "statusDate": "2026-09-02" },
+      { "name": "唐新民", "partyId": "ind", "partyLabel": "三勢團結促進聯盟", "statusDate": "2026-09-03" },
+      { "name": "蔣萬安", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "林志成", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "newtaipei": [
+      { "name": "蘇巧慧", "partyId": "dpp", "statusDate": "2026-09-02" },
+      { "name": "李四川", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "蘇輝湟", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "taoyuan": [
+      { "name": "張善政", "partyId": "kmt", "statusDate": "2026-09-01" },
+      { "name": "黃世杰", "partyId": "dpp", "statusDate": "2026-09-02" }
+    ],
+    "taichung": [
+      { "name": "何欣純", "partyId": "dpp", "statusDate": "2026-09-02" },
+      { "name": "江啟臣", "partyId": "kmt", "statusDate": "2026-09-03" },
+      { "name": "洪麗華", "partyId": "ind", "partyLabel": "司法正義黨", "statusDate": "2026-09-03" }
+    ],
+    "tainan": [
+      { "name": "謝龍介", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "蕭燐洪", "partyId": "ind", "partyLabel": "臺灣SoR無法黨", "statusDate": "2026-09-04" },
+      { "name": "葉人文", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "陳亭妃", "partyId": "dpp", "statusDate": "2026-09-04" }
+    ],
+    "kaohsiung": [
+      { "name": "張靜", "partyId": "ind", "partyLabel": "司法改革黨", "statusDate": "2026-08-31" },
+      { "name": "賴瑞隆", "partyId": "dpp", "statusDate": "2026-09-02" },
+      { "name": "王肇民", "partyId": "ind", "statusDate": "2026-09-02" },
+      { "name": "柯志恩", "partyId": "kmt", "statusDate": "2026-09-03" },
+      { "name": "洪方隆", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "keelung": [
+      { "name": "謝國樑", "partyId": "kmt", "statusDate": "2026-09-01" },
+      { "name": "魏造文", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "童子瑋", "partyId": "dpp", "statusDate": "2026-09-02" }
+    ],
+    "hsinchu-city": [
+      { "name": "高虹安", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "莊競程", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "何志勇", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "hsinchu-county": [
+      { "name": "鄭朝方", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "朱定瑀", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "徐欣瑩", "partyId": "kmt", "statusDate": "2026-09-04" }
+    ],
+    "miaoli": [
+      { "name": "陳品安", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "鍾東錦", "partyId": "kmt", "statusDate": "2026-09-04" }
+    ],
+    "changhua": [
+      { "name": "陳重嘉", "partyId": "ind", "statusDate": "2026-08-31" },
+      { "name": "陳素月", "partyId": "dpp", "statusDate": "2026-09-02" },
+      { "name": "邱建富", "partyId": "ind", "statusDate": "2026-09-03" },
+      { "name": "魏平政", "partyId": "kmt", "statusDate": "2026-09-03" }
+    ],
+    "nantou": [
+      { "name": "温世政", "partyId": "dpp", "statusDate": "2026-08-31" },
+      { "name": "許淑華", "partyId": "kmt", "statusDate": "2026-09-04" }
+    ],
+    "yunlin": [
+      { "name": "吳炳輝", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "張嘉郡", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "劉建國", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "林佳瑜", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "chiayi-city": [
+      { "name": "黃宏成台灣阿成世界偉人財神總統", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "陳愷璜", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "張啓楷", "partyId": "tpp", "statusDate": "2026-09-04" },
+      { "name": "王美惠", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "王義成", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "chiayi-county": [
+      { "name": "吳品叡", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "蔡易餘", "partyId": "dpp", "statusDate": "2026-09-04" }
+    ],
+    "pingtung": [
+      { "name": "蘇清泉", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "周春米", "partyId": "dpp", "statusDate": "2026-09-04" }
+    ],
+    "yilan": [
+      { "name": "陳宏毅", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "吳宗憲", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "劉燦輝", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "林國漳", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "楊鉯婷", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "taitung": [
+      { "name": "陳瑩", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "吳秀華", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "李吳穎智", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "王志偉", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "hualien": [
+      { "name": "游淑貞", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "張峻", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "魏嘉賢", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "羅佩秦", "partyId": "ind", "partyLabel": "台灣工黨", "statusDate": "2026-09-04" }
+    ],
+    "penghu": [
+      { "name": "吳淑瑾", "partyId": "dpp", "statusDate": "2026-09-04" },
+      { "name": "陳振中", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "周倪安", "partyId": "ind", "partyLabel": "台灣團結聯盟", "statusDate": "2026-09-04" },
+      { "name": "許智富", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "陳盡川", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "葉竹林", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "kinmen": [
+      { "name": "洪和成", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "陳玉珍", "partyId": "kmt", "statusDate": "2026-09-04" },
+      { "name": "李文良", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "黃世團", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "張國威", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "梁文韜", "partyId": "ind", "statusDate": "2026-09-04" },
+      { "name": "張火木", "partyId": "ind", "statusDate": "2026-09-04" }
+    ],
+    "lienchiang": [
+      { "name": "王忠銘", "partyId": "kmt", "statusDate": "2026-08-31" },
+      { "name": "曹爾元", "partyId": "ind", "statusDate": "2026-09-02" }
+    ]
+  }
+}

@@ -223,7 +223,7 @@ export default function CountyTable() {
                       </span>
                     </div>
                   )}
-                  {hasData && <div className="mt-2 border-t border-line pt-1.5 text-[11px] text-ink-muted">領先差距 {c.margin.toFixed(1)} 個百分點</div>}
+                  {hasData && <div className="mt-2 border-t border-line pt-1.5 text-xs text-ink-muted">領先差距 {c.margin.toFixed(1)} 個百分點</div>}
                 </button>
               );
             })}

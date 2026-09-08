@@ -27,7 +27,7 @@ export default function PollTrendSection() {
   }
 
   return (
-    <section id="trend" className="mx-auto max-w-page scroll-mt-20 px-4 pt-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-page px-4 pt-16 sm:px-6 lg:px-8">
       <SectionTitle
         title="公開民調完整資料庫"
         subtitle="逐題保留已公開數字與來源連結；黨內參、初選民調另作標記，不補點、不平滑，也不把不同題目硬做平均。"
@@ -45,7 +45,7 @@ export default function PollTrendSection() {
               aria-pressed={active}
               className={`min-h-9 rounded-lg border px-3.5 py-1.5 text-[13px] font-medium transition-colors duration-150 ${
                 active
-                  ? "border-brand bg-brand text-white"
+                  ? "border-brand bg-brand text-canvas"
                   : "border-line bg-surface text-ink-secondary hover:border-line-strong hover:text-ink"
               }`}
             >
@@ -53,7 +53,7 @@ export default function PollTrendSection() {
             </button>
           );
         })}
-        <span className="ml-1 text-[11px] text-ink-muted">最多同時顯示 {MAX_SELECTED} 個縣市</span>
+        <span className="ml-1 text-xs text-ink-muted">最多同時顯示 {MAX_SELECTED} 個縣市</span>
       </div>
 
       {/* 圖表網格 */}

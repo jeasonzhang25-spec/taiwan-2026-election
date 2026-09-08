@@ -105,16 +105,17 @@ export default function PollTrendChart({
     });
 
     return {
+      aria: { enabled: true, decal: { show: true } },
       animationDuration: 200,
       grid: { left: 8, right: 14, top: 34, bottom: 6, containLabel: true },
       tooltip: {
         trigger: "axis",
-        backgroundColor: "#FFFFFF",
-        borderColor: "#E7E4DC",
+        backgroundColor: "#16181C",
+        borderColor: "#343841",
         borderWidth: 1,
         padding: [8, 10],
-        textStyle: { color: "#1A1A1A", fontSize: 12 },
-        extraCssText: "box-shadow: 0 6px 20px rgba(26,26,26,0.10); border-radius: 8px;",
+        textStyle: { color: "#F4F5F7", fontSize: 12 },
+        extraCssText: "box-shadow: 0 10px 30px rgba(0,0,0,0.36); border-radius: 8px;",
         formatter: (params: any) => {
           const list = Array.isArray(params) ? params : [params];
           const lineParams = list.filter(
@@ -135,7 +136,7 @@ export default function PollTrendChart({
             })
             .join("");
           const foot = meta
-            ? `<div style="margin-top:6px;font-size:10px;color:#8A8F99">${meta.institute} · ${meta.sampleSize ? `樣本 ${meta.sampleSize}` : "樣本未揭露"} · ${meta.moe !== undefined ? `誤差 ±${meta.moe}%` : "誤差未揭露"}</div>`
+            ? `<div style="margin-top:6px;font-size:10px;color:#8D929B">${meta.institute} · ${meta.sampleSize ? `樣本 ${meta.sampleSize}` : "樣本未揭露"} · ${meta.moe !== undefined ? `誤差 ±${meta.moe}%` : "誤差未揭露"}</div>`
             : "";
           return head + rows + foot;
         },
@@ -146,25 +147,25 @@ export default function PollTrendChart({
         left: 0,
         itemWidth: 10,
         itemHeight: 10,
-        textStyle: { fontSize: 11, color: "#5F6470" },
+        textStyle: { fontSize: 11, color: "#B1B5BD" },
       },
       xAxis: {
         type: "category",
         data: recordIds,
         boundaryGap: false,
-        axisLine: { lineStyle: { color: "#E7E4DC" } },
+        axisLine: { lineStyle: { color: "#343841" } },
         axisTick: { show: false },
         axisLabel: {
           fontSize: 10,
-          color: "#8A8F99",
+          color: "#8D929B",
           hideOverlap: true,
           formatter: (value: string) => fmtArchiveDate(recordById.get(value)?.date ?? value),
         },
       },
       yAxis: {
         type: "value",
-        axisLabel: { fontSize: 10, color: "#8A8F99", formatter: "{value}%" },
-        splitLine: { lineStyle: { color: "#F0EEE8" } },
+        axisLabel: { fontSize: 10, color: "#8D929B", formatter: "{value}%" },
+        splitLine: { lineStyle: { color: "#24272D" } },
         min: (v: any) => Math.max(0, Math.floor(v.min - 4)),
       },
       series: [...lineSeries, ...errorSeries],
@@ -189,8 +190,17 @@ export default function PollTrendChart({
         option={option}
         className="w-full"
         style={{ height }}
-        ariaLabel={`${trend.countyId} 民調趨勢圖`}
+        ariaLabel="候選人支持度民調趨勢圖；下方可展開文字資料"
       />
+      <details className="mt-2 rounded-lg border border-line bg-canvas text-xs">
+        <summary className="cursor-pointer px-3 py-2 font-medium text-ink-secondary">查看趨勢圖文字資料</summary>
+        <div className="overflow-x-auto border-t border-line">
+          <table className="w-full min-w-[520px] text-left">
+            <thead className="text-ink-muted"><tr><th className="px-3 py-2 font-medium">日期</th><th className="px-3 py-2 font-medium">機構</th><th className="px-3 py-2 font-medium">題目結果</th></tr></thead>
+            <tbody className="divide-y divide-line">{[...trend.records].sort((a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id)).slice(0, 12).map((record) => <tr key={record.id}><td className="num whitespace-nowrap px-3 py-2">{record.date}</td><td className="px-3 py-2">{record.institute}</td><td className="px-3 py-2">{Object.entries(record.results).sort((a, b) => b[1] - a[1]).map(([id, value]) => `${candidateById.get(id)?.name ?? id} ${value}%`).join("、")}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </details>
     </div>
   );
 }

@@ -75,23 +75,36 @@ export default function SourceSubscriptions({
 
   return (
     <section id="subscriptions" className="scroll-mt-24" aria-labelledby="subscriptions-title">
-      <span className="text-xs font-medium text-[#126B43]">來源訂閱與提醒</span>
+      <span className="text-xs font-medium text-[#72D6A0]">來源訂閱與提醒</span>
       <h2 id="subscriptions-title" className="mt-1 text-2xl font-semibold tracking-tight text-ink">追蹤{countyName}，或只看指定來源</h2>
       <p className="mt-2 max-w-3xl text-sm leading-6 text-ink-secondary">RSS 可交給任何閱讀器長期訂閱；本機追蹤保存在這台裝置，回訪網站時會比對是否出現更新。瀏覽器通知只在網站被開啟時觸發，不冒充背景推播服務。</p>
 
-      {hasNewData && <div className="mt-4 flex flex-col justify-between gap-3 rounded-xl border border-[#B8D8C6] bg-[#E8F5EE] p-4 sm:flex-row sm:items-center"><div className="text-sm text-[#126B43]"><span className="font-semibold">有新資料：</span>你追蹤的來源最新收錄至 {relevantLatest}。</div><button type="button" onClick={() => setPreference((current) => ({ ...current, lastSeenDate: relevantLatest }))} className="rounded-lg bg-white px-3 py-2 text-xs font-medium text-[#126B43]">標記為已讀</button></div>}
+      {hasNewData && <div className="mt-4 flex flex-col justify-between gap-3 rounded-xl border border-[#264D3A] bg-[#13271F] p-4 sm:flex-row sm:items-center"><div className="text-sm text-[#72D6A0]"><span className="font-semibold">有新資料：</span>你追蹤的來源最新收錄至 {relevantLatest}。</div><button type="button" onClick={() => setPreference((current) => ({ ...current, lastSeenDate: relevantLatest }))} className="rounded-lg bg-surface px-3 py-2 text-xs font-medium text-[#72D6A0]">標記為已讀</button></div>}
 
       <div className="mt-5 grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
         <div className="rounded-xl border border-line bg-surface p-5 shadow-card">
           <div className="flex items-center justify-between gap-4">
-            <div><h3 className="font-semibold text-ink">追蹤整個縣市</h3><p className="mt-1 text-xs text-ink-muted">最新資料日期 {latestDate}</p></div>
-            <button type="button" role="switch" aria-checked={preference.enabled} onClick={toggleCounty} className={`relative h-7 w-12 rounded-full transition-colors ${preference.enabled ? "bg-[#178A56]" : "bg-[#D8D4CA]"}`}><span className={`absolute top-1 h-5 w-5 rounded-full bg-white shadow transition-transform ${preference.enabled ? "translate-x-6" : "translate-x-1"}`} /></button>
+            <div><h3 className="font-semibold text-ink">追蹤整個縣市</h3><p className="mt-1 text-xs text-ink-muted">{latestDate ? `最新資料日期 ${latestDate}` : "目前尚無民調；可先開啟追蹤"}</p></div>
+            <div className="flex shrink-0 items-center gap-2">
+              <span aria-live="polite" className={`text-xs font-medium ${ready && preference.enabled ? "text-[#72D6A0]" : "text-ink-muted"}`}>{!ready ? "讀取中" : preference.enabled ? "已追蹤" : "未追蹤"}</span>
+              <button
+                type="button"
+                role="switch"
+                aria-label={preference.enabled ? `停止追蹤${countyName}` : `追蹤${countyName}`}
+                aria-checked={preference.enabled}
+                disabled={!ready}
+                onClick={toggleCounty}
+                className={`relative h-7 w-12 shrink-0 rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:cursor-wait disabled:opacity-60 ${preference.enabled ? "bg-[#35A86B]" : "bg-[#3A3E47]"}`}
+              >
+                <span aria-hidden="true" className={`absolute left-1 top-1 h-5 w-5 rounded-full bg-[#F4F5F7] shadow transition-transform ${preference.enabled ? "translate-x-5" : "translate-x-0"}`} />
+              </button>
+            </div>
           </div>
           <div className="mt-5 space-y-2">
             <a href={countyFeedUrl} target="_blank" rel="noreferrer" className="flex items-center justify-between rounded-lg border border-line px-3 py-2.5 text-sm font-medium text-ink hover:bg-canvas"><span>訂閱全部民調 RSS</span><span className="text-ink-muted">↗</span></a>
-            {notificationPermission === "granted" ? <div className="rounded-lg bg-[#E8F5EE] px-3 py-2.5 text-xs text-[#126B43]">瀏覽器提醒已允許；回訪網站時若有新資料會提示。</div> : <button type="button" onClick={enableNotifications} className="w-full rounded-lg border border-line bg-canvas px-3 py-2.5 text-left text-sm font-medium text-ink hover:border-line-strong">{notificationPermission === "denied" ? "瀏覽器已封鎖通知，可在網站權限中調整" : notificationPermission === "unavailable" ? "此瀏覽器不支援通知" : "開啟瀏覽器提醒"}</button>}
+            {notificationPermission === "granted" ? <div className="rounded-lg bg-[#13271F] px-3 py-2.5 text-xs text-[#72D6A0]">瀏覽器提醒已允許；回訪網站時若有新資料會提示。</div> : <button type="button" onClick={enableNotifications} className="w-full rounded-lg border border-line bg-canvas px-3 py-2.5 text-left text-sm font-medium text-ink hover:border-line-strong">{notificationPermission === "denied" ? "瀏覽器已封鎖通知，可在網站權限中調整" : notificationPermission === "unavailable" ? "此瀏覽器不支援通知" : "開啟瀏覽器提醒"}</button>}
           </div>
-          <p className="mt-4 text-[11px] leading-5 text-ink-muted">偏好只存在目前瀏覽器，不會上傳姓名、Email 或其他個人資料。</p>
+          <p className="mt-4 text-xs leading-5 text-ink-muted">偏好只存在目前瀏覽器，不會上傳姓名、Email 或其他個人資料。</p>
         </div>
 
         <div className="overflow-hidden rounded-xl border border-line bg-surface shadow-card">
@@ -100,8 +113,9 @@ export default function SourceSubscriptions({
             {sources.map((source) => {
               const selected = preference.sources.includes(source.name);
               const sourceFeedUrl = `${countyFeedUrl}&source=${encodeURIComponent(source.name)}`;
-              return <div key={source.name} className="flex items-center gap-3 px-5 py-3 hover:bg-canvas/60"><label className="flex min-w-0 flex-1 cursor-pointer items-center gap-3"><input type="checkbox" checked={selected} onChange={() => toggleSource(source.name)} className="h-4 w-4 rounded border-line-strong accent-[#178A56]" /><span className="min-w-0"><span className="block truncate text-sm font-medium text-ink">{source.name}</span><span className="text-xs text-ink-muted">{source.count} 筆 · 最新 {source.latestDate}</span></span></label><a href={sourceFeedUrl} target="_blank" rel="noreferrer" className="shrink-0 rounded-md border border-line px-2 py-1 text-[11px] text-ink-secondary hover:text-ink">RSS ↗</a></div>;
+              return <div key={source.name} className="flex items-center gap-3 px-5 py-3 hover:bg-canvas/60"><label className="flex min-w-0 flex-1 cursor-pointer items-center gap-3"><input type="checkbox" checked={selected} onChange={() => toggleSource(source.name)} className="h-4 w-4 rounded border-line-strong accent-[#8584FF]" /><span className="min-w-0"><span className="block truncate text-sm font-medium text-ink">{source.name}</span><span className="text-xs text-ink-muted">{source.count} 筆 · 最新 {source.latestDate}</span></span></label><a href={sourceFeedUrl} target="_blank" rel="noreferrer" className="shrink-0 rounded-md border border-line px-2 py-1 text-xs text-ink-secondary hover:text-ink">RSS ↗</a></div>;
             })}
+            {sources.length === 0 && <div className="px-5 py-8 text-center text-sm leading-6 text-ink-secondary">目前沒有可單獨訂閱的發布來源；縣市 RSS 仍可先加入閱讀器，日後新增民調會自動出現。</div>}
           </div>
         </div>
       </div>

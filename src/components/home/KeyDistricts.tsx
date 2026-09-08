@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useDashboard } from "@/context/ElectionContext";
 import type { CountyRace } from "@/lib/types";
-import { partyShort } from "@/lib/constants";
+import { partyColor, partyShort } from "@/lib/constants";
 import { sortByCompetitiveness, topTwo } from "@/lib/utils/filter";
 import { fmtShortDate, fmtPct, changeNote } from "@/lib/utils/format";
 import { PartyDot } from "@/components/ui/PartyDot";
@@ -66,8 +66,8 @@ export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
                 </span>
                 <span className="num font-medium text-ink">{fmtPct(leaderSupport)}</span>
               </div>
-              <div className="h-1.5 overflow-hidden rounded-full bg-[#ECEAE3]">
-                <div className="h-full rounded-full bg-brand transition-[width] duration-200" style={{ width: `${leaderSupport}%` }} />
+              <div className="h-1.5 overflow-hidden rounded-full bg-[#202329]">
+                <div className="h-full rounded-full transition-[width] duration-200" style={{ width: `${leaderSupport}%`, backgroundColor: partyColor(leader.partyId) }} />
               </div>
               {runner && (
                 <>
@@ -78,17 +78,17 @@ export default function KeyDistricts({ counties }: { counties: CountyRace[] }) {
                     </span>
                     <span className="num font-medium text-ink">{fmtPct(runnerSupport)}</span>
                   </div>
-                  <div className="h-1.5 overflow-hidden rounded-full bg-[#ECEAE3]">
-                    <div className="h-full rounded-full bg-ink-muted/60 transition-[width] duration-200" style={{ width: `${runnerSupport}%` }} />
+                  <div className="h-1.5 overflow-hidden rounded-full bg-[#202329]">
+                    <div className="h-full rounded-full transition-[width] duration-200" style={{ width: `${runnerSupport}%`, backgroundColor: partyColor(runner.partyId) }} />
                   </div>
                 </>
               )}
             </div>
 
-            <div className="mt-2 flex items-center justify-between border-t border-line pt-2 text-[11px] text-ink-muted">
+            <div className="mt-2 flex items-center justify-between border-t border-line pt-2 text-xs text-ink-muted">
               <span>
                 差距 <span className="num font-medium text-ink">{county.margin.toFixed(1)}</span> 個百分點 ·{" "}
-                <span className={county.change > 0.1 ? "text-[#245A96]" : county.change < -0.1 ? "text-[#9C2B25]" : ""}>
+                <span className={county.change > 0.1 ? "text-[#82B8F0]" : county.change < -0.1 ? "text-[#FF8A84]" : ""}>
                   {changeNote(county.change)}
                 </span>
               </span>

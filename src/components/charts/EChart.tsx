@@ -1,12 +1,28 @@
 "use client";
 
-import * as echarts from "echarts";
+import * as echarts from "echarts/core";
+import { BarChart, CustomChart, LineChart, MapChart } from "echarts/charts";
+import { AriaComponent, GridComponent, LegendComponent, TooltipComponent } from "echarts/components";
+import { CanvasRenderer } from "echarts/renderers";
+import type { EChartsCoreOption, EChartsType } from "echarts/core";
 import { useEffect, useRef } from "react";
+
+echarts.use([
+  AriaComponent,
+  BarChart,
+  CanvasRenderer,
+  CustomChart,
+  GridComponent,
+  LegendComponent,
+  LineChart,
+  MapChart,
+  TooltipComponent,
+]);
 
 type EventHandler = (params: any) => void;
 
 interface EChartProps {
-  option: echarts.EChartsOption;
+  option: EChartsCoreOption;
   className?: string;
   style?: React.CSSProperties;
   onEvents?: Record<string, EventHandler>;
@@ -22,18 +38,29 @@ export default function EChart({
   ariaLabel,
 }: EChartProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const chartRef = useRef<echarts.ECharts | null>(null);
+  const chartRef = useRef<EChartsType | null>(null);
+  const initialOptionRef = useRef(option);
 
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
     const chart = echarts.init(el, undefined, { renderer: "canvas" });
     chartRef.current = chart;
+    // ResizeObserver 可能在下一個 effect 套用 option 前先觸發；地圖座標系尚未建立時 resize 會報錯。
+    chart.setOption(initialOptionRef.current, true);
 
-    const ro = new ResizeObserver(() => chart.resize());
+    let resizeFrame = 0;
+    const ro = new ResizeObserver(([entry]) => {
+      if (!entry || entry.contentRect.width <= 0 || entry.contentRect.height <= 0) return;
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => {
+        if (!chart.isDisposed()) chart.resize({ silent: true });
+      });
+    });
     ro.observe(el);
 
     return () => {
+      cancelAnimationFrame(resizeFrame);
       ro.disconnect();
       chart.dispose();
       chartRef.current = null;

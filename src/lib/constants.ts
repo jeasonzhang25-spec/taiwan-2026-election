@@ -16,35 +16,35 @@ export const PARTIES: Record<PartyId, Party> = {
     id: "kmt",
     name: "中國國民黨",
     short: "國民黨",
-    color: "#2B6CB0",
+    color: "#4D8FD1",
     texture: "none",
   },
   dpp: {
     id: "dpp",
     name: "民主進步黨",
     short: "民進黨",
-    color: "#178A56",
+    color: "#35A86B",
     texture: "none",
   },
   tpp: {
     id: "tpp",
     name: "台灣民眾黨",
     short: "民眾黨",
-    color: "#0E8FA0",
+    color: "#27B1C0",
     texture: "stripes",
   },
   npp: {
     id: "npp",
     name: "時代力量",
     short: "時力",
-    color: "#D19A0B",
+    color: "#E7B52D",
     texture: "dots",
   },
   ind: {
     id: "ind",
     name: "無黨籍及其他",
     short: "無黨籍",
-    color: "#8A9199",
+    color: "#A0A6AF",
     texture: "stripes",
   },
 };
@@ -60,7 +60,7 @@ export function partyShort(id: PartyId): string {
 }
 
 export function partyColor(id: PartyId): string {
-  return PARTIES[id]?.color ?? "#8A9199";
+  return PARTIES[id]?.color ?? "#A0A6AF";
 }
 
 /** 選舉類型 */

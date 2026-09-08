@@ -104,7 +104,8 @@ export function DashboardProvider({ children }: { children: ReactNode }) {
     const params = new URLSearchParams();
     for (const [k, v] of Object.entries(obj)) if (v) params.set(k, v);
     const qs = params.toString();
-    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+    const nextUrl = `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`;
+    window.history.replaceState(null, "", nextUrl);
   }, [state]);
 
   const setFilters = useCallback((patch: Partial<FilterState>) => {

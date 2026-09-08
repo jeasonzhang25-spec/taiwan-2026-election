@@ -57,16 +57,16 @@ export default function PartyMapSection() {
   }, [snapshots]);
 
   const stats: { label: string; value: number; tone: string }[] = [
-    { label: "守住", value: holds, tone: "text-[#245A96]" },
+    { label: "守住", value: holds, tone: "text-[#82B8F0]" },
     { label: "翻轉", value: flips, tone: "text-[#7C5CD6]" },
-    { label: "新增", value: gains, tone: "text-[#1C6B44]" },
-    { label: "失去", value: losses, tone: "text-[#9C2B25]" },
-    { label: "膠著", value: tossups, tone: "text-[#8A6410]" },
+    { label: "新增", value: gains, tone: "text-[#72D6A0]" },
+    { label: "失去", value: losses, tone: "text-[#FF8A84]" },
+    { label: "膠著", value: tossups, tone: "text-[#F1C46B]" },
     { label: "不足", value: insufficient, tone: "text-ink-muted" },
   ];
 
   return (
-    <section id="history" className="mx-auto max-w-page scroll-mt-20 px-4 pt-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-page px-4 pt-16 sm:px-6 lg:px-8">
       <SectionTitle
         title="政黨版圖"
         subtitle="只比較已有公開候選人支持度數字的縣市；尚無民調者不推估守住或翻轉。"
@@ -93,7 +93,7 @@ export default function PartyMapSection() {
             {stats.map((s) => (
               <div key={s.label} className="rounded-lg border border-line bg-canvas p-2 text-center">
                 <div className={`num text-xl font-semibold ${s.tone}`}>{s.value}</div>
-                <div className="mt-0.5 text-[11px] text-ink-secondary">{s.label}</div>
+                <div className="mt-0.5 text-xs text-ink-secondary">{s.label}</div>
               </div>
             ))}
           </div>
@@ -122,7 +122,7 @@ export default function PartyMapSection() {
             )}
           </div>
 
-          <p className="mt-3 text-[11px] leading-4 text-ink-muted">
+          <p className="mt-3 text-xs leading-4 text-ink-muted">
             守住＝領先政黨與 2022 相同；翻轉＝領先政黨改變；新增／失去＝各政黨相對 2022
             增減的領先席次；膠著＝差距不大於該調查已揭露的抽樣誤差；不足＝公開索引尚無數字。這是資料快照，不是當選預測。
           </p>

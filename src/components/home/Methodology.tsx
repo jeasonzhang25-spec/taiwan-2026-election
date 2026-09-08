@@ -31,7 +31,7 @@ const READING_POINTS: { title: string; body: string }[] = [
 
 export default function Methodology() {
   return (
-    <section id="methodology" className="mx-auto max-w-page scroll-mt-20 px-4 pt-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-page px-4 pt-16 sm:px-6 lg:px-8">
       <SectionTitle
         title="如何閱讀本看板"
         subtitle={`目前收錄 ${POLL_RECORD_COUNT} 筆問卷情境、涵蓋 ${POLL_COUNTY_COUNT} 個縣市；以下是正確閱讀方式。`}
@@ -52,14 +52,14 @@ export default function Methodology() {
       <div className="mt-6">
         <div className="mb-3 flex items-center justify-between gap-4">
           <h3 className="text-sm font-semibold text-ink">資料來源</h3>
-          <a href="/data-status" className="text-xs font-medium text-[#245D91] hover:underline">查看完整資料狀態 →</a>
+          <a href="/data-status" className="text-xs font-medium text-brand hover:underline">查看完整資料狀態 →</a>
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {SOURCES.slice(0, 3).map((s) => (
             <div key={s.name} className="flex flex-col rounded-xl border border-line bg-surface p-4">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-ink">{s.name}</span>
-                <span className="rounded bg-[#F0EFEC] px-1.5 py-0.5 text-[10px] text-ink-secondary">
+                <span className="rounded bg-[#1B1E23] px-1.5 py-0.5 text-xs text-ink-secondary">
                   {s.kind}
                 </span>
               </div>
@@ -70,7 +70,7 @@ export default function Methodology() {
                     前往來源 ↗
                   </a>
                 ) : (
-                  <span className="text-[11px] text-ink-muted">來源連結待補</span>
+                  <span className="text-xs text-ink-muted">來源連結待補</span>
                 )}
               </div>
             </div>

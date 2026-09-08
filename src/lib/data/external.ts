@@ -65,7 +65,7 @@ export const VERIFIED_POLLS: VerifiedPoll[] = [
     marginOfError: 3,
     results: [
       { name: "江啟臣", party: "國民黨", value: 38.2, color: "#2B6CB0" },
-      { name: "何欣純", party: "民進黨", value: 24.1, color: "#178A56" },
+      { name: "何欣純", party: "民進黨", value: 24.1, color: "#35A86B" },
     ],
     note: "報導完整揭露執行機構、調查時間、抽樣方式、樣本與誤差，但未揭露委託或經費來源。",
     sourceName: "Newtalk 新聞",
@@ -83,7 +83,7 @@ export const VERIFIED_POLLS: VerifiedPoll[] = [
     sampleSize: 1608,
     marginOfError: 2.4,
     results: [
-      { name: "賴瑞隆", party: "民進黨", value: 47.78, color: "#178A56" },
+      { name: "賴瑞隆", party: "民進黨", value: 47.78, color: "#35A86B" },
       { name: "柯志恩", party: "國民黨", value: 46.14, color: "#2B6CB0" },
     ],
     undecided: 4.24,
@@ -104,7 +104,7 @@ export const VERIFIED_POLLS: VerifiedPoll[] = [
     marginOfError: 2.7,
     results: [
       { name: "李四川", party: "國民黨", value: 43.7, color: "#2B6CB0" },
-      { name: "蘇巧慧", party: "民進黨", value: 36.8, color: "#178A56" },
+      { name: "蘇巧慧", party: "民進黨", value: 36.8, color: "#35A86B" },
     ],
     note: "這是政黨黨團委託調查，委託方會顯著展示，避免只看執行機構名稱。",
     sourceName: "中央社",
@@ -123,7 +123,7 @@ export const VERIFIED_POLLS: VerifiedPoll[] = [
     marginOfError: 3.3,
     results: [
       { name: "蔣萬安", party: "國民黨", value: 58, color: "#2B6CB0" },
-      { name: "沈伯洋", party: "民進黨", value: 30, color: "#178A56" },
+      { name: "沈伯洋", party: "民進黨", value: 30, color: "#35A86B" },
     ],
     undecided: 13,
     note: "百分比合計可能因四捨五入略有差異。",
@@ -142,7 +142,7 @@ export const VERIFIED_POLLS: VerifiedPoll[] = [
     sampleSize: 1068,
     marginOfError: 3,
     results: [
-      { name: "陳素月", party: "民進黨", value: 30.5, color: "#178A56" },
+      { name: "陳素月", party: "民進黨", value: 30.5, color: "#35A86B" },
       { name: "魏平政", party: "國民黨", value: 14, color: "#2B6CB0" },
       { name: "蔡壁如", party: "民眾黨", value: 8.5, color: "#0E8FA0" },
     ],

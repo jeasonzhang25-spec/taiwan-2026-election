@@ -15,7 +15,7 @@ export function PartyDot({
   const style = {
     width: size,
     height: size,
-    backgroundColor: p?.color ?? "#8A9199",
+    backgroundColor: p?.color ?? "#A0A6AF",
   };
   const texture =
     p?.texture === "stripes"

@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-08T15:49:25.259867+00:00",
+  "generatedAt": "2026-09-08T21:23:47.320112+00:00",
   "registryCheckedAt": "2026-09-08",
   "aggregateSourceUrl": "https://www.cna.com.tw/news/aipl/202609045002.aspx",
-  "aggregateStatus": "not-checked",
+  "aggregateStatus": "reachable",
   "summary": {
     "countyCount": 22,
     "candidateCount": 81,
     "sourceCount": 22,
-    "reachableCount": 0,
+    "reachableCount": 22,
     "restrictedCount": 0,
     "unreachableCount": 0,
-    "notCheckedCount": 22,
+    "notCheckedCount": 0,
     "localErrorCount": 0,
     "aggregateMissingNameCount": 0,
     "reviewQueueCount": 0,
@@ -21,112 +21,134 @@
     {
       "countyId": "taipei",
       "url": "https://web.cec.gov.tw/api/file/7d199a34-2eb9-47df-9059-4992778b0b8f.pdf",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "newtaipei",
       "url": "https://web.cec.gov.tw/api/file/11c24147-de1e-4616-8524-6df28adb8510.pdf",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "taoyuan",
       "url": "https://web.cec.gov.tw/api/file/588192ed-df0f-4818-8dd6-0392a7b1c60e.pdf",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "taichung",
       "url": "https://web.cec.gov.tw/api/file/21e67124-56f7-4abd-ade1-d9919df57808.pdf",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "tainan",
       "url": "https://web.cec.gov.tw/api/file/6917afae-e537-413d-b285-141eb8b12f17.pdf",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "kaohsiung",
       "url": "https://web.cec.gov.tw/api/file/c7cfcc20-6cc8-47a4-a18e-fd86faa2c368.pdf",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "keelung",
       "url": "https://web.cec.gov.tw/klec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "hsinchu-city",
       "url": "https://web.cec.gov.tw/hcec/article/64636",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "hsinchu-county",
       "url": "https://web.cec.gov.tw/hccec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "miaoli",
       "url": "https://web.cec.gov.tw/mlec/article/64615",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "changhua",
       "url": "https://web.cec.gov.tw/chec/article/64648",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "nantou",
       "url": "https://web.cec.gov.tw/ntec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "yunlin",
       "url": "https://web.cec.gov.tw/ylec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "chiayi-city",
       "url": "https://web.cec.gov.tw/cyec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "chiayi-county",
       "url": "https://web.cec.gov.tw/cycec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "pingtung",
       "url": "https://web.cec.gov.tw/ptec/article/list/616?beginDate=&endDate=&keyword=&page=1",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "yilan",
       "url": "https://web.cec.gov.tw/ilec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "hualien",
       "url": "https://web.cec.gov.tw/hlec/article/64670",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "taitung",
       "url": "https://web.cec.gov.tw/ttec/article/list/4214?beginDate=&endDate=&keyword=&page=1",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "penghu",
       "url": "https://web.cec.gov.tw/phec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "kinmen",
       "url": "https://web.cec.gov.tw/kmec",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     },
     {
       "countyId": "lienchiang",
       "url": "https://web.cec.gov.tw/lcec/article/64621",
-      "status": "not-checked"
+      "status": "reachable",
+      "statusCode": 200
     }
   ],
   "reviewQueue": []

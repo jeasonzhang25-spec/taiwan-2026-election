@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-09T13:45:15Z",
+  "generatedAt": "2026-09-09T17:19:52Z",
   "dataGeneratedAt": "2026-09-08T15:21:36Z",
   "summary": {
     "recordCount": 298,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 34,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 33,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1755,7 +1755,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2681,7 +2681,7 @@
       "evidence": "strong",
       "candidateHits": 3,
       "percentageHits": 2,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-166c223cc450",
         "poll-3e7b81309028",
@@ -4792,20 +4792,6 @@
     }
   ],
   "reviewQueue": [
-    {
-      "id": "review-62babaf1534a0002",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.upmedia.mg/tw/lifestyle/policy/246027",
-      "recordIds": [
-        "poll-166c223cc450",
-        "poll-3e7b81309028",
-        "poll-62fab29f182c",
-        "poll-d06e59edd129"
-      ]
-    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

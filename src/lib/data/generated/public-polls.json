@@ -2638,7 +2638,7 @@
       "date": "2026-07-27",
       "fieldwork": "7月24日至27日",
       "source": "民進黨內參",
-      "sourceUrl": "https://www.mirrormedia.mg/story/amp/20260730inv001",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260730inv001",
       "sourceKind": "internal",
       "scenario": "謝國樑－童子瑋",
       "results": {
@@ -3269,12 +3269,12 @@
       "undecided": 39.5
     },
     {
-      "id": "poll-3b445b0ef83e",
+      "id": "poll-b628ed333dde",
       "countyId": "newtaipei",
-      "institute": "TVBS",
+      "institute": "國民黨新北市議會黨團-委託TVBS",
       "date": "2026-06-05",
       "fieldwork": "6月2日至5日",
-      "source": "TVBS",
+      "source": "國民黨新北市議會黨團-委託TVBS",
       "sourceUrl": "https://www.ettoday.net/news/20260608/3179520.htm",
       "sourceKind": "public",
       "scenario": "李四川－蘇巧慧",
@@ -3317,12 +3317,12 @@
       "undecided": 19.8
     },
     {
-      "id": "poll-cd4a36a28b26",
+      "id": "poll-1812f22be8be",
       "countyId": "newtaipei",
-      "institute": "TVBS 民意調查中心",
+      "institute": "國民黨新北市議會黨團-委託TVBS",
       "date": "2026-07-23",
       "fieldwork": "7月20日至23日",
-      "source": "TVBS",
+      "source": "國民黨新北市議會黨團-委託TVBS",
       "sourceUrl": "https://news.nextapple.com/life/20260729/475E59B3F7F1504C83DD63E801885488",
       "sourceKind": "public",
       "scenario": "李四川－蘇巧慧",
@@ -3330,11 +3330,7 @@
         "newtaipei-李四川": 43.7,
         "newtaipei-蘇巧慧": 36.8
       },
-      "undecided": 19.5,
-      "sampleSize": 1303,
-      "method": "市內電話訪問",
-      "marginOfError": 2.7,
-      "publishedAt": "2026-07-29"
+      "undecided": 19.5
     },
     {
       "id": "poll-4aeea9351734",
@@ -3384,12 +3380,12 @@
       }
     },
     {
-      "id": "poll-e51bfad82f27",
+      "id": "poll-3f5f1429e1bc",
       "countyId": "newtaipei",
-      "institute": "TVBS",
+      "institute": "國民黨新北市議會黨團-委託TVBS",
       "date": "2026-08-29",
       "fieldwork": "8月28日至29日",
-      "source": "TVBS",
+      "source": "國民黨新北市議會黨團-委託TVBS",
       "sourceUrl": "https://newtalk.tw/news/view/2026-09-02/1057312",
       "sourceKind": "public",
       "scenario": "李四川－蘇巧慧",
@@ -5246,5 +5242,5 @@
       }
     ]
   },
-  "generatedAt": "2026-09-08T15:21:36Z"
+  "generatedAt": "2026-09-10T05:19:30Z"
 }

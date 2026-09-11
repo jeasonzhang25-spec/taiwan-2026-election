@@ -25,6 +25,8 @@ export const METRO_POLICY_DIMENSIONS = [
   { id: "climate", label: "環境與防災", description: "淨零、空污、水資源、韌性與災害應變" },
   { id: "finance", label: "產業、財政與建設", description: "產業發展、預算來源、建設期程與量化成效" },
   { id: "sports", label: "運動與公共空間", description: "運動設施、公共空間、全民參與與場館建設" },
+  { id: "culture", label: "文化、觀光與地方創生", description: "文化資產、觀光路線、原民政策與地方品牌" },
+  { id: "governance", label: "治理與公共服務", description: "行政改革、資訊公開、法律支援與公民參與" },
 ] as const;
 
 export const POLICY_DIMENSIONS = METRO_POLICY_DIMENSIONS;

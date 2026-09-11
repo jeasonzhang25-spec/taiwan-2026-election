@@ -173,12 +173,12 @@ export default function DataStatusPage() {
               </div>
               <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {[
-                  [health.rowsWithFullMethodology, "筆方法欄位完整"],
-                  [health.rowsMissingSampleSize, "筆未列樣本數"],
-                  [health.rowsMissingMethod, "筆未列調查方法"],
-                  [health.rowsMissingPublishedAt, "筆未列發布日期"],
-                  [health.rowsMissingMarginOfError, "筆未列抽樣誤差"],
-                  [health.invalidSourceUrlCount, "筆來源連結無效"],
+                  [health.rowsWithFullMethodology, "方法欄位完整"],
+                  [health.rowsMissingSampleSize, "未列樣本數"],
+                  [health.rowsMissingMethod, "未列調查方法"],
+                  [health.rowsMissingPublishedAt, "未列發布日期"],
+                  [health.rowsMissingMarginOfError, "未列抽樣誤差"],
+                  [health.invalidSourceUrlCount, "來源連結無效"],
                 ].map(([value, label]) => (
                   <div key={String(label)} className="rounded-lg bg-canvas p-3"><div className="num text-xl font-semibold">{value}</div><div className="mt-1 text-xs text-ink-muted">{label}</div></div>
                 ))}

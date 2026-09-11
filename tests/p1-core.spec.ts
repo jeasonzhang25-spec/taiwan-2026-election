@@ -63,6 +63,8 @@ test("資料狀態頁公開候選人與政見自動化覆蓋", async ({ page }) 
   await expect(page.getByText("81 / 81", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "候選人登記台帳" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "候選人政見" })).toBeVisible();
+  await expect(page.getByText("方法欄位完整", { exact: true })).toBeVisible();
+  await expect(page.getByText("未列樣本數", { exact: true })).toBeVisible();
 });
 
 test("縣市追蹤開關位置、狀態與本機保存", async ({ page }) => {

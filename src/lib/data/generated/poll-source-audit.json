@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-11T06:00:56Z",
-  "dataGeneratedAt": "2026-09-11T06:00:12Z",
+  "generatedAt": "2026-09-11T15:12:57Z",
+  "dataGeneratedAt": "2026-09-11T15:12:43Z",
   "summary": {
-    "recordCount": 299,
-    "surveyCount": 145,
-    "sourceCount": 145,
-    "checkedSourceCount": 145,
+    "recordCount": 293,
+    "surveyCount": 144,
+    "sourceCount": 144,
+    "checkedSourceCount": 144,
     "reachableCount": 121,
     "restrictedCount": 21,
-    "unreachableCount": 3,
+    "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 2,
-    "reviewQueueCount": 37,
-    "blockingIssueCount": 1
+    "contentChangedCount": 0,
+    "reviewQueueCount": 32,
+    "blockingIssueCount": 0
   },
   "sources": [
     {
@@ -1773,7 +1773,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -1895,7 +1895,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 4,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -1966,15 +1966,15 @@
       "id": "source-ddb460c1614954e1",
       "url": "https://www.kingtop.com.tw/detail.php?type=lastest&id=50522",
       "domain": "www.kingtop.com.tw",
-      "status": "unreachable",
-      "httpStatus": null,
-      "finalUrl": null,
-      "contentType": null,
-      "fingerprint": null,
-      "error": "ConnectionError",
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.kingtop.com.tw/detail.php?type=lastest&id=50522",
+      "contentType": "text/html",
+      "fingerprint": "58a0b5b07e997bdd47c787623b380b73624562fd902a407f22a7985b565ade11",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
         "poll-e1f0ff826a95"
@@ -2570,29 +2570,6 @@
       ]
     },
     {
-      "id": "source-5337774980c0b504",
-      "url": "https://www.upmedia.mg/tw/focus/politics/249606",
-      "domain": "www.upmedia.mg",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
-      "contentType": "text/html",
-      "fingerprint": null,
-      "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
-      "contentChanged": false,
-      "recordIds": [
-        "poll-0ad22fde3d69",
-        "poll-1d0940eb0c22",
-        "poll-3868dfd4654c",
-        "poll-b8e7bfa8d4e4",
-        "poll-c368ac396d21",
-        "poll-d2f92273caf6"
-      ]
-    },
-    {
       "id": "source-43f97a922506a591",
       "url": "https://www.upmedia.mg/tw/focus/politics/253073",
       "domain": "www.upmedia.mg",
@@ -2625,7 +2602,7 @@
       "evidence": "strong",
       "candidateHits": 2,
       "percentageHits": 2,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-0de9497f1f7f"
       ]
@@ -3291,24 +3268,6 @@
       ],
       "sourceUrls": [
         "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl"
-      ],
-      "scenarioCount": 1
-    },
-    {
-      "id": "survey-40b2a691d17803dc",
-      "countyId": "chiayi-county",
-      "fieldwork": "1月13日",
-      "institute": "民進黨初選",
-      "recordIds": [
-        "poll-0ad22fde3d69",
-        "poll-1d0940eb0c22",
-        "poll-3868dfd4654c",
-        "poll-b8e7bfa8d4e4",
-        "poll-c368ac396d21",
-        "poll-d2f92273caf6"
-      ],
-      "sourceUrls": [
-        "https://www.upmedia.mg/tw/focus/politics/249606"
       ],
       "scenarioCount": 1
     },
@@ -4824,41 +4783,6 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-results-424aa541288ef766",
-      "priority": "blocking",
-      "reasons": [
-        "published_results_changed"
-      ],
-      "url": "https://www.upmedia.mg/tw/focus/politics/267542",
-      "recordIds": [
-        "poll-0de9497f1f7f"
-      ]
-    },
-    {
-      "id": "review-0b71c557de25e052",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/526838",
-      "recordIds": [
-        "poll-50167f3421b3",
-        "poll-818b8bdd2864",
-        "poll-8c9492d1f501"
-      ]
-    },
-    {
-      "id": "review-0e580197bd56cc38",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.upmedia.mg/tw/focus/politics/267542",
-      "recordIds": [
-        "poll-0de9497f1f7f"
-      ]
-    },
-    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -4994,22 +4918,6 @@
         "poll-44471444b65e",
         "poll-7674f8def608",
         "poll-918de3e9b398"
-      ]
-    },
-    {
-      "id": "review-5337774980c0b504",
-      "priority": "medium",
-      "reasons": [
-        "no_poll_evidence_found"
-      ],
-      "url": "https://www.upmedia.mg/tw/focus/politics/249606",
-      "recordIds": [
-        "poll-0ad22fde3d69",
-        "poll-1d0940eb0c22",
-        "poll-3868dfd4654c",
-        "poll-b8e7bfa8d4e4",
-        "poll-c368ac396d21",
-        "poll-d2f92273caf6"
       ]
     },
     {
@@ -5252,17 +5160,6 @@
         "poll-0d1468ae4f60",
         "poll-67fdf91bdbdf",
         "poll-b66cd53f7e14"
-      ]
-    },
-    {
-      "id": "review-ddb460c1614954e1",
-      "priority": "medium",
-      "reasons": [
-        "source_unreachable"
-      ],
-      "url": "https://www.kingtop.com.tw/detail.php?type=lastest&id=50522",
-      "recordIds": [
-        "poll-e1f0ff826a95"
       ]
     },
     {

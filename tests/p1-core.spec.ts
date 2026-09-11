@@ -51,7 +51,9 @@ test("登記人選、民調選項與不同選舉層級分流", async ({ page }) 
   await expect(page.getByText("本頁已核對 7 位登記人選")).toBeVisible();
   const kinmenPolicies = page.locator("#policies");
   await expect(kinmenPolicies.getByText("陳玉珍", { exact: true }).first()).toBeVisible();
-  await expect(kinmenPolicies.getByText("自動監測中", { exact: true })).toHaveCount(7);
+  await expect(kinmenPolicies.getByText("3 / 7 人已有核驗資料", { exact: true })).toBeVisible();
+  await expect(kinmenPolicies.getByText("已核驗 7 項 · 涵蓋 3 人", { exact: true })).toBeVisible();
+  await expect(kinmenPolicies.getByText("尚無核驗資料", { exact: true })).toHaveCount(4);
 });
 
 test("資料狀態頁公開候選人與政見自動化覆蓋", async ({ page }) => {

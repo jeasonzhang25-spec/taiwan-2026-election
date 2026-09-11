@@ -1,5 +1,5 @@
 import { COUNTIES } from "../src/lib/data/counties";
-import { COUNTY_PAGE_IDS } from "../src/lib/data/county-pages";
+import { COUNTY_PAGE_IDS, POLICY_DIMENSIONS } from "../src/lib/data/county-pages";
 import { MAJOR_CITY_POLLS } from "../src/lib/data/polling";
 import { POLICY_POSITIONS } from "../src/lib/data/policies";
 import { inferExternalFeedKind } from "../src/lib/data/feed-classification";
@@ -50,10 +50,19 @@ for (const county of COUNTIES) {
   }
 }
 
+const policyIds = new Set(POLICY_POSITIONS.map((policy) => policy.id));
+const policyDimensionIds = new Set(POLICY_DIMENSIONS.map((dimension) => dimension.id));
+check(policyIds.size === POLICY_POSITIONS.length, "政見 ID 必須唯一");
+
 for (const policy of POLICY_POSITIONS) {
   check(Boolean(policy.originalText && policy.sourceUrl && policy.publishedAt && policy.versionDate), `${policy.id} 政見缺少原文或版本欄位`);
   check(COUNTY_PAGE_IDS.includes(policy.countyId as typeof COUNTY_PAGE_IDS[number]), `${policy.id} 政見縣市無效`);
+  check(policyDimensionIds.has(policy.dimensionId as typeof POLICY_DIMENSIONS[number]["id"]), `${policy.id} 政見比較維度無效`);
   check(["candidate-primary", "media-direct"].includes(policy.sourceKind), `${policy.id} 政見來源層級無效`);
+  check(policy.status === "verified", `${policy.id} 公開資料只可載入已核驗政見`);
+  check(/^https:\/\//.test(policy.sourceUrl), `${policy.id} 政見缺少 HTTPS 來源網址`);
+  check(/^\d{4}-\d{2}-\d{2}$/.test(policy.publishedAt), `${policy.id} 政見發布日期格式無效`);
+  check(/^\d{4}-\d{2}-\d{2}$/.test(policy.versionDate), `${policy.id} 政見版本日期格式無效`);
   check(COUNTIES.find((county) => county.id === policy.countyId)?.candidates.some((candidate) => candidate.id === policy.candidateId), `${policy.id} 引用了未知人選`);
 }
 

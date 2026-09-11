@@ -85,7 +85,7 @@ export default function PolicyComparison({ countyId, countyName, candidates }: {
                 <div className="flex items-center justify-between gap-3">
                   <span className="inline-flex min-w-0 items-center gap-2 text-sm font-semibold text-ink"><PartyDot party={candidate.partyId} size={8} /><span className="truncate">{candidate.name}</span></span>
                   <span className={`shrink-0 rounded-full px-2 py-1 text-[11px] font-medium ${candidatePolicies.length > 0 ? "bg-[#13271F] text-[#72D6A0]" : "bg-[#1E2735] text-[#9EC5EE]"}`}>
-                    {candidatePolicies.length > 0 ? `${candidatePolicies.length} 項已核驗` : "自動監測中"}
+                    {candidatePolicies.length > 0 ? `${candidatePolicies.length} 項已核驗` : "尚無核驗資料"}
                   </span>
                 </div>
                 <p className="mt-2 text-xs leading-5 text-ink-muted">

@@ -1,4 +1,5 @@
 import type { PolicyPosition } from "../types";
+import { REGIONAL_POLICY_POSITIONS } from "./regional-policies";
 
 /**
  * 收錄可明確歸屬候選人、具有發布日期及可回查網址的公開政見。
@@ -155,6 +156,7 @@ export const POLICY_POSITIONS: PolicyPosition[] = [
     versionDate: "2026-09-08",
     status: "verified",
   },
+  ...REGIONAL_POLICY_POSITIONS,
 ];
 
 export function getVerifiedPolicies(countyId: string): PolicyPosition[] {

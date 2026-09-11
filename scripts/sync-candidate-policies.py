@@ -21,13 +21,16 @@ from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "src/lib/data/generated/candidate-registrations.json"
-POLICIES_PATH = ROOT / "src/lib/data/policies.ts"
+POLICIES_PATHS = (
+    ROOT / "src/lib/data/policies.ts",
+    ROOT / "src/lib/data/regional-policies.ts",
+)
 AUDIT_PATH = ROOT / "src/lib/data/generated/candidate-policy-audit.json"
 POLICY_TERMS = re.compile(r"政見|政策|白皮書|願景|主張|方案|建設|福利|交通|住宅|教育|醫療|長照|產業|防災")
 
 
 def current_policy_counts() -> tuple[dict[str, int], set[str]]:
-    source = POLICIES_PATH.read_text(encoding="utf-8")
+    source = "\n".join(path.read_text(encoding="utf-8") for path in POLICIES_PATHS)
     counts: dict[str, int] = {}
     for candidate_id in re.findall(r'candidateId:\s*"([^"]+)"', source):
         counts[candidate_id] = counts.get(candidate_id, 0) + 1

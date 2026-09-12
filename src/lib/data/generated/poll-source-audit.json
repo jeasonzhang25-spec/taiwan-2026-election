@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-11T15:12:57Z",
-  "dataGeneratedAt": "2026-09-11T15:12:43Z",
+  "generatedAt": "2026-09-12T14:12:04Z",
+  "dataGeneratedAt": "2026-09-12T14:11:46Z",
   "summary": {
-    "recordCount": 293,
-    "surveyCount": 144,
-    "sourceCount": 144,
-    "checkedSourceCount": 144,
-    "reachableCount": 121,
+    "recordCount": 299,
+    "surveyCount": 145,
+    "sourceCount": 145,
+    "checkedSourceCount": 145,
+    "reachableCount": 122,
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 32,
+    "reviewQueueCount": 33,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -2570,6 +2570,29 @@
       ]
     },
     {
+      "id": "source-5337774980c0b504",
+      "url": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "domain": "www.upmedia.mg",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "contentType": "text/html",
+      "fingerprint": null,
+      "error": null,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-0ad22fde3d69",
+        "poll-1d0940eb0c22",
+        "poll-3868dfd4654c",
+        "poll-b8e7bfa8d4e4",
+        "poll-c368ac396d21",
+        "poll-d2f92273caf6"
+      ]
+    },
+    {
       "id": "source-43f97a922506a591",
       "url": "https://www.upmedia.mg/tw/focus/politics/253073",
       "domain": "www.upmedia.mg",
@@ -3268,6 +3291,24 @@
       ],
       "sourceUrls": [
         "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-40b2a691d17803dc",
+      "countyId": "chiayi-county",
+      "fieldwork": "1月13日",
+      "institute": "民進黨初選",
+      "recordIds": [
+        "poll-0ad22fde3d69",
+        "poll-1d0940eb0c22",
+        "poll-3868dfd4654c",
+        "poll-b8e7bfa8d4e4",
+        "poll-c368ac396d21",
+        "poll-d2f92273caf6"
+      ],
+      "sourceUrls": [
+        "https://www.upmedia.mg/tw/focus/politics/249606"
       ],
       "scenarioCount": 1
     },
@@ -4918,6 +4959,22 @@
         "poll-44471444b65e",
         "poll-7674f8def608",
         "poll-918de3e9b398"
+      ]
+    },
+    {
+      "id": "review-5337774980c0b504",
+      "priority": "medium",
+      "reasons": [
+        "no_poll_evidence_found"
+      ],
+      "url": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "recordIds": [
+        "poll-0ad22fde3d69",
+        "poll-1d0940eb0c22",
+        "poll-3868dfd4654c",
+        "poll-b8e7bfa8d4e4",
+        "poll-c368ac396d21",
+        "poll-d2f92273caf6"
       ]
     },
     {

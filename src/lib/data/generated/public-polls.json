@@ -1,11 +1,12 @@
 {
   "checkedAt": "2026-09-12",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 293,
-  "countyCount": 17,
+  "recordCount": 299,
+  "countyCount": 18,
   "countyIds": [
     "changhua",
     "chiayi-city",
+    "chiayi-county",
     "hsinchu-city",
     "hsinchu-county",
     "hualien",
@@ -327,6 +328,96 @@
         "chiayi-city-張啓楷": 38.0
       },
       "undecided": 20.5
+    },
+    {
+      "id": "poll-0ad22fde3d69",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-黃榮利": 37.964,
+        "chiayi-county-王育敏": 15.361
+      }
+    },
+    {
+      "id": "poll-1d0940eb0c22",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 67.5559,
+        "chiayi-county-王育敏": 14.2226
+      }
+    },
+    {
+      "id": "poll-3868dfd4654c",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-黃榮利": 39.0245,
+        "chiayi-county-王育敏": 18.3584
+      }
+    },
+    {
+      "id": "poll-b8e7bfa8d4e4",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 63.6321,
+        "chiayi-county-王育敏": 13.4218
+      }
+    },
+    {
+      "id": "poll-c368ac396d21",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 63.5224,
+        "chiayi-county-王育敏": 15.055
+      }
+    },
+    {
+      "id": "poll-d2f92273caf6",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-黃榮利": 37.5953,
+        "chiayi-county-王育敏": 15.2331
+      }
     },
     {
       "id": "poll-f4f76f22b0fe",
@@ -4803,6 +4894,23 @@
         "partyId": "tpp"
       }
     ],
+    "chiayi-county": [
+      {
+        "id": "chiayi-county-蔡易餘",
+        "name": "蔡易餘",
+        "partyId": "dpp"
+      },
+      {
+        "id": "chiayi-county-黃榮利",
+        "name": "黃榮利",
+        "partyId": "dpp"
+      },
+      {
+        "id": "chiayi-county-王育敏",
+        "name": "王育敏",
+        "partyId": "kmt"
+      }
+    ],
     "hsinchu-city": [
       {
         "id": "hsinchu-city-施乃如",
@@ -5154,5 +5262,5 @@
       }
     ]
   },
-  "generatedAt": "2026-09-11T15:12:43Z"
+  "generatedAt": "2026-09-12T14:11:46Z"
 }

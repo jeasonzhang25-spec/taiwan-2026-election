@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-16T05:17:39Z",
-  "dataGeneratedAt": "2026-09-16T05:17:22Z",
+  "generatedAt": "2026-09-16T10:18:33Z",
+  "dataGeneratedAt": "2026-09-16T10:18:16Z",
   "summary": {
     "recordCount": 301,
     "surveyCount": 147,
@@ -1800,7 +1800,7 @@
       "percentageHits": 3,
       "contentChanged": false,
       "recordIds": [
-        "poll-b0fa189c853b"
+        "poll-ba1a5f5ac811"
       ]
     },
     {
@@ -3027,19 +3027,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-1d44d35ba62685ae",
-      "countyId": "hsinchu-city",
-      "fieldwork": "5月19日至20日",
-      "institute": "ETtoday",
-      "recordIds": [
-        "poll-b0fa189c853b"
-      ],
-      "sourceUrls": [
-        "https://www.ettoday.net/news/20260916/3238141.htm"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-1daf65b83a6f320b",
       "countyId": "penghu",
       "fieldwork": "2026年7月14日至8月3日",
@@ -4003,6 +3990,19 @@
       ],
       "sourceUrls": [
         "https://my-formosa.com.tw/DOC_224538.htm"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-8e9e084d179ab098",
+      "countyId": "hsinchu-city",
+      "fieldwork": "9月3日至10日",
+      "institute": "ETtoday",
+      "recordIds": [
+        "poll-ba1a5f5ac811"
+      ],
+      "sourceUrls": [
+        "https://www.ettoday.net/news/20260916/3238141.htm"
       ],
       "scenarioCount": 1
     },

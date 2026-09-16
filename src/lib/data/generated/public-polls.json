@@ -474,23 +474,6 @@
       "undecided": 20.0
     },
     {
-      "id": "poll-b0fa189c853b",
-      "countyId": "hsinchu-city",
-      "institute": "ETtoday",
-      "date": "2026-05-20",
-      "fieldwork": "5月19日至20日",
-      "source": "ETtoday",
-      "sourceUrl": "https://www.ettoday.net/news/20260916/3238141.htm",
-      "sourceKind": "public",
-      "scenario": "高虹安－莊競程－何志勇",
-      "results": {
-        "hsinchu-city-高虹安": 48.6,
-        "hsinchu-city-莊競程": 21.2,
-        "hsinchu-city-何志勇": 1.8
-      },
-      "undecided": 28.4
-    },
-    {
       "id": "poll-b1d69c01b9f2",
       "countyId": "hsinchu-city",
       "institute": "匯流民調",
@@ -505,6 +488,23 @@
         "hsinchu-city-莊競程": 21.3
       },
       "undecided": 20.2
+    },
+    {
+      "id": "poll-ba1a5f5ac811",
+      "countyId": "hsinchu-city",
+      "institute": "ETtoday",
+      "date": "2026-09-10",
+      "fieldwork": "9月3日至10日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20260916/3238141.htm",
+      "sourceKind": "public",
+      "scenario": "高虹安－莊競程－何志勇",
+      "results": {
+        "hsinchu-city-高虹安": 48.6,
+        "hsinchu-city-莊競程": 21.2,
+        "hsinchu-city-何志勇": 1.8
+      },
+      "undecided": 28.4
     },
     {
       "id": "poll-0d1468ae4f60",
@@ -5295,5 +5295,5 @@
       }
     ]
   },
-  "generatedAt": "2026-09-16T05:17:22Z"
+  "generatedAt": "2026-09-16T10:18:16Z"
 }

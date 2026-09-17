@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-16T10:18:33Z",
-  "dataGeneratedAt": "2026-09-16T10:18:16Z",
+  "generatedAt": "2026-09-17T10:27:10Z",
+  "dataGeneratedAt": "2026-09-17T10:26:52Z",
   "summary": {
-    "recordCount": 301,
-    "surveyCount": 147,
-    "sourceCount": 147,
-    "checkedSourceCount": 147,
-    "reachableCount": 124,
+    "recordCount": 302,
+    "surveyCount": 148,
+    "sourceCount": 148,
+    "checkedSourceCount": 148,
+    "reachableCount": 125,
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
@@ -1145,6 +1145,24 @@
       "contentChanged": false,
       "recordIds": [
         "poll-e64c379eba2f"
+      ]
+    },
+    {
+      "id": "source-31dea409875fff72",
+      "url": "https://news.tvbs.com.tw/politics/4023574",
+      "domain": "news.tvbs.com.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://news.tvbs.com.tw/politics/4023574",
+      "contentType": "text/html",
+      "fingerprint": "b26abf67d1bacab0d665047645d8b806e008184bf909aaca3f8d245ab9e5032c",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 7,
+      "percentageHits": 7,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-b8c627c8ee69"
       ]
     },
     {
@@ -4728,6 +4746,19 @@
       ],
       "sourceUrls": [
         "https://m.my-formosa.com.tw/DOC_223267.htm"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-f186f8320e4f22c3",
+      "countyId": "kinmen",
+      "fieldwork": "2026年9月7日至11日",
+      "institute": "雨晴指標",
+      "recordIds": [
+        "poll-b8c627c8ee69"
+      ],
+      "sourceUrls": [
+        "https://news.tvbs.com.tw/politics/4023574"
       ],
       "scenarioCount": 1
     },

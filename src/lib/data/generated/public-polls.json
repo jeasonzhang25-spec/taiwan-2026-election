@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-09-17",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 301,
+  "recordCount": 302,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -2819,6 +2819,27 @@
       }
     },
     {
+      "id": "poll-b8c627c8ee69",
+      "countyId": "kinmen",
+      "institute": "雨晴指標",
+      "date": "2026-09-11",
+      "fieldwork": "2026年9月7日至11日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/4023574",
+      "sourceKind": "public",
+      "scenario": "陳玉珍－無黨籍",
+      "results": {
+        "kinmen-陳玉珍": 45.4,
+        "kinmen-李文良": 10.7,
+        "kinmen-張國威": 3.5,
+        "kinmen-洪和成": 1.1,
+        "kinmen-張火木": 0.7,
+        "kinmen-黃世團": 0.6,
+        "kinmen-梁文韜": 0.4
+      },
+      "undecided": 37.6
+    },
+    {
       "id": "poll-17f58e5f0dc1",
       "countyId": "newtaipei",
       "institute": "年代民調",
@@ -5071,8 +5092,33 @@
     ],
     "kinmen": [
       {
+        "id": "kinmen-張國威",
+        "name": "張國威",
+        "partyId": "ind"
+      },
+      {
+        "id": "kinmen-張火木",
+        "name": "張火木",
+        "partyId": "ind"
+      },
+      {
         "id": "kinmen-李文良",
         "name": "李文良",
+        "partyId": "ind"
+      },
+      {
+        "id": "kinmen-梁文韜",
+        "name": "梁文韜",
+        "partyId": "ind"
+      },
+      {
+        "id": "kinmen-洪和成",
+        "name": "洪和成",
+        "partyId": "ind"
+      },
+      {
+        "id": "kinmen-黃世團",
+        "name": "黃世團",
         "partyId": "ind"
       },
       {
@@ -5295,5 +5341,5 @@
       }
     ]
   },
-  "generatedAt": "2026-09-16T10:18:16Z"
+  "generatedAt": "2026-09-17T10:26:52Z"
 }

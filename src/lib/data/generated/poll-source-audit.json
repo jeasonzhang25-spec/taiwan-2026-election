@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-22T06:48:24Z",
+  "generatedAt": "2026-09-22T17:19:24Z",
   "dataGeneratedAt": "2026-09-22T06:48:09Z",
   "summary": {
     "recordCount": 306,
     "surveyCount": 152,
     "sourceCount": 152,
     "checkedSourceCount": 152,
-    "reachableCount": 129,
+    "reachableCount": 128,
     "restrictedCount": 21,
-    "unreachableCount": 2,
+    "unreachableCount": 3,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
+    "contentChangedCount": 0,
     "reviewQueueCount": 34,
     "blockingIssueCount": 0
   },
@@ -1294,7 +1294,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 2,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-4f4fa45750ba"
       ]
@@ -2398,15 +2398,15 @@
       "id": "source-51af381bc9a7fcea",
       "url": "https://www.pinview.com.tw/News/57636.html",
       "domain": "www.pinview.com.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://www.pinview.com.tw/News/57636.html",
-      "contentType": "text/html",
-      "fingerprint": "ff75f0f04bd4e160ec3da64a2d522b74a216935b33517341a15be4426503e164",
-      "error": null,
-      "evidence": "partial",
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ConnectionError",
+      "evidence": "none",
       "candidateHits": 0,
-      "percentageHits": 2,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-ae5c0a47437f"
@@ -5041,17 +5041,6 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-c278aee313c1616c",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://newtalk.tw/news/view/2026-09-21/1061013",
-      "recordIds": [
-        "poll-4f4fa45750ba"
-      ]
-    },
-    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5187,6 +5176,17 @@
         "poll-44471444b65e",
         "poll-7674f8def608",
         "poll-918de3e9b398"
+      ]
+    },
+    {
+      "id": "review-51af381bc9a7fcea",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://www.pinview.com.tw/News/57636.html",
+      "recordIds": [
+        "poll-ae5c0a47437f"
       ]
     },
     {

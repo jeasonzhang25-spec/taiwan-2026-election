@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-22T17:19:24Z",
-  "dataGeneratedAt": "2026-09-22T06:48:09Z",
+  "generatedAt": "2026-09-23T06:41:35Z",
+  "dataGeneratedAt": "2026-09-23T06:40:57Z",
   "summary": {
-    "recordCount": 306,
-    "surveyCount": 152,
-    "sourceCount": 152,
-    "checkedSourceCount": 152,
-    "reachableCount": 128,
+    "recordCount": 307,
+    "surveyCount": 153,
+    "sourceCount": 153,
+    "checkedSourceCount": 153,
+    "reachableCount": 129,
     "restrictedCount": 21,
     "unreachableCount": 3,
     "notCheckedCount": 0,
@@ -577,15 +577,15 @@
       "id": "source-b1a644896a0bcd97",
       "url": "https://my-formosa.com.tw/DOC_224158.htm",
       "domain": "my-formosa.com.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://my-formosa.com.tw/DOC_224158.htm",
-      "contentType": "text/html",
-      "fingerprint": "8c873be24b1e3aa8efb39a557b54334eaa5565228ddfa004101570b8b9e57708",
-      "error": null,
-      "evidence": "partial",
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ConnectionError",
+      "evidence": "none",
       "candidateHits": 0,
-      "percentageHits": 5,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-14d846d53782",
@@ -2398,15 +2398,15 @@
       "id": "source-51af381bc9a7fcea",
       "url": "https://www.pinview.com.tw/News/57636.html",
       "domain": "www.pinview.com.tw",
-      "status": "unreachable",
-      "httpStatus": null,
-      "finalUrl": null,
-      "contentType": null,
-      "fingerprint": null,
-      "error": "ConnectionError",
-      "evidence": "none",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.pinview.com.tw/News/57636.html",
+      "contentType": "text/html",
+      "fingerprint": "ff75f0f04bd4e160ec3da64a2d522b74a216935b33517341a15be4426503e164",
+      "error": null,
+      "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 0,
+      "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
         "poll-ae5c0a47437f"
@@ -2541,6 +2541,24 @@
       "contentChanged": false,
       "recordIds": [
         "poll-e40318941753"
+      ]
+    },
+    {
+      "id": "source-a3d8d52affa53c48",
+      "url": "https://www.setn.com/news/1911568",
+      "domain": "www.setn.com",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.setn.com/news/1911568",
+      "contentType": "text/html",
+      "fingerprint": "51db07c5458353235ff1e8c051ee9769e5e243dfd36cf60b85fc4c4b9c85bfe2",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-e6f04a1ed67c"
       ]
     },
     {
@@ -3197,6 +3215,19 @@
       ],
       "sourceUrls": [
         "https://www.ettoday.net/news/20260608/3179520.htm"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-2f7428a42d25443e",
+      "countyId": "newtaipei",
+      "fieldwork": "9月20日至21日",
+      "institute": "山水民調",
+      "recordIds": [
+        "poll-e6f04a1ed67c"
+      ],
+      "sourceUrls": [
+        "https://www.setn.com/news/1911568"
       ],
       "scenarioCount": 1
     },
@@ -5179,17 +5210,6 @@
       ]
     },
     {
-      "id": "review-51af381bc9a7fcea",
-      "priority": "medium",
-      "reasons": [
-        "source_unreachable"
-      ],
-      "url": "https://www.pinview.com.tw/News/57636.html",
-      "recordIds": [
-        "poll-ae5c0a47437f"
-      ]
-    },
-    {
       "id": "review-5337774980c0b504",
       "priority": "medium",
       "reasons": [
@@ -5363,6 +5383,19 @@
         "poll-79b7f2b7c467",
         "poll-e809e75d1ecf",
         "poll-ea867ce313cb"
+      ]
+    },
+    {
+      "id": "review-b1a644896a0bcd97",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://my-formosa.com.tw/DOC_224158.htm",
+      "recordIds": [
+        "poll-14d846d53782",
+        "poll-ac4dbd4a028d",
+        "poll-e7a5b60001db"
       ]
     },
     {

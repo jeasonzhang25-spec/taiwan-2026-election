@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-23T06:41:35Z",
+  "generatedAt": "2026-09-23T17:00:39Z",
   "dataGeneratedAt": "2026-09-23T06:40:57Z",
   "summary": {
     "recordCount": 307,
@@ -12,7 +12,7 @@
     "unreachableCount": 3,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 34,
+    "reviewQueueCount": 33,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -577,15 +577,15 @@
       "id": "source-b1a644896a0bcd97",
       "url": "https://my-formosa.com.tw/DOC_224158.htm",
       "domain": "my-formosa.com.tw",
-      "status": "unreachable",
-      "httpStatus": null,
-      "finalUrl": null,
-      "contentType": null,
-      "fingerprint": null,
-      "error": "ConnectionError",
-      "evidence": "none",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://my-formosa.com.tw/DOC_224158.htm",
+      "contentType": "text/html",
+      "fingerprint": "8c873be24b1e3aa8efb39a557b54334eaa5565228ddfa004101570b8b9e57708",
+      "error": null,
+      "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 0,
+      "percentageHits": 5,
       "contentChanged": false,
       "recordIds": [
         "poll-14d846d53782",
@@ -1602,12 +1602,12 @@
       "id": "source-2d39b6c22a70ed41",
       "url": "https://www.dpp.org.tw/media/contents/11439",
       "domain": "www.dpp.org.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://www.dpp.org.tw/media/contents/11439",
-      "contentType": "text/html",
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
       "fingerprint": null,
-      "error": null,
+      "error": "ConnectionError",
       "evidence": "none",
       "candidateHits": 0,
       "percentageHits": 0,
@@ -5121,7 +5121,7 @@
       "id": "review-2d39b6c22a70ed41",
       "priority": "medium",
       "reasons": [
-        "no_poll_evidence_found"
+        "source_unreachable"
       ],
       "url": "https://www.dpp.org.tw/media/contents/11439",
       "recordIds": [
@@ -5383,19 +5383,6 @@
         "poll-79b7f2b7c467",
         "poll-e809e75d1ecf",
         "poll-ea867ce313cb"
-      ]
-    },
-    {
-      "id": "review-b1a644896a0bcd97",
-      "priority": "medium",
-      "reasons": [
-        "source_unreachable"
-      ],
-      "url": "https://my-formosa.com.tw/DOC_224158.htm",
-      "recordIds": [
-        "poll-14d846d53782",
-        "poll-ac4dbd4a028d",
-        "poll-e7a5b60001db"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-26T18:03:02Z",
+  "generatedAt": "2026-09-26T21:10:48Z",
   "dataGeneratedAt": "2026-09-26T14:29:37Z",
   "summary": {
     "recordCount": 306,
@@ -11,8 +11,8 @@
     "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1323,7 +1323,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQ07hgjGMWR4NUGIi06QP7WYNkvquuiP4bP1GjOTR-xqQDgYBmv62Im4Dbo5RzgovaOMjqTATt_aVgyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSCg0cUGMvp4NUGIi3z23wiUttfKSd8DgeZjsDNqRFvbz_Ihm0tAiIfI237N-IankXtLN0SVNO7DJsyAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2384,12 +2384,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.pinview.com.tw/News/57636.html",
       "contentType": "text/html",
-      "fingerprint": "ff75f0f04bd4e160ec3da64a2d522b74a216935b33517341a15be4426503e164",
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "error": null,
-      "evidence": "partial",
+      "evidence": "none",
       "candidateHits": 0,
-      "percentageHits": 2,
-      "contentChanged": false,
+      "percentageHits": 0,
+      "contentChanged": true,
       "recordIds": [
         "poll-0313f47a7fe9"
       ]
@@ -5040,6 +5040,18 @@
     }
   ],
   "reviewQueue": [
+    {
+      "id": "review-51af381bc9a7fcea",
+      "priority": "high",
+      "reasons": [
+        "no_poll_evidence_found",
+        "source_content_changed"
+      ],
+      "url": "https://www.pinview.com.tw/News/57636.html",
+      "recordIds": [
+        "poll-0313f47a7fe9"
+      ]
+    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

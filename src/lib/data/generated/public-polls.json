@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-09-26",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 307,
+  "recordCount": 306,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -4438,90 +4438,7 @@
       }
     },
     {
-      "id": "poll-db9d8ac7d38d",
-      "countyId": "taipei",
-      "institute": "山水民調",
-      "date": "2025-11-23",
-      "fieldwork": "2025年11月20日至23日",
-      "source": "山水民調",
-      "sourceUrl": "https://www.mirrormedia.mg/story/20251127edi016",
-      "sourceKind": "public",
-      "scenario": "民進黨－蔣萬安",
-      "results": {
-        "taipei-王世堅": 33.0,
-        "taipei-吳怡農": 11.3,
-        "taipei-鄭麗君": 5.9,
-        "taipei-沈伯洋": 8.6,
-        "taipei-林右昌": 2.8
-      },
-      "undecided": 38.4
-    },
-    {
-      "id": "poll-9ddd26352d23",
-      "countyId": "taipei",
-      "institute": "TVBS",
-      "date": "2025-12-04",
-      "fieldwork": "2025年11月27日至12月4日",
-      "source": "TVBS",
-      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
-      "sourceKind": "public",
-      "scenario": "民進黨－蔣萬安",
-      "results": {
-        "taipei-沈伯洋": 22.0,
-        "taipei-蔣萬安": 64.0
-      },
-      "undecided": 14.0
-    },
-    {
-      "id": "poll-ad4490c27b68",
-      "countyId": "taipei",
-      "institute": "TVBS",
-      "date": "2025-12-04",
-      "fieldwork": "2025年11月27日至12月4日",
-      "source": "TVBS",
-      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
-      "sourceKind": "public",
-      "scenario": "民進黨－蔣萬安",
-      "results": {
-        "taipei-吳怡農": 24.0,
-        "taipei-蔣萬安": 61.0
-      },
-      "undecided": 14.0
-    },
-    {
-      "id": "poll-b72b28e39564",
-      "countyId": "taipei",
-      "institute": "TVBS",
-      "date": "2025-12-04",
-      "fieldwork": "2025年11月27日至12月4日",
-      "source": "TVBS",
-      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
-      "sourceKind": "public",
-      "scenario": "民進黨－蔣萬安",
-      "results": {
-        "taipei-王世堅": 34.0,
-        "taipei-蔣萬安": 55.0
-      },
-      "undecided": 14.0
-    },
-    {
-      "id": "poll-c5832f5fd268",
-      "countyId": "taipei",
-      "institute": "TVBS",
-      "date": "2025-12-04",
-      "fieldwork": "2025年11月27日至12月4日",
-      "source": "TVBS",
-      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
-      "sourceKind": "public",
-      "scenario": "民進黨－蔣萬安",
-      "results": {
-        "taipei-林右昌": 19.0,
-        "taipei-蔣萬安": 65.0
-      },
-      "undecided": 17.0
-    },
-    {
-      "id": "poll-d0752c7c7f20",
+      "id": "poll-42997d10ee4d",
       "countyId": "taipei",
       "institute": "TVBS",
       "date": "2025-12-04",
@@ -4537,7 +4454,71 @@
       "undecided": 14.0
     },
     {
-      "id": "poll-555db3b4329d",
+      "id": "poll-9ca6b3dae210",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-沈伯洋": 22.0,
+        "taipei-蔣萬安": 64.0
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-c61ce0521c01",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-林右昌": 19.0,
+        "taipei-蔣萬安": 65.0
+      },
+      "undecided": 17.0
+    },
+    {
+      "id": "poll-c754573b250a",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-王世堅": 34.0,
+        "taipei-蔣萬安": 55.0
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-cbddd7dfad03",
+      "countyId": "taipei",
+      "institute": "TVBS",
+      "date": "2025-12-04",
+      "fieldwork": "2025年11月27日至12月4日",
+      "source": "TVBS",
+      "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251208/f76262efaa46dd37ae3df58e65b2d1eb.pdf",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-吳怡農": 24.0,
+        "taipei-蔣萬安": 61.0
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-44cfdeb3760d",
       "countyId": "taipei",
       "institute": "震傳媒",
       "date": "2026-01-26",
@@ -4553,23 +4534,7 @@
       "undecided": 13.3
     },
     {
-      "id": "poll-b44687b7a76f",
-      "countyId": "taipei",
-      "institute": "震傳媒",
-      "date": "2026-01-26",
-      "fieldwork": "2026年1月25日至1月26日",
-      "source": "震傳媒",
-      "sourceUrl": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
-      "sourceKind": "public",
-      "scenario": "民進黨－蔣萬安",
-      "results": {
-        "taipei-王世堅": 32.7,
-        "taipei-蔣萬安": 52.0
-      },
-      "undecided": 15.3
-    },
-    {
-      "id": "poll-f90960cd1328",
+      "id": "poll-5431c825a15f",
       "countyId": "taipei",
       "institute": "震傳媒",
       "date": "2026-01-26",
@@ -4585,11 +4550,27 @@
       "undecided": 12.2
     },
     {
-      "id": "poll-5a345dfdd082",
+      "id": "poll-79f2497605c1",
+      "countyId": "taipei",
+      "institute": "震傳媒",
+      "date": "2026-01-26",
+      "fieldwork": "2026年1月25日至1月26日",
+      "source": "震傳媒",
+      "sourceUrl": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
+      "sourceKind": "public",
+      "scenario": "民進黨－蔣萬安",
+      "results": {
+        "taipei-王世堅": 32.7,
+        "taipei-蔣萬安": 52.0
+      },
+      "undecided": 15.3
+    },
+    {
+      "id": "poll-69d1886000d7",
       "countyId": "taipei",
       "institute": "TVBS",
       "date": "2026-01-28",
-      "fieldwork": "1月23日至1月28日",
+      "fieldwork": "2026年1月23日至1月28日",
       "source": "TVBS",
       "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260130/a77f38bdee0ceef8c988b182d179b754.pdf",
       "sourceKind": "public",
@@ -4601,11 +4582,11 @@
       "undecided": 13.0
     },
     {
-      "id": "poll-fb27375ffbe3",
+      "id": "poll-cca060af8386",
       "countyId": "taipei",
       "institute": "TVBS",
       "date": "2026-01-28",
-      "fieldwork": "1月23日至1月28日",
+      "fieldwork": "2026年1月23日至1月28日",
       "source": "TVBS",
       "sourceUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2026/20260130/a77f38bdee0ceef8c988b182d179b754.pdf",
       "sourceKind": "public",
@@ -5434,5 +5415,5 @@
       }
     ]
   },
-  "generatedAt": "2026-09-25T18:06:09Z"
+  "generatedAt": "2026-09-26T14:29:37Z"
 }

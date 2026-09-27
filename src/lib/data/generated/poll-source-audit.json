@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-26T23:38:23Z",
+  "generatedAt": "2026-09-27T01:49:36Z",
   "dataGeneratedAt": "2026-09-26T14:29:37Z",
   "summary": {
     "recordCount": 306,
@@ -1899,7 +1899,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2389,7 +2389,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 2,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-0313f47a7fe9"
       ]
@@ -2515,12 +2515,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.setn.com/news/1873356",
       "contentType": "text/html",
-      "fingerprint": "16d46325f8e5dc99cec93feaf0a71f7ee7f283d7d43315c4e25f3e5d44bf2eb9",
+      "fingerprint": "ed78d60ba089f4ce5ee0210d3a1c12e25725e155ba7c60f1e3b26620eb4c7df9",
       "error": null,
       "evidence": "strong",
       "candidateHits": 2,
-      "percentageHits": 1,
-      "contentChanged": false,
+      "percentageHits": 2,
+      "contentChanged": true,
       "recordIds": [
         "poll-64431b33baf5"
       ]
@@ -5041,14 +5041,14 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-51af381bc9a7fcea",
+      "id": "review-1f9dcee3a4c5fdb9",
       "priority": "high",
       "reasons": [
         "source_content_changed"
       ],
-      "url": "https://www.pinview.com.tw/News/57636.html",
+      "url": "https://www.setn.com/news/1873356",
       "recordIds": [
-        "poll-0313f47a7fe9"
+        "poll-64431b33baf5"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-28",
+  "checkedAt": "2026-09-29",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
   "recordCount": 307,
   "countyCount": 18,
@@ -25,23 +25,7 @@
   ],
   "records": [
     {
-      "id": "poll-1363bce8f3bb",
-      "countyId": "changhua",
-      "institute": "國民黨",
-      "date": "2026-01-01",
-      "fieldwork": "2026年1月",
-      "source": "國民黨",
-      "sourceUrl": "https://www.bigmedia.com.tw/article/1769073918464",
-      "sourceKind": "internal",
-      "scenario": "國民黨－陳素月",
-      "results": {
-        "changhua-洪榮章": 18.5,
-        "changhua-陳素月": 41.1
-      },
-      "undecided": 40.4
-    },
-    {
-      "id": "poll-35af02c27060",
+      "id": "poll-36a822574214",
       "countyId": "changhua",
       "institute": "國民黨",
       "date": "2026-01-01",
@@ -57,7 +41,23 @@
       "undecided": 36.7
     },
     {
-      "id": "poll-55d794f44576",
+      "id": "poll-8a2f50d75c87",
+      "countyId": "changhua",
+      "institute": "國民黨",
+      "date": "2026-01-01",
+      "fieldwork": "2026年1月",
+      "source": "國民黨",
+      "sourceUrl": "https://www.bigmedia.com.tw/article/1769073918464",
+      "sourceKind": "internal",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-洪榮章": 18.5,
+        "changhua-陳素月": 41.1
+      },
+      "undecided": 40.4
+    },
+    {
+      "id": "poll-9396dc9e2683",
       "countyId": "changhua",
       "institute": "國民黨",
       "date": "2026-01-01",
@@ -73,7 +73,7 @@
       "undecided": 32.6
     },
     {
-      "id": "poll-da46502592d6",
+      "id": "poll-9951c809510d",
       "countyId": "changhua",
       "institute": "國民黨",
       "date": "2026-01-01",
@@ -89,22 +89,7 @@
       "undecided": 38.6
     },
     {
-      "id": "poll-04de61d8dffc",
-      "countyId": "changhua",
-      "institute": "趨勢民調",
-      "date": "2026-03-08",
-      "fieldwork": "3月6至8日",
-      "source": "趨勢民調",
-      "sourceUrl": "https://www.mirrormedia.mg/story/20260325inv003",
-      "sourceKind": "public",
-      "scenario": "國民黨－陳素月",
-      "results": {
-        "changhua-謝衣鳳": 31.9,
-        "changhua-陳素月": 34.8
-      }
-    },
-    {
-      "id": "poll-0c2226bfd391",
+      "id": "poll-08c2b860a308",
       "countyId": "changhua",
       "institute": "趨勢民調",
       "date": "2026-03-08",
@@ -119,7 +104,7 @@
       }
     },
     {
-      "id": "poll-5398e66cd214",
+      "id": "poll-25905beeaadf",
       "countyId": "changhua",
       "institute": "趨勢民調",
       "date": "2026-03-08",
@@ -134,7 +119,7 @@
       }
     },
     {
-      "id": "poll-63bc0189a7b3",
+      "id": "poll-4bf703d1ea30",
       "countyId": "changhua",
       "institute": "趨勢民調",
       "date": "2026-03-08",
@@ -151,7 +136,22 @@
       "undecided": 53.0
     },
     {
-      "id": "poll-ad5572f3e915",
+      "id": "poll-b48c867b561a",
+      "countyId": "changhua",
+      "institute": "趨勢民調",
+      "date": "2026-03-08",
+      "fieldwork": "3月6至8日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260325inv003",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳素月",
+      "results": {
+        "changhua-謝衣鳳": 31.9,
+        "changhua-陳素月": 34.8
+      }
+    },
+    {
+      "id": "poll-7d680233583c",
       "countyId": "changhua",
       "institute": "鉅聞天下",
       "date": "2026-05-02",
@@ -167,7 +167,7 @@
       "undecided": 20.67
     },
     {
-      "id": "poll-cbe8cf485bfa",
+      "id": "poll-9dde0a2fdb28",
       "countyId": "changhua",
       "institute": "鉅聞天下",
       "date": "2026-05-02",
@@ -183,7 +183,7 @@
       "undecided": 15.54
     },
     {
-      "id": "poll-440485fef920",
+      "id": "poll-016aa41f3271",
       "countyId": "changhua",
       "institute": "CNEWS 匯流新聞網民調中心",
       "date": "2026-05-21",
@@ -193,37 +193,17 @@
       "sourceKind": "public",
       "scenario": "魏平政－陳素月－蔡壁如",
       "results": {
-        "changhua-魏平政": 23.2,
-        "changhua-陳素月": 42.6
+        "changhua-魏平政": 27.8,
+        "changhua-蔡壁如": 27.3
       },
-      "undecided": 34.2,
+      "undecided": 44.9,
       "sampleSize": 1068,
       "method": "家戶電話、分層比例隨機抽樣",
       "marginOfError": 3.0,
       "publishedAt": "2026-05-25"
     },
     {
-      "id": "poll-446b1fbe8299",
-      "countyId": "changhua",
-      "institute": "CNEWS 匯流新聞網民調中心",
-      "date": "2026-05-21",
-      "fieldwork": "5月20日至21日",
-      "source": "匯流民調",
-      "sourceUrl": "https://cnews.com.tw/001260525a01/",
-      "sourceKind": "public",
-      "scenario": "魏平政－陳素月－蔡壁如",
-      "results": {
-        "changhua-陳素月": 41.5,
-        "changhua-蔡壁如": 28.8
-      },
-      "undecided": 29.7,
-      "sampleSize": 1068,
-      "method": "家戶電話、分層比例隨機抽樣",
-      "marginOfError": 3.0,
-      "publishedAt": "2026-05-25"
-    },
-    {
-      "id": "poll-46e4cb89c489",
+      "id": "poll-1066a5e1985b",
       "countyId": "changhua",
       "institute": "CNEWS 匯流新聞網民調中心",
       "date": "2026-05-21",
@@ -244,7 +224,7 @@
       "publishedAt": "2026-05-25"
     },
     {
-      "id": "poll-57e54392f144",
+      "id": "poll-7d781727d608",
       "countyId": "changhua",
       "institute": "CNEWS 匯流新聞網民調中心",
       "date": "2026-05-21",
@@ -254,17 +234,37 @@
       "sourceKind": "public",
       "scenario": "魏平政－陳素月－蔡壁如",
       "results": {
-        "changhua-魏平政": 27.8,
-        "changhua-蔡壁如": 27.3
+        "changhua-陳素月": 41.5,
+        "changhua-蔡壁如": 28.8
       },
-      "undecided": 44.9,
+      "undecided": 29.7,
       "sampleSize": 1068,
       "method": "家戶電話、分層比例隨機抽樣",
       "marginOfError": 3.0,
       "publishedAt": "2026-05-25"
     },
     {
-      "id": "poll-48700514de43",
+      "id": "poll-d3e47f6f6df6",
+      "countyId": "changhua",
+      "institute": "CNEWS 匯流新聞網民調中心",
+      "date": "2026-05-21",
+      "fieldwork": "5月20日至21日",
+      "source": "匯流民調",
+      "sourceUrl": "https://cnews.com.tw/001260525a01/",
+      "sourceKind": "public",
+      "scenario": "魏平政－陳素月－蔡壁如",
+      "results": {
+        "changhua-魏平政": 23.2,
+        "changhua-陳素月": 42.6
+      },
+      "undecided": 34.2,
+      "sampleSize": 1068,
+      "method": "家戶電話、分層比例隨機抽樣",
+      "marginOfError": 3.0,
+      "publishedAt": "2026-05-25"
+    },
+    {
+      "id": "poll-640c57c08ebb",
       "countyId": "changhua",
       "institute": "民進黨",
       "date": "2026-06-01",
@@ -281,7 +281,7 @@
       "undecided": 49.0
     },
     {
-      "id": "poll-24e7e034d363",
+      "id": "poll-95ec7882d71b",
       "countyId": "changhua",
       "institute": "ETtoday",
       "date": "2026-08-17",
@@ -298,7 +298,7 @@
       "undecided": 31.5
     },
     {
-      "id": "poll-db153b0a3c8b",
+      "id": "poll-def7aaa4e0d9",
       "countyId": "chiayi-city",
       "institute": "TVBS",
       "date": "2026-04-30",
@@ -314,7 +314,7 @@
       "undecided": 20.0
     },
     {
-      "id": "poll-4f193e5496fa",
+      "id": "poll-30b896c557ae",
       "countyId": "chiayi-city",
       "institute": "關鍵調查",
       "date": "2026-07-12",
@@ -330,52 +330,7 @@
       "undecided": 20.5
     },
     {
-      "id": "poll-1c886a68a673",
-      "countyId": "chiayi-county",
-      "institute": "民進黨初選",
-      "date": "2026-01-13",
-      "fieldwork": "1月13日",
-      "source": "民進黨初選",
-      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
-      "sourceKind": "primary",
-      "scenario": "民進黨－王育敏",
-      "results": {
-        "chiayi-county-黃榮利": 37.964,
-        "chiayi-county-王育敏": 15.361
-      }
-    },
-    {
-      "id": "poll-a229c4c58a07",
-      "countyId": "chiayi-county",
-      "institute": "民進黨初選",
-      "date": "2026-01-13",
-      "fieldwork": "1月13日",
-      "source": "民進黨初選",
-      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
-      "sourceKind": "primary",
-      "scenario": "民進黨－王育敏",
-      "results": {
-        "chiayi-county-蔡易餘": 67.5559,
-        "chiayi-county-王育敏": 14.2226
-      }
-    },
-    {
-      "id": "poll-b0e25407d4c9",
-      "countyId": "chiayi-county",
-      "institute": "民進黨初選",
-      "date": "2026-01-13",
-      "fieldwork": "1月13日",
-      "source": "民進黨初選",
-      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
-      "sourceKind": "primary",
-      "scenario": "民進黨－王育敏",
-      "results": {
-        "chiayi-county-蔡易餘": 63.5224,
-        "chiayi-county-王育敏": 15.055
-      }
-    },
-    {
-      "id": "poll-baa03dba2871",
+      "id": "poll-025b43627858",
       "countyId": "chiayi-county",
       "institute": "民進黨初選",
       "date": "2026-01-13",
@@ -390,7 +345,37 @@
       }
     },
     {
-      "id": "poll-bea53d896d2d",
+      "id": "poll-4d754fd87db6",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 63.5224,
+        "chiayi-county-王育敏": 15.055
+      }
+    },
+    {
+      "id": "poll-76411402a3ce",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-蔡易餘": 67.5559,
+        "chiayi-county-王育敏": 14.2226
+      }
+    },
+    {
+      "id": "poll-93e1a68dbdf7",
       "countyId": "chiayi-county",
       "institute": "民進黨初選",
       "date": "2026-01-13",
@@ -405,7 +390,22 @@
       }
     },
     {
-      "id": "poll-cd56685908c4",
+      "id": "poll-c4cf7d1e471a",
+      "countyId": "chiayi-county",
+      "institute": "民進黨初選",
+      "date": "2026-01-13",
+      "fieldwork": "1月13日",
+      "source": "民進黨初選",
+      "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/249606",
+      "sourceKind": "primary",
+      "scenario": "民進黨－王育敏",
+      "results": {
+        "chiayi-county-黃榮利": 37.964,
+        "chiayi-county-王育敏": 15.361
+      }
+    },
+    {
+      "id": "poll-ec5721e35ed0",
       "countyId": "chiayi-county",
       "institute": "民進黨初選",
       "date": "2026-01-13",
@@ -420,7 +420,7 @@
       }
     },
     {
-      "id": "poll-5f35012a4f03",
+      "id": "poll-54a431d0dbd7",
       "countyId": "hsinchu-city",
       "institute": "鉅聞天下",
       "date": "2026-01-11",
@@ -441,7 +441,7 @@
       "undecided": 24.03
     },
     {
-      "id": "poll-4eda305431ab",
+      "id": "poll-d98a8ee83019",
       "countyId": "hsinchu-city",
       "institute": "TVBS",
       "date": "2026-02-04",
@@ -457,7 +457,7 @@
       "undecided": 22.0
     },
     {
-      "id": "poll-89cb56c251b8",
+      "id": "poll-f579abe8cc1b",
       "countyId": "hsinchu-city",
       "institute": "TVBS",
       "date": "2026-02-04",
@@ -474,7 +474,7 @@
       "undecided": 20.0
     },
     {
-      "id": "poll-95e7ebfaa4d3",
+      "id": "poll-0e32290de6d9",
       "countyId": "hsinchu-city",
       "institute": "匯流民調",
       "date": "2026-05-20",
@@ -490,7 +490,7 @@
       "undecided": 20.2
     },
     {
-      "id": "poll-3ccd0783f5b9",
+      "id": "poll-2c91119202ad",
       "countyId": "hsinchu-city",
       "institute": "ETtoday",
       "date": "2026-09-10",
@@ -507,7 +507,7 @@
       "undecided": 25.5
     },
     {
-      "id": "poll-f58df0ee1af2",
+      "id": "poll-ab3e7722ea8a",
       "countyId": "hsinchu-city",
       "institute": "匯流民調",
       "date": "2026-09-13",
@@ -524,39 +524,7 @@
       "undecided": 18.7
     },
     {
-      "id": "poll-51c09603ae31",
-      "countyId": "hsinchu-county",
-      "institute": "艾普羅",
-      "date": "2025-11-22",
-      "fieldwork": "2025年11月20日至22日",
-      "source": "艾普羅",
-      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1756831",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-徐欣瑩": 33.9,
-        "hsinchu-county-鄭朝方": 36.8
-      },
-      "undecided": 19.5
-    },
-    {
-      "id": "poll-7bf256c9c71f",
-      "countyId": "hsinchu-county",
-      "institute": "艾普羅",
-      "date": "2025-11-22",
-      "fieldwork": "2025年11月20日至22日",
-      "source": "艾普羅",
-      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1756831",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-鄭朝方": 40.8,
-        "hsinchu-county-林思铭": 28.6
-      },
-      "undecided": 21.0
-    },
-    {
-      "id": "poll-f4db24fc28a3",
+      "id": "poll-08190522cc23",
       "countyId": "hsinchu-county",
       "institute": "艾普羅",
       "date": "2025-11-22",
@@ -572,7 +540,39 @@
       "undecided": 22.5
     },
     {
-      "id": "poll-324b633b6731",
+      "id": "poll-0b1888901191",
+      "countyId": "hsinchu-county",
+      "institute": "艾普羅",
+      "date": "2025-11-22",
+      "fieldwork": "2025年11月20日至22日",
+      "source": "艾普羅",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1756831",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 33.9,
+        "hsinchu-county-鄭朝方": 36.8
+      },
+      "undecided": 19.5
+    },
+    {
+      "id": "poll-34bf26719ed9",
+      "countyId": "hsinchu-county",
+      "institute": "艾普羅",
+      "date": "2025-11-22",
+      "fieldwork": "2025年11月20日至22日",
+      "source": "艾普羅",
+      "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1756831",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-鄭朝方": 40.8,
+        "hsinchu-county-林思铭": 28.6
+      },
+      "undecided": 21.0
+    },
+    {
+      "id": "poll-179109348c9e",
       "countyId": "hsinchu-county",
       "institute": "美麗島電子報",
       "date": "2026-01-02",
@@ -588,7 +588,7 @@
       "undecided": 19.0
     },
     {
-      "id": "poll-eef3dfd3f09c",
+      "id": "poll-82b7f8bd528f",
       "countyId": "hsinchu-county",
       "institute": "美麗島電子報",
       "date": "2026-01-02",
@@ -604,7 +604,7 @@
       "undecided": 19.1
     },
     {
-      "id": "poll-261f3be40ffc",
+      "id": "poll-56f31fda7201",
       "countyId": "hsinchu-county",
       "institute": "全國公信力",
       "date": "2026-01-26",
@@ -620,7 +620,7 @@
       "undecided": 30.4
     },
     {
-      "id": "poll-3231987ce536",
+      "id": "poll-95100eea84cd",
       "countyId": "hsinchu-county",
       "institute": "全國公信力",
       "date": "2026-01-26",
@@ -636,7 +636,7 @@
       "undecided": 30.4
     },
     {
-      "id": "poll-3e7451d474bb",
+      "id": "poll-bbd788b84842",
       "countyId": "hsinchu-county",
       "institute": "全國公信力",
       "date": "2026-01-26",
@@ -652,7 +652,7 @@
       "undecided": 26.9
     },
     {
-      "id": "poll-796de91ab314",
+      "id": "poll-f318d7a80f35",
       "countyId": "hsinchu-county",
       "institute": "美麗島電子報",
       "date": "2026-02-05",
@@ -669,23 +669,7 @@
       "undecided": 24.0
     },
     {
-      "id": "poll-13f24dbbf098",
-      "countyId": "hsinchu-county",
-      "institute": "鋒燦傳媒",
-      "date": "2026-02-05",
-      "fieldwork": "2月2日至5日",
-      "source": "鋒燦傳媒",
-      "sourceUrl": "https://www.ftnn.com.tw/news/521857",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-徐欣瑩": 43.8,
-        "hsinchu-county-鄭朝方": 35.9
-      },
-      "undecided": 20.3
-    },
-    {
-      "id": "poll-33945447226c",
+      "id": "poll-5d185cc1cb27",
       "countyId": "hsinchu-county",
       "institute": "鋒燦傳媒",
       "date": "2026-02-05",
@@ -701,7 +685,23 @@
       "undecided": 18.6
     },
     {
-      "id": "poll-507cefbfbab2",
+      "id": "poll-728b139a825f",
+      "countyId": "hsinchu-county",
+      "institute": "鋒燦傳媒",
+      "date": "2026-02-05",
+      "fieldwork": "2月2日至5日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/521857",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.8,
+        "hsinchu-county-鄭朝方": 35.9
+      },
+      "undecided": 20.3
+    },
+    {
+      "id": "poll-f868b6c141c9",
       "countyId": "hsinchu-county",
       "institute": "鋒燦傳媒",
       "date": "2026-02-05",
@@ -717,7 +717,7 @@
       "undecided": 24.4
     },
     {
-      "id": "poll-27adbf41adc8",
+      "id": "poll-80236f386ac4",
       "countyId": "hsinchu-county",
       "institute": "趨勢民調",
       "date": "2026-02-08",
@@ -733,7 +733,7 @@
       "undecided": 24.6
     },
     {
-      "id": "poll-2d5104219b2a",
+      "id": "poll-cc29852cf567",
       "countyId": "hsinchu-county",
       "institute": "趨勢民調",
       "date": "2026-02-08",
@@ -749,7 +749,7 @@
       "undecided": 23.9
     },
     {
-      "id": "poll-17b827c5972e",
+      "id": "poll-4b869a302eb9",
       "countyId": "hsinchu-county",
       "institute": "鋒燦傳媒",
       "date": "2026-02-24",
@@ -764,7 +764,7 @@
       }
     },
     {
-      "id": "poll-b3c2c9f1f5cf",
+      "id": "poll-a7dbc8d779ec",
       "countyId": "hsinchu-county",
       "institute": "鋒燦傳媒",
       "date": "2026-02-24",
@@ -779,7 +779,7 @@
       }
     },
     {
-      "id": "poll-c0133d574483",
+      "id": "poll-f4ea790e5813",
       "countyId": "hsinchu-county",
       "institute": "鋒燦傳媒",
       "date": "2026-02-24",
@@ -794,52 +794,7 @@
       }
     },
     {
-      "id": "poll-19196f590eba",
-      "countyId": "hsinchu-county",
-      "institute": "TVBS",
-      "date": "2026-02-27",
-      "fieldwork": "2月25日至27日",
-      "source": "TVBS",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-徐欣瑩": 43.8,
-        "hsinchu-county-陳見賢": 36.4
-      }
-    },
-    {
-      "id": "poll-5e12b009566a",
-      "countyId": "hsinchu-county",
-      "institute": "TVBS",
-      "date": "2026-02-27",
-      "fieldwork": "2月25日至27日",
-      "source": "TVBS",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-徐欣瑩": 40.6,
-        "hsinchu-county-陳見賢": 36.2
-      }
-    },
-    {
-      "id": "poll-7c7900f74449",
-      "countyId": "hsinchu-county",
-      "institute": "TVBS",
-      "date": "2026-02-27",
-      "fieldwork": "2月25日至27日",
-      "source": "TVBS",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-徐欣瑩": 43.1,
-        "hsinchu-county-鄭朝方": 31.8
-      }
-    },
-    {
-      "id": "poll-919f359ebe1e",
+      "id": "poll-0d4e96323c83",
       "countyId": "hsinchu-county",
       "institute": "TVBS",
       "date": "2026-02-27",
@@ -855,23 +810,52 @@
       }
     },
     {
-      "id": "poll-24845f6c1213",
+      "id": "poll-24a9cd5d09aa",
       "countyId": "hsinchu-county",
-      "institute": "雨晴指標",
-      "date": "2026-03-05",
-      "fieldwork": "3月2日至5日",
-      "source": "雨晴指標",
-      "sourceUrl": "https://news.ebc.net.tw/news/politics/541182",
+      "institute": "TVBS",
+      "date": "2026-02-27",
+      "fieldwork": "2月25日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-徐欣瑩": 32.0,
-        "hsinchu-county-陳見賢": 36.0
-      },
-      "undecided": 32.0
+        "hsinchu-county-徐欣瑩": 43.8,
+        "hsinchu-county-陳見賢": 36.4
+      }
     },
     {
-      "id": "poll-4435eb2695d4",
+      "id": "poll-ca604e2084b6",
+      "countyId": "hsinchu-county",
+      "institute": "TVBS",
+      "date": "2026-02-27",
+      "fieldwork": "2月25日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.1,
+        "hsinchu-county-鄭朝方": 31.8
+      }
+    },
+    {
+      "id": "poll-dccc1ea3dd85",
+      "countyId": "hsinchu-county",
+      "institute": "TVBS",
+      "date": "2026-02-27",
+      "fieldwork": "2月25日至27日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3140411",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 40.6,
+        "hsinchu-county-陳見賢": 36.2
+      }
+    },
+    {
+      "id": "poll-2607264c39df",
       "countyId": "hsinchu-county",
       "institute": "雨晴指標",
       "date": "2026-03-05",
@@ -887,7 +871,7 @@
       }
     },
     {
-      "id": "poll-9fedec803139",
+      "id": "poll-46ac86141e06",
       "countyId": "hsinchu-county",
       "institute": "雨晴指標",
       "date": "2026-03-05",
@@ -902,39 +886,23 @@
       }
     },
     {
-      "id": "poll-2799f9f2df89",
+      "id": "poll-ff3fe50fffc2",
       "countyId": "hsinchu-county",
-      "institute": "美麗島電子報",
-      "date": "2026-03-06",
-      "fieldwork": "3月4日至6日",
-      "source": "美麗島電子報",
-      "sourceUrl": "https://my-formosa.com.tw/DOC_224158.htm",
+      "institute": "雨晴指標",
+      "date": "2026-03-05",
+      "fieldwork": "3月2日至5日",
+      "source": "雨晴指標",
+      "sourceUrl": "https://news.ebc.net.tw/news/politics/541182",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-徐欣瑩": 38.5,
-        "hsinchu-county-鄭朝方": 32.2
+        "hsinchu-county-徐欣瑩": 32.0,
+        "hsinchu-county-陳見賢": 36.0
       },
-      "undecided": 17.2
+      "undecided": 32.0
     },
     {
-      "id": "poll-3b7537e45da9",
-      "countyId": "hsinchu-county",
-      "institute": "美麗島電子報",
-      "date": "2026-03-06",
-      "fieldwork": "3月4日至6日",
-      "source": "美麗島電子報",
-      "sourceUrl": "https://my-formosa.com.tw/DOC_224158.htm",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-陳見賢": 37.6,
-        "hsinchu-county-鄭朝方": 38.2
-      },
-      "undecided": 13.9
-    },
-    {
-      "id": "poll-71f19c81f7da",
+      "id": "poll-2bbc6f8dfceb",
       "countyId": "hsinchu-county",
       "institute": "美麗島電子報",
       "date": "2026-03-06",
@@ -950,23 +918,39 @@
       "undecided": 26.5
     },
     {
-      "id": "poll-280ae2394e44",
+      "id": "poll-6bdc5928f619",
       "countyId": "hsinchu-county",
-      "institute": "全方位",
-      "date": "2026-03-13",
-      "fieldwork": "3月12日至13日",
-      "source": "全方位",
-      "sourceUrl": "https://news.nextapple.com/politics/20260318/614FCCFBA60F76ED4DA9EE3A0AF41581",
+      "institute": "美麗島電子報",
+      "date": "2026-03-06",
+      "fieldwork": "3月4日至6日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224158.htm",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-徐欣瑩": 36.7,
-        "hsinchu-county-鄭朝方": 24.5
+        "hsinchu-county-陳見賢": 37.6,
+        "hsinchu-county-鄭朝方": 38.2
       },
-      "undecided": 22.9
+      "undecided": 13.9
     },
     {
-      "id": "poll-971965733b39",
+      "id": "poll-e34ee47185f0",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-06",
+      "fieldwork": "3月4日至6日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224158.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 38.5,
+        "hsinchu-county-鄭朝方": 32.2
+      },
+      "undecided": 17.2
+    },
+    {
+      "id": "poll-39a1e490ec4c",
       "countyId": "hsinchu-county",
       "institute": "全方位",
       "date": "2026-03-13",
@@ -982,7 +966,7 @@
       "undecided": 22.6
     },
     {
-      "id": "poll-e380ee83d36e",
+      "id": "poll-e924c136129d",
       "countyId": "hsinchu-county",
       "institute": "全方位",
       "date": "2026-03-13",
@@ -998,39 +982,23 @@
       "undecided": 15.3
     },
     {
-      "id": "poll-070ac876e3a7",
+      "id": "poll-f9c6b421dcab",
       "countyId": "hsinchu-county",
-      "institute": "台灣研究學會",
-      "date": "2026-03-17",
-      "fieldwork": "3月16日至17日",
-      "source": "台灣研究學會",
-      "sourceUrl": "https://www.ftnn.com.tw/news/531528",
+      "institute": "全方位",
+      "date": "2026-03-13",
+      "fieldwork": "3月12日至13日",
+      "source": "全方位",
+      "sourceUrl": "https://news.nextapple.com/politics/20260318/614FCCFBA60F76ED4DA9EE3A0AF41581",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-徐欣瑩": 45.6,
-        "hsinchu-county-鄭朝方": 32.2
+        "hsinchu-county-徐欣瑩": 36.7,
+        "hsinchu-county-鄭朝方": 24.5
       },
-      "undecided": 22.2
+      "undecided": 22.9
     },
     {
-      "id": "poll-a3efc0b336aa",
-      "countyId": "hsinchu-county",
-      "institute": "台灣研究學會",
-      "date": "2026-03-17",
-      "fieldwork": "3月16日至17日",
-      "source": "台灣研究學會",
-      "sourceUrl": "https://www.ftnn.com.tw/news/531528",
-      "sourceKind": "public",
-      "scenario": "國民黨－鄭朝方",
-      "results": {
-        "hsinchu-county-陳見賢": 45.9,
-        "hsinchu-county-鄭朝方": 32.4
-      },
-      "undecided": 21.7
-    },
-    {
-      "id": "poll-febc2e0e59e2",
+      "id": "poll-2fe7fcc15355",
       "countyId": "hsinchu-county",
       "institute": "台灣研究學會",
       "date": "2026-03-17",
@@ -1046,39 +1014,39 @@
       "undecided": 23.3
     },
     {
-      "id": "poll-1d20b1fdae73",
+      "id": "poll-69a8d348ce59",
       "countyId": "hsinchu-county",
-      "institute": "鋒燦傳媒",
-      "date": "2026-03-19",
-      "fieldwork": "3月18日至19日",
-      "source": "鋒燦傳媒",
-      "sourceUrl": "https://www.ftnn.com.tw/news/532318",
+      "institute": "台灣研究學會",
+      "date": "2026-03-17",
+      "fieldwork": "3月16日至17日",
+      "source": "台灣研究學會",
+      "sourceUrl": "https://www.ftnn.com.tw/news/531528",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-陳見賢": 47.2,
-        "hsinchu-county-鄭朝方": 32.8
+        "hsinchu-county-徐欣瑩": 45.6,
+        "hsinchu-county-鄭朝方": 32.2
       },
-      "undecided": 20.0
+      "undecided": 22.2
     },
     {
-      "id": "poll-1f576a005192",
+      "id": "poll-caf987324c53",
       "countyId": "hsinchu-county",
-      "institute": "鋒燦傳媒",
-      "date": "2026-03-19",
-      "fieldwork": "3月18日至19日",
-      "source": "鋒燦傳媒",
-      "sourceUrl": "https://www.ftnn.com.tw/news/532318",
+      "institute": "台灣研究學會",
+      "date": "2026-03-17",
+      "fieldwork": "3月16日至17日",
+      "source": "台灣研究學會",
+      "sourceUrl": "https://www.ftnn.com.tw/news/531528",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-徐欣瑩": 46.6,
-        "hsinchu-county-鄭朝方": 30.9
+        "hsinchu-county-陳見賢": 45.9,
+        "hsinchu-county-鄭朝方": 32.4
       },
-      "undecided": 22.3
+      "undecided": 21.7
     },
     {
-      "id": "poll-9b1246714dba",
+      "id": "poll-04d1d23cbfde",
       "countyId": "hsinchu-county",
       "institute": "鋒燦傳媒",
       "date": "2026-03-19",
@@ -1094,39 +1062,39 @@
       "undecided": 28.0
     },
     {
-      "id": "poll-49a838e48ee7",
+      "id": "poll-54357e605466",
       "countyId": "hsinchu-county",
-      "institute": "美麗島電子報",
-      "date": "2026-03-25",
-      "fieldwork": "3月23日至25日",
-      "source": "美麗島電子報",
-      "sourceUrl": "https://my-formosa.com.tw/DOC_224581.htm",
+      "institute": "鋒燦傳媒",
+      "date": "2026-03-19",
+      "fieldwork": "3月18日至19日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/532318",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-徐欣瑩": 43.7,
-        "hsinchu-county-陳見賢": 33.4
+        "hsinchu-county-徐欣瑩": 46.6,
+        "hsinchu-county-鄭朝方": 30.9
       },
-      "undecided": 23.0
+      "undecided": 22.3
     },
     {
-      "id": "poll-ca7f4315288e",
+      "id": "poll-97d973b82003",
       "countyId": "hsinchu-county",
-      "institute": "美麗島電子報",
-      "date": "2026-03-25",
-      "fieldwork": "3月23日至25日",
-      "source": "美麗島電子報",
-      "sourceUrl": "https://my-formosa.com.tw/DOC_224581.htm",
+      "institute": "鋒燦傳媒",
+      "date": "2026-03-19",
+      "fieldwork": "3月18日至19日",
+      "source": "鋒燦傳媒",
+      "sourceUrl": "https://www.ftnn.com.tw/news/532318",
       "sourceKind": "public",
       "scenario": "國民黨－鄭朝方",
       "results": {
-        "hsinchu-county-徐欣瑩": 44.7,
-        "hsinchu-county-鄭朝方": 27.0
+        "hsinchu-county-陳見賢": 47.2,
+        "hsinchu-county-鄭朝方": 32.8
       },
-      "undecided": 12.1
+      "undecided": 20.0
     },
     {
-      "id": "poll-f6fef16c3ece",
+      "id": "poll-6aed334ee5ab",
       "countyId": "hsinchu-county",
       "institute": "美麗島電子報",
       "date": "2026-03-25",
@@ -1142,7 +1110,39 @@
       "undecided": 14.1
     },
     {
-      "id": "poll-c0020af660af",
+      "id": "poll-814f251ba736",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-25",
+      "fieldwork": "3月23日至25日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224581.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 43.7,
+        "hsinchu-county-陳見賢": 33.4
+      },
+      "undecided": 23.0
+    },
+    {
+      "id": "poll-99b51a24dd32",
+      "countyId": "hsinchu-county",
+      "institute": "美麗島電子報",
+      "date": "2026-03-25",
+      "fieldwork": "3月23日至25日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224581.htm",
+      "sourceKind": "public",
+      "scenario": "國民黨－鄭朝方",
+      "results": {
+        "hsinchu-county-徐欣瑩": 44.7,
+        "hsinchu-county-鄭朝方": 27.0
+      },
+      "undecided": 12.1
+    },
+    {
+      "id": "poll-4d921aeb502c",
       "countyId": "hsinchu-county",
       "institute": "國民黨初選",
       "date": "2026-03-28",
@@ -1157,7 +1157,7 @@
       }
     },
     {
-      "id": "poll-557e5268fa40",
+      "id": "poll-e1c0105da7d7",
       "countyId": "hsinchu-county",
       "institute": "年代民調",
       "date": "2026-04-07",
@@ -1173,7 +1173,7 @@
       "undecided": 28.3
     },
     {
-      "id": "poll-8abefd8b4749",
+      "id": "poll-0313f47a7fe9",
       "countyId": "hsinchu-county",
       "institute": "全國公信力",
       "date": "2026-04-18",
@@ -1189,7 +1189,7 @@
       "undecided": 21.7
     },
     {
-      "id": "poll-32135cfbce75",
+      "id": "poll-e66011bcf291",
       "countyId": "hsinchu-county",
       "institute": "年代民調",
       "date": "2026-06-16",
@@ -1205,7 +1205,7 @@
       "undecided": 33.6
     },
     {
-      "id": "poll-a56404a63832",
+      "id": "poll-dd39da1dcdd9",
       "countyId": "hsinchu-county",
       "institute": "皮爾森數據",
       "date": "2026-08-01",
@@ -1221,7 +1221,7 @@
       "undecided": 12.87
     },
     {
-      "id": "poll-0a37852b4f55",
+      "id": "poll-9f3658833f70",
       "countyId": "hsinchu-county",
       "institute": "精確民調",
       "date": "2026-08-20",
@@ -1237,7 +1237,7 @@
       "undecided": 20.5
     },
     {
-      "id": "poll-ab731e178341",
+      "id": "poll-df705aaf2d48",
       "countyId": "hsinchu-county",
       "institute": "年代民調",
       "date": "2026-09-18",
@@ -1253,7 +1253,7 @@
       "undecided": 32.7
     },
     {
-      "id": "poll-e62b6935a53e",
+      "id": "poll-964422d2c653",
       "countyId": "hualien",
       "institute": "國民黨內參",
       "date": "2026-01-01",
@@ -1268,7 +1268,39 @@
       }
     },
     {
-      "id": "poll-851f13efa87b",
+      "id": "poll-2e22cc825b28",
+      "countyId": "hualien",
+      "institute": "風傳媒",
+      "date": "2026-03-01",
+      "fieldwork": "3月",
+      "source": "風傳媒",
+      "sourceUrl": "https://www.storm.mg/article/11116179",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 39.9,
+        "hualien-張峻": 25.0
+      },
+      "undecided": 24.9
+    },
+    {
+      "id": "poll-50596559120a",
+      "countyId": "hualien",
+      "institute": "風傳媒",
+      "date": "2026-03-01",
+      "fieldwork": "3月",
+      "source": "風傳媒",
+      "sourceUrl": "https://www.storm.mg/article/11116179",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 31.3,
+        "hualien-魏嘉賢": 31.0
+      },
+      "undecided": 27.4
+    },
+    {
+      "id": "poll-c57709e7dba5",
       "countyId": "hualien",
       "institute": "風傳媒",
       "date": "2026-03-01",
@@ -1285,55 +1317,7 @@
       "undecided": 32.7
     },
     {
-      "id": "poll-8c70d76bdace",
-      "countyId": "hualien",
-      "institute": "風傳媒",
-      "date": "2026-03-01",
-      "fieldwork": "3月",
-      "source": "風傳媒",
-      "sourceUrl": "https://www.storm.mg/article/11116179",
-      "sourceKind": "public",
-      "scenario": "游淑貞－魏嘉賢－張峻",
-      "results": {
-        "hualien-游淑貞": 39.9,
-        "hualien-張峻": 25.0
-      },
-      "undecided": 24.9
-    },
-    {
-      "id": "poll-e7f4d81eb58a",
-      "countyId": "hualien",
-      "institute": "風傳媒",
-      "date": "2026-03-01",
-      "fieldwork": "3月",
-      "source": "風傳媒",
-      "sourceUrl": "https://www.storm.mg/article/11116179",
-      "sourceKind": "public",
-      "scenario": "游淑貞－魏嘉賢－張峻",
-      "results": {
-        "hualien-游淑貞": 31.3,
-        "hualien-魏嘉賢": 31.0
-      },
-      "undecided": 27.4
-    },
-    {
-      "id": "poll-7df2213dc12c",
-      "countyId": "hualien",
-      "institute": "美麗島電子報",
-      "date": "2026-03-23",
-      "fieldwork": "3月18日至20日及3月23日",
-      "source": "美麗島電子報",
-      "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
-      "sourceKind": "public",
-      "scenario": "游淑貞－魏嘉賢－張峻",
-      "results": {
-        "hualien-游淑貞": 44.1,
-        "hualien-張峻": 28.3
-      },
-      "undecided": 16.3
-    },
-    {
-      "id": "poll-9cf78697cb95",
+      "id": "poll-4cca70d3f6ed",
       "countyId": "hualien",
       "institute": "美麗島電子報",
       "date": "2026-03-23",
@@ -1349,7 +1333,7 @@
       "undecided": 21.6
     },
     {
-      "id": "poll-c161fdf133ec",
+      "id": "poll-c2c45b8d4694",
       "countyId": "hualien",
       "institute": "美麗島電子報",
       "date": "2026-03-23",
@@ -1366,39 +1350,23 @@
       "undecided": 31.3
     },
     {
-      "id": "poll-30d3ac491cd7",
+      "id": "poll-ffeef671cda6",
       "countyId": "hualien",
-      "institute": "求真",
-      "date": "2026-04-10",
-      "fieldwork": "4月7日至10日",
-      "source": "求真",
-      "sourceUrl": "https://www.nownews.com/news/6809155",
+      "institute": "美麗島電子報",
+      "date": "2026-03-23",
+      "fieldwork": "3月18日至20日及3月23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
       "sourceKind": "public",
       "scenario": "游淑貞－魏嘉賢－張峻",
       "results": {
-        "hualien-游淑貞": 35.4,
-        "hualien-魏嘉賢": 43.7
+        "hualien-游淑貞": 44.1,
+        "hualien-張峻": 28.3
       },
-      "undecided": 14.0
+      "undecided": 16.3
     },
     {
-      "id": "poll-51e3a8b961b6",
-      "countyId": "hualien",
-      "institute": "求真",
-      "date": "2026-04-10",
-      "fieldwork": "4月7日至10日",
-      "source": "求真",
-      "sourceUrl": "https://www.nownews.com/news/6809155",
-      "sourceKind": "public",
-      "scenario": "游淑貞－魏嘉賢－張峻",
-      "results": {
-        "hualien-游淑貞": 51.3,
-        "hualien-張峻": 28.7
-      },
-      "undecided": 14.7
-    },
-    {
-      "id": "poll-9be1cea0c915",
+      "id": "poll-0dda5a3b30cf",
       "countyId": "hualien",
       "institute": "求真",
       "date": "2026-04-10",
@@ -1415,7 +1383,39 @@
       "undecided": 9.4
     },
     {
-      "id": "poll-097bc6587734",
+      "id": "poll-d829f9d67aff",
+      "countyId": "hualien",
+      "institute": "求真",
+      "date": "2026-04-10",
+      "fieldwork": "4月7日至10日",
+      "source": "求真",
+      "sourceUrl": "https://www.nownews.com/news/6809155",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 35.4,
+        "hualien-魏嘉賢": 43.7
+      },
+      "undecided": 14.0
+    },
+    {
+      "id": "poll-ee9ac0202bae",
+      "countyId": "hualien",
+      "institute": "求真",
+      "date": "2026-04-10",
+      "fieldwork": "4月7日至10日",
+      "source": "求真",
+      "sourceUrl": "https://www.nownews.com/news/6809155",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 51.3,
+        "hualien-張峻": 28.7
+      },
+      "undecided": 14.7
+    },
+    {
+      "id": "poll-d317455e717b",
       "countyId": "hualien",
       "institute": "趨勢民調",
       "date": "2026-06-08",
@@ -1431,7 +1431,7 @@
       "undecided": 35.1
     },
     {
-      "id": "poll-a9bee71455ce",
+      "id": "poll-20c8026bb31d",
       "countyId": "hualien",
       "institute": "風傳媒",
       "date": "2026-07-23",
@@ -1448,7 +1448,7 @@
       "undecided": 29.2
     },
     {
-      "id": "poll-c062f208ca6f",
+      "id": "poll-439b554a2e7a",
       "countyId": "hualien",
       "institute": "風傳媒",
       "date": "2026-08-22",
@@ -1465,7 +1465,7 @@
       "undecided": 29.6
     },
     {
-      "id": "poll-24b192fdd2a3",
+      "id": "poll-30bb9777e612",
       "countyId": "hualien",
       "institute": "包打聽AI民調中心",
       "date": "2026-09-03",
@@ -1481,22 +1481,7 @@
       }
     },
     {
-      "id": "poll-37f1e2fdd9d5",
-      "countyId": "hualien",
-      "institute": "包打聽AI民調中心",
-      "date": "2026-09-03",
-      "fieldwork": "9月1日至3日",
-      "source": "包打聽AI民調中心",
-      "sourceUrl": "https://www.mirrormedia.mg/story/20260905-169soc-100102",
-      "sourceKind": "public",
-      "scenario": "游淑貞－魏嘉賢－張峻",
-      "results": {
-        "hualien-游淑貞": 28.7,
-        "hualien-魏嘉賢": 34.6
-      }
-    },
-    {
-      "id": "poll-836c96ff89e0",
+      "id": "poll-567597c9c7f2",
       "countyId": "hualien",
       "institute": "包打聽AI民調中心",
       "date": "2026-09-03",
@@ -1508,6 +1493,21 @@
       "results": {
         "hualien-游淑貞": 33.4,
         "hualien-張峻": 30.3
+      }
+    },
+    {
+      "id": "poll-78cc9ce6a84e",
+      "countyId": "hualien",
+      "institute": "包打聽AI民調中心",
+      "date": "2026-09-03",
+      "fieldwork": "9月1日至3日",
+      "source": "包打聽AI民調中心",
+      "sourceUrl": "https://www.mirrormedia.mg/story/20260905-169soc-100102",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 28.7,
+        "hualien-魏嘉賢": 34.6
       }
     },
     {
@@ -2643,7 +2643,7 @@
       "source": "TVBS",
       "sourceUrl": "https://news.tvbs.com.tw/politics/3080482?openExternalBrowser=1",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 48.0,
         "keelung-童子瑋": 33.0
@@ -2659,7 +2659,7 @@
       "source": "民進黨內參",
       "sourceUrl": "https://www.mirrormedia.mg/story/20260312inv003",
       "sourceKind": "internal",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 39.3,
         "keelung-童子瑋": 33.1
@@ -2674,7 +2674,7 @@
       "source": "TVBS",
       "sourceUrl": "https://www.storm.mg/article/11115511",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 45.0,
         "keelung-童子瑋": 30.0
@@ -2690,7 +2690,7 @@
       "source": "民進黨內參",
       "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5436378",
       "sourceKind": "internal",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 42.2,
         "keelung-童子瑋": 37.7
@@ -2706,7 +2706,7 @@
       "source": "民進黨內參",
       "sourceUrl": "https://www.mirrormedia.mg/story/20260730inv001",
       "sourceKind": "internal",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 38.5,
         "keelung-童子瑋": 36.0
@@ -2722,7 +2722,7 @@
       "source": "全國公信力",
       "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 40.7,
         "keelung-童子瑋": 29.1
@@ -2737,7 +2737,7 @@
       "source": "全國公信力",
       "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 38.5,
         "keelung-童子瑋": 30.6
@@ -2752,7 +2752,7 @@
       "source": "全國公信力",
       "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 44.9,
         "keelung-童子瑋": 28.0
@@ -2767,7 +2767,7 @@
       "source": "山水民調",
       "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/267542",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 38.6,
         "keelung-童子瑋": 33.2
@@ -2775,24 +2775,38 @@
       "undecided": 28.2
     },
     {
-      "id": "poll-d2f7fdb6671c",
+      "id": "poll-968a3ad8981b",
       "countyId": "keelung",
       "institute": "山水民調",
       "date": "2026-09-21",
       "fieldwork": "9月20日至21日",
       "source": "山水民調",
-      "sourceUrl": "https://tw.news.yahoo.com/%E6%B4%8B%E6%B5%81-%E8%B7%AF%E5%90%B9%E5%90%91%E5%9F%BA%E9%9A%86-%E6%9E%97%E6%BF%81%E6%B0%B4%E7%9C%8B%E6%B0%91%E8%AA%BF%E9%A9%9A%E8%AE%8A-%E5%8C%97%E5%8F%B0%E7%81%A3%E8%97%8D%E7%87%9F%E5%85%A8%E9%9D%A2%E5%91%8A%E6%80%A5-035557762.html",
+      "sourceUrl": "https://newtalk.tw/news/view/2026-09-28/1062272",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－魏造文",
+      "scenario": "謝國樑－童子瑋－其他",
       "results": {
         "keelung-謝國樑": 38.0,
-        "keelung-童子瑋": 34.2,
-        "keelung-魏造文": 1.7
+        "keelung-童子瑋": 34.2
       },
-      "undecided": 29.9
+      "undecided": 29.8
     },
     {
-      "id": "poll-7897469901b4",
+      "id": "poll-7cf054db589e",
+      "countyId": "kinmen",
+      "institute": "國民黨內參",
+      "date": "2025-10-31",
+      "fieldwork": "2025年10月27日至31日",
+      "source": "國民黨內參",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3099283",
+      "sourceKind": "internal",
+      "scenario": "陳玉珍－楊鎮浯－李文良",
+      "results": {
+        "kinmen-陳玉珍": 50.0,
+        "kinmen-楊鎮浯": 24.0
+      }
+    },
+    {
+      "id": "poll-ae760a17d759",
       "countyId": "kinmen",
       "institute": "國民黨內參",
       "date": "2025-10-31",
@@ -2808,22 +2822,22 @@
       }
     },
     {
-      "id": "poll-b3ea9bc2294e",
+      "id": "poll-506f3dec7b24",
       "countyId": "kinmen",
-      "institute": "國民黨內參",
-      "date": "2025-10-31",
-      "fieldwork": "2025年10月27日至31日",
-      "source": "國民黨內參",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3099283",
-      "sourceKind": "internal",
+      "institute": "世新大學",
+      "date": "2026-04-17",
+      "fieldwork": "2026年4月13日至17日",
+      "source": "世新大學",
+      "sourceUrl": "https://www.ftvnews.com.tw/news/detail/2026522W0366",
+      "sourceKind": "public",
       "scenario": "陳玉珍－楊鎮浯－李文良",
       "results": {
-        "kinmen-陳玉珍": 50.0,
-        "kinmen-楊鎮浯": 24.0
+        "kinmen-陳玉珍": 52.0,
+        "kinmen-李文良": 10.4
       }
     },
     {
-      "id": "poll-0bc6b54c667b",
+      "id": "poll-93a759feb863",
       "countyId": "kinmen",
       "institute": "世新大學",
       "date": "2026-04-17",
@@ -2838,7 +2852,7 @@
       }
     },
     {
-      "id": "poll-c2a3d6b8200d",
+      "id": "poll-c1e0fe2deaf5",
       "countyId": "kinmen",
       "institute": "世新大學",
       "date": "2026-04-17",
@@ -2854,22 +2868,7 @@
       }
     },
     {
-      "id": "poll-ed80d0f8317a",
-      "countyId": "kinmen",
-      "institute": "世新大學",
-      "date": "2026-04-17",
-      "fieldwork": "2026年4月13日至17日",
-      "source": "世新大學",
-      "sourceUrl": "https://www.ftvnews.com.tw/news/detail/2026522W0366",
-      "sourceKind": "public",
-      "scenario": "陳玉珍－楊鎮浯－李文良",
-      "results": {
-        "kinmen-陳玉珍": 52.0,
-        "kinmen-李文良": 10.4
-      }
-    },
-    {
-      "id": "poll-7d9e9f08bc85",
+      "id": "poll-26d29036d01f",
       "countyId": "kinmen",
       "institute": "雨晴指標",
       "date": "2026-09-11",
@@ -3521,56 +3520,7 @@
       "undecided": 22.1
     },
     {
-      "id": "poll-5e6d5016994b",
-      "countyId": "penghu",
-      "institute": "民意調查協會",
-      "date": "2025-11-27",
-      "fieldwork": "2025年11月24日到27日",
-      "source": "民意調查協會",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
-      "sourceKind": "public",
-      "scenario": "國民黨－陳光復",
-      "results": {
-        "penghu-陳光復": 34.79,
-        "penghu-陳雙全": 16.24,
-        "penghu-葉竹林": 19.79
-      },
-      "undecided": 22.04
-    },
-    {
-      "id": "poll-7b7d054b8c4f",
-      "countyId": "penghu",
-      "institute": "民意調查協會",
-      "date": "2025-11-27",
-      "fieldwork": "2025年11月24日到27日",
-      "source": "民意調查協會",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
-      "sourceKind": "public",
-      "scenario": "國民黨－陳光復",
-      "results": {
-        "penghu-陳光復": 46.06,
-        "penghu-鄭清發": 16.08
-      },
-      "undecided": 27.77
-    },
-    {
-      "id": "poll-7c73ec91f83f",
-      "countyId": "penghu",
-      "institute": "民意調查協會",
-      "date": "2025-11-27",
-      "fieldwork": "2025年11月24日到27日",
-      "source": "民意調查協會",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
-      "sourceKind": "public",
-      "scenario": "國民黨－陳光復",
-      "results": {
-        "penghu-陳光復": 35.31,
-        "penghu-葉竹林": 25.62
-      },
-      "undecided": 25.94
-    },
-    {
-      "id": "poll-ad63df468787",
+      "id": "poll-2948971be896",
       "countyId": "penghu",
       "institute": "民意調查協會",
       "date": "2025-11-27",
@@ -3587,7 +3537,56 @@
       "undecided": 22.27
     },
     {
-      "id": "poll-5dc809d9698c",
+      "id": "poll-c11a6e8760b4",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2025-11-27",
+      "fieldwork": "2025年11月24日到27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳光復",
+      "results": {
+        "penghu-陳光復": 35.31,
+        "penghu-葉竹林": 25.62
+      },
+      "undecided": 25.94
+    },
+    {
+      "id": "poll-cad5883c4534",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2025-11-27",
+      "fieldwork": "2025年11月24日到27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳光復",
+      "results": {
+        "penghu-陳光復": 34.79,
+        "penghu-陳雙全": 16.24,
+        "penghu-葉竹林": 19.79
+      },
+      "undecided": 22.04
+    },
+    {
+      "id": "poll-ceae335d06eb",
+      "countyId": "penghu",
+      "institute": "民意調查協會",
+      "date": "2025-11-27",
+      "fieldwork": "2025年11月24日到27日",
+      "source": "民意調查協會",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3059332",
+      "sourceKind": "public",
+      "scenario": "國民黨－陳光復",
+      "results": {
+        "penghu-陳光復": 46.06,
+        "penghu-鄭清發": 16.08
+      },
+      "undecided": 27.77
+    },
+    {
+      "id": "poll-ef1eb54fa5f2",
       "countyId": "penghu",
       "institute": "民意調查協會",
       "date": "2026-03-27",
@@ -3607,7 +3606,7 @@
       "undecided": 24.79
     },
     {
-      "id": "poll-82750b26cd4c",
+      "id": "poll-6e1c1e1896c2",
       "countyId": "penghu",
       "institute": "ETToday",
       "date": "2026-08-03",
@@ -4700,7 +4699,7 @@
       "undecided": 17.8
     },
     {
-      "id": "poll-069953380d04",
+      "id": "poll-356419ce2755",
       "countyId": "taitung",
       "institute": "匯流民調",
       "date": "2026-05-28",
@@ -4716,7 +4715,7 @@
       "undecided": 26.3
     },
     {
-      "id": "poll-dd081a5d3904",
+      "id": "poll-ba78f1c4f8fb",
       "countyId": "taitung",
       "institute": "匯流民調",
       "date": "2026-05-28",
@@ -4829,7 +4828,7 @@
       "undecided": 27.1
     },
     {
-      "id": "poll-7ac78c7b724a",
+      "id": "poll-1c153b493134",
       "countyId": "yilan",
       "institute": "美麗島電子報",
       "date": "2026-03-18",
@@ -4845,7 +4844,7 @@
       "undecided": 23.5
     },
     {
-      "id": "poll-d3c1d1b35bd9",
+      "id": "poll-4cf8e6a21c45",
       "countyId": "yilan",
       "institute": "美麗島電子報",
       "date": "2026-03-18",
@@ -4862,7 +4861,7 @@
       "undecided": 25.0
     },
     {
-      "id": "poll-e2d250ed8514",
+      "id": "poll-6717fb28fc4b",
       "countyId": "yilan",
       "institute": "美麗島電子報",
       "date": "2026-03-18",
@@ -4878,23 +4877,7 @@
       "undecided": 25.9
     },
     {
-      "id": "poll-405d06d4e7f5",
-      "countyId": "yilan",
-      "institute": "TVBS",
-      "date": "2026-03-19",
-      "fieldwork": "3月13日至19日",
-      "source": "TVBS",
-      "sourceUrl": "https://news.tvbs.com.tw/politics/3158893",
-      "sourceKind": "public",
-      "scenario": "吳宗憲－林國漳－陳琬惠",
-      "results": {
-        "yilan-吳宗憲": 35.0,
-        "yilan-林國漳": 38.0
-      },
-      "undecided": 27.0
-    },
-    {
-      "id": "poll-c68cab151af4",
+      "id": "poll-2c529baa4ca1",
       "countyId": "yilan",
       "institute": "TVBS",
       "date": "2026-03-19",
@@ -4911,23 +4894,23 @@
       "undecided": 31.0
     },
     {
-      "id": "poll-74289fffb801",
+      "id": "poll-6e7367768c70",
       "countyId": "yilan",
-      "institute": "藍白整合初選",
-      "date": "2026-05-01",
-      "fieldwork": "5月",
-      "source": "藍白整合初選",
-      "sourceUrl": "https://www.storm.mg/article/11127599",
-      "sourceKind": "primary",
+      "institute": "TVBS",
+      "date": "2026-03-19",
+      "fieldwork": "3月13日至19日",
+      "source": "TVBS",
+      "sourceUrl": "https://news.tvbs.com.tw/politics/3158893",
+      "sourceKind": "public",
       "scenario": "吳宗憲－林國漳－陳琬惠",
       "results": {
-        "yilan-林國漳": 27.5,
-        "yilan-陳琬惠": 21.1
+        "yilan-吳宗憲": 35.0,
+        "yilan-林國漳": 38.0
       },
-      "undecided": 40.4
+      "undecided": 27.0
     },
     {
-      "id": "poll-df27530fff8b",
+      "id": "poll-4f2966578222",
       "countyId": "yilan",
       "institute": "藍白整合初選",
       "date": "2026-05-01",
@@ -4943,7 +4926,23 @@
       "undecided": 36.7
     },
     {
-      "id": "poll-1988b1c15376",
+      "id": "poll-51872b7c7082",
+      "countyId": "yilan",
+      "institute": "藍白整合初選",
+      "date": "2026-05-01",
+      "fieldwork": "5月",
+      "source": "藍白整合初選",
+      "sourceUrl": "https://www.storm.mg/article/11127599",
+      "sourceKind": "primary",
+      "scenario": "吳宗憲－林國漳－陳琬惠",
+      "results": {
+        "yilan-林國漳": 27.5,
+        "yilan-陳琬惠": 21.1
+      },
+      "undecided": 40.4
+    },
+    {
+      "id": "poll-38afba0b87b2",
       "countyId": "yilan",
       "institute": "山水民調",
       "date": "2026-08-29",
@@ -4958,7 +4957,7 @@
       }
     },
     {
-      "id": "poll-8b133a54f153",
+      "id": "poll-99e057105cb1",
       "countyId": "yunlin",
       "institute": "鉅聞天下",
       "date": "2026-03-28",
@@ -5164,11 +5163,6 @@
         "id": "keelung-童子瑋",
         "name": "童子瑋",
         "partyId": "dpp"
-      },
-      {
-        "id": "keelung-魏造文",
-        "name": "魏造文",
-        "partyId": "ind"
       },
       {
         "id": "keelung-謝國樑",
@@ -5437,5 +5431,5 @@
       }
     ]
   },
-  "generatedAt": "2026-09-28T05:23:45Z"
+  "generatedAt": "2026-09-28T19:40:49Z"
 }

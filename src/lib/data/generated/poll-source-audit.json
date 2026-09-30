@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-29T17:02:02Z",
+  "generatedAt": "2026-09-30T18:08:37Z",
   "dataGeneratedAt": "2026-09-28T19:40:49Z",
   "summary": {
     "recordCount": 307,
     "surveyCount": 153,
     "sourceCount": 153,
     "checkedSourceCount": 153,
-    "reachableCount": 122,
-    "restrictedCount": 29,
+    "reachableCount": 130,
+    "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 42,
+    "reviewQueueCount": 34,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -753,15 +753,15 @@
       "id": "source-7fa73df8a754adbe",
       "url": "https://news.ltn.com.tw/news/politics/breakingnews/5297627",
       "domain": "news.ltn.com.tw",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "reachable",
+      "httpStatus": 200,
       "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5297627",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "9783e5780bd429acda60f8e735744bbea4cf597e90f7be4ff1d8f1b969b11309",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 4,
       "contentChanged": false,
       "recordIds": [
         "poll-b21c001c26f4",
@@ -772,15 +772,15 @@
       "id": "source-23708d2ab12c63a4",
       "url": "https://news.ltn.com.tw/news/politics/breakingnews/5352342",
       "domain": "news.ltn.com.tw",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "reachable",
+      "httpStatus": 200,
       "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5352342",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "19a55cd7753715adeb20583dd6b2d3bb8562133a39636ab40b606f0cc2ec6232",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 7,
       "contentChanged": false,
       "recordIds": [
         "poll-47f6f656713b",
@@ -792,15 +792,15 @@
       "id": "source-d47a16cd52726a0f",
       "url": "https://news.ltn.com.tw/news/politics/breakingnews/5418501",
       "domain": "news.ltn.com.tw",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "reachable",
+      "httpStatus": 200,
       "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5418501",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "8aed62d5a9b0dda0c575f0a1704ccffae2d144034f5b1a498453786a2cd89ab2",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 8,
       "contentChanged": false,
       "recordIds": [
         "poll-462031f1d45b",
@@ -813,15 +813,15 @@
       "id": "source-2b0a82401a33ed50",
       "url": "https://news.ltn.com.tw/news/politics/breakingnews/5436378",
       "domain": "news.ltn.com.tw",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "reachable",
+      "httpStatus": 200,
       "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5436378",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "24ec0559975f1eeddf1428e75a711f06be4e3dcf5c1122e9ea6e1dbfa15a5c96",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
         "poll-862d49774acc"
@@ -831,15 +831,15 @@
       "id": "source-1d81df1e9d8271ae",
       "url": "https://news.ltn.com.tw/news/politics/breakingnews/5461880",
       "domain": "news.ltn.com.tw",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "reachable",
+      "httpStatus": 200,
       "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5461880",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "0c7ffe637367d6c74e5f5ede2c9136f8ecb5ebdddc5f15e80d5158575d2d4e9d",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 1,
       "contentChanged": false,
       "recordIds": [
         "poll-fce224d6678a"
@@ -849,14 +849,14 @@
       "id": "source-d4d3d37e2f044387",
       "url": "https://news.ltn.com.tw/news/politics/breakingnews/5539708",
       "domain": "news.ltn.com.tw",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "reachable",
+      "httpStatus": 200,
       "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5539708",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "d83cc5e111bd0ba2373ac61a47f513fbc0626f73dd026f70e288ed9dea282cb3",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
+      "evidence": "partial",
+      "candidateHits": 2,
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
@@ -867,15 +867,15 @@
       "id": "source-d5ae47838993282b",
       "url": "https://news.ltn.com.tw/news/politics/breakingnews/5558776",
       "domain": "news.ltn.com.tw",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "reachable",
+      "httpStatus": 200,
       "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5558776",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "29c3c8d5440aa972c55a6f0bfee3edf77917a258f4fb9076a844c0aa7cdcc548",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
         "poll-38afba0b87b2"
@@ -1339,15 +1339,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "restricted",
-      "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQUvbvVGIHe79UGIi3jKqPdPLtm6W-VVIaWL51IEJXGO5oD6C-747pdTe1oQY8evHRdHud0QH9glLAyAnJSWgFD",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 6,
+      "percentageHits": 3,
       "contentChanged": false,
       "recordIds": [
         "poll-6e1c1e1896c2"
@@ -5096,17 +5096,6 @@
       ]
     },
     {
-      "id": "review-1d81df1e9d8271ae",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5461880",
-      "recordIds": [
-        "poll-fce224d6678a"
-      ]
-    },
-    {
       "id": "review-1ff7b2b2d56fa661",
       "priority": "medium",
       "reasons": [
@@ -5118,19 +5107,6 @@
       ]
     },
     {
-      "id": "review-23708d2ab12c63a4",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5352342",
-      "recordIds": [
-        "poll-47f6f656713b",
-        "poll-499116ae996f",
-        "poll-f2acb4110792"
-      ]
-    },
-    {
       "id": "review-29a01d8fa34c3d7b",
       "priority": "medium",
       "reasons": [
@@ -5139,17 +5115,6 @@
       "url": "https://cnews.com.tw/247260821a05/",
       "recordIds": [
         "poll-9f3658833f70"
-      ]
-    },
-    {
-      "id": "review-2b0a82401a33ed50",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5436378",
-      "recordIds": [
-        "poll-862d49774acc"
       ]
     },
     {
@@ -5215,17 +5180,6 @@
         "poll-1066a5e1985b",
         "poll-7d781727d608",
         "poll-d3e47f6f6df6"
-      ]
-    },
-    {
-      "id": "review-4577a83454a058f8",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
-      "recordIds": [
-        "poll-6e1c1e1896c2"
       ]
     },
     {
@@ -5329,18 +5283,6 @@
       "url": "https://cnews.com.tw/1450514a02/",
       "recordIds": [
         "poll-72d9c6da6e93"
-      ]
-    },
-    {
-      "id": "review-7fa73df8a754adbe",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5297627",
-      "recordIds": [
-        "poll-b21c001c26f4",
-        "poll-b527aa1497b7"
       ]
     },
     {
@@ -5502,20 +5444,6 @@
       ]
     },
     {
-      "id": "review-d47a16cd52726a0f",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5418501",
-      "recordIds": [
-        "poll-462031f1d45b",
-        "poll-b230a8d99151",
-        "poll-bcd625e2287a",
-        "poll-f7ed4babe05c"
-      ]
-    },
-    {
       "id": "review-d4a56eedc6948e5e",
       "priority": "medium",
       "reasons": [
@@ -5524,28 +5452,6 @@
       "url": "https://cnews.com.tw/%e3%80%90%e5%8c%af%e6%b5%81%e6%b0%91%e8%aa%bf2026%e5%8f%b0%e4%b8%ad%e5%b8%82%e9%95%b7%e9%81%b8%e8%88%89%e6%9c%80%e6%96%b0%e6%b0%91%e8%aa%bf3-2%e3%80%912026%e5%8f%b0%e4%b8%ad%e5%b8%82%e9%95%b7%e9%81%b8",
       "recordIds": [
         "poll-f044a8666d39"
-      ]
-    },
-    {
-      "id": "review-d4d3d37e2f044387",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5539708",
-      "recordIds": [
-        "poll-656cac5fe07a"
-      ]
-    },
-    {
-      "id": "review-d5ae47838993282b",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5558776",
-      "recordIds": [
-        "poll-38afba0b87b2"
       ]
     },
     {

@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-02T05:42:55Z",
-  "dataGeneratedAt": "2026-10-02T05:42:32Z",
+  "generatedAt": "2026-10-02T16:50:11Z",
+  "dataGeneratedAt": "2026-10-02T16:49:56Z",
   "summary": {
-    "recordCount": 307,
-    "surveyCount": 153,
-    "sourceCount": 153,
-    "checkedSourceCount": 153,
+    "recordCount": 308,
+    "surveyCount": 154,
+    "sourceCount": 154,
+    "checkedSourceCount": 154,
     "reachableCount": 130,
-    "restrictedCount": 21,
+    "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 34,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -882,6 +882,24 @@
       ]
     },
     {
+      "id": "source-8ccad044982f84ac",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593630",
+      "domain": "news.ltn.com.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5593630",
+      "contentType": "text/html",
+      "fingerprint": "a740a7de8bea54f1b46c8a25224a08071d3537e5c49435637c898d33768386e5",
+      "error": null,
+      "evidence": "partial",
+      "candidateHits": 2,
+      "percentageHits": 0,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-54e4650518dc"
+      ]
+    },
+    {
       "id": "source-95ad5fe803c0a81d",
       "url": "https://news.nextapple.com/life/20260729/475E59B3F7F1504C83DD63E801885488",
       "domain": "news.nextapple.com",
@@ -1339,15 +1357,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "status": "restricted",
+      "httpStatus": 429,
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQzOVQBGLrB_9UGIi3SmiUG9CdxsYY9Q3REUN4HPmcMICrAEwsSbAmYBjykNgV4ZqXWL2WJi3ypvvgyAnJSWgFD",
       "contentType": "text/html",
-      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
+      "fingerprint": null,
       "error": null,
-      "evidence": "strong",
-      "candidateHits": 6,
-      "percentageHits": 3,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-6e1c1e1896c2"
@@ -1957,12 +1975,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/506723",
       "contentType": "text/html",
-      "fingerprint": "2da5a231c7f7fb02713d8e1da00ad1f629dc6d6a239fd4a9cdb5a112a0178204",
+      "fingerprint": "8ffed625413a40ff28e7337e051473c7c521aa906b5a9087c35297fe2629c5b2",
       "error": null,
       "evidence": "strong",
       "candidateHits": 3,
-      "percentageHits": 3,
-      "contentChanged": false,
+      "percentageHits": 4,
+      "contentChanged": true,
       "recordIds": [
         "poll-25e3d81ee126",
         "poll-6f28e6ce59a7"
@@ -3332,6 +3350,19 @@
       ],
       "sourceUrls": [
         "https://news.ltn.com.tw/news/politics/breakingnews/5436378"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-3981096986674d83",
+      "countyId": "newtaipei",
+      "fieldwork": "9月30日至10月1日",
+      "institute": "山水民調",
+      "recordIds": [
+        "poll-54e4650518dc"
+      ],
+      "sourceUrls": [
+        "https://news.ltn.com.tw/news/politics/breakingnews/5593630"
       ],
       "scenarioCount": 1
     },
@@ -5072,6 +5103,18 @@
   ],
   "reviewQueue": [
     {
+      "id": "review-cae2e9feb5529f2e",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.ftnn.com.tw/news/506723",
+      "recordIds": [
+        "poll-25e3d81ee126",
+        "poll-6f28e6ce59a7"
+      ]
+    },
+    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5180,6 +5223,17 @@
         "poll-1066a5e1985b",
         "poll-7d781727d608",
         "poll-d3e47f6f6df6"
+      ]
+    },
+    {
+      "id": "review-4577a83454a058f8",
+      "priority": "medium",
+      "reasons": [
+        "source_restricted"
+      ],
+      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "recordIds": [
+        "poll-6e1c1e1896c2"
       ]
     },
     {

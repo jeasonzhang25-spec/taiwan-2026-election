@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-03T15:14:49Z",
+  "generatedAt": "2026-10-03T18:42:10Z",
   "dataGeneratedAt": "2026-10-02T21:19:48Z",
   "summary": {
     "recordCount": 308,
@@ -11,8 +11,8 @@
     "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 36,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1359,7 +1359,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQEmvaSGOC3hNYGIi1_2J6kUZ42Sixsl4F2hrXipZA0aB0y3FbxGB-mBRdxWAvqPiORpt3NREBdgCUyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSs19LlGPOYhdYGIi1De92GqI1W2i2MY9ddUGyWVFRFv1d2_Y1HYCnAMcjq9lwokQjOX8D1TkIxFnQyAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2443,7 +2443,7 @@
       "evidence": "partial",
       "candidateHits": 5,
       "percentageHits": 0,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-05b3836f310d",
         "poll-7867b164def4",
@@ -5102,20 +5102,6 @@
     }
   ],
   "reviewQueue": [
-    {
-      "id": "review-e4fdea1f8fb3c6da",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.setn.com/News.aspx?NewsID=1748047",
-      "recordIds": [
-        "poll-05b3836f310d",
-        "poll-7867b164def4",
-        "poll-9c3674c5c8c7",
-        "poll-b80a849acb0b"
-      ]
-    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

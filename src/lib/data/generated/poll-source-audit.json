@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-02T21:20:05Z",
+  "generatedAt": "2026-10-03T05:48:21Z",
   "dataGeneratedAt": "2026-10-02T21:19:48Z",
   "summary": {
     "recordCount": 308,
@@ -1359,7 +1359,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQNWX-FGPq_gNYGIi0dcK68HZeuQ0XzVGY9j6FFfjM2fYZl9Tqt7ZbDApoQ9OQ2NXmPo3iLlwRcYvUyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSs0FyiGJuugtYGIi0gSCXofuIMg4S2Ep2ucZ9YGz8GSrbiREHL-qy0DuxSRy1IlOYm9-orIJ2XEeUyAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -1975,12 +1975,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/506723",
       "contentType": "text/html",
-      "fingerprint": "8ffed625413a40ff28e7337e051473c7c521aa906b5a9087c35297fe2629c5b2",
+      "fingerprint": "2da5a231c7f7fb02713d8e1da00ad1f629dc6d6a239fd4a9cdb5a112a0178204",
       "error": null,
       "evidence": "strong",
       "candidateHits": 3,
-      "percentageHits": 4,
-      "contentChanged": false,
+      "percentageHits": 3,
+      "contentChanged": true,
       "recordIds": [
         "poll-0c0b625ac0e2",
         "poll-4259820be9c2"
@@ -2574,7 +2574,7 @@
       "evidence": "strong",
       "candidateHits": 2,
       "percentageHits": 2,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-e6f04a1ed67c"
       ]
@@ -5103,14 +5103,15 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-a3d8d52affa53c48",
+      "id": "review-cae2e9feb5529f2e",
       "priority": "high",
       "reasons": [
         "source_content_changed"
       ],
-      "url": "https://www.setn.com/news/1911568",
+      "url": "https://www.ftnn.com.tw/news/506723",
       "recordIds": [
-        "poll-e6f04a1ed67c"
+        "poll-0c0b625ac0e2",
+        "poll-4259820be9c2"
       ]
     },
     {

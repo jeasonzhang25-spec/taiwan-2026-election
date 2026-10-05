@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-05T02:01:38Z",
+  "generatedAt": "2026-10-05T18:28:10Z",
   "dataGeneratedAt": "2026-10-02T21:19:48Z",
   "summary": {
     "recordCount": 308,
     "surveyCount": 154,
     "sourceCount": 154,
     "checkedSourceCount": 154,
-    "reachableCount": 131,
-    "restrictedCount": 21,
+    "reachableCount": 130,
+    "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 2,
+    "contentChangedCount": 0,
     "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
@@ -1357,15 +1357,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "status": "restricted",
+      "httpStatus": 429,
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQUvbwDGLDYj9YGIi3k8ARFKeOc9D75JZG52GjcD2Boip_0vLvZSBk7TgCXb0yJZZMfLZH3orcbOiEyAnJSWgFD",
       "contentType": "text/html",
-      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
+      "fingerprint": null,
       "error": null,
-      "evidence": "strong",
-      "candidateHits": 6,
-      "percentageHits": 3,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-4e37501e9e70"
@@ -1660,10 +1660,10 @@
       "httpStatus": 200,
       "finalUrl": "https://www.dpp.org.tw/media/contents/11439",
       "contentType": "text/html",
-      "fingerprint": "6714cc98e70acbdfe8bd164846c6af370747482c0c366e1bbfdc207b91a90407",
+      "fingerprint": null,
       "error": null,
-      "evidence": "partial",
-      "candidateHits": 1,
+      "evidence": "none",
+      "candidateHits": 0,
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
@@ -1798,7 +1798,7 @@
       "evidence": "partial",
       "candidateHits": 2,
       "percentageHits": 0,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-3b445b0ef83e"
       ]
@@ -2057,7 +2057,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 4,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -5103,30 +5103,6 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-0b71c557de25e052",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/526838",
-      "recordIds": [
-        "poll-50167f3421b3",
-        "poll-818b8bdd2864",
-        "poll-8c9492d1f501"
-      ]
-    },
-    {
-      "id": "review-9e083d36d9f2e543",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ettoday.net/news/20260608/3179520.htm",
-      "recordIds": [
-        "poll-3b445b0ef83e"
-      ]
-    },
-    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5170,6 +5146,18 @@
       "url": "https://cnews.com.tw/247260821a05/",
       "recordIds": [
         "poll-0b06ad48a3be"
+      ]
+    },
+    {
+      "id": "review-2d39b6c22a70ed41",
+      "priority": "medium",
+      "reasons": [
+        "no_poll_evidence_found"
+      ],
+      "url": "https://www.dpp.org.tw/media/contents/11439",
+      "recordIds": [
+        "poll-73405830aaad",
+        "poll-f93ec3fe3d99"
       ]
     },
     {
@@ -5223,6 +5211,17 @@
         "poll-3c5d29b6b367",
         "poll-599c54801248",
         "poll-f7b684c2707d"
+      ]
+    },
+    {
+      "id": "review-4577a83454a058f8",
+      "priority": "medium",
+      "reasons": [
+        "source_restricted"
+      ],
+      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "recordIds": [
+        "poll-4e37501e9e70"
       ]
     },
     {

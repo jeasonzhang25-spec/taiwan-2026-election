@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-05T18:28:10Z",
+  "generatedAt": "2026-10-06T06:52:38Z",
   "dataGeneratedAt": "2026-10-02T21:19:48Z",
   "summary": {
     "recordCount": 308,
@@ -11,8 +11,8 @@
     "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1359,7 +1359,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQUvbwDGLDYj9YGIi3k8ARFKeOc9D75JZG52GjcD2Boip_0vLvZSBk7TgCXb0yJZZMfLZH3orcbOiEyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQ05rNhGKu1ktYGIi38tt9CXw921Am0dIGbhl_F-nU1a3pVlFcaFl5L015K1qV5A4btGhNoKgXErJsyAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2052,12 +2052,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/526838",
       "contentType": "text/html",
-      "fingerprint": "5c5074f0f61eb866830d7c09e6dfcb6b95bd8a55bf6c72c4542f7ea402cee6ec",
+      "fingerprint": "42e69a4e903aa710ff9b8f1349fe812edc9399570ccca9319ad2182306432966",
       "error": null,
       "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 4,
-      "contentChanged": false,
+      "percentageHits": 5,
+      "contentChanged": true,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -5102,6 +5102,19 @@
     }
   ],
   "reviewQueue": [
+    {
+      "id": "review-0b71c557de25e052",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.ftnn.com.tw/news/526838",
+      "recordIds": [
+        "poll-50167f3421b3",
+        "poll-818b8bdd2864",
+        "poll-8c9492d1f501"
+      ]
+    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

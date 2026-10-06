@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-06",
+  "checkedAt": "2026-10-07",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 308,
+  "recordCount": 309,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -3977,6 +3977,22 @@
       "undecided": 21.4
     },
     {
+      "id": "poll-5a5fd88f8dbe",
+      "countyId": "taichung",
+      "institute": "年代民調",
+      "date": "2026-10-04",
+      "fieldwork": "10月2日至4日",
+      "source": "年代民調",
+      "sourceUrl": "https://www.youtube.com/watch?v=MLwUdNyfH20",
+      "sourceKind": "public",
+      "scenario": "江啟臣－何欣純－其他",
+      "results": {
+        "taichung-江啟臣": 37.3,
+        "taichung-何欣純": 31.3
+      },
+      "undecided": 29.7
+    },
+    {
       "id": "poll-ac14ea7f9f04",
       "countyId": "tainan",
       "institute": "東森民調",
@@ -5434,5 +5450,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-02T21:19:48Z"
+  "generatedAt": "2026-10-06T19:32:20Z"
 }

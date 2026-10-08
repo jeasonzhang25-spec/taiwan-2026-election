@@ -6,7 +6,7 @@ import {
 } from "@/lib/data/external";
 import { inferExternalFeedKind } from "@/lib/data/feed-classification";
 
-export const revalidate = 300;
+export const dynamic = "force-dynamic";
 
 type FeedDefinition = {
   kind: ExternalFeedKind;
@@ -83,7 +83,7 @@ function isElectionRelated(title: string): boolean {
   return /2026|九合一|地方選舉|縣市長|市長|縣長|選情|民調|參選|候選|提名/.test(title);
 }
 
-function parseFeed(xml: string, feed: (typeof FEEDS)[number]): ExternalFeedItem[] {
+function parseFeed(xml: string, feed: (typeof FEEDS)[number], indexedAt: string): ExternalFeedItem[] {
   const blocks = xml.match(/<item>[\s\S]*?<\/item>/gi) ?? [];
 
   return blocks.slice(0, ITEMS_PER_FEED).flatMap((block, index) => {
@@ -105,6 +105,8 @@ function parseFeed(xml: string, feed: (typeof FEEDS)[number]): ExternalFeedItem[
         source,
         url,
         publishedAt,
+        indexedAt,
+        verification: "unverified-index" as const,
         topic: feed.topic,
       },
     ];
@@ -114,12 +116,13 @@ function parseFeed(xml: string, feed: (typeof FEEDS)[number]): ExternalFeedItem[
 async function fetchFeed(feed: (typeof FEEDS)[number]): Promise<ExternalFeedItem[]> {
   const response = await fetch(feed.url, {
     headers: { "User-Agent": "IslandElectionDashboard/0.1" },
-    next: { revalidate: 300 },
+    cache: "no-store",
     signal: AbortSignal.timeout(6000),
   });
 
   if (!response.ok) throw new Error(`Feed responded ${response.status}`);
-  return parseFeed(await response.text(), feed);
+  const xml = await response.text();
+  return parseFeed(xml, feed, new Date().toISOString());
 }
 
 export async function GET() {
@@ -168,6 +171,13 @@ export async function GET() {
   balancedItems.sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
 
   const failedFeeds = settled.length - settled.filter((result) => result.status === "fulfilled").length;
+  if (failedFeeds === activeFeeds.length) {
+    console.error("external_feed_unavailable", JSON.stringify({ failedFeeds, totalFeeds: activeFeeds.length, fetchedAt: now.toISOString() }));
+    return NextResponse.json(
+      { error: "外部索引全部無法連線", fetchedAt: now.toISOString(), successfulFeeds: 0, totalFeeds: activeFeeds.length },
+      { status: 503, headers: { "Cache-Control": "no-store" } },
+    );
+  }
   if (failedFeeds > 0) {
     console.warn("external_feed_partial", JSON.stringify({ failedFeeds, totalFeeds: activeFeeds.length, fetchedAt: now.toISOString() }));
   }
@@ -176,6 +186,7 @@ export async function GET() {
     {
       items: balancedItems,
       fetchedAt: now.toISOString(),
+      latestPublishedAt: balancedItems[0]?.publishedAt ?? null,
       blackout,
       partial: settled.some((result) => result.status === "rejected"),
       successfulFeeds: settled.filter((result) => result.status === "fulfilled").length,
@@ -183,7 +194,7 @@ export async function GET() {
     },
     {
       headers: {
-        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=900",
+        "Cache-Control": "public, s-maxage=300",
       },
     },
   );

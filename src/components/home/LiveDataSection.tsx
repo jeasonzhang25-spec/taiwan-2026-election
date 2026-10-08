@@ -12,10 +12,12 @@ import {
 import { Badge } from "@/components/ui/Badge";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { taiwanToday } from "@/lib/utils/format";
+import { artifactFreshness } from "@/lib/data/provenance";
 
 type FeedResponse = {
   items: ExternalFeedItem[];
   fetchedAt: string;
+  latestPublishedAt: string | null;
   blackout: boolean;
   partial: boolean;
   successfulFeeds: number;
@@ -136,6 +138,10 @@ export default function LiveDataSection() {
   }, [activeFilter, feed]);
   const visibleFeed = filteredFeed.slice(0, visibleCount);
   const visibleVerifiedPolls = showAllVerified ? VERIFIED_POLLS : VERIFIED_POLLS.slice(0, 2);
+  const latestArticleFreshness = feed
+    ? artifactFreshness(feed.latestPublishedAt ?? undefined, 48, new Date(feed.fetchedAt))
+    : "unknown";
+  const responseFreshness = feed ? artifactFreshness(feed.fetchedAt, 0.25) : "unknown";
 
   return (
     <section className="mt-16 border-y border-line bg-[#0F1114] py-14">
@@ -143,7 +149,7 @@ export default function LiveDataSection() {
       <SectionTitle
         title="外部真實資料"
         subtitle="人工核驗的民調資料與即時媒體索引分開呈現；評論觀點不參與地圖、席次或勝率計算。"
-        aside={<Badge tone="green">核驗至 {EXTERNAL_DATA_CHECKED_AT}</Badge>}
+        aside={<a href="/data-status" aria-label={`查看民調目錄版本 ${EXTERNAL_DATA_CHECKED_AT} 與核驗狀態`}><Badge tone="gray">民調目錄版本 {EXTERNAL_DATA_CHECKED_AT}</Badge></a>}
       />
 
       <div className="mb-5 grid gap-3 lg:grid-cols-[1.2fr_1fr]">
@@ -306,8 +312,8 @@ export default function LiveDataSection() {
         <div>
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
             <div>
-              <h3 className="text-lg font-semibold tracking-tight text-ink">即時新聞、民調與評論索引</h3>
-              <p className="mt-0.5 text-xs text-ink-muted">每 5 分鐘自動刷新；彙整全台 22 縣市、民調、分析與評論查詢，不自動判定立場</p>
+              <h3 className="text-lg font-semibold tracking-tight text-ink">外部新聞、民調與評論索引</h3>
+              <p className="mt-0.5 text-xs text-ink-muted">每 5 分鐘重新查詢索引；彙整全台 22 縣市、民調、分析與評論，不自動核驗報導內容</p>
             </div>
             <button
               type="button"
@@ -342,10 +348,26 @@ export default function LiveDataSection() {
             </div>
             {feed && (
               <p className="text-xs text-ink-muted">
-                更新 {formatFetchedAt(feed.fetchedAt)} · {feed.items.length} 筆 · {feed.successfulFeeds}/{feed.totalFeeds} 組查詢正常
+                上次查詢 {formatFetchedAt(feed.fetchedAt)} · 最新文章發布 {feed.latestPublishedAt ? formatFeedDate(feed.latestPublishedAt) : "無"} · {feed.items.length} 筆 · {feed.successfulFeeds}/{feed.totalFeeds} 組上次查詢成功
               </p>
             )}
           </div>
+
+          {(feedError || feed?.partial || responseFreshness === "stale" || latestArticleFreshness === "stale" || latestArticleFreshness === "unknown" && Boolean(feed)) && (
+            <div role="status" className="mb-3 rounded-xl border border-[#70532B] bg-[#2A2112] px-4 py-3 text-[13px] leading-5 text-[#F1C46B]">
+              {feedError
+                ? feed
+                  ? `本次索引更新失敗；以下保留上次成功查詢（${formatFetchedAt(feed.fetchedAt)}）的內容，不代表最新消息。`
+                  : "外部索引目前無法連線，暫時沒有可顯示的即時報導。"
+                : feed?.partial
+                  ? `部分查詢失敗（${feed.successfulFeeds}/${feed.totalFeeds} 組成功）；以下內容可能不完整。`
+                  : responseFreshness === "stale"
+                    ? "上次成功查詢已超過 15 分鐘；以下可能是過期快取，不能視為即時更新。"
+                  : latestArticleFreshness === "stale"
+                    ? "最新收錄文章距本次查詢已超過 48 小時；索引剛刷新不代表選舉消息有更新。"
+                    : "無法確認最新文章的發布時間；請以來源頁為準。"}
+            </div>
+          )}
 
           <div className="overflow-hidden rounded-2xl border border-line bg-surface" aria-live="polite">
             {!feed && !feedError && (
@@ -356,9 +378,9 @@ export default function LiveDataSection() {
               </div>
             )}
 
-            {feedError && (
+            {feedError && !feed && (
               <div className="p-5 text-center text-[13px] text-ink-secondary">
-                即時索引暫時無法連線；上方人工核驗資料仍可正常使用。
+                已暫停展示媒體索引，避免把舊報導誤認為最新消息；上方人工核驗資料仍可查閱。
               </div>
             )}
 
@@ -387,7 +409,7 @@ export default function LiveDataSection() {
                       {item.title}
                     </p>
                     <p className="mt-1 text-xs text-ink-muted">
-                      {item.topic} · {item.source} · {formatFeedDate(item.publishedAt)}
+                      {item.topic} · {item.source} · 發布 {formatFeedDate(item.publishedAt)} · 索引 {formatFetchedAt(item.indexedAt)} · 未經本站內容核驗
                     </p>
                   </div>
                   <span className="text-xs text-ink-muted" aria-hidden="true">↗</span>
@@ -408,9 +430,6 @@ export default function LiveDataSection() {
             )}
           </div>
 
-          {feed?.partial && (
-            <p className="mt-2 text-xs text-ink-muted">部分外部來源暫時沒有回應，現有項目仍繼續顯示。</p>
-          )}
         </div>
       </div>
       </div>

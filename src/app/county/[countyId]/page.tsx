@@ -10,10 +10,13 @@ import { CompetitivenessBadge } from "@/components/ui/Badge";
 import { COUNTY_MAP } from "@/lib/data/counties";
 import { COUNTY_PAGE_IDS, isCountyPageId } from "@/lib/data/county-pages";
 import { MAJOR_CITY_POLLS } from "@/lib/data/polling";
+import { getPollDataHealth } from "@/lib/data/health";
+import { pollSourceStatesFor } from "@/lib/data/poll-source-state";
 import { partyName, partyShort } from "@/lib/constants";
 import { fmtPct } from "@/lib/utils/format";
 
 export const dynamicParams = false;
+export const revalidate = 1800;
 
 export function generateStaticParams() {
   return COUNTY_PAGE_IDS.map((countyId) => ({ countyId }));
@@ -41,6 +44,8 @@ export default async function CountyPage({ params }: CountyPageProps) {
   const county = COUNTY_MAP[countyId];
   if (!county) notFound();
   const records = [...(MAJOR_CITY_POLLS[county.id] ?? [])].sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
+  const pollHealth = getPollDataHealth();
+  const sourceStates = pollSourceStatesFor(records.map((record) => record.id));
   const latestRecord = records.at(-1);
   const latestCandidates = county.candidates
     .filter((candidate) => candidate.id in county.latestSupport)
@@ -93,6 +98,14 @@ export default async function CountyPage({ params }: CountyPageProps) {
         </nav>
 
         <div className="mx-auto max-w-page space-y-16 px-4 py-10 sm:px-6 lg:px-8">
+          {pollHealth.status !== "healthy" && (
+            <div role="status" className="rounded-xl border border-[#70532B] bg-[#2A2112] px-4 py-3 text-sm leading-6 text-[#F1C46B]">
+              {pollHealth.status === "blocked" && "民調來源核驗有阻擋項；"}
+              {(pollHealth.catalogIsStale || pollHealth.sourceAudit.isStale) && "民調目錄或來源核驗已逾更新門檻；"}
+              目前仍顯示上一版資料，不代表最近已重新核對。目錄版本 {pollHealth.generatedAt.slice(0, 10)}、來源檢查 {pollHealth.sourceAudit.generatedAt.slice(0, 10)}。
+              <a href="/data-status" className="ml-1 font-medium underline underline-offset-2">查看資料狀態與複核項目 ↗</a>
+            </div>
+          )}
           <section id="overview" className="scroll-mt-24" aria-labelledby="overview-title">
             <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end"><div><span className="text-xs font-medium text-ink-muted">最新概況</span><h2 id="overview-title" className="mt-1 text-2xl font-semibold tracking-tight text-ink">最近採用的公開情境</h2></div><div className="text-xs text-ink-muted">資料範圍 {earliestDate} 至 {latestRecord?.date ?? "—"}</div></div>
             <div className="mt-5 grid gap-4 lg:grid-cols-[1fr_340px]">
@@ -105,7 +118,7 @@ export default async function CountyPage({ params }: CountyPageProps) {
             </div>
           </section>
 
-          {records.length > 0 ? <PollComparisonTool countyId={county.id} countyName={county.name} records={records} candidates={pollCandidates} /> : <section id="poll-comparison" className="scroll-mt-24" aria-labelledby="poll-comparison-title"><span className="text-xs font-medium text-brand">民調比較器</span><h2 id="poll-comparison-title" className="mt-1 text-2xl font-semibold tracking-tight text-ink">目前沒有可比較的公開民調</h2><div className="mt-5 rounded-xl border border-dashed border-line-strong bg-surface px-5 py-8 text-center"><p className="text-sm leading-6 text-ink-secondary">系統仍會持續監測公開索引。找到可追溯來源並通過校驗後，這裡會自動出現逐筆比較、趨勢圖與來源明細。</p><a href="/data-status" className="mt-3 inline-flex text-sm font-medium text-brand hover:underline">查看自動核驗狀態 →</a></div></section>}
+          {records.length > 0 ? <PollComparisonTool countyId={county.id} countyName={county.name} records={records} candidates={pollCandidates} sourceStates={sourceStates} catalogGeneratedAt={pollHealth.generatedAt} sourceAuditStale={pollHealth.sourceAudit.isStale} /> : <section id="poll-comparison" className="scroll-mt-24" aria-labelledby="poll-comparison-title"><span className="text-xs font-medium text-brand">民調比較器</span><h2 id="poll-comparison-title" className="mt-1 text-2xl font-semibold tracking-tight text-ink">目前沒有可比較的公開民調</h2><div className="mt-5 rounded-xl border border-dashed border-line-strong bg-surface px-5 py-8 text-center"><p className="text-sm leading-6 text-ink-secondary">系統仍會持續監測公開索引。找到可追溯來源並通過校驗後，這裡會自動出現逐筆比較、趨勢圖與來源明細。</p><a href="/data-status" className="mt-3 inline-flex text-sm font-medium text-brand hover:underline">查看自動核驗狀態 →</a></div></section>}
           <PolicyComparison countyId={county.id} countyName={county.name} candidates={county.candidates} />
           <SourceSubscriptions countyId={county.id} countyName={county.name} sources={sourceSummaries} latestDate={latestRecord?.date ?? ""} />
         </div>

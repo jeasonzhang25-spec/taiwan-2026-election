@@ -192,8 +192,9 @@ export default function HeroFilter() {
             <p>
               {filters.date
                 ? `正在查看截至 ${filters.date} 的資料快照，納入的最新民調為 ${latestIncludedDate || "無"}。`
-                : `目前採用最新資料，已收錄民調的最新日期為 ${latestIncludedDate || "無"}。`}
+                : `目前採用本站已收錄資料，最新一筆民調的調查日期為 ${latestIncludedDate || "無"}。`}
               日期、政黨與來源會同步更新地圖、統計卡與縣市列表；日期最多可選至今天（{today}）。
+              <a href="/data-status" className="ml-1 font-medium text-[#A5A4FF] underline underline-offset-2">查看實際核驗時間 ↗</a>
             </p>
           </div>
         </div>

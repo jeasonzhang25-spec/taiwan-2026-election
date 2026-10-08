@@ -8,6 +8,8 @@ import { REGISTERED_MAYOR_CANDIDATES } from "../src/lib/data/candidate-registrat
 import auditData from "../src/lib/data/generated/poll-source-audit.json";
 import candidateAudit from "../src/lib/data/generated/candidate-registration-audit.json";
 import policyAudit from "../src/lib/data/generated/candidate-policy-audit.json";
+import { artifactFreshness, pollSourceStateLabel } from "../src/lib/data/provenance";
+import { pollSourceStatesFor } from "../src/lib/data/poll-source-state";
 
 const errors: string[] = [];
 const allowedStatuses = new Set(["poll-option", "announced", "nominated", "registered", "qualified"]);
@@ -69,6 +71,14 @@ for (const policy of POLICY_POSITIONS) {
 check(auditData.summary.recordCount === Object.values(MAJOR_CITY_POLLS).flat().length, "來源台帳與民調情境數量不一致");
 check(auditData.summary.surveyCount === auditData.surveyGroups.length, "來源台帳調查分組數量不一致");
 check(auditData.summary.sourceCount === auditData.sources.length, "來源台帳網址數量不一致");
+const pollIds = Object.values(MAJOR_CITY_POLLS).flat().map((record) => record.id);
+const pollSourceStates = pollSourceStatesFor(pollIds);
+check(pollIds.every((id) => pollSourceStates[id]?.status !== "not-checked"), "部分民調沒有來源核驗狀態");
+check(pollIds.every((id) => pollSourceStates[id]?.checkedAt === auditData.generatedAt), "民調來源檢查時間與核驗產物不一致");
+check(pollIds.every((id) => Boolean(pollSourceStateLabel(pollSourceStates[id]))), "部分民調來源狀態無法顯示");
+check(artifactFreshness("2026-09-11T00:00:00Z", 36, new Date("2026-09-12T12:00:01Z")) === "stale", "超過門檻的產物必須顯示過期");
+check(artifactFreshness("2026-09-11T00:00:00Z", 36, new Date("2026-09-12T12:00:00Z")) === "current", "門檻內的產物不可誤報過期");
+check(artifactFreshness("invalid", 36) === "unknown", "無效日期不可冒充最新核驗");
 check(candidateAudit.summary.countyCount === 22, "候選人核驗台帳未覆蓋 22 縣市");
 check(candidateAudit.summary.candidateCount === 81, "候選人核驗台帳人數不一致");
 check(candidateAudit.summary.blockingIssueCount === 0, "候選人核驗台帳存在阻擋發布問題");

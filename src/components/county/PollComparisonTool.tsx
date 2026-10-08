@@ -5,6 +5,7 @@ import PollTrendChart from "@/components/charts/PollTrendChart";
 import { PartyDot } from "@/components/ui/PartyDot";
 import { buildSeries } from "@/lib/data/polling";
 import { partyShort } from "@/lib/constants";
+import { pollSourceStateLabel, type PollSourceState } from "@/lib/data/provenance";
 import type { Candidate, PollRecord } from "@/lib/types";
 
 const SOURCE_KIND_LABEL = {
@@ -13,16 +14,31 @@ const SOURCE_KIND_LABEL = {
   primary: "黨內初選",
 } as const;
 
+function SourceEvidence({ record, state, auditStale }: { record: PollRecord; state?: PollSourceState; auditStale: boolean }) {
+  return (
+    <div className="mt-2 text-xs leading-5 text-ink-secondary">
+      發布 {record.publishedAt ?? "未揭露"} · {pollSourceStateLabel(state)} · 來源檢查 {state?.checkedAt.slice(0, 10) ?? "未記錄"}
+      {auditStale && <span className="text-[#F1C46B]">（已逾更新門檻）</span>}
+    </div>
+  );
+}
+
 export default function PollComparisonTool({
   countyId,
   countyName,
   records,
   candidates,
+  sourceStates,
+  catalogGeneratedAt,
+  sourceAuditStale,
 }: {
   countyId: string;
   countyName: string;
   records: PollRecord[];
   candidates: Candidate[];
+  sourceStates: Record<string, PollSourceState>;
+  catalogGeneratedAt: string;
+  sourceAuditStale: boolean;
 }) {
   const candidateFrequency = useMemo(() => {
     const counts = new Map<string, number>();
@@ -88,7 +104,7 @@ export default function PollComparisonTool({
         <div>
           <span className="text-xs font-medium text-brand">民調比較器</span>
           <h2 id="poll-comparison-title" className="mt-1 text-2xl font-semibold tracking-tight text-ink">比較不同機構、題目與人選</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-ink-secondary">不同機構與對戰題目不混成單一平均；篩選後逐筆並列，最多同時追蹤 5 名人選。</p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-ink-secondary">不同機構與對戰題目不混成單一平均；篩選後逐筆並列，最多同時追蹤 5 名人選。目錄內容版本 {catalogGeneratedAt.slice(0, 10)}，各筆來源檢查狀態見下方。</p>
         </div>
         <button type="button" onClick={resetFilters} className="self-start rounded-lg border border-line bg-surface px-3 py-2 text-xs font-medium text-ink-secondary hover:border-line-strong hover:text-ink">重設條件</button>
       </div>
@@ -155,6 +171,7 @@ export default function PollComparisonTool({
               <div className="flex flex-wrap items-start justify-between gap-2"><div><time dateTime={record.date} className="num text-sm font-medium text-ink">{record.date}</time><div className="mt-1 text-xs text-ink-muted">{record.scenario ?? "題目未標示"}</div></div><span className="rounded bg-canvas px-2 py-1 text-xs text-ink-secondary">{SOURCE_KIND_LABEL[record.sourceKind ?? "public"]}</span></div>
               <div className="mt-3 space-y-2">{Object.entries(record.results).filter(([id]) => selectedCandidates.includes(id)).sort((a, b) => b[1] - a[1]).map(([id, value]) => { const candidate = candidates.find((item) => item.id === id); return <div key={id} className="flex items-center justify-between gap-4 text-sm"><span className="inline-flex items-center gap-1.5"><PartyDot party={candidate?.partyId ?? "ind"} size={8} />{candidate?.name ?? id}<span className="text-xs text-ink-muted">{candidate ? partyShort(candidate.partyId) : ""}</span></span><span className="num font-semibold">{value}%</span></div>; })}</div>
               <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-line pt-3 text-xs"><span className="text-ink-muted">{record.sampleSize ? `樣本 ${record.sampleSize.toLocaleString()}` : "樣本未揭露"} · {record.method ?? "方法未揭露"}</span>{record.sourceUrl ? <a href={record.sourceUrl} target="_blank" rel="noreferrer" className="min-h-9 rounded-lg border border-line px-3 py-2 font-medium text-brand">{record.source} ↗</a> : <span>{record.source}</span>}</div>
+              <SourceEvidence record={record} state={sourceStates[record.id]} auditStale={sourceAuditStale} />
             </article>
           ))}
           {visibleRows.length === 0 && <div className="px-4 py-10 text-center text-sm text-ink-muted">目前條件下沒有資料</div>}
@@ -165,7 +182,7 @@ export default function PollComparisonTool({
             <tbody className="divide-y divide-line">
               {visibleRows.map((record) => (
                 <tr key={record.id} className="align-top hover:bg-canvas/60">
-                  <td className="px-4 py-3"><div className="num whitespace-nowrap text-ink">{record.date}</div>{record.sourceUrl ? <a href={record.sourceUrl} target="_blank" rel="noreferrer" className="mt-1 inline-flex text-brand hover:underline">{record.source} ↗</a> : <div className="mt-1">{record.source}</div>}</td>
+                  <td className="px-4 py-3"><div className="num whitespace-nowrap text-ink">{record.date}</div>{record.sourceUrl ? <a href={record.sourceUrl} target="_blank" rel="noreferrer" className="mt-1 inline-flex text-brand hover:underline">{record.source} ↗</a> : <div className="mt-1">{record.source}</div>}<SourceEvidence record={record} state={sourceStates[record.id]} auditStale={sourceAuditStale} /></td>
                   <td className="px-3 py-3"><span className="rounded bg-canvas px-2 py-1 text-ink-secondary">{SOURCE_KIND_LABEL[record.sourceKind ?? "public"]}</span></td>
                   <td className="max-w-[260px] px-3 py-3 leading-5 text-ink-secondary">{record.scenario ?? "—"}</td>
                   <td className="px-3 py-3"><div className="space-y-1">{Object.entries(record.results).filter(([id]) => selectedCandidates.includes(id)).sort((a, b) => b[1] - a[1]).map(([id, value]) => { const candidate = candidates.find((item) => item.id === id); return <div key={id} className="flex min-w-[150px] items-center justify-between gap-4"><span className="inline-flex items-center gap-1.5"><PartyDot party={candidate?.partyId ?? "ind"} size={8} />{candidate?.name ?? id}<span className="text-ink-muted">{candidate ? partyShort(candidate.partyId) : ""}</span></span><span className="num font-medium">{value}%</span></div>; })}</div></td>

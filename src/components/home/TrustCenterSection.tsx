@@ -1,8 +1,13 @@
 import { getPollDataHealth } from "@/lib/data/health";
+import candidateAuditData from "@/lib/data/generated/candidate-registration-audit.json";
+import policyAuditData from "@/lib/data/generated/candidate-policy-audit.json";
+import { artifactFreshness } from "@/lib/data/provenance";
 
 export default function TrustCenterSection() {
   const health = getPollDataHealth();
   const healthy = health.status === "healthy";
+  const registryStale = artifactFreshness(candidateAuditData.generatedAt, 18) !== "current";
+  const policyMonitorStale = artifactFreshness(policyAuditData.generatedAt, 18) !== "current";
   return (
     <section className="mx-auto max-w-page px-4 pt-16 sm:px-6 lg:px-8" aria-labelledby="trust-title">
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#111214] text-white shadow-[0_18px_60px_rgba(8,9,10,0.12)]">
@@ -19,6 +24,14 @@ export default function TrustCenterSection() {
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/55">
               已收錄 {health.recordCount} 筆民調情境，歸為約 {health.surveyCount} 組公開調查，涵蓋 {health.countyCount} 個縣市。發布前會阻擋重複 ID、無效來源連結與異常支持度；來源未揭露的方法與樣本數不自行補猜。
             </p>
+            {(health.catalogIsStale || health.sourceAudit.isStale || registryStale || policyMonitorStale) && (
+              <p className="mt-3 text-xs leading-5 text-[#F1C46B]">
+                {(health.catalogIsStale || health.sourceAudit.isStale) && `民調目錄或來源核驗 ${health.sourceAudit.generatedAt.slice(0, 10)} 已逾更新門檻。`}
+                {registryStale && `候選人台帳檢查 ${candidateAuditData.generatedAt.slice(0, 10)} 已逾更新門檻。`}
+                {policyMonitorStale && ` 政見監測 ${policyAuditData.generatedAt.slice(0, 10)} 已逾更新門檻。`}
+                既有資料仍可查閱，但不代表近期已重新核對。
+              </p>
+            )}
           </div>
           <div className="flex flex-col gap-2 sm:flex-row lg:flex-col xl:flex-row">
             <a href="/data-status" className="rounded-xl bg-brand px-4 py-2.5 text-center text-sm font-medium text-canvas transition-colors hover:bg-brand-strong">查看資料狀態</a>

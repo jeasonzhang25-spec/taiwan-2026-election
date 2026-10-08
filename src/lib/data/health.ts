@@ -130,6 +130,7 @@ export function getPollDataHealth(now = new Date()) {
     status: blockingIssueCount > 0 ? "blocked" as const : isStale || sourceAuditIsStale ? "stale" as const : "healthy" as const,
     checkedAt: payload.checkedAt,
     generatedAt,
+    catalogIsStale: isStale,
     staleAfterHours: STALE_AFTER_HOURS,
     sourceAuditStaleAfterHours: SOURCE_AUDIT_STALE_AFTER_HOURS,
     scheduleLabel: "每小時第 17、47 分檢查",

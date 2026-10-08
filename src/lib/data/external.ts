@@ -42,6 +42,8 @@ export interface ExternalFeedItem {
   source: string;
   url: string;
   publishedAt: string;
+  indexedAt: string;
+  verification: "unverified-index";
   topic: string;
 }
 

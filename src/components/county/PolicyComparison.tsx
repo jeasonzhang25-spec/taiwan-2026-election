@@ -2,6 +2,9 @@ import { POLICY_DIMENSIONS } from "@/lib/data/county-pages";
 import { candidatePartyLabel, candidateStatusLabel } from "@/lib/data/candidate-status";
 import { getVerifiedPolicies } from "@/lib/data/policies";
 import { CANDIDATE_REGISTRATION_CHECKED_AT } from "@/lib/data/candidate-registrations";
+import candidateAuditData from "@/lib/data/generated/candidate-registration-audit.json";
+import policyAuditData from "@/lib/data/generated/candidate-policy-audit.json";
+import { artifactFreshness } from "@/lib/data/provenance";
 import { PartyDot } from "@/components/ui/PartyDot";
 import type { Candidate } from "@/lib/types";
 
@@ -33,11 +36,22 @@ export default function PolicyComparison({ countyId, countyName, candidates }: {
     dimension.id,
     policies.filter((policy) => policy.dimensionId === dimension.id),
   ]));
+  const registryStale = artifactFreshness(candidateAuditData.generatedAt, 18) !== "current";
+  const policyMonitorStale = artifactFreshness(policyAuditData.generatedAt, 18) !== "current";
   return (
     <section id="policies" className="scroll-mt-24" aria-labelledby="policies-title">
       <span className="text-xs font-medium text-[#F1C46B]">政見資料</span>
       <h2 id="policies-title" className="mt-1 text-2xl font-semibold tracking-tight text-ink">登記已截止，政見資料持續核驗</h2>
       <p className="mt-2 max-w-3xl text-sm leading-6 text-ink-secondary">全台 22 縣市、81 位縣市長登記人已建立台帳並連回各地選委會來源；政見優先採候選人一手資料，媒體對政策發布的直接報導會另行標示，不把評論或推測當成政見。</p>
+
+      {(registryStale || policyMonitorStale) && (
+        <div role="status" className="mt-4 rounded-xl border border-[#70532B] bg-[#2A2112] px-4 py-3 text-sm leading-6 text-[#F1C46B]">
+          {registryStale && `候選人台帳檢查停留在 ${candidateAuditData.generatedAt.slice(0, 10)}；`}
+          {policyMonitorStale && `政見監測產物停留在 ${policyAuditData.generatedAt.slice(0, 10)}；`}
+          現有卡片仍可回查來源，但不能視作已完成近期核驗。
+          <a href="/data-status" className="ml-1 font-medium underline underline-offset-2">查看更新狀態 ↗</a>
+        </div>
+      )}
 
       {raceScopeNote && <div className="mt-4 rounded-xl border border-[#2B4664] bg-[#162333] px-4 py-3 text-sm leading-6 text-[#B9D6F2]">
         <span>{raceScopeNote.text}</span>{" "}
@@ -103,7 +117,7 @@ export default function PolicyComparison({ countyId, countyName, candidates }: {
       </div>
 
       <div className="mt-4 overflow-hidden rounded-xl border border-line bg-surface shadow-card">
-        <div className="flex flex-col justify-between gap-2 border-b border-line px-5 py-4 sm:flex-row sm:items-end"><div><h3 className="text-sm font-semibold text-ink">{countyName}政見比較維度</h3><p className="mt-1 text-xs leading-5 text-ink-muted">保留發布日期、來源網址與來源層級；預算、期程等尚未公布的欄位不代為推算。</p></div>{policies.length > 0 && <span className="shrink-0 text-xs font-medium text-brand">已核驗 {policies.length} 項 · 涵蓋 {coveredCandidateCount} 人</span>}</div>
+        <div className="flex flex-col justify-between gap-2 border-b border-line px-5 py-4 sm:flex-row sm:items-end"><div><h3 className="text-sm font-semibold text-ink">{countyName}政見比較維度</h3><p className="mt-1 text-xs leading-5 text-ink-muted">保留發布日期、來源網址、內容版本與來源層級；目前未逐項記錄人工核驗完成時刻，不能把監測產物時間當成政見核驗時間。</p></div>{policies.length > 0 && <span className="shrink-0 text-xs font-medium text-brand">已核驗 {policies.length} 項 · 涵蓋 {coveredCandidateCount} 人</span>}</div>
         <div className="divide-y divide-line">
           {POLICY_DIMENSIONS.map((dimension) => {
             const dimensionPolicies = policiesByDimension.get(dimension.id) ?? [];
@@ -114,7 +128,7 @@ export default function PolicyComparison({ countyId, countyName, candidates }: {
                 <div className="text-sm text-ink-secondary">{dimension.description}</div>
                 {dimensionPolicies.length > 0 ? <div className="mt-3 grid gap-3 xl:grid-cols-2">{dimensionPolicies.map((policy) => {
                   const candidate = candidates.find((item) => item.id === policy.candidateId);
-                  return <article key={policy.id} className="rounded-lg border border-line bg-canvas p-3"><div className="flex flex-wrap items-center justify-between gap-2"><h4 className="flex items-center gap-2 text-sm font-semibold text-ink">{candidate && <PartyDot party={candidate.partyId} size={8} />}<span>{candidate?.name ?? policy.candidateId}｜{policy.title}</span></h4><span className={`rounded-full px-2 py-1 text-[11px] font-medium ${policy.sourceKind === "candidate-primary" ? "bg-[#172B24] text-[#72D6A0]" : "bg-[#1E2735] text-[#9EC5EE]"}`}>{POLICY_SOURCE_LABELS[policy.sourceKind]}</span></div><p className="mt-2 text-sm leading-6 text-ink-secondary">{policy.summary}</p><div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs"><time dateTime={policy.publishedAt} className="text-ink-muted">發布 {policy.publishedAt}</time><a href={policy.sourceUrl} target="_blank" rel="noreferrer" className="font-medium text-brand hover:underline">{policy.sourceName} · 查看來源 ↗</a></div></article>;
+                  return <article key={policy.id} className="rounded-lg border border-line bg-canvas p-3"><div className="flex flex-wrap items-center justify-between gap-2"><h4 className="flex items-center gap-2 text-sm font-semibold text-ink">{candidate && <PartyDot party={candidate.partyId} size={8} />}<span>{candidate?.name ?? policy.candidateId}｜{policy.title}</span></h4><span className={`rounded-full px-2 py-1 text-[11px] font-medium ${policy.sourceKind === "candidate-primary" ? "bg-[#172B24] text-[#72D6A0]" : "bg-[#1E2735] text-[#9EC5EE]"}`}>{POLICY_SOURCE_LABELS[policy.sourceKind]}</span></div><p className="mt-2 text-sm leading-6 text-ink-secondary">{policy.summary}</p><div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs"><span className="text-ink-muted">已核驗收錄 · 發布 <time dateTime={policy.publishedAt}>{policy.publishedAt}</time> · 內容版本 {policy.versionDate}</span><a href={policy.sourceUrl} target="_blank" rel="noreferrer" className="font-medium text-brand hover:underline">{policy.sourceName} · 查看來源 ↗</a></div></article>;
                 })}</div> : <span className="mt-2 inline-flex w-fit rounded-full bg-[#1B1E23] px-2.5 py-1 text-xs text-ink-muted">等待可追溯的正式資料</span>}
               </div>
             </div>

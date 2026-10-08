@@ -6,6 +6,7 @@ import { DATA_CHANGE_LOG } from "@/lib/data/change-log";
 import { getPollDataHealth, POLL_RECORDS_BY_COUNTY } from "@/lib/data/health";
 import candidateAuditData from "@/lib/data/generated/candidate-registration-audit.json";
 import policyAuditData from "@/lib/data/generated/candidate-policy-audit.json";
+import { artifactFreshness } from "@/lib/data/provenance";
 
 export const metadata: Metadata = {
   title: "資料狀態與更正紀錄｜島嶼選情",
@@ -69,6 +70,8 @@ export default function DataStatusPage() {
       ? `超過 ${health.staleAfterHours} 小時未核驗`
       : "資料檢查未通過";
   const healthy = health.status === "healthy";
+  const registryStale = artifactFreshness(candidateAuditData.generatedAt, 18) !== "current";
+  const policyMonitorStale = artifactFreshness(policyAuditData.generatedAt, 18) !== "current";
 
   return (
     <>
@@ -88,6 +91,16 @@ export default function DataStatusPage() {
           </p>
         </div>
 
+        {(!healthy || registryStale || policyMonitorStale) && (
+          <div role="status" className="mt-6 rounded-xl border border-[#70532B] bg-[#2A2112] px-4 py-3 text-sm leading-6 text-[#F1C46B]">
+            目前至少一條資料更新路徑逾期或有阻擋項：{[
+              !healthy ? "民調目錄／來源核驗" : null,
+              registryStale ? "候選人登記台帳" : null,
+              policyMonitorStale ? "政見監測" : null,
+            ].filter(Boolean).join("、")}。既有資料仍保留，但不能把頁面載入時間當作再次核驗時間；請查看下方各路徑的實際時間與待複核項目。
+          </div>
+        )}
+
         <section className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4" aria-label="資料摘要">
           <Metric label="民調情境" value={`${health.recordCount} 筆`} note="每個問卷對戰組合各自保留" />
           <Metric label="登記候選人" value={`${candidateAudit.candidateCount} 人`} note={`${candidateAudit.countyCount} / 22 縣市均已建立台帳`} />
@@ -105,7 +118,7 @@ export default function DataStatusPage() {
           </div>
           <div className="mt-5 grid gap-3 md:grid-cols-2">
             <article className="rounded-lg border border-line bg-canvas p-4">
-              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">結構化民調</h3><span className="rounded bg-[#13271F] px-2 py-1 text-xs font-medium text-[#72D6A0]">人工規則核驗</span></div>
+              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">結構化民調</h3><span className={`rounded px-2 py-1 text-xs font-medium ${healthy ? "bg-[#13271F] text-[#72D6A0]" : "bg-[#2A2112] text-[#F1C46B]"}`}>{health.status === "blocked" ? "有阻擋項" : health.status === "stale" ? "檢查已逾期" : "人工規則核驗"}</span></div>
               <dl className="mt-3 grid gap-2 text-sm">
                 <div className="flex justify-between gap-4"><dt className="text-ink-muted">目錄最近檢查</dt><dd className="num text-ink">{health.checkedAt}</dd></div>
                 <div className="flex justify-between gap-4"><dt className="text-ink-muted">內容最近變化</dt><dd className="num text-right text-ink">{formatTaiwanDateTime(health.generatedAt)}</dd></div>
@@ -113,12 +126,12 @@ export default function DataStatusPage() {
               </dl>
             </article>
             <article className="rounded-lg border border-line bg-canvas p-4">
-              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">候選人登記台帳</h3><span className="rounded bg-[#13271F] px-2 py-1 text-xs font-medium text-[#72D6A0]">22 縣市完整</span></div>
+              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">候選人登記台帳</h3><span className={`rounded px-2 py-1 text-xs font-medium ${registryStale ? "bg-[#2A2112] text-[#F1C46B]" : "bg-[#13271F] text-[#72D6A0]"}`}>{registryStale ? "檢查已逾 18 小時" : "22 縣市完整"}</span></div>
               <p className="mt-3 text-sm leading-6 text-ink-secondary">每 6 小時檢查 22 個地方選委會入口與全台彙總；來源異常或姓名差異會阻擋新版，不會刪掉上一版名冊。</p>
               <div className="mt-2 text-xs text-ink-muted">核驗產物 {formatTaiwanDateTime(candidateAuditData.generatedAt)}</div>
             </article>
             <article className="rounded-lg border border-line bg-canvas p-4">
-              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">候選人政見</h3><span className="rounded bg-[#162333] px-2 py-1 text-xs font-medium text-[#82B8F0]">81 人持續監測</span></div>
+              <div className="flex items-center justify-between gap-3"><h3 className="font-semibold text-ink">候選人政見</h3><span className={`rounded px-2 py-1 text-xs font-medium ${policyMonitorStale ? "bg-[#2A2112] text-[#F1C46B]" : "bg-[#162333] text-[#82B8F0]"}`}>{policyMonitorStale ? "監測已逾 18 小時" : "81 人持續監測"}</span></div>
               <p className="mt-3 text-sm leading-6 text-ink-secondary">每 6 小時逐縣市掃描候選人姓名與政策關鍵字。新文章只會進入待核驗佇列；確認為本人主張並保留原文後才加入比較卡。</p>
               <div className="mt-2 text-xs text-ink-muted">目前 {policyAudit.reviewQueueCount} 條線索待核驗 · 產物 {formatTaiwanDateTime(policyAuditData.generatedAt)}</div>
             </article>
@@ -197,7 +210,7 @@ export default function DataStatusPage() {
               </p>
             </div>
             <div className="text-right text-xs leading-5 text-ink-muted">
-              <div>{health.sourceAudit.checkedSourceCount > 0 ? "最近完成核驗" : "尚未完成連線核驗"}</div>
+              <div>{health.sourceAudit.isStale ? `來源檢查已逾 ${health.sourceAuditStaleAfterHours} 小時` : health.sourceAudit.checkedSourceCount > 0 ? "最近完成核驗" : "尚未完成連線核驗"}</div>
               <div className="num">{formatTaiwanDateTime(health.sourceAudit.generatedAt)}</div>
             </div>
           </div>

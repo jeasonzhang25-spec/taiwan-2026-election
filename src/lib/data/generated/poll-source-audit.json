@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-09T01:28:08Z",
+  "generatedAt": "2026-10-09T20:20:23Z",
   "dataGeneratedAt": "2026-10-08T21:31:18Z",
   "summary": {
     "recordCount": 311,
     "surveyCount": 157,
     "sourceCount": 157,
     "checkedSourceCount": 157,
-    "reachableCount": 133,
-    "restrictedCount": 22,
+    "reachableCount": 134,
+    "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 37,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1393,15 +1393,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "restricted",
-      "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSsvn5yGJ2GodYGIi3x_X6vdgpQAIhbUoaTe9i-luxh4tYPfj8IVe3O-KXFlR-ZSuFP3vKiy_jILF4yAnJSWgFD",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 6,
+      "percentageHits": 3,
       "contentChanged": false,
       "recordIds": [
         "poll-4e37501e9e70"
@@ -2016,7 +2016,7 @@
       "evidence": "strong",
       "candidateHits": 3,
       "percentageHits": 3,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-0c0b625ac0e2",
         "poll-4259820be9c2"
@@ -5196,18 +5196,6 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-cae2e9feb5529f2e",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/506723",
-      "recordIds": [
-        "poll-0c0b625ac0e2",
-        "poll-4259820be9c2"
-      ]
-    },
-    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5316,17 +5304,6 @@
         "poll-3c5d29b6b367",
         "poll-599c54801248",
         "poll-f7b684c2707d"
-      ]
-    },
-    {
-      "id": "review-4577a83454a058f8",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
-      "recordIds": [
-        "poll-4e37501e9e70"
       ]
     },
     {

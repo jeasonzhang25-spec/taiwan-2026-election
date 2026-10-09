@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-08T21:31:36Z",
+  "generatedAt": "2026-10-09T01:28:08Z",
   "dataGeneratedAt": "2026-10-08T21:31:18Z",
   "summary": {
     "recordCount": 311,
     "surveyCount": 157,
     "sourceCount": 157,
     "checkedSourceCount": 157,
-    "reachableCount": 132,
+    "reachableCount": 133,
     "restrictedCount": 22,
-    "unreachableCount": 3,
+    "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 3,
-    "reviewQueueCount": 41,
-    "blockingIssueCount": 1
+    "contentChangedCount": 1,
+    "reviewQueueCount": 37,
+    "blockingIssueCount": 0
   },
   "sources": [
     {
@@ -876,7 +876,7 @@
       "evidence": "strong",
       "candidateHits": 2,
       "percentageHits": 2,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-b003434c2296"
       ]
@@ -1020,15 +1020,15 @@
       "id": "source-f194547688d8656d",
       "url": "https://news.tvbs.com.tw/politics/3099283",
       "domain": "news.tvbs.com.tw",
-      "status": "unreachable",
-      "httpStatus": null,
-      "finalUrl": null,
-      "contentType": null,
-      "fingerprint": null,
-      "error": "ChunkedEncodingError",
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://news.tvbs.com.tw/politics/3099283",
+      "contentType": "text/html",
+      "fingerprint": "1904b6c77bd71bc1141b2d5dd6fcd15d0951522b3514f760c3c39e9deb127863",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 5,
       "contentChanged": false,
       "recordIds": [
         "poll-0fa76acfd3e3",
@@ -1395,7 +1395,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQUZmdzGK6XoNYGIi1BhGOeVxUl86Uy1shBvgKV76QHaI237GFDkxb2kO8G2PBMZIGTWgP35A84mNQyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSsvn5yGJ2GodYGIi3x_X6vdgpQAIhbUoaTe9i-luxh4tYPfj8IVe3O-KXFlR-ZSuFP3vKiy_jILF4yAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2011,11 +2011,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/506723",
       "contentType": "text/html",
-      "fingerprint": "8ffed625413a40ff28e7337e051473c7c521aa906b5a9087c35297fe2629c5b2",
+      "fingerprint": "2da5a231c7f7fb02713d8e1da00ad1f629dc6d6a239fd4a9cdb5a112a0178204",
       "error": null,
       "evidence": "strong",
       "candidateHits": 3,
-      "percentageHits": 4,
+      "percentageHits": 3,
       "contentChanged": true,
       "recordIds": [
         "poll-0c0b625ac0e2",
@@ -2093,7 +2093,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 4,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -5196,41 +5196,6 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-results-aae3b7b928f2125f",
-      "priority": "blocking",
-      "reasons": [
-        "published_results_changed"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593630",
-      "recordIds": [
-        "poll-b003434c2296"
-      ]
-    },
-    {
-      "id": "review-0b71c557de25e052",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/526838",
-      "recordIds": [
-        "poll-50167f3421b3",
-        "poll-818b8bdd2864",
-        "poll-8c9492d1f501"
-      ]
-    },
-    {
-      "id": "review-8ccad044982f84ac",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593630",
-      "recordIds": [
-        "poll-b003434c2296"
-      ]
-    },
-    {
       "id": "review-cae2e9feb5529f2e",
       "priority": "high",
       "reasons": [
@@ -5682,18 +5647,6 @@
         "poll-6c4ba2cf2d7d",
         "poll-91f6a6e1b412",
         "poll-b5b74ee78502"
-      ]
-    },
-    {
-      "id": "review-f194547688d8656d",
-      "priority": "medium",
-      "reasons": [
-        "source_unreachable"
-      ],
-      "url": "https://news.tvbs.com.tw/politics/3099283",
-      "recordIds": [
-        "poll-0fa76acfd3e3",
-        "poll-9b2af0f8016d"
       ]
     }
   ]

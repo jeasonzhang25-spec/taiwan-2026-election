@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-11T18:28:27Z",
-  "dataGeneratedAt": "2026-10-08T21:31:18Z",
+  "generatedAt": "2026-10-12T09:12:58Z",
+  "dataGeneratedAt": "2026-10-12T09:12:40Z",
   "summary": {
-    "recordCount": 311,
-    "surveyCount": 157,
-    "sourceCount": 157,
-    "checkedSourceCount": 157,
-    "reachableCount": 133,
+    "recordCount": 312,
+    "surveyCount": 158,
+    "sourceCount": 158,
+    "checkedSourceCount": 158,
+    "reachableCount": 134,
     "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 36,
+    "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -900,6 +900,24 @@
       ]
     },
     {
+      "id": "source-f7de9b686db9c490",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5603302",
+      "domain": "news.ltn.com.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5603302",
+      "contentType": "text/html",
+      "fingerprint": "acbc7bd80940c3ad800cb52514fd63f8523d50ba600e185f9876c36a285fe0b3",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-0a0d2e3b5099"
+      ]
+    },
+    {
       "id": "source-95ad5fe803c0a81d",
       "url": "https://news.nextapple.com/life/20260729/475E59B3F7F1504C83DD63E801885488",
       "domain": "news.nextapple.com",
@@ -1395,7 +1413,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSs19DEGMGqr9YGIi2bJpqA7Lm5NDq_j_B4gi5BmV-ctIgddi-YEjCXWDD0VGWPGiJ_4K2p9uZY3nsyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQw2WzYGI_JstYGIi1UEloZD6hmhIqVDjR30uzUd7vJX2ATtvaydAuVhq4RchyD9_MkIEBspVawQCMyAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -1696,10 +1714,10 @@
       "httpStatus": 200,
       "finalUrl": "https://www.dpp.org.tw/media/contents/11439",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "6714cc98e70acbdfe8bd164846c6af370747482c0c366e1bbfdc207b91a90407",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
+      "evidence": "partial",
+      "candidateHits": 1,
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
@@ -3828,6 +3846,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-61ac580b229c9675",
+      "countyId": "taichung",
+      "fieldwork": "10月5至6日",
+      "institute": "循證民調",
+      "recordIds": [
+        "poll-0a0d2e3b5099"
+      ],
+      "sourceUrls": [
+        "https://news.ltn.com.tw/news/politics/breakingnews/5603302"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-62be9e3638e4020f",
       "countyId": "keelung",
       "fieldwork": "2026年2月26日至28日",
@@ -5239,18 +5270,6 @@
       "url": "https://cnews.com.tw/247260821a05/",
       "recordIds": [
         "poll-0b06ad48a3be"
-      ]
-    },
-    {
-      "id": "review-2d39b6c22a70ed41",
-      "priority": "medium",
-      "reasons": [
-        "no_poll_evidence_found"
-      ],
-      "url": "https://www.dpp.org.tw/media/contents/11439",
-      "recordIds": [
-        "poll-73405830aaad",
-        "poll-f93ec3fe3d99"
       ]
     },
     {

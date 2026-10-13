@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-13",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 312,
+  "recordCount": 313,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -1165,7 +1165,7 @@
       "source": "年代民調",
       "sourceUrl": "https://udn.com/news/story/124652/9430562",
       "sourceKind": "public",
-      "scenario": "徐欣瑩－鄭朝方",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
       "results": {
         "hsinchu-county-徐欣瑩": 36.6,
         "hsinchu-county-鄭朝方": 30.8
@@ -1181,7 +1181,7 @@
       "source": "全國公信力",
       "sourceUrl": "https://www.pinview.com.tw/News/57636.html",
       "sourceKind": "public",
-      "scenario": "徐欣瑩－鄭朝方",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
       "results": {
         "hsinchu-county-徐欣瑩": 38.7,
         "hsinchu-county-鄭朝方": 27.3
@@ -1197,7 +1197,7 @@
       "source": "年代民調",
       "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1856735",
       "sourceKind": "public",
-      "scenario": "徐欣瑩－鄭朝方",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
       "results": {
         "hsinchu-county-徐欣瑩": 32.3,
         "hsinchu-county-鄭朝方": 30.5
@@ -1213,7 +1213,7 @@
       "source": "皮爾森數據",
       "sourceUrl": "https://www.bigmedia.com.tw/article/1786409505418",
       "sourceKind": "public",
-      "scenario": "徐欣瑩－鄭朝方",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
       "results": {
         "hsinchu-county-徐欣瑩": 35.5,
         "hsinchu-county-鄭朝方": 44.88
@@ -1229,7 +1229,7 @@
       "source": "精確民調",
       "sourceUrl": "https://cnews.com.tw/247260821a05/",
       "sourceKind": "public",
-      "scenario": "徐欣瑩－鄭朝方",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
       "results": {
         "hsinchu-county-徐欣瑩": 41.4,
         "hsinchu-county-鄭朝方": 38.1
@@ -1237,7 +1237,7 @@
       "undecided": 20.5
     },
     {
-      "id": "poll-4f4fa45750ba",
+      "id": "poll-a8a65ce3cb78",
       "countyId": "hsinchu-county",
       "institute": "年代民調",
       "date": "2026-09-18",
@@ -1245,12 +1245,13 @@
       "source": "年代民調",
       "sourceUrl": "https://newtalk.tw/news/view/2026-09-21/1061013",
       "sourceKind": "public",
-      "scenario": "徐欣瑩－鄭朝方",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
       "results": {
         "hsinchu-county-徐欣瑩": 28.7,
-        "hsinchu-county-鄭朝方": 35.1
+        "hsinchu-county-鄭朝方": 35.1,
+        "hsinchu-county-朱定瑀": 2.8
       },
-      "undecided": 32.7
+      "undecided": 29.9
     },
     {
       "id": "poll-c0e12b3f0df5",
@@ -3332,7 +3333,7 @@
       "source": "山水民調",
       "sourceUrl": "https://www.zmedia.com.tw/Document/PoolDetail/41952",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 39.6,
         "newtaipei-蘇巧慧": 34.8
@@ -3348,7 +3349,7 @@
       "source": "ETToday",
       "sourceUrl": "https://www.ettoday.net/news/20260512/3164695.htm",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 42.5,
         "newtaipei-蘇巧慧": 41.7
@@ -3364,7 +3365,7 @@
       "source": "民進黨",
       "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5461880",
       "sourceKind": "internal",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 29.0,
         "newtaipei-蘇巧慧": 31.5
@@ -3380,7 +3381,7 @@
       "source": "TVBS",
       "sourceUrl": "https://www.ettoday.net/news/20260608/3179520.htm",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 39.2,
         "newtaipei-蘇巧慧": 33.0
@@ -3396,7 +3397,7 @@
       "source": "鉅聞天下",
       "sourceUrl": "https://www.ettoday.net/news/20260720/3204332.htm",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 50.85,
         "newtaipei-蘇巧慧": 44.06
@@ -3412,7 +3413,7 @@
       "source": "新台灣國策智庫",
       "sourceUrl": "https://www.setn.com/news/1873356",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 40.0,
         "newtaipei-蘇巧慧": 40.2
@@ -3428,7 +3429,7 @@
       "source": "TVBS",
       "sourceUrl": "https://news.nextapple.com/life/20260729/475E59B3F7F1504C83DD63E801885488",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 43.7,
         "newtaipei-蘇巧慧": 36.8
@@ -3448,7 +3449,7 @@
       "source": "ETToday",
       "sourceUrl": "https://www.ettoday.net/news/20260820/3222662.htm",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 39.3,
         "newtaipei-蘇巧慧": 37.3
@@ -3464,7 +3465,7 @@
       "source": "年代民調",
       "sourceUrl": "https://news.tvbs.com.tw/politics/4013907",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 32.2,
         "newtaipei-蘇巧慧": 37.8
@@ -3480,7 +3481,7 @@
       "source": "信民協會",
       "sourceUrl": "https://ctinews.com/news/items/4XamVZDJxA",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 34.7,
         "newtaipei-蘇巧慧": 35.2
@@ -3495,7 +3496,7 @@
       "source": "TVBS",
       "sourceUrl": "https://newtalk.tw/news/view/2026-09-02/1057312",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 39.8,
         "newtaipei-蘇巧慧": 33.1
@@ -3503,7 +3504,7 @@
       "undecided": 27.1
     },
     {
-      "id": "poll-e6f04a1ed67c",
+      "id": "poll-c898148e2de5",
       "countyId": "newtaipei",
       "institute": "山水民調",
       "date": "2026-09-21",
@@ -3511,12 +3512,13 @@
       "source": "山水民調",
       "sourceUrl": "https://www.setn.com/news/1911568",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 37.1,
-        "newtaipei-蘇巧慧": 38.2
+        "newtaipei-蘇巧慧": 38.2,
+        "newtaipei-蘇輝湟": 2.6
       },
-      "undecided": 24.7
+      "undecided": 22.1
     },
     {
       "id": "poll-b003434c2296",
@@ -3527,7 +3529,7 @@
       "source": "山水民調",
       "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5593630",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 34.5,
         "newtaipei-蘇巧慧": 39.1
@@ -3542,11 +3544,28 @@
       "source": "TVBS",
       "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5598111",
       "sourceKind": "public",
-      "scenario": "李四川－蘇巧慧－其他",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
       "results": {
         "newtaipei-李四川": 42.6,
         "newtaipei-蘇巧慧": 35.9
       }
+    },
+    {
+      "id": "poll-de442430b971",
+      "countyId": "newtaipei",
+      "institute": "信民協會",
+      "date": "2026-10-08",
+      "fieldwork": "10月6日至8日",
+      "source": "信民協會",
+      "sourceUrl": "https://www.storm.mg/article/11171838",
+      "sourceKind": "public",
+      "scenario": "李四川－蘇巧慧－蘇輝湟",
+      "results": {
+        "newtaipei-李四川": 30.0,
+        "newtaipei-蘇巧慧": 43.1,
+        "newtaipei-蘇輝湟": 1.5
+      },
+      "undecided": 30.3
     },
     {
       "id": "poll-1380a5b80955",
@@ -4675,11 +4694,11 @@
       "undecided": 13.0
     },
     {
-      "id": "poll-7e75040d9e7a",
+      "id": "poll-db7c4d62c37a",
       "countyId": "taipei",
       "institute": "新台灣國策智庫",
       "date": "2026-05-05",
-      "fieldwork": "5月4日至5日",
+      "fieldwork": "2026年5月4日至5日",
       "source": "新台灣國策智庫",
       "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1834747",
       "sourceKind": "public",
@@ -4691,11 +4710,11 @@
       "undecided": 17.4
     },
     {
-      "id": "poll-58bf9d37c81c",
+      "id": "poll-0de2a87c0233",
       "countyId": "taipei",
       "institute": "TVBS 民意調查中心",
       "date": "2026-05-26",
-      "fieldwork": "5月21至26日",
+      "fieldwork": "2026年5月21日至26日",
       "source": "TVBS",
       "sourceUrl": "https://news.tvbs.com.tw/politics/3214850",
       "sourceKind": "public",
@@ -4711,11 +4730,11 @@
       "publishedAt": "2026-05-27"
     },
     {
-      "id": "poll-3f93cd42835c",
+      "id": "poll-ce731a811e45",
       "countyId": "taipei",
       "institute": "山水民調",
       "date": "2026-06-22",
-      "fieldwork": "6月21日至22日",
+      "fieldwork": "2026年6月21日至22日",
       "source": "山水民調",
       "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1861503",
       "sourceKind": "public",
@@ -4727,11 +4746,11 @@
       "undecided": 17.4
     },
     {
-      "id": "poll-656cac5fe07a",
+      "id": "poll-1c4fccbf1713",
       "countyId": "taipei",
       "institute": "TPOC台灣議題研究中心",
       "date": "2026-08-07",
-      "fieldwork": "8月5日至7日",
+      "fieldwork": "2026年8月5日至7日",
       "source": "TPOC台灣議題研究中心",
       "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5539708",
       "sourceKind": "public",
@@ -4743,27 +4762,28 @@
       "undecided": 18.6
     },
     {
-      "id": "poll-1af4f523d7f3",
+      "id": "poll-ebff0a01b017",
       "countyId": "taipei",
       "institute": "信民協會",
       "date": "2026-09-18",
-      "fieldwork": "9月16至18日",
+      "fieldwork": "2026年9月16日至18日",
       "source": "信民協會",
       "sourceUrl": "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_7c66d227dc414f169202cda2ca75a7f3.pdf",
       "sourceKind": "public",
       "scenario": "蔣萬安－沈伯洋",
       "results": {
         "taipei-蔣萬安": 41.7,
-        "taipei-沈伯洋": 40.5
+        "taipei-沈伯洋": 40.5,
+        "taipei-林志成": 0.3
       },
-      "undecided": 17.9
+      "undecided": 17.8
     },
     {
-      "id": "poll-664b9919ead0",
+      "id": "poll-859731d84566",
       "countyId": "taipei",
       "institute": "TVBS",
       "date": "2026-10-07",
-      "fieldwork": "10月3、5、7日",
+      "fieldwork": "2026年10月3日、5日至7日",
       "source": "TVBS",
       "sourceUrl": "https://news.tvbs.com.tw/politics/4033527",
       "sourceKind": "public",
@@ -5170,6 +5190,11 @@
         "partyId": "dpp"
       },
       {
+        "id": "hsinchu-county-朱定瑀",
+        "name": "朱定瑀",
+        "partyId": "ind"
+      },
+      {
         "id": "hsinchu-county-徐欣瑩",
         "name": "徐欣瑩",
         "partyId": "kmt"
@@ -5293,6 +5318,11 @@
         "id": "newtaipei-蘇巧慧",
         "name": "蘇巧慧",
         "partyId": "dpp"
+      },
+      {
+        "id": "newtaipei-蘇輝湟",
+        "name": "蘇輝湟",
+        "partyId": "ind"
       },
       {
         "id": "newtaipei-李四川",
@@ -5423,6 +5453,11 @@
         "partyId": "dpp"
       },
       {
+        "id": "taipei-林志成",
+        "name": "林志成",
+        "partyId": "ind"
+      },
+      {
         "id": "taipei-蔣萬安",
         "name": "蔣萬安",
         "partyId": "kmt"
@@ -5497,5 +5532,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-12T09:12:40Z"
+  "generatedAt": "2026-10-13T08:27:50Z"
 }

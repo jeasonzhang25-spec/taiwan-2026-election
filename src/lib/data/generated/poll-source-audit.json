@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-13T16:27:31Z",
+  "generatedAt": "2026-10-14T05:25:46Z",
   "dataGeneratedAt": "2026-10-13T08:27:50Z",
   "summary": {
     "recordCount": 313,
     "surveyCount": 159,
     "sourceCount": 159,
     "checkedSourceCount": 159,
-    "reachableCount": 136,
-    "restrictedCount": 21,
+    "reachableCount": 135,
+    "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 34,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -505,12 +505,12 @@
       "httpStatus": 200,
       "finalUrl": "https://m.my-formosa.com.tw/DOC_223267.htm",
       "contentType": "text/html",
-      "fingerprint": "e0550f37ce5d5ccfbe581bbeb503f7e04b3d3fb83610d3ae84b1c3409d8b4b46",
+      "fingerprint": "333d5ce14fc38fbcaf6a583066a3218b468c7838a5e24fd96190f924b27b2f89",
       "error": null,
       "evidence": "strong",
       "candidateHits": 3,
-      "percentageHits": 5,
-      "contentChanged": false,
+      "percentageHits": 6,
+      "contentChanged": true,
       "recordIds": [
         "poll-3e8ddc3688f2",
         "poll-762f06155ca4",
@@ -1411,15 +1411,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "status": "restricted",
+      "httpStatus": 429,
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgRK-U4jGM-kvNYGIi3-__yCGG-XPfeuEMUzRN36sh0bDO9juaLebkLaJy_DmTgKp5yXDRyeyFalb3IyAnJSWgFD",
       "contentType": "text/html",
-      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
+      "fingerprint": null,
       "error": null,
-      "evidence": "strong",
-      "candidateHits": 6,
-      "percentageHits": 3,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-4e37501e9e70"
@@ -5258,6 +5258,19 @@
   ],
   "reviewQueue": [
     {
+      "id": "review-2fbeced2235411d2",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://m.my-formosa.com.tw/DOC_223267.htm",
+      "recordIds": [
+        "poll-3e8ddc3688f2",
+        "poll-762f06155ca4",
+        "poll-f4e435cd47c4"
+      ]
+    },
+    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5354,6 +5367,17 @@
         "poll-3c5d29b6b367",
         "poll-599c54801248",
         "poll-f7b684c2707d"
+      ]
+    },
+    {
+      "id": "review-4577a83454a058f8",
+      "priority": "medium",
+      "reasons": [
+        "source_restricted"
+      ],
+      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "recordIds": [
+        "poll-4e37501e9e70"
       ]
     },
     {

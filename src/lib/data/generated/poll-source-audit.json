@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-14T05:25:46Z",
+  "generatedAt": "2026-10-14T15:30:29Z",
   "dataGeneratedAt": "2026-10-13T08:27:50Z",
   "summary": {
     "recordCount": 313,
@@ -505,11 +505,11 @@
       "httpStatus": 200,
       "finalUrl": "https://m.my-formosa.com.tw/DOC_223267.htm",
       "contentType": "text/html",
-      "fingerprint": "333d5ce14fc38fbcaf6a583066a3218b468c7838a5e24fd96190f924b27b2f89",
+      "fingerprint": "e0550f37ce5d5ccfbe581bbeb503f7e04b3d3fb83610d3ae84b1c3409d8b4b46",
       "error": null,
       "evidence": "strong",
       "candidateHits": 3,
-      "percentageHits": 6,
+      "percentageHits": 5,
       "contentChanged": true,
       "recordIds": [
         "poll-3e8ddc3688f2",
@@ -1413,7 +1413,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgRK-U4jGM-kvNYGIi3-__yCGG-XPfeuEMUzRN36sh0bDO9juaLebkLaJy_DmTgKp5yXDRyeyFalb3IyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgQUNw9kGIrAvtYGIi2eqNKdEP4mHo2ClAzTdezr69Y6fL34NB8lUI_AWHODGBl-QxpbEYFVxTMhGuoyAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,

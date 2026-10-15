@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-15",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 314,
+  "recordCount": 315,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -2644,7 +2644,7 @@
       "source": "TVBS",
       "sourceUrl": "https://news.tvbs.com.tw/politics/3080482?openExternalBrowser=1",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 48.0,
         "keelung-童子瑋": 33.0
@@ -2660,7 +2660,7 @@
       "source": "民進黨內參",
       "sourceUrl": "https://www.mirrormedia.mg/story/20260312inv003",
       "sourceKind": "internal",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 39.3,
         "keelung-童子瑋": 33.1
@@ -2675,7 +2675,7 @@
       "source": "TVBS",
       "sourceUrl": "https://www.storm.mg/article/11115511",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 45.0,
         "keelung-童子瑋": 30.0
@@ -2691,7 +2691,7 @@
       "source": "民進黨內參",
       "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5436378",
       "sourceKind": "internal",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 42.2,
         "keelung-童子瑋": 37.7
@@ -2707,7 +2707,7 @@
       "source": "民進黨內參",
       "sourceUrl": "https://www.mirrormedia.mg/story/20260730inv001",
       "sourceKind": "internal",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 38.5,
         "keelung-童子瑋": 36.0
@@ -2723,7 +2723,7 @@
       "source": "全國公信力",
       "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 44.9,
         "keelung-童子瑋": 28.0
@@ -2738,7 +2738,7 @@
       "source": "全國公信力",
       "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 38.5,
         "keelung-童子瑋": 30.6
@@ -2753,7 +2753,7 @@
       "source": "全國公信力",
       "sourceUrl": "https://udn.com/vote2026/story/7328/9708171",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 40.7,
         "keelung-童子瑋": 29.1
@@ -2768,7 +2768,7 @@
       "source": "山水民調",
       "sourceUrl": "https://www.upmedia.mg/tw/focus/politics/267542",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 38.6,
         "keelung-童子瑋": 33.2
@@ -2776,7 +2776,7 @@
       "undecided": 28.2
     },
     {
-      "id": "poll-aaa9652d4356",
+      "id": "poll-65db282aa523",
       "countyId": "keelung",
       "institute": "山水民調",
       "date": "2026-09-21",
@@ -2784,12 +2784,29 @@
       "source": "山水民調",
       "sourceUrl": "https://newtalk.tw/news/view/2026-09-28/1062272",
       "sourceKind": "public",
-      "scenario": "謝國樑－童子瑋－其他",
+      "scenario": "謝國樑－童子瑋－魏造文",
       "results": {
         "keelung-謝國樑": 38.0,
-        "keelung-童子瑋": 34.2
+        "keelung-童子瑋": 34.2,
+        "keelung-魏造文": 1.7
       },
-      "undecided": 29.8
+      "undecided": 29.9
+    },
+    {
+      "id": "poll-a0092f01094f",
+      "countyId": "keelung",
+      "institute": "趨勢民調",
+      "date": "2026-10-10",
+      "fieldwork": "10月7日至10日",
+      "source": "趨勢民調",
+      "sourceUrl": "https://newtalk.tw/news/view/2026-10-15/1065627",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋－魏造文",
+      "results": {
+        "keelung-謝國樑": 42.9,
+        "keelung-童子瑋": 38.3
+      },
+      "undecided": 18.8
     },
     {
       "id": "poll-0fa76acfd3e3",
@@ -5282,6 +5299,11 @@
         "partyId": "dpp"
       },
       {
+        "id": "keelung-魏造文",
+        "name": "魏造文",
+        "partyId": "ind"
+      },
+      {
         "id": "keelung-謝國樑",
         "name": "謝國樑",
         "partyId": "kmt"
@@ -5548,5 +5570,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-14T19:42:07Z"
+  "generatedAt": "2026-10-15T11:28:29Z"
 }

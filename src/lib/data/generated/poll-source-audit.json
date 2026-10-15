@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-14T19:42:23Z",
-  "dataGeneratedAt": "2026-10-14T19:42:07Z",
+  "generatedAt": "2026-10-15T11:29:03Z",
+  "dataGeneratedAt": "2026-10-15T11:28:29Z",
   "summary": {
-    "recordCount": 314,
-    "surveyCount": 160,
-    "sourceCount": 160,
-    "checkedSourceCount": 160,
-    "reachableCount": 136,
-    "restrictedCount": 21,
-    "unreachableCount": 3,
+    "recordCount": 315,
+    "surveyCount": 161,
+    "sourceCount": 161,
+    "checkedSourceCount": 161,
+    "reachableCount": 137,
+    "restrictedCount": 22,
+    "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
+    "contentChangedCount": 1,
     "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
@@ -155,12 +155,12 @@
       "id": "source-ac23c7f5d36a1c2e",
       "url": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251215/fcec2c7a4c138f591e0a2ce680a491da.pdf",
       "domain": "cc.tvbs.com.tw",
-      "status": "unreachable",
-      "httpStatus": null,
-      "finalUrl": null,
-      "contentType": null,
+      "status": "restricted",
+      "httpStatus": 403,
+      "finalUrl": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251215/fcec2c7a4c138f591e0a2ce680a491da.pdf",
+      "contentType": "application/xml",
       "fingerprint": null,
-      "error": "ChunkedEncodingError",
+      "error": null,
       "evidence": "none",
       "candidateHits": 0,
       "percentageHits": 0,
@@ -1397,14 +1397,32 @@
       "httpStatus": 200,
       "finalUrl": "https://newtalk.tw/news/view/2026-09-28/1062272",
       "contentType": "text/html",
-      "fingerprint": "6e3a416b3424d921076cb27b4d35e2344a6705b16e99e258d7994a7816264b24",
+      "fingerprint": "de2c5cdef5ce3c61f9b26b1a3a6f2f6f191928fcd3823e1cd923203a3181d09e",
       "error": null,
       "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 3,
+      "contentChanged": true,
+      "recordIds": [
+        "poll-65db282aa523"
+      ]
+    },
+    {
+      "id": "source-3b78443c7cf2febf",
+      "url": "https://newtalk.tw/news/view/2026-10-15/1065627",
+      "domain": "newtalk.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://newtalk.tw/news/view/2026-10-15/1065627",
+      "contentType": "text/html",
+      "fingerprint": "a0de98a1a59cb2a2e84bba5e24110291f18c7d298f315502f528c46ff3da0895",
+      "error": null,
+      "evidence": "partial",
       "candidateHits": 2,
-      "percentageHits": 2,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
-        "poll-aaa9652d4356"
+        "poll-a0092f01094f"
       ]
     },
     {
@@ -1413,7 +1431,7 @@
       "domain": "penghudaily.blogspot.com",
       "status": "restricted",
       "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgRE3D3CGJW2v9YGIi0XPqIIyB6Sjj-UZULxIDGbZhMhH7FtYu67keEtTUy_RFE522ZqE2bw8pqPuPMyAnJSWgFD",
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSAGKNWGOXxwtYGIi13jixbyU8sam3M4KIDZOVkIi_CXPyTtxglAzkguykVlFV4BQsTRyShxS6ioVsyAnJSWgFD",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2531,11 +2549,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.setn.com/news/1756831",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "0324fea6834e81c34555e5678187c1b09615ed87f3bc2debcd4159f9622ac49c",
       "error": null,
-      "evidence": "none",
+      "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 0,
+      "percentageHits": 1,
       "contentChanged": false,
       "recordIds": [
         "poll-0d1468ae4f60",
@@ -4339,7 +4357,7 @@
       "fieldwork": "9月20日至21日",
       "institute": "山水民調",
       "recordIds": [
-        "poll-aaa9652d4356"
+        "poll-65db282aa523"
       ],
       "sourceUrls": [
         "https://newtalk.tw/news/view/2026-09-28/1062272"
@@ -5010,6 +5028,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-e46e437f3f57c7c7",
+      "countyId": "keelung",
+      "fieldwork": "10月7日至10日",
+      "institute": "趨勢民調",
+      "recordIds": [
+        "poll-a0092f01094f"
+      ],
+      "sourceUrls": [
+        "https://newtalk.tw/news/view/2026-10-15/1065627"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-e577155945642344",
       "countyId": "tainan",
       "fieldwork": "12月22日至23日",
@@ -5288,6 +5319,17 @@
     }
   ],
   "reviewQueue": [
+    {
+      "id": "review-5677c730e0e2b1b5",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://newtalk.tw/news/view/2026-09-28/1062272",
+      "recordIds": [
+        "poll-65db282aa523"
+      ]
+    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
@@ -5603,7 +5645,7 @@
       "id": "review-ac23c7f5d36a1c2e",
       "priority": "medium",
       "reasons": [
-        "source_unreachable"
+        "source_restricted"
       ],
       "url": "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251215/fcec2c7a4c138f591e0a2ce680a491da.pdf",
       "recordIds": [
@@ -5690,19 +5732,6 @@
       "url": "https://cnews.com.tw/【匯流民調】2026新竹市長選舉最新民調-六成五新竹/",
       "recordIds": [
         "poll-b1d69c01b9f2"
-      ]
-    },
-    {
-      "id": "review-dc97b40058d8404e",
-      "priority": "medium",
-      "reasons": [
-        "no_poll_evidence_found"
-      ],
-      "url": "https://www.setn.com/News.aspx?NewsID=1756831",
-      "recordIds": [
-        "poll-0d1468ae4f60",
-        "poll-67fdf91bdbdf",
-        "poll-b66cd53f7e14"
       ]
     },
     {

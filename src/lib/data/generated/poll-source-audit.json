@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-15T11:29:03Z",
+  "generatedAt": "2026-10-15T19:25:33Z",
   "dataGeneratedAt": "2026-10-15T11:28:29Z",
   "summary": {
     "recordCount": 315,
     "surveyCount": 161,
     "sourceCount": 161,
     "checkedSourceCount": 161,
-    "reachableCount": 137,
-    "restrictedCount": 22,
+    "reachableCount": 138,
+    "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 33,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1402,7 +1402,7 @@
       "evidence": "strong",
       "candidateHits": 3,
       "percentageHits": 3,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-65db282aa523"
       ]
@@ -1429,15 +1429,15 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "restricted",
-      "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSAGKNWGOXxwtYGIi13jixbyU8sam3M4KIDZOVkIi_CXPyTtxglAzkguykVlFV4BQsTRyShxS6ioVsyAnJSWgFD",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 6,
+      "percentageHits": 3,
       "contentChanged": false,
       "recordIds": [
         "poll-4e37501e9e70"
@@ -5320,17 +5320,6 @@
   ],
   "reviewQueue": [
     {
-      "id": "review-5677c730e0e2b1b5",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://newtalk.tw/news/view/2026-09-28/1062272",
-      "recordIds": [
-        "poll-65db282aa523"
-      ]
-    },
-    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5427,17 +5416,6 @@
         "poll-3c5d29b6b367",
         "poll-599c54801248",
         "poll-f7b684c2707d"
-      ]
-    },
-    {
-      "id": "review-4577a83454a058f8",
-      "priority": "medium",
-      "reasons": [
-        "source_restricted"
-      ],
-      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
-      "recordIds": [
-        "poll-4e37501e9e70"
       ]
     },
     {

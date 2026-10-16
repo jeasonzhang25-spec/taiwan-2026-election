@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-15T19:25:33Z",
+  "generatedAt": "2026-10-16T09:49:29Z",
   "dataGeneratedAt": "2026-10-15T11:28:29Z",
   "summary": {
     "recordCount": 315,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 33,
+    "contentChangedCount": 2,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1883,12 +1883,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ettoday.net/news/20260608/3179520.htm",
       "contentType": "text/html",
-      "fingerprint": "a740a7de8bea54f1b46c8a25224a08071d3537e5c49435637c898d33768386e5",
+      "fingerprint": "d94707d58d5ad69aa6064757d7ec17b5f41020575713bb447397d51386fe68b9",
       "error": null,
-      "evidence": "partial",
+      "evidence": "strong",
       "candidateHits": 2,
-      "percentageHits": 0,
-      "contentChanged": false,
+      "percentageHits": 1,
+      "contentChanged": true,
       "recordIds": [
         "poll-3b445b0ef83e"
       ]
@@ -2142,12 +2142,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/526838",
       "contentType": "text/html",
-      "fingerprint": "5c5074f0f61eb866830d7c09e6dfcb6b95bd8a55bf6c72c4542f7ea402cee6ec",
+      "fingerprint": "0369087e39e942c99bc3eaabf90da373461a914e0babaddf1d24c1166cff681c",
       "error": null,
       "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 4,
-      "contentChanged": false,
+      "percentageHits": 5,
+      "contentChanged": true,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -2549,11 +2549,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.setn.com/news/1756831",
       "contentType": "text/html",
-      "fingerprint": "0324fea6834e81c34555e5678187c1b09615ed87f3bc2debcd4159f9622ac49c",
+      "fingerprint": null,
       "error": null,
-      "evidence": "partial",
+      "evidence": "none",
       "candidateHits": 0,
-      "percentageHits": 1,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-0d1468ae4f60",
@@ -5320,6 +5320,30 @@
   ],
   "reviewQueue": [
     {
+      "id": "review-0b71c557de25e052",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.ftnn.com.tw/news/526838",
+      "recordIds": [
+        "poll-50167f3421b3",
+        "poll-818b8bdd2864",
+        "poll-8c9492d1f501"
+      ]
+    },
+    {
+      "id": "review-9e083d36d9f2e543",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.ettoday.net/news/20260608/3179520.htm",
+      "recordIds": [
+        "poll-3b445b0ef83e"
+      ]
+    },
+    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5710,6 +5734,19 @@
       "url": "https://cnews.com.tw/【匯流民調】2026新竹市長選舉最新民調-六成五新竹/",
       "recordIds": [
         "poll-b1d69c01b9f2"
+      ]
+    },
+    {
+      "id": "review-dc97b40058d8404e",
+      "priority": "medium",
+      "reasons": [
+        "no_poll_evidence_found"
+      ],
+      "url": "https://www.setn.com/News.aspx?NewsID=1756831",
+      "recordIds": [
+        "poll-0d1468ae4f60",
+        "poll-67fdf91bdbdf",
+        "poll-b66cd53f7e14"
       ]
     },
     {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import WebVitalsReporter from "@/components/monitoring/WebVitalsReporter";
+import { Analytics } from "@vercel/analytics/next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -38,6 +39,7 @@ export default function RootLayout({
         }).replace(/</g, "\\u003c") }} />
         {children}
         <WebVitalsReporter />
+        <Analytics />
       </body>
     </html>
   );

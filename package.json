@@ -21,6 +21,7 @@
     "quality": "npm run validate:polls && npm run sync:candidates -- --offline --no-write && npm run sync:policies -- --offline --no-write && npm run test:contracts && npm run typecheck && npm run build && npm run check:bundle"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "echarts": "^6.1.0",
     "next": "16.3.4",
     "react": "^18.3.1",

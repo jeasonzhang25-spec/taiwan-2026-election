@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-16T18:48:53Z",
-  "dataGeneratedAt": "2026-10-15T11:28:29Z",
+  "generatedAt": "2026-10-17T13:13:46Z",
+  "dataGeneratedAt": "2026-10-17T13:13:27Z",
   "summary": {
-    "recordCount": 315,
-    "surveyCount": 161,
-    "sourceCount": 161,
-    "checkedSourceCount": 161,
-    "reachableCount": 138,
+    "recordCount": 316,
+    "surveyCount": 162,
+    "sourceCount": 162,
+    "checkedSourceCount": 162,
+    "reachableCount": 139,
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
@@ -2901,6 +2901,24 @@
       ]
     },
     {
+      "id": "source-38be632d470fb76d",
+      "url": "https://www.upmedia.mg/tw/focus/politics/271680",
+      "domain": "www.upmedia.mg",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.upmedia.mg/tw/focus/politics/271680",
+      "contentType": "text/html",
+      "fingerprint": "1f862132d5da959a6743cca5e4b77a5cac15ed620fb4b79684ef03ba4beec55e",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-4d7d6b1e6721"
+      ]
+    },
+    {
       "id": "source-6bbbe8cb80e6e2e8",
       "url": "https://www.upmedia.mg/tw/focus/poll/237754",
       "domain": "www.upmedia.mg",
@@ -3748,6 +3766,19 @@
       ],
       "sourceUrls": [
         "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250930/47eff2bda3a7f080df5c17a6cc9fffa0.pdf"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-5358b1096c5d4e79",
+      "countyId": "taichung",
+      "fieldwork": "10月15至16日",
+      "institute": "世新民調",
+      "recordIds": [
+        "poll-4d7d6b1e6721"
+      ],
+      "sourceUrls": [
+        "https://www.upmedia.mg/tw/focus/politics/271680"
       ],
       "scenarioCount": 1
     },

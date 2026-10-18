@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-17T21:28:13Z",
+  "generatedAt": "2026-10-18T01:33:08Z",
   "dataGeneratedAt": "2026-10-17T13:13:27Z",
   "summary": {
     "recordCount": 316,
@@ -2510,11 +2510,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.pinview.com.tw/News/57636.html",
       "contentType": "text/html",
-      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fingerprint": "ff75f0f04bd4e160ec3da64a2d522b74a216935b33517341a15be4426503e164",
       "error": null,
-      "evidence": "none",
+      "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 0,
+      "percentageHits": 2,
       "contentChanged": true,
       "recordIds": [
         "poll-ae5c0a47437f"
@@ -5354,7 +5354,6 @@
       "id": "review-51af381bc9a7fcea",
       "priority": "high",
       "reasons": [
-        "no_poll_evidence_found",
         "source_content_changed"
       ],
       "url": "https://www.pinview.com.tw/News/57636.html",

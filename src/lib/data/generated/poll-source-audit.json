@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-20T05:20:29Z",
-  "dataGeneratedAt": "2026-10-20T05:20:12Z",
+  "generatedAt": "2026-10-20T15:23:07Z",
+  "dataGeneratedAt": "2026-10-20T15:22:46Z",
   "summary": {
     "recordCount": 319,
     "surveyCount": 165,
@@ -12,7 +12,7 @@
     "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 34,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -477,6 +477,24 @@
       "contentChanged": false,
       "recordIds": [
         "poll-a8585e969ad8"
+      ]
+    },
+    {
+      "id": "source-ce727acc878cd719",
+      "url": "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_257951a3d235492f8595f6dcd7b5cdd3.pdf",
+      "domain": "dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_257951a3d235492f8595f6dcd7b5cdd3.pdf",
+      "contentType": "application/pdf",
+      "fingerprint": "8e97b38ac818611deb6db877e44603621e24d37b16985d44fcc55f64c2987e79",
+      "error": null,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-3f5293a6a3d0"
       ]
     },
     {
@@ -2056,24 +2074,6 @@
       ]
     },
     {
-      "id": "source-f36d05f6a2cf48f6",
-      "url": "https://www.ettoday.net/news/20261020/3257641.htm",
-      "domain": "www.ettoday.net",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://www.ettoday.net/news/20261020/3257641.htm",
-      "contentType": "text/html",
-      "fingerprint": "df45a4c30f817fc329cf9a571e96b51bf1a22f8a20ab33a756ae4297bed6cf4d",
-      "error": null,
-      "evidence": "strong",
-      "candidateHits": 2,
-      "percentageHits": 2,
-      "contentChanged": false,
-      "recordIds": [
-        "poll-3f5293a6a3d0"
-      ]
-    },
-    {
       "id": "source-589c8ebbbc18fd1f",
       "url": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "domain": "www.facebook.com",
@@ -2731,11 +2731,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.shotnews.tw/news/e61dccbd57da4",
       "contentType": "text/html",
-      "fingerprint": "193c7b03ec29c579b6809fb3a330fd4472c7d810637651d22b1ea2360cf3fee9",
+      "fingerprint": null,
       "error": null,
-      "evidence": "strong",
-      "candidateHits": 3,
-      "percentageHits": 4,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
         "poll-200855b5460c",
@@ -3456,7 +3456,7 @@
         "poll-3f5293a6a3d0"
       ],
       "sourceUrls": [
-        "https://www.ettoday.net/news/20261020/3257641.htm"
+        "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_257951a3d235492f8595f6dcd7b5cdd3.pdf"
       ],
       "scenarioCount": 1
     },
@@ -5799,6 +5799,29 @@
       "url": "http://survey.eracom.com.tw/detail.jsp?resultId=566",
       "recordIds": [
         "poll-a50704bd0396"
+      ]
+    },
+    {
+      "id": "review-ce727acc878cd719",
+      "priority": "medium",
+      "reasons": [
+        "no_poll_evidence_found"
+      ],
+      "url": "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_257951a3d235492f8595f6dcd7b5cdd3.pdf",
+      "recordIds": [
+        "poll-3f5293a6a3d0"
+      ]
+    },
+    {
+      "id": "review-d25b4135f47a2ccb",
+      "priority": "medium",
+      "reasons": [
+        "no_poll_evidence_found"
+      ],
+      "url": "https://www.shotnews.tw/news/e61dccbd57da4",
+      "recordIds": [
+        "poll-200855b5460c",
+        "poll-bbf5533a72ea"
       ]
     },
     {

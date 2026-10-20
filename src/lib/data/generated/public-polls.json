@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-20",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 317,
+  "recordCount": 319,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -2827,6 +2827,22 @@
       "undecided": 18.8
     },
     {
+      "id": "poll-13663de445e2",
+      "countyId": "keelung",
+      "institute": "全國公信力",
+      "date": "2026-10-16",
+      "fieldwork": "10月13日至16日",
+      "source": "全國公信力",
+      "sourceUrl": "https://www.ctwant.com/article/503031",
+      "sourceKind": "public",
+      "scenario": "謝國樑－童子瑋－魏造文",
+      "results": {
+        "keelung-謝國樑": 41.3,
+        "keelung-童子瑋": 35.7
+      },
+      "undecided": 23.0
+    },
+    {
       "id": "poll-7cf054db589e",
       "countyId": "kinmen",
       "institute": "國民黨內參",
@@ -4862,6 +4878,23 @@
       "undecided": 11.0
     },
     {
+      "id": "poll-3f5293a6a3d0",
+      "countyId": "taipei",
+      "institute": "信民協會",
+      "date": "2026-10-16",
+      "fieldwork": "2026年10月14至16日",
+      "source": "信民協會",
+      "sourceUrl": "https://www.ettoday.net/news/20261020/3257641.htm",
+      "sourceKind": "public",
+      "scenario": "蔣萬安－沈伯洋",
+      "results": {
+        "taipei-蔣萬安": 33.3,
+        "taipei-沈伯洋": 50.3,
+        "taipei-林志成": 0.7
+      },
+      "undecided": 15.2
+    },
+    {
       "id": "poll-6c109f4bcccf",
       "countyId": "taitung",
       "institute": "匯流民調",
@@ -5609,5 +5642,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-18T18:05:27Z"
+  "generatedAt": "2026-10-20T05:20:12Z"
 }

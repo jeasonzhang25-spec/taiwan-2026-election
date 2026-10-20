@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-19T17:32:46Z",
-  "dataGeneratedAt": "2026-10-18T18:05:27Z",
+  "generatedAt": "2026-10-20T05:20:29Z",
+  "dataGeneratedAt": "2026-10-20T05:20:12Z",
   "summary": {
-    "recordCount": 317,
-    "surveyCount": 163,
-    "sourceCount": 163,
-    "checkedSourceCount": 163,
-    "reachableCount": 140,
+    "recordCount": 319,
+    "surveyCount": 165,
+    "sourceCount": 165,
+    "checkedSourceCount": 165,
+    "reachableCount": 142,
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 34,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1761,6 +1761,24 @@
       ]
     },
     {
+      "id": "source-d21614408ed4c863",
+      "url": "https://www.ctwant.com/article/503031",
+      "domain": "www.ctwant.com",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.ctwant.com/article/503031/",
+      "contentType": "text/html",
+      "fingerprint": "6864d55b01f4a85443ad8b857cfc3d1d7f09f9ab872e914b980950841ffc6411",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-13663de445e2"
+      ]
+    },
+    {
       "id": "source-2d39b6c22a70ed41",
       "url": "https://www.dpp.org.tw/media/contents/11439",
       "domain": "www.dpp.org.tw",
@@ -2038,6 +2056,24 @@
       ]
     },
     {
+      "id": "source-f36d05f6a2cf48f6",
+      "url": "https://www.ettoday.net/news/20261020/3257641.htm",
+      "domain": "www.ettoday.net",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.ettoday.net/news/20261020/3257641.htm",
+      "contentType": "text/html",
+      "fingerprint": "df45a4c30f817fc329cf9a571e96b51bf1a22f8a20ab33a756ae4297bed6cf4d",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-3f5293a6a3d0"
+      ]
+    },
+    {
       "id": "source-589c8ebbbc18fd1f",
       "url": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "domain": "www.facebook.com",
@@ -2165,7 +2201,7 @@
       "evidence": "partial",
       "candidateHits": 0,
       "percentageHits": 4,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -3412,6 +3448,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-2f5601697d7037b4",
+      "countyId": "taipei",
+      "fieldwork": "2026年10月14至16日",
+      "institute": "信民協會",
+      "recordIds": [
+        "poll-3f5293a6a3d0"
+      ],
+      "sourceUrls": [
+        "https://www.ettoday.net/news/20261020/3257641.htm"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-2f7428a42d25443e",
       "countyId": "newtaipei",
       "fieldwork": "9月20日至21日",
@@ -4577,6 +4626,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-a10b16e31d2d2424",
+      "countyId": "keelung",
+      "fieldwork": "10月13日至16日",
+      "institute": "全國公信力",
+      "recordIds": [
+        "poll-13663de445e2"
+      ],
+      "sourceUrls": [
+        "https://www.ctwant.com/article/503031"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-a389e44aeafee2d4",
       "countyId": "changhua",
       "fieldwork": "3月6至8日",
@@ -5381,19 +5443,6 @@
     }
   ],
   "reviewQueue": [
-    {
-      "id": "review-0b71c557de25e052",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/526838",
-      "recordIds": [
-        "poll-50167f3421b3",
-        "poll-818b8bdd2864",
-        "poll-8c9492d1f501"
-      ]
-    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

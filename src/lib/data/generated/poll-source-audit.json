@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-20T15:23:07Z",
+  "generatedAt": "2026-10-20T19:36:07Z",
   "dataGeneratedAt": "2026-10-20T15:22:46Z",
   "summary": {
     "recordCount": 319,
@@ -12,7 +12,7 @@
     "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 36,
+    "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -2731,11 +2731,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.shotnews.tw/news/e61dccbd57da4",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "193c7b03ec29c579b6809fb3a330fd4472c7d810637651d22b1ea2360cf3fee9",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 4,
       "contentChanged": false,
       "recordIds": [
         "poll-200855b5460c",
@@ -5810,18 +5810,6 @@
       "url": "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_257951a3d235492f8595f6dcd7b5cdd3.pdf",
       "recordIds": [
         "poll-3f5293a6a3d0"
-      ]
-    },
-    {
-      "id": "review-d25b4135f47a2ccb",
-      "priority": "medium",
-      "reasons": [
-        "no_poll_evidence_found"
-      ],
-      "url": "https://www.shotnews.tw/news/e61dccbd57da4",
-      "recordIds": [
-        "poll-200855b5460c",
-        "poll-bbf5533a72ea"
       ]
     },
     {

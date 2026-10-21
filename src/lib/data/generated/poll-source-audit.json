@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-21T06:02:05Z",
-  "dataGeneratedAt": "2026-10-21T06:01:47Z",
+  "generatedAt": "2026-10-21T11:48:43Z",
+  "dataGeneratedAt": "2026-10-21T11:48:26Z",
   "summary": {
     "recordCount": 320,
     "surveyCount": 166,
     "sourceCount": 166,
     "checkedSourceCount": 166,
-    "reachableCount": 143,
-    "restrictedCount": 21,
+    "reachableCount": 142,
+    "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 37,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -49,7 +49,7 @@
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
-        "poll-ef1eb54fa5f2"
+        "poll-5dc809d9698c"
       ]
     },
     {
@@ -1009,10 +1009,10 @@
       "percentageHits": 10,
       "contentChanged": false,
       "recordIds": [
-        "poll-2948971be896",
-        "poll-c11a6e8760b4",
-        "poll-cad5883c4534",
-        "poll-ceae335d06eb"
+        "poll-5e6d5016994b",
+        "poll-7b7d054b8c4f",
+        "poll-7c73ec91f83f",
+        "poll-ad63df468787"
       ]
     },
     {
@@ -1067,8 +1067,8 @@
       "percentageHits": 5,
       "contentChanged": false,
       "recordIds": [
-        "poll-7cf054db589e",
-        "poll-ae760a17d759"
+        "poll-7897469901b4",
+        "poll-b3ea9bc2294e"
       ]
     },
     {
@@ -1162,7 +1162,7 @@
       "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
-        "poll-def7aaa4e0d9"
+        "poll-db153b0a3c8b"
       ]
     },
     {
@@ -1252,7 +1252,7 @@
       "percentageHits": 7,
       "contentChanged": false,
       "recordIds": [
-        "poll-26d29036d01f"
+        "poll-7d9e9f08bc85"
       ]
     },
     {
@@ -1447,18 +1447,18 @@
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "status": "restricted",
+      "httpStatus": 429,
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://penghudaily.blogspot.com/2026/08/ettoday.html&q=EgSsrFdJGJDN4tYGIi1F_FjX6gp5kheltfWmcjWGBvUs19JlgautDt5G_szHlHiaPKcmoJjD6T-Ms0wyAnJSWgFDYNmUjbutoIWqsAE",
       "contentType": "text/html",
-      "fingerprint": "c5976b47f83789b997761b510ea81118bdb2139e95b364fb97e5c7ae2631cada",
+      "fingerprint": null,
       "error": null,
-      "evidence": "strong",
-      "candidateHits": 6,
-      "percentageHits": 3,
+      "evidence": "none",
+      "candidateHits": 0,
+      "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
-        "poll-6e1c1e1896c2"
+        "poll-82750b26cd4c"
       ]
     },
     {
@@ -1476,7 +1476,7 @@
       "percentageHits": 1,
       "contentChanged": false,
       "recordIds": [
-        "poll-30b896c557ae"
+        "poll-4f193e5496fa"
       ]
     },
     {
@@ -1664,7 +1664,7 @@
       "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
-        "poll-fc2c68fa02a0"
+        "poll-99e057105cb1"
       ]
     },
     {
@@ -2196,12 +2196,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/526838",
       "contentType": "text/html",
-      "fingerprint": "5c5074f0f61eb866830d7c09e6dfcb6b95bd8a55bf6c72c4542f7ea402cee6ec",
+      "fingerprint": "42e69a4e903aa710ff9b8f1349fe812edc9399570ccca9319ad2182306432966",
       "error": null,
       "evidence": "partial",
       "candidateHits": 0,
-      "percentageHits": 4,
-      "contentChanged": false,
+      "percentageHits": 5,
+      "contentChanged": true,
       "recordIds": [
         "poll-50167f3421b3",
         "poll-818b8bdd2864",
@@ -2263,9 +2263,9 @@
       "percentageHits": 6,
       "contentChanged": false,
       "recordIds": [
-        "poll-506f3dec7b24",
-        "poll-93a759feb863",
-        "poll-c1e0fe2deaf5"
+        "poll-0bc6b54c667b",
+        "poll-c2a3d6b8200d",
+        "poll-ed80d0f8317a"
       ]
     },
     {
@@ -2926,12 +2926,12 @@
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
-        "poll-08502d6a662d",
-        "poll-0b66caf5759c",
-        "poll-0c24e796632a",
-        "poll-7b84ac5149d1",
-        "poll-b12fae790743",
-        "poll-eead0fdf469d"
+        "poll-025b43627858",
+        "poll-4d754fd87db6",
+        "poll-76411402a3ce",
+        "poll-93e1a68dbdf7",
+        "poll-c4cf7d1e471a",
+        "poll-ec5721e35ed0"
       ]
     },
     {
@@ -3373,7 +3373,7 @@
       "fieldwork": "2026年7月14日至8月3日",
       "institute": "ETToday",
       "recordIds": [
-        "poll-6e1c1e1896c2"
+        "poll-82750b26cd4c"
       ],
       "sourceUrls": [
         "https://penghudaily.blogspot.com/2026/08/ettoday.html"
@@ -3562,7 +3562,7 @@
       "fieldwork": "2026年3月19日至27日",
       "institute": "民意調查協會",
       "recordIds": [
-        "poll-ef1eb54fa5f2"
+        "poll-5dc809d9698c"
       ],
       "sourceUrls": [
         "https://bccnews.com.tw/archives/778434"
@@ -3730,12 +3730,12 @@
       "fieldwork": "1月13日",
       "institute": "民進黨初選",
       "recordIds": [
-        "poll-08502d6a662d",
-        "poll-0b66caf5759c",
-        "poll-0c24e796632a",
-        "poll-7b84ac5149d1",
-        "poll-b12fae790743",
-        "poll-eead0fdf469d"
+        "poll-025b43627858",
+        "poll-4d754fd87db6",
+        "poll-76411402a3ce",
+        "poll-93e1a68dbdf7",
+        "poll-c4cf7d1e471a",
+        "poll-ec5721e35ed0"
       ],
       "sourceUrls": [
         "https://www.upmedia.mg/tw/focus/politics/249606"
@@ -3990,8 +3990,8 @@
       "fieldwork": "2025年10月27日至31日",
       "institute": "國民黨內參",
       "recordIds": [
-        "poll-7cf054db589e",
-        "poll-ae760a17d759"
+        "poll-7897469901b4",
+        "poll-b3ea9bc2294e"
       ],
       "sourceUrls": [
         "https://news.tvbs.com.tw/politics/3099283"
@@ -4290,7 +4290,7 @@
       "fieldwork": "4月24日至30日",
       "institute": "TVBS",
       "recordIds": [
-        "poll-def7aaa4e0d9"
+        "poll-db153b0a3c8b"
       ],
       "sourceUrls": [
         "https://news.tvbs.com.tw/politics/3194942"
@@ -4333,7 +4333,7 @@
       "fieldwork": "7月10日至12日",
       "institute": "關鍵調查",
       "recordIds": [
-        "poll-30b896c557ae"
+        "poll-4f193e5496fa"
       ],
       "sourceUrls": [
         "https://sunmedia.tw/news/collaborative/2acUgQRl2gSuldPntgr9btUK4mmfKahkpZSFUMtNIIUC4U3WdIUjKIoe8AxhAA8S3BdGM03R"
@@ -4678,9 +4678,9 @@
       "fieldwork": "2026年4月13日至17日",
       "institute": "世新大學",
       "recordIds": [
-        "poll-506f3dec7b24",
-        "poll-93a759feb863",
-        "poll-c1e0fe2deaf5"
+        "poll-0bc6b54c667b",
+        "poll-c2a3d6b8200d",
+        "poll-ed80d0f8317a"
       ],
       "sourceUrls": [
         "https://www.ftvnews.com.tw/news/detail/2026522W0366"
@@ -5020,7 +5020,7 @@
       "fieldwork": "2026年3月23日至28日",
       "institute": "鉅聞天下",
       "recordIds": [
-        "poll-fc2c68fa02a0"
+        "poll-99e057105cb1"
       ],
       "sourceUrls": [
         "https://www.bigmedia.com.tw/article/1779181485438"
@@ -5287,7 +5287,7 @@
       "fieldwork": "2026年9月7日至11日",
       "institute": "雨晴指標",
       "recordIds": [
-        "poll-26d29036d01f"
+        "poll-7d9e9f08bc85"
       ],
       "sourceUrls": [
         "https://news.tvbs.com.tw/politics/4023574"
@@ -5408,10 +5408,10 @@
       "fieldwork": "2025年11月24日到27日",
       "institute": "民意調查協會",
       "recordIds": [
-        "poll-2948971be896",
-        "poll-c11a6e8760b4",
-        "poll-cad5883c4534",
-        "poll-ceae335d06eb"
+        "poll-5e6d5016994b",
+        "poll-7b7d054b8c4f",
+        "poll-7c73ec91f83f",
+        "poll-ad63df468787"
       ],
       "sourceUrls": [
         "https://news.tvbs.com.tw/politics/3059332"
@@ -5474,6 +5474,19 @@
     }
   ],
   "reviewQueue": [
+    {
+      "id": "review-0b71c557de25e052",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.ftnn.com.tw/news/526838",
+      "recordIds": [
+        "poll-50167f3421b3",
+        "poll-818b8bdd2864",
+        "poll-8c9492d1f501"
+      ]
+    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
@@ -5574,6 +5587,17 @@
       ]
     },
     {
+      "id": "review-4577a83454a058f8",
+      "priority": "medium",
+      "reasons": [
+        "source_restricted"
+      ],
+      "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
+      "recordIds": [
+        "poll-82750b26cd4c"
+      ]
+    },
+    {
       "id": "review-45bff19b5d134b65",
       "priority": "medium",
       "reasons": [
@@ -5608,12 +5632,12 @@
       ],
       "url": "https://www.upmedia.mg/tw/focus/politics/249606",
       "recordIds": [
-        "poll-08502d6a662d",
-        "poll-0b66caf5759c",
-        "poll-0c24e796632a",
-        "poll-7b84ac5149d1",
-        "poll-b12fae790743",
-        "poll-eead0fdf469d"
+        "poll-025b43627858",
+        "poll-4d754fd87db6",
+        "poll-76411402a3ce",
+        "poll-93e1a68dbdf7",
+        "poll-c4cf7d1e471a",
+        "poll-ec5721e35ed0"
       ]
     },
     {
@@ -5709,7 +5733,7 @@
       ],
       "url": "https://bccnews.com.tw/archives/778434",
       "recordIds": [
-        "poll-ef1eb54fa5f2"
+        "poll-5dc809d9698c"
       ]
     },
     {

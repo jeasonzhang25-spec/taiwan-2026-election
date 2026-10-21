@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-20T19:36:07Z",
-  "dataGeneratedAt": "2026-10-20T15:22:46Z",
+  "generatedAt": "2026-10-21T06:02:05Z",
+  "dataGeneratedAt": "2026-10-21T06:01:47Z",
   "summary": {
-    "recordCount": 319,
-    "surveyCount": 165,
-    "sourceCount": 165,
-    "checkedSourceCount": 165,
-    "reachableCount": 142,
+    "recordCount": 320,
+    "surveyCount": 166,
+    "sourceCount": 166,
+    "checkedSourceCount": 166,
+    "reachableCount": 143,
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
@@ -2724,6 +2724,24 @@
       ]
     },
     {
+      "id": "source-382ebec2f156df45",
+      "url": "https://www.setn.com/news/1925870",
+      "domain": "www.setn.com",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.setn.com/news/1925870",
+      "contentType": "text/html",
+      "fingerprint": "c36e039cecf18090e8524752d02da046c39981f88bd6875638df883d93bb36f5",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-dd70f0dfb4ee"
+      ]
+    },
+    {
       "id": "source-d25b4135f47a2ccb",
       "url": "https://www.shotnews.tw/news/e61dccbd57da4",
       "domain": "www.shotnews.tw",
@@ -4923,6 +4941,19 @@
       ],
       "sourceUrls": [
         "https://www.setn.com/News.aspx?NewsID=1756831"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-c903a43e4627acd7",
+      "countyId": "tainan",
+      "fieldwork": "10月13日至15日",
+      "institute": "新台灣國策智庫",
+      "recordIds": [
+        "poll-dd70f0dfb4ee"
+      ],
+      "sourceUrls": [
+        "https://www.setn.com/news/1925870"
       ],
       "scenarioCount": 1
     },

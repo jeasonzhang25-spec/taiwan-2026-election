@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-21",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 319,
+  "recordCount": 320,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -4587,6 +4587,22 @@
       "undecided": 17.0
     },
     {
+      "id": "poll-dd70f0dfb4ee",
+      "countyId": "tainan",
+      "institute": "新台灣國策智庫",
+      "date": "2026-10-15",
+      "fieldwork": "10月13日至15日",
+      "source": "新台灣國策智庫",
+      "sourceUrl": "https://www.setn.com/news/1925870",
+      "sourceKind": "public",
+      "scenario": "陳亭妃－謝龍介－其他",
+      "results": {
+        "tainan-陳亭妃": 59.4,
+        "tainan-謝龍介": 22.6
+      },
+      "undecided": 17.0
+    },
+    {
       "id": "poll-200855b5460c",
       "countyId": "taipei",
       "institute": "循證民調",
@@ -5642,5 +5658,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-20T15:22:46Z"
+  "generatedAt": "2026-10-21T06:01:47Z"
 }

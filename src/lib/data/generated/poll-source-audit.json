@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-22T07:35:36Z",
+  "generatedAt": "2026-10-22T13:12:56Z",
   "dataGeneratedAt": "2026-10-22T07:35:19Z",
   "summary": {
     "recordCount": 321,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 36,
+    "contentChangedCount": 2,
+    "reviewQueueCount": 37,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -2119,11 +2119,11 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/506723",
       "contentType": "text/html",
-      "fingerprint": "8ffed625413a40ff28e7337e051473c7c521aa906b5a9087c35297fe2629c5b2",
+      "fingerprint": "2da5a231c7f7fb02713d8e1da00ad1f629dc6d6a239fd4a9cdb5a112a0178204",
       "error": null,
       "evidence": "strong",
       "candidateHits": 3,
-      "percentageHits": 4,
+      "percentageHits": 3,
       "contentChanged": true,
       "recordIds": [
         "poll-0c0b625ac0e2",
@@ -3166,12 +3166,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.zmedia.com.tw/Document/PoolDetail/44789",
       "contentType": "text/html",
-      "fingerprint": "6425a304010a7e704fd085ba711c9c7bb81fef406944c351df2400a09b1d7995",
+      "fingerprint": "59d42a0af3e39eba56d87db0b009925d74281bb7d44c25197df63e41cbed9d70",
       "error": null,
       "evidence": "strong",
       "candidateHits": 2,
-      "percentageHits": 1,
-      "contentChanged": false,
+      "percentageHits": 2,
+      "contentChanged": true,
       "recordIds": [
         "poll-498513213c8f"
       ]
@@ -5515,6 +5515,17 @@
       "recordIds": [
         "poll-0c0b625ac0e2",
         "poll-4259820be9c2"
+      ]
+    },
+    {
+      "id": "review-ed3ebfe83ccc733b",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.zmedia.com.tw/Document/PoolDetail/44789",
+      "recordIds": [
+        "poll-498513213c8f"
       ]
     },
     {

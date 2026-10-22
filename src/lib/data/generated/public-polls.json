@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-22",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 320,
+  "recordCount": 321,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -4809,11 +4809,11 @@
       "undecided": 17.4
     },
     {
-      "id": "poll-0de2a87c0233",
+      "id": "poll-3a60e38909b9",
       "countyId": "taipei",
       "institute": "TVBS 民意調查中心",
       "date": "2026-05-26",
-      "fieldwork": "2026年5月21日至26日",
+      "fieldwork": "5月21日至26日",
       "source": "TVBS",
       "sourceUrl": "https://news.tvbs.com.tw/politics/3214850",
       "sourceKind": "public",
@@ -4829,11 +4829,11 @@
       "publishedAt": "2026-05-27"
     },
     {
-      "id": "poll-ce731a811e45",
+      "id": "poll-3f93cd42835c",
       "countyId": "taipei",
       "institute": "山水民調",
       "date": "2026-06-22",
-      "fieldwork": "2026年6月21日至22日",
+      "fieldwork": "6月21日至22日",
       "source": "山水民調",
       "sourceUrl": "https://www.setn.com/News.aspx?NewsID=1861503",
       "sourceKind": "public",
@@ -4845,11 +4845,11 @@
       "undecided": 17.4
     },
     {
-      "id": "poll-1c4fccbf1713",
+      "id": "poll-656cac5fe07a",
       "countyId": "taipei",
       "institute": "TPOC台灣議題研究中心",
       "date": "2026-08-07",
-      "fieldwork": "2026年8月5日至7日",
+      "fieldwork": "8月5日至7日",
       "source": "TPOC台灣議題研究中心",
       "sourceUrl": "https://news.ltn.com.tw/news/politics/breakingnews/5539708",
       "sourceKind": "public",
@@ -4861,11 +4861,11 @@
       "undecided": 18.6
     },
     {
-      "id": "poll-ebff0a01b017",
+      "id": "poll-bb914227f8ab",
       "countyId": "taipei",
       "institute": "信民協會",
       "date": "2026-09-18",
-      "fieldwork": "2026年9月16日至18日",
+      "fieldwork": "9月16日至18日",
       "source": "信民協會",
       "sourceUrl": "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_7c66d227dc414f169202cda2ca75a7f3.pdf",
       "sourceKind": "public",
@@ -4878,11 +4878,11 @@
       "undecided": 17.8
     },
     {
-      "id": "poll-859731d84566",
+      "id": "poll-e0438baa7d81",
       "countyId": "taipei",
       "institute": "TVBS",
       "date": "2026-10-07",
-      "fieldwork": "2026年10月3日、5日至7日",
+      "fieldwork": "10月3日、5日至7日",
       "source": "TVBS",
       "sourceUrl": "https://news.tvbs.com.tw/politics/4033527",
       "sourceKind": "public",
@@ -4894,11 +4894,11 @@
       "undecided": 11.0
     },
     {
-      "id": "poll-3f5293a6a3d0",
+      "id": "poll-ce1bcb23cd7f",
       "countyId": "taipei",
       "institute": "信民協會",
       "date": "2026-10-16",
-      "fieldwork": "2026年10月14至16日",
+      "fieldwork": "10月14至16日",
       "source": "信民協會",
       "sourceUrl": "https://dc579968-5ed9-4902-8454-9871fa44324e.filesusr.com/ugd/3ea6ac_257951a3d235492f8595f6dcd7b5cdd3.pdf",
       "sourceKind": "public",
@@ -4909,6 +4909,22 @@
         "taipei-林志成": 0.7
       },
       "undecided": 15.2
+    },
+    {
+      "id": "poll-498513213c8f",
+      "countyId": "taipei",
+      "institute": "山水民調",
+      "date": "2026-10-19",
+      "fieldwork": "10月18至19日",
+      "source": "山水民調",
+      "sourceUrl": "https://www.zmedia.com.tw/Document/PoolDetail/44789",
+      "sourceKind": "public",
+      "scenario": "蔣萬安－沈伯洋",
+      "results": {
+        "taipei-蔣萬安": 39.0,
+        "taipei-沈伯洋": 42.8
+      },
+      "undecided": 18.1
     },
     {
       "id": "poll-6c109f4bcccf",
@@ -5658,5 +5674,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-21T11:48:26Z"
+  "generatedAt": "2026-10-22T07:35:19Z"
 }

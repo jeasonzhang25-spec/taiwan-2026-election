@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-23T04:49:18Z",
+  "generatedAt": "2026-10-23T19:13:38Z",
   "dataGeneratedAt": "2026-10-23T04:48:51Z",
   "summary": {
     "recordCount": 322,
     "surveyCount": 168,
     "sourceCount": 168,
     "checkedSourceCount": 168,
-    "reachableCount": 145,
+    "reachableCount": 144,
     "restrictedCount": 21,
-    "unreachableCount": 2,
+    "unreachableCount": 3,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 35,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1800,14 +1800,14 @@
       "id": "source-2d39b6c22a70ed41",
       "url": "https://www.dpp.org.tw/media/contents/11439",
       "domain": "www.dpp.org.tw",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://www.dpp.org.tw/media/contents/11439",
-      "contentType": "text/html",
-      "fingerprint": "6714cc98e70acbdfe8bd164846c6af370747482c0c366e1bbfdc207b91a90407",
-      "error": null,
-      "evidence": "partial",
-      "candidateHits": 1,
+      "status": "unreachable",
+      "httpStatus": null,
+      "finalUrl": null,
+      "contentType": null,
+      "fingerprint": null,
+      "error": "ConnectTimeout",
+      "evidence": "none",
+      "candidateHits": 0,
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
@@ -5580,6 +5580,18 @@
       "url": "https://cnews.com.tw/247260821a05/",
       "recordIds": [
         "poll-0b06ad48a3be"
+      ]
+    },
+    {
+      "id": "review-2d39b6c22a70ed41",
+      "priority": "medium",
+      "reasons": [
+        "source_unreachable"
+      ],
+      "url": "https://www.dpp.org.tw/media/contents/11439",
+      "recordIds": [
+        "poll-73405830aaad",
+        "poll-f93ec3fe3d99"
       ]
     },
     {

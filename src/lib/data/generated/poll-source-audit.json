@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-22T17:58:45Z",
-  "dataGeneratedAt": "2026-10-22T07:35:19Z",
+  "generatedAt": "2026-10-23T04:49:18Z",
+  "dataGeneratedAt": "2026-10-23T04:48:51Z",
   "summary": {
-    "recordCount": 321,
-    "surveyCount": 167,
-    "sourceCount": 167,
-    "checkedSourceCount": 167,
-    "reachableCount": 144,
+    "recordCount": 322,
+    "surveyCount": 168,
+    "sourceCount": 168,
+    "checkedSourceCount": 168,
+    "reachableCount": 145,
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
@@ -2477,6 +2477,24 @@
       ]
     },
     {
+      "id": "source-2dbcb8f7e177f531",
+      "url": "https://www.mnews.tw/story/20261023nm001",
+      "domain": "www.mnews.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.mnews.tw/story/20261023nm001",
+      "contentType": "text/html",
+      "fingerprint": "59c82ac62fd3134fba237914424e3306f11400a657284510b2e13c20dc18b71e",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-556fe5ef9cf2"
+      ]
+    },
+    {
       "id": "source-e3a20811bb5791f4",
       "url": "https://www.nownews.com/news/6749393",
       "domain": "www.nownews.com",
@@ -3173,7 +3191,7 @@
       "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
-        "poll-498513213c8f"
+        "poll-89782e40833c"
       ]
     }
   ],
@@ -3313,19 +3331,6 @@
       ],
       "sourceUrls": [
         "https://www.storm.mg/article/11160079"
-      ],
-      "scenarioCount": 1
-    },
-    {
-      "id": "survey-18276f13b5318df7",
-      "countyId": "taipei",
-      "fieldwork": "10月18至19日",
-      "institute": "山水民調",
-      "recordIds": [
-        "poll-498513213c8f"
-      ],
-      "sourceUrls": [
-        "https://www.zmedia.com.tw/Document/PoolDetail/44789"
       ],
       "scenarioCount": 1
     },
@@ -4176,6 +4181,19 @@
       ],
       "sourceUrls": [
         "https://udn.com/news/story/124652/9430562"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-73228664ffc6e248",
+      "countyId": "taipei",
+      "fieldwork": "10月18至19日",
+      "institute": "震傳媒",
+      "recordIds": [
+        "poll-89782e40833c"
+      ],
+      "sourceUrls": [
+        "https://www.zmedia.com.tw/Document/PoolDetail/44789"
       ],
       "scenarioCount": 1
     },
@@ -5417,6 +5435,19 @@
       ],
       "sourceUrls": [
         "https://www.ftnn.com.tw/news/532318"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-f6ee35bfe8c2a451",
+      "countyId": "keelung",
+      "fieldwork": "10月18日至21日",
+      "institute": "大地民意",
+      "recordIds": [
+        "poll-556fe5ef9cf2"
+      ],
+      "sourceUrls": [
+        "https://www.mnews.tw/story/20261023nm001"
       ],
       "scenarioCount": 1
     },

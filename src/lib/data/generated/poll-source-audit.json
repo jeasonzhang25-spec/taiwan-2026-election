@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-24T13:36:29Z",
+  "generatedAt": "2026-10-24T16:59:24Z",
   "dataGeneratedAt": "2026-10-24T13:36:10Z",
   "summary": {
     "recordCount": 323,
     "surveyCount": 169,
     "sourceCount": 169,
     "checkedSourceCount": 169,
-    "reachableCount": 146,
-    "restrictedCount": 21,
+    "reachableCount": 145,
+    "restrictedCount": 22,
     "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
@@ -3144,9 +3144,9 @@
       "id": "source-c17c45c54fad921f",
       "url": "https://www.youtube.com/watch?v=MLwUdNyfH20",
       "domain": "www.youtube.com",
-      "status": "reachable",
-      "httpStatus": 200,
-      "finalUrl": "https://www.youtube.com/watch?v=MLwUdNyfH20",
+      "status": "restricted",
+      "httpStatus": 429,
+      "finalUrl": "https://www.google.com/sorry/index?continue=https://www.youtube.com/watch%3Fv%3DMLwUdNyfH20&q=EgQ05rS0GOvH89YGIjAif0MUvpP9Oc0uv4pdYIeH4E84YBZrvwKuz-BYs4S5gXdBZijfMkxAVwC2qDhhR_EyAnJSWgFDYNei9KLxtdTjKA",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -5884,7 +5884,7 @@
       "id": "review-c17c45c54fad921f",
       "priority": "medium",
       "reasons": [
-        "no_poll_evidence_found"
+        "source_restricted"
       ],
       "url": "https://www.youtube.com/watch?v=MLwUdNyfH20",
       "recordIds": [

@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-23T19:13:38Z",
+  "generatedAt": "2026-10-24T00:42:26Z",
   "dataGeneratedAt": "2026-10-23T04:48:51Z",
   "summary": {
     "recordCount": 322,
     "surveyCount": 168,
     "sourceCount": 168,
     "checkedSourceCount": 168,
-    "reachableCount": 144,
+    "reachableCount": 145,
     "restrictedCount": 21,
-    "unreachableCount": 3,
+    "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
+    "contentChangedCount": 1,
     "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
@@ -1800,14 +1800,14 @@
       "id": "source-2d39b6c22a70ed41",
       "url": "https://www.dpp.org.tw/media/contents/11439",
       "domain": "www.dpp.org.tw",
-      "status": "unreachable",
-      "httpStatus": null,
-      "finalUrl": null,
-      "contentType": null,
-      "fingerprint": null,
-      "error": "ConnectTimeout",
-      "evidence": "none",
-      "candidateHits": 0,
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.dpp.org.tw/media/contents/11439",
+      "contentType": "text/html",
+      "fingerprint": "6714cc98e70acbdfe8bd164846c6af370747482c0c366e1bbfdc207b91a90407",
+      "error": null,
+      "evidence": "partial",
+      "candidateHits": 1,
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
@@ -3184,12 +3184,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.zmedia.com.tw/Document/PoolDetail/44789",
       "contentType": "text/html",
-      "fingerprint": "59d42a0af3e39eba56d87db0b009925d74281bb7d44c25197df63e41cbed9d70",
+      "fingerprint": "6425a304010a7e704fd085ba711c9c7bb81fef406944c351df2400a09b1d7995",
       "error": null,
       "evidence": "strong",
       "candidateHits": 2,
-      "percentageHits": 2,
-      "contentChanged": false,
+      "percentageHits": 1,
+      "contentChanged": true,
       "recordIds": [
         "poll-89782e40833c"
       ]
@@ -5537,6 +5537,17 @@
   ],
   "reviewQueue": [
     {
+      "id": "review-ed3ebfe83ccc733b",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.zmedia.com.tw/Document/PoolDetail/44789",
+      "recordIds": [
+        "poll-89782e40833c"
+      ]
+    },
+    {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",
       "reasons": [
@@ -5580,18 +5591,6 @@
       "url": "https://cnews.com.tw/247260821a05/",
       "recordIds": [
         "poll-0b06ad48a3be"
-      ]
-    },
-    {
-      "id": "review-2d39b6c22a70ed41",
-      "priority": "medium",
-      "reasons": [
-        "source_unreachable"
-      ],
-      "url": "https://www.dpp.org.tw/media/contents/11439",
-      "recordIds": [
-        "poll-73405830aaad",
-        "poll-f93ec3fe3d99"
       ]
     },
     {

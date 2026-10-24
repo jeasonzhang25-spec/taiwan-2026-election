@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-24T00:42:26Z",
-  "dataGeneratedAt": "2026-10-23T04:48:51Z",
+  "generatedAt": "2026-10-24T09:32:34Z",
+  "dataGeneratedAt": "2026-10-24T09:32:18Z",
   "summary": {
     "recordCount": 322,
     "surveyCount": 168,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 36,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -3189,7 +3189,7 @@
       "evidence": "strong",
       "candidateHits": 2,
       "percentageHits": 1,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-89782e40833c"
       ]
@@ -5536,17 +5536,6 @@
     }
   ],
   "reviewQueue": [
-    {
-      "id": "review-ed3ebfe83ccc733b",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.zmedia.com.tw/Document/PoolDetail/44789",
-      "recordIds": [
-        "poll-89782e40833c"
-      ]
-    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

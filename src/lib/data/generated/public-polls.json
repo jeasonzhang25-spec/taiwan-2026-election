@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-25",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 323,
+  "recordCount": 324,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -1528,6 +1528,23 @@
         "hualien-游淑貞": 28.7,
         "hualien-魏嘉賢": 34.6
       }
+    },
+    {
+      "id": "poll-7b6651186425",
+      "countyId": "hualien",
+      "institute": "風傳媒",
+      "date": "2026-10-18",
+      "fieldwork": "10月16日至18日",
+      "source": "風傳媒",
+      "sourceUrl": "https://www.storm.mg/article/11175544",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 29.6,
+        "hualien-魏嘉賢": 13.8,
+        "hualien-張峻": 17.8
+      },
+      "undecided": 38.8
     },
     {
       "id": "poll-57bd449e3959",
@@ -5708,5 +5725,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-24T13:36:10Z"
+  "generatedAt": "2026-10-25T05:20:00Z"
 }

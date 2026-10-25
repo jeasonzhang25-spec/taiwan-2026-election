@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-24T16:59:24Z",
-  "dataGeneratedAt": "2026-10-24T13:36:10Z",
+  "generatedAt": "2026-10-25T05:20:16Z",
+  "dataGeneratedAt": "2026-10-25T05:20:00Z",
   "summary": {
-    "recordCount": 323,
-    "surveyCount": 169,
-    "sourceCount": 169,
-    "checkedSourceCount": 169,
-    "reachableCount": 145,
-    "restrictedCount": 22,
+    "recordCount": 324,
+    "surveyCount": 170,
+    "sourceCount": 170,
+    "checkedSourceCount": 170,
+    "reachableCount": 147,
+    "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
@@ -2892,6 +2892,24 @@
       ]
     },
     {
+      "id": "source-e0cdbb7b1602dec1",
+      "url": "https://www.storm.mg/article/11175544",
+      "domain": "www.storm.mg",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.storm.mg/article/11175544",
+      "contentType": "text/html",
+      "fingerprint": "2b2ec3f469caa22dfa957843db25dac7214511470d8f594958ad461f8c7d0d03",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 3,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-7b6651186425"
+      ]
+    },
+    {
       "id": "source-90fdcdf1d1cd6b1e",
       "url": "https://www.upmedia.mg/tw/focus/politics/239780",
       "domain": "www.upmedia.mg",
@@ -3144,9 +3162,9 @@
       "id": "source-c17c45c54fad921f",
       "url": "https://www.youtube.com/watch?v=MLwUdNyfH20",
       "domain": "www.youtube.com",
-      "status": "restricted",
-      "httpStatus": 429,
-      "finalUrl": "https://www.google.com/sorry/index?continue=https://www.youtube.com/watch%3Fv%3DMLwUdNyfH20&q=EgQ05rS0GOvH89YGIjAif0MUvpP9Oc0uv4pdYIeH4E84YBZrvwKuz-BYs4S5gXdBZijfMkxAVwC2qDhhR_EyAnJSWgFDYNei9KLxtdTjKA",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=MLwUdNyfH20",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -5012,6 +5030,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-c29303e4d3a3295c",
+      "countyId": "hualien",
+      "fieldwork": "10月16日至18日",
+      "institute": "風傳媒",
+      "recordIds": [
+        "poll-7b6651186425"
+      ],
+      "sourceUrls": [
+        "https://www.storm.mg/article/11175544"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-c903a43e4627acd7",
       "countyId": "tainan",
       "fieldwork": "10月13日至15日",
@@ -5884,7 +5915,7 @@
       "id": "review-c17c45c54fad921f",
       "priority": "medium",
       "reasons": [
-        "source_restricted"
+        "no_poll_evidence_found"
       ],
       "url": "https://www.youtube.com/watch?v=MLwUdNyfH20",
       "recordIds": [

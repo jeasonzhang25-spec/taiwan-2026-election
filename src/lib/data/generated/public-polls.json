@@ -1336,11 +1336,11 @@
       "undecided": 32.7
     },
     {
-      "id": "poll-4cca70d3f6ed",
+      "id": "poll-084750ca72ac",
       "countyId": "hualien",
       "institute": "美麗島電子報",
       "date": "2026-03-23",
-      "fieldwork": "3月18日至20日及3月23日",
+      "fieldwork": "3月18日至20日、3月23日",
       "source": "美麗島電子報",
       "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
       "sourceKind": "public",
@@ -1352,11 +1352,27 @@
       "undecided": 21.6
     },
     {
-      "id": "poll-c2c45b8d4694",
+      "id": "poll-205787a4a3a7",
       "countyId": "hualien",
       "institute": "美麗島電子報",
       "date": "2026-03-23",
-      "fieldwork": "3月18日至20日及3月23日",
+      "fieldwork": "3月18日至20日、3月23日",
+      "source": "美麗島電子報",
+      "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
+      "sourceKind": "public",
+      "scenario": "游淑貞－魏嘉賢－張峻",
+      "results": {
+        "hualien-游淑貞": 44.1,
+        "hualien-張峻": 28.3
+      },
+      "undecided": 16.3
+    },
+    {
+      "id": "poll-49efdc2038b1",
+      "countyId": "hualien",
+      "institute": "美麗島電子報",
+      "date": "2026-03-23",
+      "fieldwork": "3月18日至20日、3月23日",
       "source": "美麗島電子報",
       "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
       "sourceKind": "public",
@@ -1367,22 +1383,6 @@
         "hualien-張峻": 19.8
       },
       "undecided": 31.3
-    },
-    {
-      "id": "poll-ffeef671cda6",
-      "countyId": "hualien",
-      "institute": "美麗島電子報",
-      "date": "2026-03-23",
-      "fieldwork": "3月18日至20日及3月23日",
-      "source": "美麗島電子報",
-      "sourceUrl": "https://my-formosa.com.tw/DOC_224538.htm",
-      "sourceKind": "public",
-      "scenario": "游淑貞－魏嘉賢－張峻",
-      "results": {
-        "hualien-游淑貞": 44.1,
-        "hualien-張峻": 28.3
-      },
-      "undecided": 16.3
     },
     {
       "id": "poll-0dda5a3b30cf",
@@ -4615,7 +4615,7 @@
       "source": "鉅聞天下",
       "sourceUrl": "https://www.bigmedia.com.tw/article/1772712411866",
       "sourceKind": "public",
-      "scenario": "陳亭妃－謝龍介－其他",
+      "scenario": "陳亭妃－謝龍介",
       "results": {
         "tainan-陳亭妃": 45.96,
         "tainan-謝龍介": 40.57
@@ -4630,7 +4630,7 @@
       "source": "TVBS",
       "sourceUrl": "https://news.tvbs.com.tw/politics/3152745",
       "sourceKind": "public",
-      "scenario": "陳亭妃－謝龍介－其他",
+      "scenario": "陳亭妃－謝龍介",
       "results": {
         "tainan-陳亭妃": 53.0,
         "tainan-謝龍介": 30.0
@@ -4646,7 +4646,7 @@
       "source": "新台灣國策智庫",
       "sourceUrl": "https://www.setn.com/news/1925870",
       "sourceKind": "public",
-      "scenario": "陳亭妃－謝龍介－其他",
+      "scenario": "陳亭妃－謝龍介",
       "results": {
         "tainan-陳亭妃": 59.4,
         "tainan-謝龍介": 22.6
@@ -5725,5 +5725,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-25T05:20:00Z"
+  "generatedAt": "2026-10-25T10:09:41Z"
 }

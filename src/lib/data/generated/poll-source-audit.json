@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-25T05:20:16Z",
-  "dataGeneratedAt": "2026-10-25T05:20:00Z",
+  "generatedAt": "2026-10-25T10:10:01Z",
+  "dataGeneratedAt": "2026-10-25T10:09:41Z",
   "summary": {
     "recordCount": 324,
     "surveyCount": 170,
@@ -666,9 +666,9 @@
       "percentageHits": 6,
       "contentChanged": false,
       "recordIds": [
-        "poll-4cca70d3f6ed",
-        "poll-c2c45b8d4694",
-        "poll-ffeef671cda6"
+        "poll-084750ca72ac",
+        "poll-205787a4a3a7",
+        "poll-49efdc2038b1"
       ]
     },
     {
@@ -4510,21 +4510,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-8e018f5894705f56",
-      "countyId": "hualien",
-      "fieldwork": "3月18日至20日及3月23日",
-      "institute": "美麗島電子報",
-      "recordIds": [
-        "poll-4cca70d3f6ed",
-        "poll-c2c45b8d4694",
-        "poll-ffeef671cda6"
-      ],
-      "sourceUrls": [
-        "https://my-formosa.com.tw/DOC_224538.htm"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-8e9e084d179ab098",
       "countyId": "hsinchu-city",
       "fieldwork": "9月3日至10日",
@@ -5523,6 +5508,21 @@
       ],
       "sourceUrls": [
         "https://news.ebc.net.tw/news/politics/565257"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-fa78a5e0d2f8c7f5",
+      "countyId": "hualien",
+      "fieldwork": "3月18日至20日、3月23日",
+      "institute": "美麗島電子報",
+      "recordIds": [
+        "poll-084750ca72ac",
+        "poll-205787a4a3a7",
+        "poll-49efdc2038b1"
+      ],
+      "sourceUrls": [
+        "https://my-formosa.com.tw/DOC_224538.htm"
       ],
       "scenarioCount": 1
     },

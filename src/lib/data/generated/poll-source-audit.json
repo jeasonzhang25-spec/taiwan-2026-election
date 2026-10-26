@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-25T14:22:26Z",
+  "generatedAt": "2026-10-26T06:21:13Z",
   "dataGeneratedAt": "2026-10-25T14:22:09Z",
   "summary": {
     "recordCount": 324,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 36,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -2119,12 +2119,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.ftnn.com.tw/news/506723",
       "contentType": "text/html",
-      "fingerprint": "2da5a231c7f7fb02713d8e1da00ad1f629dc6d6a239fd4a9cdb5a112a0178204",
+      "fingerprint": "8ffed625413a40ff28e7337e051473c7c521aa906b5a9087c35297fe2629c5b2",
       "error": null,
       "evidence": "strong",
       "candidateHits": 3,
-      "percentageHits": 3,
-      "contentChanged": false,
+      "percentageHits": 4,
+      "contentChanged": true,
       "recordIds": [
         "poll-0c0b625ac0e2",
         "poll-4259820be9c2"
@@ -5598,6 +5598,18 @@
     }
   ],
   "reviewQueue": [
+    {
+      "id": "review-cae2e9feb5529f2e",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.ftnn.com.tw/news/506723",
+      "recordIds": [
+        "poll-0c0b625ac0e2",
+        "poll-4259820be9c2"
+      ]
+    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

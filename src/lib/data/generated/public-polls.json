@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-27",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 324,
+  "recordCount": 326,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -1270,6 +1270,40 @@
         "hsinchu-county-朱定瑀": 2.8
       },
       "undecided": 29.9
+    },
+    {
+      "id": "poll-4fb783a22dfe",
+      "countyId": "hsinchu-county",
+      "institute": "皮爾森數據",
+      "date": "2026-09-21",
+      "fieldwork": "9月14日至21日",
+      "source": "皮爾森數據",
+      "sourceUrl": "https://www.ftvnews.com.tw/news/detail/2026A27W0193",
+      "sourceKind": "public",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
+      "results": {
+        "hsinchu-county-徐欣瑩": 33.34,
+        "hsinchu-county-鄭朝方": 47.68,
+        "hsinchu-county-朱定瑀": 0.79
+      },
+      "undecided": 13.24
+    },
+    {
+      "id": "poll-5e1faaadfcdc",
+      "countyId": "hsinchu-county",
+      "institute": "皮爾森數據",
+      "date": "2026-10-18",
+      "fieldwork": "10月12日至18日",
+      "source": "皮爾森數據",
+      "sourceUrl": "https://newtalk.tw/news/view/2026-10-27/1067646",
+      "sourceKind": "public",
+      "scenario": "徐欣瑩－鄭朝方－朱定瑀",
+      "results": {
+        "hsinchu-county-徐欣瑩": 34.87,
+        "hsinchu-county-鄭朝方": 50.3,
+        "hsinchu-county-朱定瑀": 1.14
+      },
+      "undecided": 11.24
     },
     {
       "id": "poll-964422d2c653",
@@ -5725,5 +5759,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-25T14:22:09Z"
+  "generatedAt": "2026-10-27T08:22:55Z"
 }

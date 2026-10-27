@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-26T19:35:01Z",
-  "dataGeneratedAt": "2026-10-25T14:22:09Z",
+  "generatedAt": "2026-10-27T08:23:16Z",
+  "dataGeneratedAt": "2026-10-27T08:22:55Z",
   "summary": {
-    "recordCount": 324,
-    "surveyCount": 170,
-    "sourceCount": 170,
-    "checkedSourceCount": 170,
-    "reachableCount": 146,
+    "recordCount": 326,
+    "surveyCount": 172,
+    "sourceCount": 172,
+    "checkedSourceCount": 172,
+    "reachableCount": 149,
     "restrictedCount": 21,
-    "unreachableCount": 3,
+    "unreachableCount": 2,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
     "reviewQueueCount": 35,
@@ -1444,6 +1444,24 @@
       ]
     },
     {
+      "id": "source-fc4ea3e432391eb9",
+      "url": "https://newtalk.tw/news/view/2026-10-27/1067646",
+      "domain": "newtalk.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://newtalk.tw/news/view/2026-10-27/1067646",
+      "contentType": "text/html",
+      "fingerprint": "61478355f990ccd3d716fa5cc5685410e832aed3130880fefcbcc103e75a8a52",
+      "error": null,
+      "evidence": "partial",
+      "candidateHits": 0,
+      "percentageHits": 1,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-5e1faaadfcdc"
+      ]
+    },
+    {
       "id": "source-4577a83454a058f8",
       "url": "https://penghudaily.blogspot.com/2026/08/ettoday.html",
       "domain": "penghudaily.blogspot.com",
@@ -1557,12 +1575,12 @@
       "id": "source-96e5a604e595ac4b",
       "url": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
       "domain": "web.archive.org",
-      "status": "unreachable",
-      "httpStatus": null,
-      "finalUrl": null,
-      "contentType": null,
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
+      "contentType": "text/html",
       "fingerprint": null,
-      "error": "RetryError",
+      "error": null,
       "evidence": "none",
       "candidateHits": 0,
       "percentageHits": 0,
@@ -2266,6 +2284,24 @@
         "poll-1aebebb087bf",
         "poll-1bab5a5243ed",
         "poll-46f7b6c8ecb7"
+      ]
+    },
+    {
+      "id": "source-b680222b95900a70",
+      "url": "https://www.ftvnews.com.tw/news/detail/2026A27W0193",
+      "domain": "www.ftvnews.com.tw",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.ftvnews.com.tw/news/detail/2026A27W0193",
+      "contentType": "text/html",
+      "fingerprint": "f763c9e8b31d46b73e1baab59d3b1d98315b8091fd1d763ea80a9e14fc90d30f",
+      "error": null,
+      "evidence": "partial",
+      "candidateHits": 0,
+      "percentageHits": 2,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-4fb783a22dfe"
       ]
     },
     {
@@ -3511,6 +3547,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-27f68ef5fadc0236",
+      "countyId": "hsinchu-county",
+      "fieldwork": "10月12日至18日",
+      "institute": "皮爾森數據",
+      "recordIds": [
+        "poll-5e1faaadfcdc"
+      ],
+      "sourceUrls": [
+        "https://newtalk.tw/news/view/2026-10-27/1067646"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-296ff8ba31340ac9",
       "countyId": "keelung",
       "fieldwork": "10月16日至18日",
@@ -3779,6 +3828,19 @@
       ],
       "sourceUrls": [
         "https://cnews.com.tw/001260525a01/"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-3e3697c6e3540a24",
+      "countyId": "hsinchu-county",
+      "fieldwork": "9月14日至21日",
+      "institute": "皮爾森數據",
+      "recordIds": [
+        "poll-4fb783a22dfe"
+      ],
+      "sourceUrls": [
+        "https://www.ftvnews.com.tw/news/detail/2026A27W0193"
       ],
       "scenarioCount": 1
     },
@@ -5852,7 +5914,7 @@
       "id": "review-96e5a604e595ac4b",
       "priority": "medium",
       "reasons": [
-        "source_unreachable"
+        "no_poll_evidence_found"
       ],
       "url": "https://web.archive.org/web/20260505003807/https://www.zmedia.com.tw/Document/PoolDetail/40330",
       "recordIds": [

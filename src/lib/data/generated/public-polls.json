@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-27",
   "indexUrl": "https://zh.wikipedia.org/wiki/2026年中華民國直轄市長及縣市長選舉民意調查",
-  "recordCount": 326,
+  "recordCount": 327,
   "countyCount": 18,
   "countyIds": [
     "changhua",
@@ -5012,6 +5012,23 @@
       "undecided": 18.1
     },
     {
+      "id": "poll-0357d32b09d3",
+      "countyId": "taipei",
+      "institute": "ETtoday",
+      "date": "2026-10-25",
+      "fieldwork": "10月21日至25日",
+      "source": "ETtoday",
+      "sourceUrl": "https://www.ettoday.net/news/20261027/3261830.htm",
+      "sourceKind": "public",
+      "scenario": "蔣萬安－沈伯洋－其他",
+      "results": {
+        "taipei-蔣萬安": 48.6,
+        "taipei-沈伯洋": 41.1,
+        "taipei-林志成": 0.1
+      },
+      "undecided": 9.8
+    },
+    {
       "id": "poll-356419ce2755",
       "countyId": "taitung",
       "institute": "匯流民調",
@@ -5759,5 +5776,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-27T08:22:55Z"
+  "generatedAt": "2026-10-27T14:55:28Z"
 }

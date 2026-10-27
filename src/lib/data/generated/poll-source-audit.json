@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-27T08:23:16Z",
-  "dataGeneratedAt": "2026-10-27T08:22:55Z",
+  "generatedAt": "2026-10-27T14:55:47Z",
+  "dataGeneratedAt": "2026-10-27T14:55:28Z",
   "summary": {
-    "recordCount": 326,
-    "surveyCount": 172,
-    "sourceCount": 172,
-    "checkedSourceCount": 172,
-    "reachableCount": 149,
+    "recordCount": 327,
+    "surveyCount": 173,
+    "sourceCount": 173,
+    "checkedSourceCount": 173,
+    "reachableCount": 150,
     "restrictedCount": 21,
     "unreachableCount": 2,
     "notCheckedCount": 0,
@@ -2092,12 +2092,30 @@
       ]
     },
     {
+      "id": "source-78627c7e1c026e1f",
+      "url": "https://www.ettoday.net/news/20261027/3261830.htm",
+      "domain": "www.ettoday.net",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://www.ettoday.net/news/20261027/3261830.htm",
+      "contentType": "text/html",
+      "fingerprint": "e85368ab85da6d14df913da750f60a896acd346829673a9879e11d7a498d1b0f",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 3,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-0357d32b09d3"
+      ]
+    },
+    {
       "id": "source-589c8ebbbc18fd1f",
       "url": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -5324,6 +5342,19 @@
       ],
       "sourceUrls": [
         "https://udn.com/vote2026/story/124652/9822866"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-e2a2b5ccf70de158",
+      "countyId": "taipei",
+      "fieldwork": "10月21日至25日",
+      "institute": "ETtoday",
+      "recordIds": [
+        "poll-0357d32b09d3"
+      ],
+      "sourceUrls": [
+        "https://www.ettoday.net/news/20261027/3261830.htm"
       ],
       "scenarioCount": 1
     },

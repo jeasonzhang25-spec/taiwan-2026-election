@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-27T14:55:47Z",
-  "dataGeneratedAt": "2026-10-27T14:55:28Z",
+  "generatedAt": "2026-10-27T20:05:45Z",
+  "dataGeneratedAt": "2026-10-27T20:05:25Z",
   "summary": {
-    "recordCount": 327,
-    "surveyCount": 173,
-    "sourceCount": 173,
-    "checkedSourceCount": 173,
-    "reachableCount": 150,
+    "recordCount": 328,
+    "surveyCount": 174,
+    "sourceCount": 174,
+    "checkedSourceCount": 174,
+    "reachableCount": 152,
     "restrictedCount": 21,
-    "unreachableCount": 2,
+    "unreachableCount": 1,
     "notCheckedCount": 0,
     "contentChangedCount": 0,
-    "reviewQueueCount": 35,
+    "reviewQueueCount": 34,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -706,9 +706,9 @@
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
-        "poll-00b97418b313",
-        "poll-6139f779ea51",
-        "poll-87489504fd59"
+        "poll-0ae41d780dd3",
+        "poll-b5b834863088",
+        "poll-fc43f4816a1c"
       ]
     },
     {
@@ -726,9 +726,9 @@
       "percentageHits": 0,
       "contentChanged": false,
       "recordIds": [
-        "poll-8f93b4668c39",
-        "poll-bba2c978fa3a",
-        "poll-f4665f4d9462"
+        "poll-4327565244d9",
+        "poll-8ea16c50c887",
+        "poll-d5e96e1d8f28"
       ]
     },
     {
@@ -783,9 +783,9 @@
       "percentageHits": 7,
       "contentChanged": false,
       "recordIds": [
-        "poll-2f4a07ad8a72",
-        "poll-389307cb6433",
-        "poll-3b4f2ffb6644"
+        "poll-8e286ca85b28",
+        "poll-adcd080b0f69",
+        "poll-e3d155e392c9"
       ]
     },
     {
@@ -842,7 +842,7 @@
       "percentageHits": 1,
       "contentChanged": false,
       "recordIds": [
-        "poll-5d6e389cad1d"
+        "poll-86e47929112a"
       ]
     },
     {
@@ -988,10 +988,10 @@
       "percentageHits": 5,
       "contentChanged": false,
       "recordIds": [
-        "poll-0f3b685234e3",
-        "poll-1a84c20b1671",
-        "poll-783e01c4f5e4",
-        "poll-f3b96f519f3d"
+        "poll-1be8a29bb6e0",
+        "poll-233e9be93087",
+        "poll-291db7820d5a",
+        "poll-aab2979ddb3c"
       ]
     },
     {
@@ -1252,7 +1252,7 @@
       "percentageHits": 7,
       "contentChanged": false,
       "recordIds": [
-        "poll-096ac3dbe9b0"
+        "poll-718813fd5ec1"
       ]
     },
     {
@@ -1516,21 +1516,39 @@
       ]
     },
     {
-      "id": "source-630702ebde6ca3ee",
-      "url": "https://udn.com/news/story/124652/96176762",
+      "id": "source-04cd8c0184f116d9",
+      "url": "https://udn.com/news/story/124652/9840910?from=udn-catebreaknews_ch2",
       "domain": "udn.com",
-      "status": "unreachable",
-      "httpStatus": 404,
-      "finalUrl": "https://udn.com/news/story/124652/96176762",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://udn.com/news/story/124652/9840910?from=udn-catebreaknews_ch2",
       "contentType": "text/html",
-      "fingerprint": null,
+      "fingerprint": "e4716f640288b92193c56ac2b02268ed31aa8166dd391ca72d989ea3bbe9946a",
       "error": null,
-      "evidence": "none",
-      "candidateHits": 0,
-      "percentageHits": 0,
+      "evidence": "strong",
+      "candidateHits": 2,
+      "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
-        "poll-b17bf984f349"
+        "poll-041427042f64"
+      ]
+    },
+    {
+      "id": "source-3c3e3ba0885609cd",
+      "url": "https://udn.com/vote2026/story/124652/9617676",
+      "domain": "udn.com",
+      "status": "reachable",
+      "httpStatus": 200,
+      "finalUrl": "https://udn.com/vote2026/story/124652/9617676",
+      "contentType": "text/html",
+      "fingerprint": "fdbbe2f957ffba0f0204b2e4ce3145cf61032e599b4eadb73f37df7d58fa514c",
+      "error": null,
+      "evidence": "strong",
+      "candidateHits": 3,
+      "percentageHits": 3,
+      "contentChanged": false,
+      "recordIds": [
+        "poll-935a8b91c110"
       ]
     },
     {
@@ -1624,10 +1642,10 @@
       "percentageHits": 7,
       "contentChanged": false,
       "recordIds": [
-        "poll-5421b05929d5",
-        "poll-5d910becebd2",
-        "poll-7437e52f2a3c",
-        "poll-d4ff0c6d6bcb"
+        "poll-32aee33803e2",
+        "poll-70d04c229dcd",
+        "poll-ba183021e94a",
+        "poll-d17dc5fcd249"
       ]
     },
     {
@@ -2115,7 +2133,7 @@
       "domain": "www.facebook.com",
       "status": "reachable",
       "httpStatus": 200,
-      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Flinweijo%2Fposts%2Fpfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
+      "finalUrl": "https://www.facebook.com/linweijo/posts/pfbid02rwesxCQ729mZQ5KgUNcTzKxP4AjxeyA4cHC5KX4HzyZr1LmY9dZQ1CnDnUkNh1ZWl",
       "contentType": "text/html",
       "fingerprint": null,
       "error": null,
@@ -2584,10 +2602,10 @@
       "percentageHits": 8,
       "contentChanged": false,
       "recordIds": [
-        "poll-04c3de881d2a",
-        "poll-1954217f8c26",
-        "poll-9e808cad5633",
-        "poll-d8e777e62170"
+        "poll-0c6a371c3a90",
+        "poll-ecb32b698aaa",
+        "poll-f86754bfd53e",
+        "poll-f9641690fbeb"
       ]
     },
     {
@@ -2605,7 +2623,7 @@
       "percentageHits": 2,
       "contentChanged": false,
       "recordIds": [
-        "poll-059be5a33995"
+        "poll-5aa4c81bbee3"
       ]
     },
     {
@@ -3190,8 +3208,8 @@
       "percentageHits": 3,
       "contentChanged": false,
       "recordIds": [
-        "poll-178020ece8ba",
-        "poll-3b6d5b44ca8c"
+        "poll-afc5a569ee95",
+        "poll-ebe23e23d78e"
       ]
     },
     {
@@ -3339,19 +3357,6 @@
       ],
       "sourceUrls": [
         "https://news.ltn.com.tw/news/politics/breakingnews/5539708"
-      ],
-      "scenarioCount": 1
-    },
-    {
-      "id": "survey-0c102ccf77ecd5b7",
-      "countyId": "changhua",
-      "fieldwork": "6月",
-      "institute": "民進黨",
-      "recordIds": [
-        "poll-b17bf984f349"
-      ],
-      "sourceUrls": [
-        "https://udn.com/news/story/124652/96176762"
       ],
       "scenarioCount": 1
     },
@@ -3670,19 +3675,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-35c95ef08c227cea",
-      "countyId": "kaohsiung",
-      "fieldwork": "2月3日至9日",
-      "institute": "雨晴指標",
-      "recordIds": [
-        "poll-059be5a33995"
-      ],
-      "sourceUrls": [
-        "https://www.nownews.com/news/6785609"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-365ea19865eae3f1",
       "countyId": "kaohsiung",
       "fieldwork": "6月9日至10日",
@@ -3748,22 +3740,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-39b6c8b7a79d2119",
-      "countyId": "changhua",
-      "fieldwork": "2026年1月",
-      "institute": "國民黨",
-      "recordIds": [
-        "poll-5421b05929d5",
-        "poll-5d910becebd2",
-        "poll-7437e52f2a3c",
-        "poll-d4ff0c6d6bcb"
-      ],
-      "sourceUrls": [
-        "https://www.bigmedia.com.tw/article/1769073918464"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-3ae4cae176dce4de",
       "countyId": "newtaipei",
       "fieldwork": "3月27日",
@@ -3788,22 +3764,6 @@
       ],
       "sourceUrls": [
         "https://www.ftnn.com.tw/news/521857"
-      ],
-      "scenarioCount": 1
-    },
-    {
-      "id": "survey-3b8db91a4d62d05e",
-      "countyId": "kaohsiung",
-      "fieldwork": "12月11日至13日",
-      "institute": "NOWNEWS今日新聞",
-      "recordIds": [
-        "poll-04c3de881d2a",
-        "poll-1954217f8c26",
-        "poll-9e808cad5633",
-        "poll-d8e777e62170"
-      ],
-      "sourceUrls": [
-        "https://www.nownews.com/news/6765373"
       ],
       "scenarioCount": 1
     },
@@ -3990,6 +3950,22 @@
       ],
       "sourceUrls": [
         "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20250930/47eff2bda3a7f080df5c17a6cc9fffa0.pdf"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-51ac66b4738bfb1d",
+      "countyId": "kaohsiung",
+      "fieldwork": "12月11日至13日",
+      "institute": "NOWNEWS",
+      "recordIds": [
+        "poll-0c6a371c3a90",
+        "poll-ecb32b698aaa",
+        "poll-f86754bfd53e",
+        "poll-f9641690fbeb"
+      ],
+      "sourceUrls": [
+        "https://www.nownews.com/news/6765373"
       ],
       "scenarioCount": 1
     },
@@ -4274,20 +4250,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-6b9a0c9b3e335aa4",
-      "countyId": "tainan",
-      "fieldwork": "1月6日至7日",
-      "institute": "雨晴指標",
-      "recordIds": [
-        "poll-178020ece8ba",
-        "poll-3b6d5b44ca8c"
-      ],
-      "sourceUrls": [
-        "https://www.upmedia.mg/tw/lifestyle/policy/249218"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-6f9bb6d63610b4a5",
       "countyId": "hsinchu-city",
       "fieldwork": "2026年1月6日至11日",
@@ -4314,6 +4276,22 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-70a1652be45499f4",
+      "countyId": "changhua",
+      "fieldwork": "2026年1月",
+      "institute": "國民黨內參",
+      "recordIds": [
+        "poll-32aee33803e2",
+        "poll-70d04c229dcd",
+        "poll-ba183021e94a",
+        "poll-d17dc5fcd249"
+      ],
+      "sourceUrls": [
+        "https://www.bigmedia.com.tw/article/1769073918464"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-73228664ffc6e248",
       "countyId": "taipei",
       "fieldwork": "10月18至19日",
@@ -4336,6 +4314,21 @@
       ],
       "sourceUrls": [
         "https://www.mirrormedia.mg/story/20250305edi059"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-76f0bca99f803597",
+      "countyId": "newtaipei",
+      "fieldwork": "2月23日至24日",
+      "institute": "民進黨內參",
+      "recordIds": [
+        "poll-8e286ca85b28",
+        "poll-adcd080b0f69",
+        "poll-e3d155e392c9"
+      ],
+      "sourceUrls": [
+        "https://news.ltn.com.tw/news/politics/breakingnews/5352342"
       ],
       "scenarioCount": 1
     },
@@ -4377,6 +4370,19 @@
       ],
       "sourceUrls": [
         "https://cnews.com.tw/%e3%80%90%e5%8c%af%e6%b5%81%e6%b0%91%e8%aa%bf2026%e5%8f%b0%e4%b8%ad%e5%b8%82%e9%95%b7%e9%81%b8%e8%88%89%e6%9c%80%e6%96%b0%e6%b0%91%e8%aa%bf3-2%e3%80%912026%e5%8f%b0%e4%b8%ad%e5%b8%82%e9%95%b7%e9%81%b8"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-79ef270ca5cd22e6",
+      "countyId": "newtaipei",
+      "fieldwork": "6月2日至3日",
+      "institute": "民進黨內參",
+      "recordIds": [
+        "poll-86e47929112a"
+      ],
+      "sourceUrls": [
+        "https://news.ltn.com.tw/news/politics/breakingnews/5461880"
       ],
       "scenarioCount": 1
     },
@@ -4437,15 +4443,17 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-82b353ab37e61089",
+      "id": "survey-8336040789b557b4",
       "countyId": "newtaipei",
-      "fieldwork": "6月2日至3日",
-      "institute": "民進黨",
+      "fieldwork": "1月26日至28日",
+      "institute": "雨晴民調",
       "recordIds": [
-        "poll-5d6e389cad1d"
+        "poll-0ae41d780dd3",
+        "poll-b5b834863088",
+        "poll-fc43f4816a1c"
       ],
       "sourceUrls": [
-        "https://news.ltn.com.tw/news/politics/breakingnews/5461880"
+        "https://news.ebc.net.tw/news/politics/535474"
       ],
       "scenarioCount": 1
     },
@@ -4473,22 +4481,6 @@
       ],
       "sourceUrls": [
         "https://cc.tvbs.com.tw/portal/file/poll_center/2025/20251124/b598691bc21b681281b8b75489a1deef.pdf"
-      ],
-      "scenarioCount": 1
-    },
-    {
-      "id": "survey-8612576d6fc6ac12",
-      "countyId": "kaohsiung",
-      "fieldwork": "2026年1月5日至6日",
-      "institute": "台視新聞網（初選前綠營內封關民調）",
-      "recordIds": [
-        "poll-0f3b685234e3",
-        "poll-1a84c20b1671",
-        "poll-783e01c4f5e4",
-        "poll-f3b96f519f3d"
-      ],
-      "sourceUrls": [
-        "https://news.ttv.com.tw/news/11501070003600W"
       ],
       "scenarioCount": 1
     },
@@ -4794,6 +4786,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-a351cbd582ef13e6",
+      "countyId": "taipei",
+      "fieldwork": "10月20日至22日、10月25日",
+      "institute": "聯合報",
+      "recordIds": [
+        "poll-041427042f64"
+      ],
+      "sourceUrls": [
+        "https://udn.com/news/story/124652/9840910?from=udn-catebreaknews_ch2"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-a389e44aeafee2d4",
       "countyId": "changhua",
       "fieldwork": "3月6至8日",
@@ -4837,6 +4842,19 @@
       ],
       "sourceUrls": [
         "https://news.ltn.com.tw/news/politics/breakingnews/5418501"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-a543b7805f9b8550",
+      "countyId": "kinmen",
+      "fieldwork": "2026年9月7日至11日",
+      "institute": "雨晴民調",
+      "recordIds": [
+        "poll-718813fd5ec1"
+      ],
+      "sourceUrls": [
+        "https://news.tvbs.com.tw/politics/4023574"
       ],
       "scenarioCount": 1
     },
@@ -4922,6 +4940,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-ae9ab91a8bcddfdf",
+      "countyId": "kaohsiung",
+      "fieldwork": "2月3日至9日",
+      "institute": "雨晴民調",
+      "recordIds": [
+        "poll-5aa4c81bbee3"
+      ],
+      "sourceUrls": [
+        "https://www.nownews.com/news/6785609"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-b159c950836fea02",
       "countyId": "yilan",
       "fieldwork": "3月13日至19日",
@@ -4974,6 +5005,19 @@
       ],
       "sourceUrls": [
         "https://www.upmedia.mg/tw/lifestyle/policy/246027"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-b85cf1026007f598",
+      "countyId": "changhua",
+      "fieldwork": "6月",
+      "institute": "民進黨內參",
+      "recordIds": [
+        "poll-935a8b91c110"
+      ],
+      "sourceUrls": [
+        "https://udn.com/vote2026/story/124652/9617676"
       ],
       "scenarioCount": 1
     },
@@ -5065,21 +5109,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-c10b8b81044b6df7",
-      "countyId": "hsinchu-county",
-      "fieldwork": "3月2日至5日",
-      "institute": "雨晴指標",
-      "recordIds": [
-        "poll-8f93b4668c39",
-        "poll-bba2c978fa3a",
-        "poll-f4665f4d9462"
-      ],
-      "sourceUrls": [
-        "https://news.ebc.net.tw/news/politics/541182"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-c193a9007c212ec2",
       "countyId": "hsinchu-county",
       "fieldwork": "2025年11月20日至22日",
@@ -5091,6 +5120,20 @@
       ],
       "sourceUrls": [
         "https://www.setn.com/News.aspx?NewsID=1756831"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-c1bb4f9c6b65a31a",
+      "countyId": "tainan",
+      "fieldwork": "1月6日至7日",
+      "institute": "雨晴民調",
+      "recordIds": [
+        "poll-afc5a569ee95",
+        "poll-ebe23e23d78e"
+      ],
+      "sourceUrls": [
+        "https://www.upmedia.mg/tw/lifestyle/policy/249218"
       ],
       "scenarioCount": 1
     },
@@ -5191,21 +5234,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-d231c8b5d5b59b84",
-      "countyId": "newtaipei",
-      "fieldwork": "1月26日至28日",
-      "institute": "東森民調",
-      "recordIds": [
-        "poll-00b97418b313",
-        "poll-6139f779ea51",
-        "poll-87489504fd59"
-      ],
-      "sourceUrls": [
-        "https://news.ebc.net.tw/news/politics/535474"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-d250c0ea309364c1",
       "countyId": "newtaipei",
       "fieldwork": "8月26日至28日",
@@ -5260,6 +5288,22 @@
       ],
       "sourceUrls": [
         "https://news.nextapple.com/life/20260729/475E59B3F7F1504C83DD63E801885488"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-d7954cc19985606b",
+      "countyId": "kaohsiung",
+      "fieldwork": "2026年1月5日至6日",
+      "institute": "雨晴民調",
+      "recordIds": [
+        "poll-1be8a29bb6e0",
+        "poll-233e9be93087",
+        "poll-291db7820d5a",
+        "poll-aab2979ddb3c"
+      ],
+      "sourceUrls": [
+        "https://news.ttv.com.tw/news/11501070003600W"
       ],
       "scenarioCount": 1
     },
@@ -5400,21 +5444,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-e80ddaa5afa02573",
-      "countyId": "newtaipei",
-      "fieldwork": "2月23日至24日",
-      "institute": "民進黨",
-      "recordIds": [
-        "poll-2f4a07ad8a72",
-        "poll-389307cb6433",
-        "poll-3b4f2ffb6644"
-      ],
-      "sourceUrls": [
-        "https://news.ltn.com.tw/news/politics/breakingnews/5352342"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-e9b0af92d53c12d9",
       "countyId": "newtaipei",
       "fieldwork": "4月21日",
@@ -5471,19 +5500,6 @@
       "scenarioCount": 1
     },
     {
-      "id": "survey-f186f8320e4f22c3",
-      "countyId": "kinmen",
-      "fieldwork": "2026年9月7日至11日",
-      "institute": "雨晴指標",
-      "recordIds": [
-        "poll-096ac3dbe9b0"
-      ],
-      "sourceUrls": [
-        "https://news.tvbs.com.tw/politics/4023574"
-      ],
-      "scenarioCount": 1
-    },
-    {
       "id": "survey-f1c6a081bd3105c6",
       "countyId": "hsinchu-county",
       "fieldwork": "2月4日至5日",
@@ -5493,6 +5509,21 @@
       ],
       "sourceUrls": [
         "https://m.my-formosa.com.tw/doc_223590.htm"
+      ],
+      "scenarioCount": 1
+    },
+    {
+      "id": "survey-f2b8f32a162b4c54",
+      "countyId": "hsinchu-county",
+      "fieldwork": "3月2日至5日",
+      "institute": "雨晴民調",
+      "recordIds": [
+        "poll-4327565244d9",
+        "poll-8ea16c50c887",
+        "poll-d5e96e1d8f28"
+      ],
+      "sourceUrls": [
+        "https://news.ebc.net.tw/news/politics/541182"
       ],
       "scenarioCount": 1
     },
@@ -5756,9 +5787,9 @@
       ],
       "url": "https://news.ebc.net.tw/news/politics/541182",
       "recordIds": [
-        "poll-8f93b4668c39",
-        "poll-bba2c978fa3a",
-        "poll-f4665f4d9462"
+        "poll-4327565244d9",
+        "poll-8ea16c50c887",
+        "poll-d5e96e1d8f28"
       ]
     },
     {
@@ -5843,17 +5874,6 @@
       "recordIds": [
         "poll-0c8f3a46cfd7",
         "poll-e130ccccdcbf"
-      ]
-    },
-    {
-      "id": "review-630702ebde6ca3ee",
-      "priority": "medium",
-      "reasons": [
-        "source_unreachable"
-      ],
-      "url": "https://udn.com/news/story/124652/96176762",
-      "recordIds": [
-        "poll-b17bf984f349"
       ]
     },
     {

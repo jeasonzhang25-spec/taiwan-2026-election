@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-28T16:02:18Z",
+  "generatedAt": "2026-10-28T21:04:46Z",
   "dataGeneratedAt": "2026-10-28T02:36:27Z",
   "summary": {
     "recordCount": 328,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 1,
     "notCheckedCount": 0,
-    "contentChangedCount": 0,
-    "reviewQueueCount": 34,
+    "contentChangedCount": 1,
+    "reviewQueueCount": 35,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -2785,12 +2785,12 @@
       "httpStatus": 200,
       "finalUrl": "https://www.setn.com/news/1873356",
       "contentType": "text/html",
-      "fingerprint": "16d46325f8e5dc99cec93feaf0a71f7ee7f283d7d43315c4e25f3e5d44bf2eb9",
+      "fingerprint": "ed78d60ba089f4ce5ee0210d3a1c12e25725e155ba7c60f1e3b26620eb4c7df9",
       "error": null,
       "evidence": "strong",
       "candidateHits": 2,
-      "percentageHits": 1,
-      "contentChanged": false,
+      "percentageHits": 2,
+      "contentChanged": true,
       "recordIds": [
         "poll-e40318941753"
       ]
@@ -5722,6 +5722,17 @@
     }
   ],
   "reviewQueue": [
+    {
+      "id": "review-1f9dcee3a4c5fdb9",
+      "priority": "high",
+      "reasons": [
+        "source_content_changed"
+      ],
+      "url": "https://www.setn.com/news/1873356",
+      "recordIds": [
+        "poll-e40318941753"
+      ]
+    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

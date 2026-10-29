@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-29T07:05:41Z",
-  "dataGeneratedAt": "2026-10-29T07:05:04Z",
+  "generatedAt": "2026-10-29T19:52:35Z",
+  "dataGeneratedAt": "2026-10-29T19:52:17Z",
   "summary": {
     "recordCount": 329,
     "surveyCount": 175,
@@ -11,8 +11,8 @@
     "restrictedCount": 21,
     "unreachableCount": 1,
     "notCheckedCount": 0,
-    "contentChangedCount": 1,
-    "reviewQueueCount": 35,
+    "contentChangedCount": 0,
+    "reviewQueueCount": 34,
     "blockingIssueCount": 0
   },
   "sources": [
@@ -1270,7 +1270,7 @@
       "percentageHits": 3,
       "contentChanged": false,
       "recordIds": [
-        "poll-c586484d76e6"
+        "poll-cfd14d65693e"
       ]
     },
     {
@@ -2196,7 +2196,7 @@
       "evidence": "strong",
       "candidateHits": 3,
       "percentageHits": 3,
-      "contentChanged": true,
+      "contentChanged": false,
       "recordIds": [
         "poll-0c0b625ac0e2",
         "poll-4259820be9c2"
@@ -3614,6 +3614,19 @@
       "scenarioCount": 1
     },
     {
+      "id": "survey-2c9df93be8721200",
+      "countyId": "hsinchu-city",
+      "fieldwork": "9月10日至13日",
+      "institute": "匯流民調",
+      "recordIds": [
+        "poll-cfd14d65693e"
+      ],
+      "sourceUrls": [
+        "https://news.tvbs.com.tw/politics/4025748"
+      ],
+      "scenarioCount": 1
+    },
+    {
       "id": "survey-2e4da27ec8c563aa",
       "countyId": "newtaipei",
       "fieldwork": "6月2日至5日",
@@ -4499,19 +4512,6 @@
       ],
       "sourceUrls": [
         "https://sunmedia.tw/news/collaborative/2acUgQRl2gSuldPntgr9btUK4mmfKahkpZSFUMtNIIUC4U3WdIUjKIoe8AxhAA8S3BdGM03R"
-      ],
-      "scenarioCount": 1
-    },
-    {
-      "id": "survey-8959139c5023ee5c",
-      "countyId": "hsinchu-city",
-      "fieldwork": "9月10日至9月13日",
-      "institute": "匯流民調",
-      "recordIds": [
-        "poll-c586484d76e6"
-      ],
-      "sourceUrls": [
-        "https://news.tvbs.com.tw/politics/4025748"
       ],
       "scenarioCount": 1
     },
@@ -5753,18 +5753,6 @@
     }
   ],
   "reviewQueue": [
-    {
-      "id": "review-cae2e9feb5529f2e",
-      "priority": "high",
-      "reasons": [
-        "source_content_changed"
-      ],
-      "url": "https://www.ftnn.com.tw/news/506723",
-      "recordIds": [
-        "poll-0c0b625ac0e2",
-        "poll-4259820be9c2"
-      ]
-    },
     {
       "id": "review-0ba5123559d0d22c",
       "priority": "medium",

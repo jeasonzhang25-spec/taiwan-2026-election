@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T20:00:14.065756+00:00",
+  "generatedAt": "2026-11-14T06:59:00.175530+00:00",
   "summary": {
     "candidateCount": 81,
     "coveredCandidateCount": 43,
@@ -7,7 +7,7 @@
     "monitoredFeedCount": 22,
     "successfulFeedCount": 22,
     "failedFeedCount": 0,
-    "reviewQueueCount": 94
+    "reviewQueueCount": 105
   },
   "candidates": [
     {
@@ -23,7 +23,7 @@
       "candidateId": "taipei-沈伯洋",
       "candidateName": "沈伯洋",
       "verifiedPolicyCount": 7,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 12,
       "status": "verified"
     },
     {
@@ -47,7 +47,7 @@
       "candidateId": "taipei-蔣萬安",
       "candidateName": "蔣萬安",
       "verifiedPolicyCount": 0,
-      "reviewQueueCount": 2,
+      "reviewQueueCount": 12,
       "status": "monitoring"
     },
     {
@@ -79,7 +79,7 @@
       "candidateId": "newtaipei-蘇輝湟",
       "candidateName": "蘇輝湟",
       "verifiedPolicyCount": 0,
-      "reviewQueueCount": 0,
+      "reviewQueueCount": 1,
       "status": "monitoring"
     },
     {
@@ -87,7 +87,7 @@
       "candidateId": "taoyuan-張善政",
       "candidateName": "張善政",
       "verifiedPolicyCount": 1,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 1,
       "status": "verified"
     },
     {
@@ -95,7 +95,7 @@
       "candidateId": "taoyuan-黃世杰",
       "candidateName": "黃世杰",
       "verifiedPolicyCount": 5,
-      "reviewQueueCount": 4,
+      "reviewQueueCount": 3,
       "status": "verified"
     },
     {
@@ -111,7 +111,7 @@
       "candidateId": "taichung-江啟臣",
       "candidateName": "江啟臣",
       "verifiedPolicyCount": 3,
-      "reviewQueueCount": 6,
+      "reviewQueueCount": 7,
       "status": "verified"
     },
     {
@@ -127,7 +127,7 @@
       "candidateId": "tainan-謝龍介",
       "candidateName": "謝龍介",
       "verifiedPolicyCount": 2,
-      "reviewQueueCount": 5,
+      "reviewQueueCount": 6,
       "status": "verified"
     },
     {
@@ -151,7 +151,7 @@
       "candidateId": "tainan-陳亭妃",
       "candidateName": "陳亭妃",
       "verifiedPolicyCount": 4,
-      "reviewQueueCount": 4,
+      "reviewQueueCount": 5,
       "status": "verified"
     },
     {
@@ -159,7 +159,7 @@
       "candidateId": "kaohsiung-張靜",
       "candidateName": "張靜",
       "verifiedPolicyCount": 0,
-      "reviewQueueCount": 0,
+      "reviewQueueCount": 1,
       "status": "monitoring"
     },
     {
@@ -167,7 +167,7 @@
       "candidateId": "kaohsiung-賴瑞隆",
       "candidateName": "賴瑞隆",
       "verifiedPolicyCount": 2,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 2,
       "status": "verified"
     },
     {
@@ -183,7 +183,7 @@
       "candidateId": "kaohsiung-柯志恩",
       "candidateName": "柯志恩",
       "verifiedPolicyCount": 5,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 4,
       "status": "verified"
     },
     {
@@ -191,7 +191,7 @@
       "candidateId": "kaohsiung-洪方隆",
       "candidateName": "洪方隆",
       "verifiedPolicyCount": 0,
-      "reviewQueueCount": 1,
+      "reviewQueueCount": 0,
       "status": "monitoring"
     },
     {
@@ -199,7 +199,7 @@
       "candidateId": "keelung-謝國樑",
       "candidateName": "謝國樑",
       "verifiedPolicyCount": 4,
-      "reviewQueueCount": 1,
+      "reviewQueueCount": 0,
       "status": "verified"
     },
     {
@@ -215,7 +215,7 @@
       "candidateId": "keelung-童子瑋",
       "candidateName": "童子瑋",
       "verifiedPolicyCount": 9,
-      "reviewQueueCount": 4,
+      "reviewQueueCount": 3,
       "status": "verified"
     },
     {
@@ -247,7 +247,7 @@
       "candidateId": "hsinchu-county-鄭朝方",
       "candidateName": "鄭朝方",
       "verifiedPolicyCount": 5,
-      "reviewQueueCount": 2,
+      "reviewQueueCount": 1,
       "status": "verified"
     },
     {
@@ -263,7 +263,7 @@
       "candidateId": "hsinchu-county-徐欣瑩",
       "candidateName": "徐欣瑩",
       "verifiedPolicyCount": 4,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 2,
       "status": "verified"
     },
     {
@@ -343,7 +343,7 @@
       "candidateId": "yunlin-張嘉郡",
       "candidateName": "張嘉郡",
       "verifiedPolicyCount": 3,
-      "reviewQueueCount": 2,
+      "reviewQueueCount": 1,
       "status": "verified"
     },
     {
@@ -383,7 +383,7 @@
       "candidateId": "chiayi-city-張啓楷",
       "candidateName": "張啓楷",
       "verifiedPolicyCount": 1,
-      "reviewQueueCount": 2,
+      "reviewQueueCount": 1,
       "status": "verified"
     },
     {
@@ -391,7 +391,7 @@
       "candidateId": "chiayi-city-王美惠",
       "candidateName": "王美惠",
       "verifiedPolicyCount": 1,
-      "reviewQueueCount": 4,
+      "reviewQueueCount": 3,
       "status": "verified"
     },
     {
@@ -407,7 +407,7 @@
       "candidateId": "chiayi-county-吳品叡",
       "candidateName": "吳品叡",
       "verifiedPolicyCount": 1,
-      "reviewQueueCount": 2,
+      "reviewQueueCount": 1,
       "status": "verified"
     },
     {
@@ -431,7 +431,7 @@
       "candidateId": "pingtung-周春米",
       "candidateName": "周春米",
       "verifiedPolicyCount": 0,
-      "reviewQueueCount": 0,
+      "reviewQueueCount": 1,
       "status": "monitoring"
     },
     {
@@ -447,7 +447,7 @@
       "candidateId": "yilan-吳宗憲",
       "candidateName": "吳宗憲",
       "verifiedPolicyCount": 2,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 2,
       "status": "verified"
     },
     {
@@ -463,7 +463,7 @@
       "candidateId": "yilan-林國漳",
       "candidateName": "林國漳",
       "verifiedPolicyCount": 2,
-      "reviewQueueCount": 2,
+      "reviewQueueCount": 3,
       "status": "verified"
     },
     {
@@ -479,7 +479,7 @@
       "candidateId": "taitung-陳瑩",
       "candidateName": "陳瑩",
       "verifiedPolicyCount": 2,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 2,
       "status": "verified"
     },
     {
@@ -487,7 +487,7 @@
       "candidateId": "taitung-吳秀華",
       "candidateName": "吳秀華",
       "verifiedPolicyCount": 2,
-      "reviewQueueCount": 3,
+      "reviewQueueCount": 2,
       "status": "verified"
     },
     {
@@ -670,13 +670,13 @@
       "countyId": "chiayi-city",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%98%89%E7%BE%A9%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 6
+      "itemCount": 4
     },
     {
       "countyId": "chiayi-county",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%98%89%E7%BE%A9%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 3
+      "itemCount": 2
     },
     {
       "countyId": "hsinchu-city",
@@ -688,7 +688,7 @@
       "countyId": "hsinchu-county",
       "url": "https://news.google.com/rss/search?q=2026%20%E6%96%B0%E7%AB%B9%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 5
+      "itemCount": 3
     },
     {
       "countyId": "hualien",
@@ -706,7 +706,7 @@
       "countyId": "keelung",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%9F%BA%E9%9A%86%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 5
+      "itemCount": 3
     },
     {
       "countyId": "kinmen",
@@ -736,7 +736,7 @@
       "countyId": "newtaipei",
       "url": "https://news.google.com/rss/search?q=2026%20%E6%96%B0%E5%8C%97%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 5
+      "itemCount": 6
     },
     {
       "countyId": "penghu",
@@ -748,37 +748,37 @@
       "countyId": "pingtung",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%B1%8F%E6%9D%B1%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 0
+      "itemCount": 1
     },
     {
       "countyId": "taichung",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E4%B8%AD%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 12
+      "itemCount": 13
     },
     {
       "countyId": "tainan",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E5%8D%97%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 9
+      "itemCount": 11
     },
     {
       "countyId": "taipei",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E5%8C%97%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 5
+      "itemCount": 24
     },
     {
       "countyId": "taitung",
       "url": "https://news.google.com/rss/search?q=2026%20%E5%8F%B0%E6%9D%B1%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 6
+      "itemCount": 4
     },
     {
       "countyId": "taoyuan",
       "url": "https://news.google.com/rss/search?q=2026%20%E6%A1%83%E5%9C%92%E5%B8%82%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 7
+      "itemCount": 4
     },
     {
       "countyId": "yilan",
@@ -790,7 +790,7 @@
       "countyId": "yunlin",
       "url": "https://news.google.com/rss/search?q=2026%20%E9%9B%B2%E6%9E%97%E7%B8%A3%20%E9%95%B7%20%E9%81%B8%E8%88%89%20%28%E6%94%BF%E8%A6%8B%20OR%20%E6%94%BF%E7%AD%96%20OR%20%E9%A1%98%E6%99%AF%20OR%20%E6%96%B9%E6%A1%88%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
       "status": "reachable",
-      "itemCount": 5
+      "itemCount": 4
     }
   ],
   "failedFeeds": [],
@@ -807,25 +807,14 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "chiayi-city-張啓楷-ee93fcb87356",
+      "id": "chiayi-city-張啓楷-037a5cd628ef",
       "countyId": "chiayi-city",
       "candidateId": "chiayi-city-張啓楷",
       "candidateName": "張啓楷",
-      "title": "張啓楷端居住正義三箭！「嘉義女婿」張善政力挺 黃敏惠轟王美惠無政見 - 中天新聞網",
-      "sourceName": "中天新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5val9fYUtSWUdBaFdnZTQ0alJDWDRWMVdRTUJyWlJhRGlOaGNvcGUxUnVuQnhwREI0Ny1lelpobVlSRTZNSVFsQTVoRGU5Sy1GanlV?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 13:49:48 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "chiayi-city-張啓楷-c2c1dad95db8",
-      "countyId": "chiayi-city",
-      "candidateId": "chiayi-city-張啓楷",
-      "candidateName": "張啓楷",
-      "title": "藍白合作加持 張啓楷聯手吳品叡拋敬老與居住政見 - 梅花新聞網",
-      "sourceName": "梅花新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1VQ3VQN1k5MHFXcTU5cWxjcVhhcFMwa3FBcHQ0dHdDYmowWWl0VnVBelpYdzZLdVRwU1paZzhqZ201UmhsZ2JkV2otUzNoYnpyRnFZZ01fU2Q?oc=5",
-      "publishedAt": "Wed, 11 Nov 2026 08:49:00 GMT",
+      "title": "嘉市長號次抽籤！候選人高喊政見「打倒張啓楷」 - Yahoo新聞",
+      "sourceName": "Yahoo新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPT0pzQnFYbzlXVUtIaEE5ek5faHYzVHE2dzkzei1VWWpndzNvSElsZWt5UWloRUt3aE91WVhhWkpjWjRZeUpKQmNvZ3VaaTVsZm1ZZXJ3NXpvNUJCUHJNTXN0TXZ6MUZpT2thMXlRaWk1VUNibXdvNlJBV2F5REh2dEhWODhfblgzY1BvbVNmTUM4Tkcya2FUN0ZXSzhIQ3E1aGFhUU9vVVl2VnR3aUhoUGlHeWpQOFQtcjVrVmRzRFU4ZEk1NmhGMWt2UklDa0lyaDZ0UjZIWXl6Vi1aTmZob05RbmZpSFhpeTV1bEFvX1VwejFJaEJFQ1hiT2N6UU0wamMwaVdoRXNIZTRzZDNMV3VORVhIaFgzbndPd0gxazBXOW5kLVRmZXVuY3Y2c0VFVDFGY1ZLNS1zdw?oc=5",
+      "publishedAt": "Tue, 27 Oct 2026 07:00:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -837,17 +826,6 @@
       "sourceName": "城市學",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wU2ZUWGtLUEtfTmtjOXRJM0xDX0F5aDIwdUgwR2VZRzRXSHpQc244ejNwQmNwd1pBM3c0N2VUZlZMa011WWxrMThyZ2lzRms?oc=5",
       "publishedAt": "Tue, 07 Apr 2026 07:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "chiayi-city-王美惠-ee93fcb87356",
-      "countyId": "chiayi-city",
-      "candidateId": "chiayi-city-王美惠",
-      "candidateName": "王美惠",
-      "title": "張啓楷端居住正義三箭！「嘉義女婿」張善政力挺 黃敏惠轟王美惠無政見 - 中天新聞網",
-      "sourceName": "中天新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5val9fYUtSWUdBaFdnZTQ0alJDWDRWMVdRTUJyWlJhRGlOaGNvcGUxUnVuQnhwREI0Ny1lelpobVlSRTZNSVFsQTVoRGU5Sy1GanlV?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 13:49:48 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -881,17 +859,6 @@
       "sourceName": "udn",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fOXdrdWxaeGVNNWhIa25IbDJHWnA1dW1IaWpaMVQwa0xmYWwwUHF2aWduWkFGdHBSTS1PWkE4Q2NJRjYwb1ViMUxaZ2o0WnRXdnNVQjgwa3I?oc=5",
       "publishedAt": "Wed, 11 Nov 2026 16:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "chiayi-county-吳品叡-c2c1dad95db8",
-      "countyId": "chiayi-county",
-      "candidateId": "chiayi-county-吳品叡",
-      "candidateName": "吳品叡",
-      "title": "藍白合作加持 張啓楷聯手吳品叡拋敬老與居住政見 - 梅花新聞網",
-      "sourceName": "梅花新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1VQ3VQN1k5MHFXcTU5cWxjcVhhcFMwa3FBcHQ0dHdDYmowWWl0VnVBelpYdzZLdVRwU1paZzhqZ201UmhsZ2JkV2otUzNoYnpyRnFZZ01fU2Q?oc=5",
-      "publishedAt": "Wed, 11 Nov 2026 08:49:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -961,17 +928,6 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "hsinchu-county-徐欣瑩-30c7b61b8302",
-      "countyId": "hsinchu-county",
-      "candidateId": "hsinchu-county-徐欣瑩",
-      "candidateName": "徐欣瑩",
-      "title": "新竹縣長選戰聚焦生活政策 徐欣瑩談環境、鄭朝方推共融 - Taiwan News",
-      "sourceName": "Taiwan News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKaHNIR3JjRXE3OHl2dV81MVFfaTUtRGxNWV85WTk4NEphbURGMkNLdzRoLXBSWWkxenY0X2NLVGEzcDJPQmVlODRRR0wzdjFKUFZmOVRFd3E?oc=5",
-      "publishedAt": "Fri, 16 Oct 2026 07:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
       "id": "hsinchu-county-鄭朝方-e4b221b05fad",
       "countyId": "hsinchu-county",
       "candidateId": "hsinchu-county-鄭朝方",
@@ -980,17 +936,6 @@
       "sourceName": "Taiwan News",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GR196dF84dkZNYV9RWGNZOGNWWmtWUzVFcjB2NUduX3FyVFpNZGFZRUZZeXhwckJ5NURGNHBMM0c4T3Y4Vi11cTc2LW5RVkktY0NyNTQxU24?oc=5",
       "publishedAt": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "hsinchu-county-鄭朝方-30c7b61b8302",
-      "countyId": "hsinchu-county",
-      "candidateId": "hsinchu-county-鄭朝方",
-      "candidateName": "鄭朝方",
-      "title": "新竹縣長選戰聚焦生活政策 徐欣瑩談環境、鄭朝方推共融 - Taiwan News",
-      "sourceName": "Taiwan News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKaHNIR3JjRXE3OHl2dV81MVFfaTUtRGxNWV85WTk4NEphbURGMkNLdzRoLXBSWWkxenY0X2NLVGEzcDJPQmVlODRRR0wzdjFKUFZmOVRFd3E?oc=5",
-      "publishedAt": "Fri, 16 Oct 2026 07:00:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1038,25 +983,47 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "kaohsiung-柯志恩-803a886550a7",
+      "id": "kaohsiung-張靜-1f14aec2de1a",
       "countyId": "kaohsiung",
-      "candidateId": "kaohsiung-柯志恩",
-      "candidateName": "柯志恩",
-      "title": "挺張嘉郡張善政陪掃街、柯志恩分享教育政策- 地方 - 華視新聞網",
-      "sourceName": "華視新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qbDdSUnNMem5TWklTbW5rY2RiVWh3dGNQb20xeUpzUG5lZXBrRHk4NFlCcUtEMElnZGF6YnZJbVpXNDNncy11X2c0MktCSzZtSHNlbUZQaGNmUXE2eU90TW1YMk9KTHI4NkVsWm53?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 09:57:21 GMT",
+      "candidateId": "kaohsiung-張靜",
+      "candidateName": "張靜",
+      "title": "高雄市長政見會》張靜：每半年發放每人3千元「委屈補償金」 - 自由時報",
+      "sourceName": "自由時報",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1sbzZLS0FJbGpvSnJ1dEZLakdIa2VzMkNXUWRsbUJ1bXRmZS1JNUJBNEh3VzNaQVFqSzl0WlNwalY1cDZmMWNtclU1YjY2TXZicnMwUVJhOURiTkxRTUFwaGh0VnhlX1VLd0HSAW9BVV95cUxOUjBMbGdxYlU3c2lzQXhDdVhVZlNycng5aEhOZnBqVGhNTnRaZFh5cmZxQVotWjhlb2VGQ1ZlLXBxd2dJUDBlZ0dtY0NOeEttV0ZUNjBfOHFqZXJzY1FBMkFXZGR1LUVEMmVWbkxmLXc?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 06:21:51 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "kaohsiung-柯志恩-23a7c9ff4edd",
+      "id": "kaohsiung-柯志恩-96c0058b10bd",
       "countyId": "kaohsiung",
       "candidateId": "kaohsiung-柯志恩",
       "candidateName": "柯志恩",
-      "title": "高雄市長選戰／柯志恩推「高澎生活圈」 賴瑞隆秀「大港政策島」 - Rti 中央廣播電臺",
-      "sourceName": "Rti 中央廣播電臺",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CVkp2RDVBVGYzUXk1cVJsNzBlMlZ3clRjZGNnT3g0VWNLb0p2Nnp6ZkJCdjBSU2xjQ1pBT082OS1FMWd6Tm9jTkxybS0xaGFZTGtBUFJiWEY?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 07:49:07 GMT",
+      "title": "政見會前交鋒！柯志恩嗆「深耕」不能看年資：做了什麼才重要 - 中天新聞網",
+      "sourceName": "中天新聞網",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pVC1rWTAtTWpVdk9CMEhTREhpV3Q5bzBieEh2VVJDUnlwQ0Jwa2VQN1dMZHRBT3MzS2RUZTJ4bF9STHVfWWtXbEZBRHJheWhCVVFB?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 06:22:08 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "kaohsiung-柯志恩-953c31015a92",
+      "countyId": "kaohsiung",
+      "candidateId": "kaohsiung-柯志恩",
+      "candidateName": "柯志恩",
+      "title": "高雄市長政見會將登場！5人發言順序曝　柯志恩、賴瑞隆搶先發聲 - ETtoday新聞雲",
+      "sourceName": "ETtoday新聞雲",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51QXBFclU4aExkd2k3Yjk2LWRDWm5CUU8zQkFQeTRCUnNQY3pkcTFyMGZpV0JWZGlLWmRudzhqSGFySjl0WnA1S3RZLUpoV2ZOLUwwV3hPcmFxMnNYVGfSAUtBVV95cUxNVjlYZjM2YkFPclVUWFY2SkdWSkpxaXB4Zk5DTkYzZzJUZUNVc21kTE9ORVJBU085STRVeWRrWjV3Q3U2X05KUHA5bzA?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 05:31:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "kaohsiung-柯志恩-ad393c2cccb1",
+      "countyId": "kaohsiung",
+      "candidateId": "kaohsiung-柯志恩",
+      "candidateName": "柯志恩",
+      "title": "高雄市長選舉政見會14:00登場 柯志恩賴瑞隆再度交鋒｜直播 - Yahoo新聞",
+      "sourceName": "Yahoo新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxPQ1BxbzRBUXNSZVZUcUhDajRyNkRvYmwtc3lNOFdDbGQtTE90ZDRFX2dKWE84ejZvYzBNaFgzeTJtY3NrU2R4YU9TdFRKOURGcllFY3JmNWlvTzB0d2pkQVMtY1FBVUlXUTZtYzVPZ0k1bDRtRmpiTTBJN3NJbTlhYVRxSFB1THptM1dyUks0dV9wZHNuZXBQbllsc0NCVERwV2ZpVEFHM2ltWmtFOWotZWk1N3JBNi1HRW1WSEJ2XzJYWGpzN2NtNHozeUxXTmN5WEdWWWJvTTZyQ05zckxxMktzc1haRzhyLUtJamhTRmhzWFNyRTZkTk5STXRRR2RzVXFwdFJlLUhtYkhLVlh0TXZaa3Rmb0JneWlnWEEzOVY2a1VVWGlEcGkzcHNva3I3OXBZdXVpa1F2Uk53MU9JNHFnTkVFSGUyZzBDZUFzMU9DbURWaEV2c1d2WDlKd2ZqQzExVG4yMFpwbnZzcDM2Nkl4UzNUWGJ4d3c?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 04:01:04 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1071,47 +1038,25 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "kaohsiung-洪方隆-8b53059aa3b2",
-      "countyId": "kaohsiung",
-      "candidateId": "kaohsiung-洪方隆",
-      "candidateName": "洪方隆",
-      "title": "高雄市長選舉第五人登記 洪方隆：政治責任化、政見要檢驗 - 自由時報",
-      "sourceName": "自由時報",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2Yi1uMzg3Ty1xZ21zVFU3Q3JkNDVIamtfWk8wX0xTeUc0MnB4NW9EcnloN0xIRzlmZ3Vyd2wzX1NseG9ZdWFpcWlBTUdkZWJUeElkbmdiZDdVN3NUbDBGMy1IQW1xRGZYWmfSAW9BVV95cUxNaXpkU2N3TEhEWnByREV5cFhlTVI3MWVsaWwxZldKM1pjREZsR0lWb0dZbmNieFVuOGpvOERSWTFnMVpRUUxKbFJtSm1SVDI5cEdXbVZtS2dSNFltTW9qQTNEYVJHSzl3Szc5RmVxTUE?oc=5",
-      "publishedAt": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "kaohsiung-賴瑞隆-b7f8a8f9199c",
+      "id": "kaohsiung-賴瑞隆-953c31015a92",
       "countyId": "kaohsiung",
       "candidateId": "kaohsiung-賴瑞隆",
       "candidateName": "賴瑞隆",
-      "title": "賴瑞隆推3D政見地圖 走訪路竹談醫療、志工誓師拚選戰 - Taiwan News",
-      "sourceName": "Taiwan News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE04QWJSNTFRb1Fud2ZkcktJbFVsTmtBOFFRNU14c0FVZWFEV3R5VEZGZzZHX0NxdHVYWHFMWFY1RWl5X3dibkpZRC1RRFV6RTNTdFBMVDVHVkw?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 08:31:00 GMT",
+      "title": "高雄市長政見會將登場！5人發言順序曝　柯志恩、賴瑞隆搶先發聲 - ETtoday新聞雲",
+      "sourceName": "ETtoday新聞雲",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51QXBFclU4aExkd2k3Yjk2LWRDWm5CUU8zQkFQeTRCUnNQY3pkcTFyMGZpV0JWZGlLWmRudzhqSGFySjl0WnA1S3RZLUpoV2ZOLUwwV3hPcmFxMnNYVGfSAUtBVV95cUxNVjlYZjM2YkFPclVUWFY2SkdWSkpxaXB4Zk5DTkYzZzJUZUNVc21kTE9ORVJBU085STRVeWRrWjV3Q3U2X05KUHA5bzA?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 05:31:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "kaohsiung-賴瑞隆-ea6ce9958700",
+      "id": "kaohsiung-賴瑞隆-ad393c2cccb1",
       "countyId": "kaohsiung",
       "candidateId": "kaohsiung-賴瑞隆",
       "candidateName": "賴瑞隆",
-      "title": "賴瑞隆推「大港政策島」 互動地圖探索政見- 地方 - 華視新聞網",
-      "sourceName": "華視新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9iMnE1SklvN0dndFJkdjBBU25zZE1kM1JGeXR5RGJrZDhqMjd6M3h4dmIxclJQV1hCSmlXMEY5endkZ3g2WVZDWG5NdFhMb01IV3VOMy15Zks4a1dIbV9rYXpVZFlzRnEzU2R1dmZ3?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 06:51:27 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "kaohsiung-賴瑞隆-23a7c9ff4edd",
-      "countyId": "kaohsiung",
-      "candidateId": "kaohsiung-賴瑞隆",
-      "candidateName": "賴瑞隆",
-      "title": "高雄市長選戰／柯志恩推「高澎生活圈」 賴瑞隆秀「大港政策島」 - Rti 中央廣播電臺",
-      "sourceName": "Rti 中央廣播電臺",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CVkp2RDVBVGYzUXk1cVJsNzBlMlZ3clRjZGNnT3g0VWNLb0p2Nnp6ZkJCdjBSU2xjQ1pBT082OS1FMWd6Tm9jTkxybS0xaGFZTGtBUFJiWEY?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 07:49:07 GMT",
+      "title": "高雄市長選舉政見會14:00登場 柯志恩賴瑞隆再度交鋒｜直播 - Yahoo新聞",
+      "sourceName": "Yahoo新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxPQ1BxbzRBUXNSZVZUcUhDajRyNkRvYmwtc3lNOFdDbGQtTE90ZDRFX2dKWE84ejZvYzBNaFgzeTJtY3NrU2R4YU9TdFRKOURGcllFY3JmNWlvTzB0d2pkQVMtY1FBVUlXUTZtYzVPZ0k1bDRtRmpiTTBJN3NJbTlhYVRxSFB1THptM1dyUks0dV9wZHNuZXBQbllsc0NCVERwV2ZpVEFHM2ltWmtFOWotZWk1N3JBNi1HRW1WSEJ2XzJYWGpzN2NtNHozeUxXTmN5WEdWWWJvTTZyQ05zckxxMktzc1haRzhyLUtJamhTRmhzWFNyRTZkTk5STXRRR2RzVXFwdFJlLUhtYkhLVlh0TXZaa3Rmb0JneWlnWEEzOVY2a1VVWGlEcGkzcHNva3I3OXBZdXVpa1F2Uk53MU9JNHFnTkVFSGUyZzBDZUFzMU9DbURWaEV2c1d2WDlKd2ZqQzExVG4yMFpwbnZzcDM2Nkl4UzNUWGJ4d3c?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 04:01:04 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1137,17 +1082,6 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "keelung-童子瑋-c6e0e10b3d92",
-      "countyId": "keelung",
-      "candidateId": "keelung-童子瑋",
-      "candidateName": "童子瑋",
-      "title": "基隆市長選舉辯論謝國樑講政績、童子瑋提改善交通| 地方 - 中央社 CNA",
-      "sourceName": "中央社 CNA",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Wa0pOQ3lxdHliSlM5OEUta3JORXlTMmtzcndySVBNUUUtMVRETnJfWm5aVlJsOWEtYmRRMjF0S01pMnhwcDIyQ0s2ZHQ1SHFBQVg5NEk1WklSY05wN0cw?oc=5",
-      "publishedAt": "Tue, 10 Nov 2026 05:13:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
       "id": "keelung-童子瑋-1cc6ccefac9f",
       "countyId": "keelung",
       "candidateId": "keelung-童子瑋",
@@ -1156,17 +1090,6 @@
       "sourceName": "Newtalk新聞",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOTTZwVExfVmw2b2JGaUsyVUpHWGdJZDY0elFxZTZYU2tqUlpSZ0J4SnZaeF83QWI1b2JaaGt0ZVU1UGVQZlBtWmNjNnp0YmY5WjdSaHY4dl9fM3c?oc=5",
       "publishedAt": "Thu, 29 Oct 2026 07:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "keelung-謝國樑-c6e0e10b3d92",
-      "countyId": "keelung",
-      "candidateId": "keelung-謝國樑",
-      "candidateName": "謝國樑",
-      "title": "基隆市長選舉辯論謝國樑講政績、童子瑋提改善交通| 地方 - 中央社 CNA",
-      "sourceName": "中央社 CNA",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Wa0pOQ3lxdHliSlM5OEUta3JORXlTMmtzcndySVBNUUUtMVRETnJfWm5aVlJsOWEtYmRRMjF0S01pMnhwcDIyQ0s2ZHQ1SHFBQVg5NEk1WklSY05wN0cw?oc=5",
-      "publishedAt": "Tue, 10 Nov 2026 05:13:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1269,11 +1192,22 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
+      "id": "newtaipei-蘇輝湟-e29cdfba4740",
+      "countyId": "newtaipei",
+      "candidateId": "newtaipei-蘇輝湟",
+      "candidateName": "蘇輝湟",
+      "title": "新北市長候選人抽籤 蘇輝湟抽2號再拋震撼政見「一夫二妻」 - UDN",
+      "sourceName": "UDN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1QUFBGUklfb292cUFXT3M3TXl0QnVjbjE2aEM1S2tkdmtZdUlSNFczWjVrS2RmbGxrQzRmT2N3VXBhdGNDdU95WFE2T2h5cXZNNldWVWN1Smo?oc=5",
+      "publishedAt": "Tue, 27 Oct 2026 07:00:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
       "id": "penghu-葉竹林-eb553944d297",
       "countyId": "penghu",
       "candidateId": "penghu-葉竹林",
       "candidateName": "葉竹林",
-      "title": "]無黨澎湖縣長候選人葉竹林 北辰市場掃街放福利政策 - 自由時報",
+      "title": "無黨澎湖縣長候選人葉竹林 北辰市場掃街放福利政策 - 自由時報",
       "sourceName": "自由時報",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE95eDN4S3NzUkFDdGU2dHF0Zmp5dEJZVUNmRFdsQ3ZXTFk4YjdJRlBfakVJTGxWMzFVNXdOV3k4UTZHOVFWQktXVzZickJlcDFVZVk2WEFRcno1ZzJZRkdTOU9zdmNMRmp3YWfSAW9BVV95cUxOTEsyOTl3cXpWc1lOSTF5RFphdVNBTUJZd18yd3BUMmR1S2VOdDZBQlV6ZGRNbU4tek95cVpDUVBCX1ZBYWVrMUdNakJCV2pselJyU0FyV2x0TVJmb0xiTDlWSEp4OXhzY1RNY2I5Wkk?oc=5",
       "publishedAt": "Fri, 13 Nov 2026 03:18:31 GMT",
@@ -1288,6 +1222,17 @@
       "sourceName": "UDN",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE93TWNLZmh3aXUtamRXV2JMcVoxTEQ5SnR3a010endOZ3NFdVprSG44STdtT3BfaHlWcTdjNnMzbWsyNXVpdGVfWVN5WmFpSFJROFhZ0gFYQVVfeXFMT2tWcjZEVlZjQkhId2VvdENDSUpZNUZ1aEJkZVlLNnZyLWJDLXByZnZ2VDFSV0pCQ0VuTFNKa1UycFlfelFGdngydjJ3YnRMU3M0Q05CNzhEUw?oc=5",
       "publishedAt": "Fri, 03 Apr 2026 07:00:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "pingtung-周春米-fb729d790df9",
+      "countyId": "pingtung",
+      "candidateId": "pingtung-周春米",
+      "candidateName": "周春米",
+      "title": "從上帝的餐桌到通往宇宙起點蕭美琴挺周春米談屏東願景| 2026九合一選舉 - UDN",
+      "sourceName": "UDN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1naXU2UFNaWld0NDBNTnZLZEdSUGc0UnQwZDluekZUZXhZR0ZtMzlCVkNrSlFXdXZxck5lbC1yOHBnSHpRcHF3aUlhQjVZTnItWFpMSFlxc3g?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 05:07:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1412,6 +1357,17 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
+      "id": "taichung-江啟臣-12b21c94bf84",
+      "countyId": "taichung",
+      "candidateId": "taichung-江啟臣",
+      "candidateName": "江啟臣",
+      "title": "江啟臣專訪／從台中普發一萬議題，到捷運藍線8年完工、公車免費坐：比拚政見「永遠不是看誰支票多」 - 今周刊",
+      "sourceName": "今周刊",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPclMyUng5WDdyQjBOUUFhWGRoYjE3THk2aDJZZnFOVE9kNTdQZzBLb1dCa2ZvRTdqaVhKT1NsNkt6andjTzdnSWZVOG5scFpvRFdmVGdJNlVDRUZQSUhpS1BaTW1wN0tuOEVrZFUwNjRtSjVWVnNCeFlBSFJTaHk5Tw?oc=5",
+      "publishedAt": "Thu, 24 Sep 2026 07:00:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
       "id": "taichung-洪麗華-7ef6ed9da32d",
       "countyId": "taichung",
       "candidateId": "taichung-洪麗華",
@@ -1442,6 +1398,17 @@
       "sourceName": "Rti 中央廣播電臺",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9xaHRYc2lCcFFlRkZlblQ4NjFoWkQ1SEYwc2x1S0I5U3E4ckdIbWJJbW5ranpFcmZ1VXFvRlhTMmhKYjFDWlVLX01SUnJCX1h5cGNWUzMyZw?oc=5",
       "publishedAt": "Thu, 22 Oct 2026 07:00:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "tainan-謝龍介-2a958925c965",
+      "countyId": "tainan",
+      "candidateId": "tainan-謝龍介",
+      "candidateName": "謝龍介",
+      "title": "台南市長選戰／陳亭妃要捐3成選舉補助款助偏鄉 謝龍介政見網站上線 - Rti 中央廣播電臺",
+      "sourceName": "Rti 中央廣播電臺",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TVUI2cF9CQ1h6R3YtZEZabGgzOC1fOTlYeU90MF9YVUZ1UVVRODR2b0lQRGVyWk9za2V1Y3lUd3hnc09IYkNHeUtfQVBpdjBQRy01dG1qRQ?oc=5",
+      "publishedAt": "Thu, 05 Nov 2026 08:00:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1489,6 +1456,17 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
+      "id": "tainan-陳亭妃-2a958925c965",
+      "countyId": "tainan",
+      "candidateId": "tainan-陳亭妃",
+      "candidateName": "陳亭妃",
+      "title": "台南市長選戰／陳亭妃要捐3成選舉補助款助偏鄉 謝龍介政見網站上線 - Rti 中央廣播電臺",
+      "sourceName": "Rti 中央廣播電臺",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TVUI2cF9CQ1h6R3YtZEZabGgzOC1fOTlYeU90MF9YVUZ1UVVRODR2b0lQRGVyWk9za2V1Y3lUd3hnc09IYkNHeUtfQVBpdjBQRy01dG1qRQ?oc=5",
+      "publishedAt": "Thu, 05 Nov 2026 08:00:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
       "id": "tainan-陳亭妃-036c9f3efee2",
       "countyId": "tainan",
       "candidateId": "tainan-陳亭妃",
@@ -1522,6 +1500,28 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
+      "id": "taipei-沈伯洋-8397529118fd",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "【LIVE】1114蔣萬安沈伯洋再同台 北市政見會登場| 2026九合一選舉 - UDN",
+      "sourceName": "UDN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12UG9BY0k1SDVLMk16ZERkVkRwbk14dHBDZzU2aGFxOVVSRXhZd3FabVVvMHEteXFzdkNGQ2RDNzhyVmp5ZGNLbG5XVnBPdjJaQTdaRg?oc=5",
+      "publishedAt": "Fri, 13 Nov 2026 19:58:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-沈伯洋-ed706ddd513b",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "北市政見會下午2時登場！沈伯洋閉關特訓 蔣萬安將談「市民減壓」 - 自由時報",
+      "sourceName": "自由時報",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02NmhMY09sMldfdmFrdUVoNGxFVk94THlBb2lGQlhlSEVXT1dTMDFCMG1TZEZuWVhyUERPWVRFX1lhSzB3RVZyelpzRW1ld0luaFp6TVl0XzdxQlY1QmVfWUNFQ19CcERUSnfSAW9BVV95cUxONjdZY0F4elZzS2Vad3hTYWxUcnN5bjYtSV9QOW1hSGdRd2VRTl9STW9ySVBJYkVnOHVWSlRrRlJHZGduWFBNWmdScTNqZGtpRC0wT1MtTHYxTGpHeVRtOWxPd2tNLXR0NHFhQ0F2LWc?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 03:15:09 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
       "id": "taipei-沈伯洋-fd0dbcaa17e7",
       "countyId": "taipei",
       "candidateId": "taipei-沈伯洋",
@@ -1530,6 +1530,28 @@
       "sourceName": "Rti 中央廣播電臺",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFByUXp2UUFBMzFfTkFBWDZ6WE4wRl9WNlJWdW5UbmwxTktocXNQTmh3RXFQZ3RwWWhRTnFfZXUyUkZKdmdQNzN5N2tkREFNUEFRNW5MRWp1Zw?oc=5",
       "publishedAt": "Sat, 31 Oct 2026 07:00:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-沈伯洋-098b8ae29b09",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "台北市長選戰／公辦政見會14日登場 沈伯洋細談政見、蔣萬安平常心 - Rti 中央廣播電臺",
+      "sourceName": "Rti 中央廣播電臺",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9NQ3lEa2hCSFlidmhaNm9ta24xVmMwN2c3Y2hFa3pvOFRxenFBTXp5NzBsUDZsWkRLNXRBUE9jU2ZrdnZpbjFxeTNwSEZHa2pfR0MtWm5NYzY?oc=5",
+      "publishedAt": "Fri, 13 Nov 2026 14:43:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-沈伯洋-69c5636c46cc",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "台北市長選舉政見會14:00登場 蔣萬安沈伯洋再度交鋒｜直播 - Yahoo新聞",
+      "sourceName": "Yahoo新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxNOGZwdDRfTHU0cW1ISjBZSXlrS1JYMHlqNmpwMy01Y1BjcFVGcTJmMHhsamJQdGJGQTQ3YkhuWjV3dlBrbnE2TnN2TWFnLTJJOWdhbk1DTnltZE82UGExUGs0M05tdFNsNUUxOUVlOTI3V1dNcXNzN1BHSTJ1bU5ZalRkNnctMDVYWkRMZ0hlb2U5ckx0Mm1kekZmODNWN1loVEdqcW5KNVJfM19vUWJ1akxPU3hTZ1F1Nlhjb1dLUDN1NzAtNVlRN0ptR1JhYWowZFFXT2F1RWZCTHUtNno3YU94NU1xVy1YYlNuWDl1MzlXZzJTQVZpWUNZSDRVOFQ5QVBuTUI2SVl0dGVEcDdXdHdfNVdxeDZXUjZWRHdscHg2cjZDUEFiT3dzcWVNSGdoSml1akcyS2EtWFF5RHZjVjZscldKSXdrMzZzbXh6R0FZdi1KV2JXZzBNcTh4SmVYNFlUVjNJdzltS2pVaXY2Zmt6LXJkaFc5enc?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 04:04:13 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1544,6 +1566,61 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
+      "id": "taipei-沈伯洋-28c7de8bfc97",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "台北市長選舉政見會今14：00登場 沈伯洋、蔣萬安等6候選人政見對決 - 自由時報",
+      "sourceName": "自由時報",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfV3Y0elhKUDZYdjdDU2tleU1iZzZzVEU2eHY0RHVtWWFTc0puekw5eTA2Y3dJLVFVS0FYc2k4Yy1reDVnQk5PRDVETVlVeFNpbml6ZGlqNVkxVWt6SUtNV1ZUWHVWczE0X1HSAW9BVV95cUxQMFo1UHZMZ09VSUlBNjJHTk9uaTRPYTA2RHQxYzdJWE53R3U5dzJfamljZDdodTB3MkMtSUQ2ZVJfeldFcWJhdWdESDMtQkM1UWZNQi04alpZeFdKSENWQWI0SU80UU83NUpXRkdpY28?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 01:59:30 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-沈伯洋-3d1f403108f8",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "政見發表會下午登場！沈伯洋閉關備戰 蔣萬安曝因應策略 - 台視新聞網",
+      "sourceName": "台視新聞網",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5sdFdvS0lSYVRSMHN3TFJBM3JKcWE3c0daRGYyTXA3ci1kNTRvbGVfeWMxU1FYVVhfeTVpbVNYd0pzYS1kNFVRTmo1S0hObVlodWRMaFQxNA?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 01:48:27 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-沈伯洋-d03cffa3e8ab",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "沈伯洋閉關特訓政見會蔣萬安曝兩戰略- 政治新聞 - PChome Online 新聞",
+      "sourceName": "PChome Online 新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORVNtMzN2VXhQanVEN19LTEJEMVJKVDRVdjN0QlV3YnlaS2FkUVdwOVYzU284N2gwU0N5MFNzNzdSVUhBTmYxc2Q3QktZZ01ZRTNoYTJQTkRGMlRXQUx1eEtTYmwtbVBxWHRFVllwU0F5bE5QSzktUHhCWi1QYjIzUmtRQmg4RFFVUDhKcw?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 02:46:01 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-沈伯洋-8b6ab8e6030f",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "洋流艦隊夢碎！小水滴包船造勢突喊卡 沈伯洋競辦曝補救方案 - TVBS新聞網",
+      "sourceName": "TVBS新聞網",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vUHpZSHBvWGtsczFNSUdCTFdXUk10SE1PLTdaaXY0U0M0SF8tTXVvcU5XalRHSkVqakc3SGlweHAyMERGVDNVenR6aHR6Z2ZJM09B?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 03:56:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-沈伯洋-8d6a885bddf3",
+      "countyId": "taipei",
+      "candidateId": "taipei-沈伯洋",
+      "candidateName": "沈伯洋",
+      "title": "直播／台北市長政見發表會14:00登場 沈伯洋、蔣萬安等6人輪番上台 - 上報Up Media",
+      "sourceName": "上報Up Media",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5pZzVjMG5vN0NocURzRjQ0bVBoNHdjZlJCdTZERXk3OGtYU1kxb0p4a1pGSzZsY3B1V241eERGdkhOT0piamRlUVhNRUdfYTZUZW9ZLVZjd0VlVkM4Q2p6Rm53?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 03:04:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
       "id": "taipei-沈伯洋-5a3f7f3c24f3",
       "countyId": "taipei",
       "candidateId": "taipei-沈伯洋",
@@ -1552,6 +1629,28 @@
       "sourceName": "中央社 CNA",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9OdUN2NlppTHlrc0NDcFZoTzlzc2s0V0pwOWhQV0p2a1Z1MkxaaldWZnZaUmk5MWhaMDNQM0pzTDEzaU5wQXJyX1kwSGVxQ2RVbWlfYUxPUEQ2VGp0TlJV?oc=5",
       "publishedAt": "Fri, 13 Nov 2026 10:32:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-8397529118fd",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "【LIVE】1114蔣萬安沈伯洋再同台 北市政見會登場| 2026九合一選舉 - UDN",
+      "sourceName": "UDN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12UG9BY0k1SDVLMk16ZERkVkRwbk14dHBDZzU2aGFxOVVSRXhZd3FabVVvMHEteXFzdkNGQ2RDNzhyVmp5ZGNLbG5XVnBPdjJaQTdaRg?oc=5",
+      "publishedAt": "Fri, 13 Nov 2026 19:58:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-ed706ddd513b",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "北市政見會下午2時登場！沈伯洋閉關特訓 蔣萬安將談「市民減壓」 - 自由時報",
+      "sourceName": "自由時報",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02NmhMY09sMldfdmFrdUVoNGxFVk94THlBb2lGQlhlSEVXT1dTMDFCMG1TZEZuWVhyUERPWVRFX1lhSzB3RVZyelpzRW1ld0luaFp6TVl0XzdxQlY1QmVfWUNFQ19CcERUSnfSAW9BVV95cUxONjdZY0F4elZzS2Vad3hTYWxUcnN5bjYtSV9QOW1hSGdRd2VRTl9STW9ySVBJYkVnOHVWSlRrRlJHZGduWFBNWmdScTNqZGtpRC0wT1MtTHYxTGpHeVRtOWxPd2tNLXR0NHFhQ0F2LWc?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 03:15:09 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1566,6 +1665,28 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
+      "id": "taipei-蔣萬安-098b8ae29b09",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "台北市長選戰／公辦政見會14日登場 沈伯洋細談政見、蔣萬安平常心 - Rti 中央廣播電臺",
+      "sourceName": "Rti 中央廣播電臺",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9NQ3lEa2hCSFlidmhaNm9ta24xVmMwN2c3Y2hFa3pvOFRxenFBTXp5NzBsUDZsWkRLNXRBUE9jU2ZrdnZpbjFxeTNwSEZHa2pfR0MtWm5NYzY?oc=5",
+      "publishedAt": "Fri, 13 Nov 2026 14:43:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-69c5636c46cc",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "台北市長選舉政見會14:00登場 蔣萬安沈伯洋再度交鋒｜直播 - Yahoo新聞",
+      "sourceName": "Yahoo新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxNOGZwdDRfTHU0cW1ISjBZSXlrS1JYMHlqNmpwMy01Y1BjcFVGcTJmMHhsamJQdGJGQTQ3YkhuWjV3dlBrbnE2TnN2TWFnLTJJOWdhbk1DTnltZE82UGExUGs0M05tdFNsNUUxOUVlOTI3V1dNcXNzN1BHSTJ1bU5ZalRkNnctMDVYWkRMZ0hlb2U5ckx0Mm1kekZmODNWN1loVEdqcW5KNVJfM19vUWJ1akxPU3hTZ1F1Nlhjb1dLUDN1NzAtNVlRN0ptR1JhYWowZFFXT2F1RWZCTHUtNno3YU94NU1xVy1YYlNuWDl1MzlXZzJTQVZpWUNZSDRVOFQ5QVBuTUI2SVl0dGVEcDdXdHdfNVdxeDZXUjZWRHdscHg2cjZDUEFiT3dzcWVNSGdoSml1akcyS2EtWFF5RHZjVjZscldKSXdrMzZzbXh6R0FZdi1KV2JXZzBNcTh4SmVYNFlUVjNJdzltS2pVaXY2Zmt6LXJkaFc5enc?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 04:04:13 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
       "id": "taipei-蔣萬安-bdc43468d5d0",
       "countyId": "taipei",
       "candidateId": "taipei-蔣萬安",
@@ -1577,14 +1698,69 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "taitung-吳秀華-6433ff09ae59",
-      "countyId": "taitung",
-      "candidateId": "taitung-吳秀華",
-      "candidateName": "吳秀華",
-      "title": "台東縣長不好當！政見要會講、歌喉也要好？吳秀華、陳瑩都開唱| 2026九合一選舉 - UDN",
+      "id": "taipei-蔣萬安-28c7de8bfc97",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "台北市長選舉政見會今14：00登場 沈伯洋、蔣萬安等6候選人政見對決 - 自由時報",
+      "sourceName": "自由時報",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfV3Y0elhKUDZYdjdDU2tleU1iZzZzVEU2eHY0RHVtWWFTc0puekw5eTA2Y3dJLVFVS0FYc2k4Yy1reDVnQk5PRDVETVlVeFNpbml6ZGlqNVkxVWt6SUtNV1ZUWHVWczE0X1HSAW9BVV95cUxQMFo1UHZMZ09VSUlBNjJHTk9uaTRPYTA2RHQxYzdJWE53R3U5dzJfamljZDdodTB3MkMtSUQ2ZVJfeldFcWJhdWdESDMtQkM1UWZNQi04alpZeFdKSENWQWI0SU80UU83NUpXRkdpY28?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 01:59:30 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-b774b7f12c9c",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "台北市長選舉政見會蔣萬安：首場談市民減壓| 地方 - 中央社 CNA",
+      "sourceName": "中央社 CNA",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE83dUhTMVFTT3I2MkFaamdwSzNyRFI3MXd0dDVQdEppTy1fVVdHZEVCZWtqeEw0V0FrUWsxc1ZyZTFGUjlsd3VaLXJFbGdNSXFRNjZTT3hMbHZ1eVdVdnlN?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 04:28:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-3d1f403108f8",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "政見發表會下午登場！沈伯洋閉關備戰 蔣萬安曝因應策略 - 台視新聞網",
+      "sourceName": "台視新聞網",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5sdFdvS0lSYVRSMHN3TFJBM3JKcWE3c0daRGYyTXA3ci1kNTRvbGVfeWMxU1FYVVhfeTVpbVNYd0pzYS1kNFVRTmo1S0hObVlodWRMaFQxNA?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 01:48:27 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-d03cffa3e8ab",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "沈伯洋閉關特訓政見會蔣萬安曝兩戰略- 政治新聞 - PChome Online 新聞",
+      "sourceName": "PChome Online 新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORVNtMzN2VXhQanVEN19LTEJEMVJKVDRVdjN0QlV3YnlaS2FkUVdwOVYzU284N2gwU0N5MFNzNzdSVUhBTmYxc2Q3QktZZ01ZRTNoYTJQTkRGMlRXQUx1eEtTYmwtbVBxWHRFVllwU0F5bE5QSzktUHhCWi1QYjIzUmtRQmg4RFFVUDhKcw?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 02:46:01 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-8d6a885bddf3",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "直播／台北市長政見發表會14:00登場 沈伯洋、蔣萬安等6人輪番上台 - 上報Up Media",
+      "sourceName": "上報Up Media",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5pZzVjMG5vN0NocURzRjQ0bVBoNHdjZlJCdTZERXk3OGtYU1kxb0p4a1pGSzZsY3B1V241eERGdkhOT0piamRlUVhNRUdfYTZUZW9ZLVZjd0VlVkM4Q2p6Rm53?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 03:04:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
+      "id": "taipei-蔣萬安-41412469e07b",
+      "countyId": "taipei",
+      "candidateId": "taipei-蔣萬安",
+      "candidateName": "蔣萬安",
+      "title": "首場政見發表會下午登場蔣萬安曝2方向：市民減壓、市民角度出發| 2026九合一選舉 - UDN",
       "sourceName": "UDN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0yRkwtNjRPYWtGVHpVWTlXMHlzNDRsbGFackp1d1BqVHJHMUhZVTNjS3J0Q1VWVmpVRm5aNnN5X3Zid3d5YkxFdlItZFFqa0UwcFVVMDlzUjc?oc=5",
-      "publishedAt": "Sat, 31 Oct 2026 07:00:00 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Wbkc3QkpJVFhCZWx5bG80eVlpOU95SnMyS1dFVzlWWk5nYVpFMW9HZ2R5UTZ6UjRIM2MyVGdSajFNdGRPaEExbHJwM1NpVHpONkNLYXRObFg?oc=5",
+      "publishedAt": "Sat, 14 Nov 2026 03:34:28 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1610,17 +1786,6 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "taitung-陳瑩-6433ff09ae59",
-      "countyId": "taitung",
-      "candidateId": "taitung-陳瑩",
-      "candidateName": "陳瑩",
-      "title": "台東縣長不好當！政見要會講、歌喉也要好？吳秀華、陳瑩都開唱| 2026九合一選舉 - UDN",
-      "sourceName": "UDN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0yRkwtNjRPYWtGVHpVWTlXMHlzNDRsbGFackp1d1BqVHJHMUhZVTNjS3J0Q1VWVmpVRm5aNnN5X3Zid3d5YkxFdlItZFFqa0UwcFVVMDlzUjc?oc=5",
-      "publishedAt": "Sat, 31 Oct 2026 07:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
       "id": "taitung-陳瑩-e1b786c6cffd",
       "countyId": "taitung",
       "candidateId": "taitung-陳瑩",
@@ -1640,28 +1805,6 @@
       "sourceName": "城市學",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMQVJENGgtVXVyVXl5c0hTUUdaaVdwdzRkQk5IcnIzQXE4YjJOUEdfQkZFUlpscWtVRDFzaHozc1AyOXhVQjZ4NWliWE1CcU0?oc=5",
       "publishedAt": "Tue, 03 Nov 2026 08:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "taoyuan-張善政-803a886550a7",
-      "countyId": "taoyuan",
-      "candidateId": "taoyuan-張善政",
-      "candidateName": "張善政",
-      "title": "挺張嘉郡張善政陪掃街、柯志恩分享教育政策- 地方 - 華視新聞網",
-      "sourceName": "華視新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qbDdSUnNMem5TWklTbW5rY2RiVWh3dGNQb20xeUpzUG5lZXBrRHk4NFlCcUtEMElnZGF6YnZJbVpXNDNncy11X2c0MktCSzZtSHNlbUZQaGNmUXE2eU90TW1YMk9KTHI4NkVsWm53?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 09:57:21 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "taoyuan-張善政-70cb58008e65",
-      "countyId": "taoyuan",
-      "candidateId": "taoyuan-張善政",
-      "candidateName": "張善政",
-      "title": "桃園市長選戰聚焦交通住宅 張善政、黃世杰各提主張 - Taiwan News",
-      "sourceName": "Taiwan News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9XZGFreWxxVS0xWGU4UERxamFBcjV5VTVqRFZseVY4YzhlS29lSzdndFBWNkF3WTY0NG5PazItTkd4czBNbXEtUnljbHdlYzZwVlNrRjBEWlo?oc=5",
-      "publishedAt": "Mon, 19 Oct 2026 07:00:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1687,17 +1830,6 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "taoyuan-黃世杰-70cb58008e65",
-      "countyId": "taoyuan",
-      "candidateId": "taoyuan-黃世杰",
-      "candidateName": "黃世杰",
-      "title": "桃園市長選戰聚焦交通住宅 張善政、黃世杰各提主張 - Taiwan News",
-      "sourceName": "Taiwan News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9XZGFreWxxVS0xWGU4UERxamFBcjV5VTVqRFZseVY4YzhlS29lSzdndFBWNkF3WTY0NG5PazItTkd4czBNbXEtUnljbHdlYzZwVlNrRjBEWlo?oc=5",
-      "publishedAt": "Mon, 19 Oct 2026 07:00:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
       "id": "taoyuan-黃世杰-0636b42dd68f",
       "countyId": "taoyuan",
       "candidateId": "taoyuan-黃世杰",
@@ -1717,17 +1849,6 @@
       "sourceName": "中央社 CNA",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9OdUN2NlppTHlrc0NDcFZoTzlzc2s0V0pwOWhQV0p2a1Z1MkxaaldWZnZaUmk5MWhaMDNQM0pzTDEzaU5wQXJyX1kwSGVxQ2RVbWlfYUxPUEQ2VGp0TlJV?oc=5",
       "publishedAt": "Fri, 13 Nov 2026 10:32:00 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "yilan-吳宗憲-20f0955ebe01",
-      "countyId": "yilan",
-      "candidateId": "yilan-吳宗憲",
-      "candidateName": "吳宗憲",
-      "title": "吳宗憲端「三大靠山」政策！長輩、青年、警消公務員全照顧喊話做宜蘭人的靠山- 生活新聞 - PChome Online 新聞",
-      "sourceName": "PChome Online 新聞",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVDBDank4akVjUjRsYlRMMVFxVDhQcDVBSFN0UWpISWZzY1VOQnE3Q04xV0NTcXpQZlJtcFc3ZS05eUxRQ0Z2R2diRFB0V0puY3hSaFdfdWg2SXQzRDZaLW1VMGY0SWhXczE5NkVXcXhma3daelQwRVVrb3VTdXk3Ql9LWnVEVmVR?oc=5",
-      "publishedAt": "Wed, 11 Nov 2026 05:20:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
@@ -1775,6 +1896,17 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
+      "id": "yilan-林國漳-c143c8d200e1",
+      "countyId": "yilan",
+      "candidateId": "yilan-林國漳",
+      "candidateName": "林國漳",
+      "title": "政治素人橫空出世選宜蘭縣長？被賴清德提名欽點的林國漳是誰？首談參選內幕與宜蘭政見藍圖 - Yahoo新聞",
+      "sourceName": "Yahoo新聞",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywRBVV95cUxQS2tEQnBfMU1GNjZTcmlPcHVaYXZ5ZGRTaVZERk01aWlhSDVoVXk0bEc4ZmI2TnZwLWU1cndZQld6LVJXMHAzelRPX2ZCQVhCSHp4VGlGeWE5T01lZ3pEMXhCWVRqWUQ5eFpYYVBnWHdKT3hHNjl5U3R0azAyOGdHZ1NJTG14cnN0RC1TcFpFM0pFMjJkVTRoSkd0ZlVxS1NrS0dGNFVPbHVtRFYyV1RaVjM3VWl5bnJQcUdxZDZ1SW9hRlJSeTAtUGtMUWZheG80VW5Eb0ZtOGFLUmZvOXpDMWo3UVZuV0VnWV9fWEtweVRMMTBUYUpHM1FxajRFeTN3LXhzT2VTTmJNRjRvMkctT3AxWkZDbDk0d081SFl6N0M3Rkpob1ZELU1fNlVSYnJYbGZXeVBkRTU5djFQc0kxM3NhN3VuNVhfT0NPSk82cHZMdmVKOUJWWGFaUDVIalZHNnZHNlgyVHZfdEJsX1lWbHlIZHRkT01WaGwtOExRYjhLbVBVRlFxRFV6b2E5RFhpMUJiOUotVWRaa1BGN19yVGNZbnNxSTY2VWtVNTFSLWFaMTdTN2pCa2ZLVGdVTy1oVlZyajRNMl9pZzZjODRJZGtsdGt3REtBN3BsS3l6ZGFlQjRJdElLM25aUWQwRDE1SDVna2NOV2hwVF9wd0wxMHFrbXNIZWxUQXhBQ2EyMDloOEt3Nk5WdXFwUGxtaC1qWTRpeWFZaGNrT2JFNWw4azlSZE9JX2tCYVYyYktXaDRzenQ1TGRvaWdqNA?oc=5",
+      "publishedAt": "Tue, 23 Dec 2025 08:00:00 GMT",
+      "reason": "candidate_name_and_policy_term_matched"
+    },
+    {
       "id": "yunlin-劉建國-79252043b591",
       "countyId": "yunlin",
       "candidateId": "yunlin-劉建國",
@@ -1808,25 +1940,14 @@
       "reason": "candidate_name_and_policy_term_matched"
     },
     {
-      "id": "yunlin-張嘉郡-803a886550a7",
+      "id": "yunlin-張嘉郡-4278da89381c",
       "countyId": "yunlin",
       "candidateId": "yunlin-張嘉郡",
       "candidateName": "張嘉郡",
-      "title": "挺張嘉郡張善政陪掃街、柯志恩分享教育政策- 地方 - 華視新聞網",
-      "sourceName": "華視新聞網",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qbDdSUnNMem5TWklTbW5rY2RiVWh3dGNQb20xeUpzUG5lZXBrRHk4NFlCcUtEMElnZGF6YnZJbVpXNDNncy11X2c0MktCSzZtSHNlbUZQaGNmUXE2eU90TW1YMk9KTHI4NkVsWm53?oc=5",
-      "publishedAt": "Thu, 12 Nov 2026 09:57:21 GMT",
-      "reason": "candidate_name_and_policy_term_matched"
-    },
-    {
-      "id": "yunlin-張嘉郡-c2171fd1bd14",
-      "countyId": "yunlin",
-      "candidateId": "yunlin-張嘉郡",
-      "candidateName": "張嘉郡",
-      "title": "虎尾聯合競總成立 張嘉郡、林嘉弘談產業園區、半導體與地方建設 - 17news民生好報",
-      "sourceName": "17news民生好報",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBVQ3hxb09CaldjMkZWN3FEdHFnWHpiRVR2RzFRbXB2YnlBaE5QbnFQU1Vkc1BOcE5CNVdJUGEySk1qOHpKVDZVblRn?oc=5",
-      "publishedAt": "Fri, 13 Nov 2026 15:09:37 GMT",
+      "title": "挺張嘉郡張善政陪掃街、柯志恩分享教育政策| 政治 - 中央社 CNA",
+      "sourceName": "中央社 CNA",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YT3k4LXFIYk82T0IzOTN4aklCeVFpcmVJQm5JRm1zQlNoNkFUc3Iwcl95T1ZKM0hiMjJSdEZyYjJGNlQ1NldybzNzSThuZFJWYjItNzhUaW0xZTZobWRr?oc=5",
+      "publishedAt": "Thu, 12 Nov 2026 09:57:00 GMT",
       "reason": "candidate_name_and_policy_term_matched"
     }
   ]
